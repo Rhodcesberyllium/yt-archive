@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-08-18 21:25:03 (UTC+8)
+抓取时间: 2026-08-18 21:40:44 (UTC+8)
 数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 upload_date（日精度） + 官方 RSS（精确秒） + 频道页相对时间（兜底）
 视频总数: 291
 ========================================
@@ -909,831 +909,831 @@
 
 --------------------------------------------------
 
-【151】视频名称: Make Thermite (and testing various iron oxide sources)
+【151】视频名称: Peanut Butter Glows in the Dark
+    视频链接: https://www.youtube.com/watch?v=fUnSpEtnDNw
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【152】视频名称: Make Pyrophoric Iron and Iron Oxalate
+    视频链接: https://www.youtube.com/watch?v=vPnqLSyoEy8
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【153】视频名称: Using Fractional Distillation for Purification of Hydrobromic acid
+    视频链接: https://www.youtube.com/watch?v=TZo97aO4xbk
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【154】视频名称: Q&A with NurdRage September Edition
+    视频链接: https://www.youtube.com/watch?v=Bxac2OWTTHo
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【155】视频名称: Make Thermite (and testing various iron oxide sources)
     视频链接: https://www.youtube.com/watch?v=RiF73l4PjyY
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【152】视频名称: Q&A with NurdRage January 2016 edition - Thiols, mercury, and how to make sodium
+【156】视频名称: Q&A with NurdRage January 2016 edition - Thiols, mercury, and how to make sodium
     视频链接: https://www.youtube.com/watch?v=t_v_7A365PE
     发布时间: 2016-01（推断至月份, 来自标题）
 
 --------------------------------------------------
 
-【153】视频名称: Make Iron Oxide (for Thermite)
+【157】视频名称: Make Iron Oxide (for Thermite)
     视频链接: https://www.youtube.com/watch?v=8ZQ67POLiqg
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【154】视频名称: Make sulfuric acid from water and sulfur (electrobromine process)
+【158】视频名称: Q&A with NurdRage August Edition
+    视频链接: https://www.youtube.com/watch?v=LFLnTPymSOc
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【159】视频名称: Make Hydrobromic Acid
+    视频链接: https://www.youtube.com/watch?v=C3n4Xqfb9qk
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【160】视频名称: Make an Electrolysis Box
+    视频链接: https://www.youtube.com/watch?v=M4vSCqj_5i8
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【161】视频名称: Thank you for your support and Answering Your Questions
+    视频链接: https://www.youtube.com/watch?v=ebsJ0keTsvs
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【162】视频名称: Make sulfuric acid from water and sulfur (electrobromine process)
     视频链接: https://www.youtube.com/watch?v=6ms6xbPhdVs
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【155】视频名称: Make Copper Chloride (3 ways)
+【163】视频名称: NurdRage Begs for Money!
+    视频链接: https://www.youtube.com/watch?v=gwu0iAMp5D4
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【164】视频名称: Make a thermometer probe for a westlab/scilogex hotplate
+    视频链接: https://www.youtube.com/watch?v=ORBgemwMLS4
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【165】视频名称: Recover Copper from Ferric Chloride Etchant (Waste free method)
+    视频链接: https://www.youtube.com/watch?v=CY2T3orVuFU
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【166】视频名称: Recycle Copper chloride PCB etchant (waste free method)
+    视频链接: https://www.youtube.com/watch?v=FjEoRidvgYE
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【167】视频名称: Make Copper Chloride (3 ways)
     视频链接: https://www.youtube.com/watch?v=V8mHiFYmlBc
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【156】视频名称: Purify Sulfuric Acid by Distillation
+【168】视频名称: Make an Air Sensitive Solution
+    视频链接: https://www.youtube.com/watch?v=W_P2hdsJAaY
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【169】视频名称: Purify Sulfuric Acid by Distillation
     视频链接: https://www.youtube.com/watch?v=tgUH0HXrOKE
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【157】视频名称: Make an AA Battery
+【170】视频名称: Make a High Temperature Heating Mantle
+    视频链接: https://www.youtube.com/watch?v=N5meDWAqYes
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【171】视频名称: Make an AA Battery
     视频链接: https://www.youtube.com/watch?v=3Ts34IWziqo
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【158】视频名称: Gallium Induced Structural Failure of an Aluminum Sheet
+【172】视频名称: Gallium Induced Structural Failure of an Aluminum Sheet
     视频链接: https://www.youtube.com/watch?v=IZkzxWZETds
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【159】视频名称: ALS Liquid Nitrogen "Ice Bucket Challenge" (Ft. Muhammad Qureshi)
+【173】视频名称: Make Paramagnetic Fluid ("Parafluid")
+    视频链接: https://www.youtube.com/watch?v=MUKFaxy-z7s
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【174】视频名称: Ghost Metal (Chemistry Trick) - Version 2
+    视频链接: https://www.youtube.com/watch?v=VDMgrgSVjd8
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【175】视频名称: ALS Liquid Nitrogen "Ice Bucket Challenge" (Ft. Muhammad Qureshi)
     视频链接: https://www.youtube.com/watch?v=Xj-prpHfyEY
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【160】视频名称: How a Chemist Lights a Barbecue
+【176】视频名称: Lab Update 8-26-2014
+    视频链接: https://www.youtube.com/watch?v=-4gwhNryki0
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【177】视频名称: How a Chemist Lights a Barbecue
     视频链接: https://www.youtube.com/watch?v=eRtaPlEcEUU
     发布时间: 2014年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【161】视频名称: Set Hearts on Fire with Potassium Chlorate
+【178】视频名称: testing-00020.mp4
+    视频链接: https://www.youtube.com/watch?v=gw9ZzvSiyAQ
+    发布时间: 2014年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【179】视频名称: Make an Iron Heart Bleed (chemistry trick)
+    视频链接: https://www.youtube.com/watch?v=lH3b4426FMs
+    发布时间: 2013年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【180】视频名称: Set Hearts on Fire with Potassium Chlorate
     视频链接: https://www.youtube.com/watch?v=WkW9YIzkJII
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【162】视频名称: Cockroach Cremation
+【181】视频名称: Cockroach Cremation
     视频链接: https://www.youtube.com/watch?v=vZx3ZVZ_C1k
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【163】视频名称: How Fluorescence Works - The Science
+【182】视频名称: How Fluorescence Works - The Science
     视频链接: https://www.youtube.com/watch?v=CcssdJf0pKQ
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【164】视频名称: Make Ferric Chloride (for etching printed circuit boards)
+【183】视频名称: Make 10 Etchants for Copper Printed Circuit Boards
+    视频链接: https://www.youtube.com/watch?v=Q4tWEse2rDI
+    发布时间: 2013年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【184】视频名称: Make Conductive Silver Ink (complex ion based)
+    视频链接: https://www.youtube.com/watch?v=EBlqPS8boLI
+    发布时间: 2013年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【185】视频名称: Make Silver Acetate
+    视频链接: https://www.youtube.com/watch?v=2J6V4acKels
+    发布时间: 2013年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【186】视频名称: Make Ferric Chloride (for etching printed circuit boards)
     视频链接: https://www.youtube.com/watch?v=43Xsh9J7S-g
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【165】视频名称: Platinum Bar Dissolving in Acid (Aqua Regia)
+【187】视频名称: Platinum Bar Dissolving in Acid (Aqua Regia)
     视频链接: https://www.youtube.com/watch?v=APxL87X92t4
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【166】视频名称: Make Purified Chloroplatinic Acid
+【188】视频名称: Make Purified Chloroplatinic Acid
     视频链接: https://www.youtube.com/watch?v=MlMj3VEYBMA
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【167】视频名称: Coke Can in Liquid Nitrogen
+【189】视频名称: Coke Can in Liquid Nitrogen
     视频链接: https://www.youtube.com/watch?v=7RgQOUUa9Sk
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【168】视频名称: Make Fake Blood Cuts (Chemistry Trick)
+【190】视频名称: Make Fake Blood Cuts (Chemistry Trick)
     视频链接: https://www.youtube.com/watch?v=ZgbY7WzkplI
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【169】视频名称: Make Gold from Chloroauric Acid
+【191】视频名称: How to Make Fluorescein (Fluorescent Dye)
+    视频链接: https://www.youtube.com/watch?v=ihssISvNL3o
+    发布时间: 2013年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【192】视频名称: Make Gold from Chloroauric Acid
     视频链接: https://www.youtube.com/watch?v=AHsPkoO4wKw
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【170】视频名称: Chemical Resistance of Platinum
+【193】视频名称: Chemical Resistance of Platinum
     视频链接: https://www.youtube.com/watch?v=fro-L5gSyh4
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【171】视频名称: Clean pennies with Vinegar and Salt
+【194】视频名称: Clean pennies with Vinegar and Salt
     视频链接: https://www.youtube.com/watch?v=H4N-iGvYrbM
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【172】视频名称: Make Blue Smash-Glow Crystals (Triboluminescence Demonstration)
+【195】视频名称: Make Blue Smash-Glow Crystals (Triboluminescence Demonstration)
     视频链接: https://www.youtube.com/watch?v=hPtCvReouCM
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【173】视频名称: Gold Coin Dissolving in Acid (Aqua Regia)
+【196】视频名称: Gold Coin Dissolving in Acid (Aqua Regia)
     视频链接: https://www.youtube.com/watch?v=XoqU1GfIOkI
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【174】视频名称: Make Potassium Rhodizonate (for lead testing)
+【197】视频名称: Gold Chemical Resistance
+    视频链接: https://www.youtube.com/watch?v=ng6DGwiKWag
+    发布时间: 2012年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【198】视频名称: Test for Lead Using Potassium Rhodizonate
+    视频链接: https://www.youtube.com/watch?v=eiJNAxPYK04
+    发布时间: 2012年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【199】视频名称: Make Potassium Rhodizonate (for lead testing)
     视频链接: https://www.youtube.com/watch?v=BLmycZ2nrt0
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【175】视频名称: Gum in Potassium Chlorate
+【200】视频名称: Gum in Potassium Chlorate
     视频链接: https://www.youtube.com/watch?v=_itwzas9raY
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【176】视频名称: Gum in Acid
+【201】视频名称: Gum in Acid
     视频链接: https://www.youtube.com/watch?v=sXrZLtDHsy8
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【177】视频名称: Make Quantum Dots (Cadmium Selenide Type)
+【202】视频名称: Make Quantum Dots (Cadmium Selenide Type)
     视频链接: https://www.youtube.com/watch?v=bNuoYm7Su4o
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【178】视频名称: Magnetic Salt - Dysprosium Nitrate
+【203】视频名称: Magnetic Salt - Dysprosium Nitrate
     视频链接: https://www.youtube.com/watch?v=4YSmr1psa_0
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【179】视频名称: Make Manganese Dioxide Electrodes - Revisited
+【204】视频名称: Make Manganese Dioxide Electrodes - Revisited
     视频链接: https://www.youtube.com/watch?v=nvMVlhBmv7M
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【180】视频名称: Potassium on Ice
+【205】视频名称: Potassium on Ice
     视频链接: https://www.youtube.com/watch?v=Jg4k5P_GXt4
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【181】视频名称: Lab Equipment: Glass Ampoules
+【206】视频名称: Lab Equipment: Glass Ampoules
     视频链接: https://www.youtube.com/watch?v=cve_D3tWlzE
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【182】视频名称: Make Manganese Dioxide (MnSO4 + KHSO5 approach)
+【207】视频名称: Make Manganese Dioxide (MnSO4 + KHSO5 approach)
     视频链接: https://www.youtube.com/watch?v=4JXbF4QgxJk
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【183】视频名称: Lab Equipment - Mineral/Paraffin Oil
+【208】视频名称: Lab Equipment - Mineral/Paraffin Oil
     视频链接: https://www.youtube.com/watch?v=eXQwVdTZd_g
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【184】视频名称: "Ghost metal" (chemistry trick)
+【209】视频名称: "Ghost metal" (chemistry trick)
     视频链接: https://www.youtube.com/watch?v=CQ4145kogvY
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【185】视频名称: Make Iron BLEED
+【210】视频名称: Make Iron BLEED
     视频链接: https://www.youtube.com/watch?v=zc_DxfUC4Y8
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【186】视频名称: Make a Color Changing Glow Stick
+【211】视频名称: Make a Color Changing Glow Stick
     视频链接: https://www.youtube.com/watch?v=2__CQ29BHKY
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【187】视频名称: Volcano of Ammonium Dichromate
+【212】视频名称: Volcano of Ammonium Dichromate
     视频链接: https://www.youtube.com/watch?v=CW4hN0dYnkM
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【188】视频名称: Gallium Induced Failure of a Heat Sink
+【213】视频名称: Gallium Induced Failure of a Heat Sink
     视频链接: https://www.youtube.com/watch?v=JHHI2Lk79cY
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【189】视频名称: AWESOME FLUORESCENCE THERMOCHROMISM
+【214】视频名称: AWESOME FLUORESCENCE THERMOCHROMISM
     视频链接: https://www.youtube.com/watch?v=8jDFx7yeBvw
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【190】视频名称: Make a Gallium Beating Heart
+【215】视频名称: Make a Gallium Beating Heart
     视频链接: https://www.youtube.com/watch?v=g8Tc-5pUbH8
     发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【191】视频名称: Gallium Induced Structural Failure of a Coke Can
+【216】视频名称: Gallium Induced Structural Failure of a Coke Can
     视频链接: https://www.youtube.com/watch?v=FaMWxLCGY0U
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【192】视频名称: Make Luminol - The Abridged Guide
+【217】视频名称: Make Luminol - The Abridged Guide
     视频链接: https://www.youtube.com/watch?v=lB_g2ddZZYk
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【193】视频名称: Make Luminol - The Complete Guide
+【218】视频名称: Make Luminol - The Complete Guide
     视频链接: https://www.youtube.com/watch?v=58Ve69s0qD0
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【194】视频名称: Make Flowers Glow In The Dark (with highlighter fluid and UV light)
+【219】视频名称: Make Flowers Glow In The Dark (with highlighter fluid and UV light)
     视频链接: https://www.youtube.com/watch?v=2vhcHuaArdg
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【195】视频名称: Make a Zinc Air Battery
+【220】视频名称: Make a Zinc Air Battery
     视频链接: https://www.youtube.com/watch?v=OcGWbt1mcrc
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【196】视频名称: Make an Aluminum Air Battery
+【221】视频名称: Make an Aluminum Air Battery
     视频链接: https://www.youtube.com/watch?v=_FxIzMwOF00
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【197】视频名称: Grow Silver Metal Crystals by Electrochemistry
+【222】视频名称: Grow Silver Metal Crystals by Electrochemistry
     视频链接: https://www.youtube.com/watch?v=fnyBldC4Ra4
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【198】视频名称: BURN STEEL WOOL
+【223】视频名称: BURN STEEL WOOL
     视频链接: https://www.youtube.com/watch?v=5MDH92VxPEQ
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【199】视频名称: Make Hydrazine Sulfate by the Hypochlorite-Ketazine Process - The Complete Guide
+【224】视频名称: Make Hydrazine Sulfate by the Hypochlorite-Ketazine Process - The Complete Guide
     视频链接: https://www.youtube.com/watch?v=UB7vwIFCnR0
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【200】视频名称: Make Hydrochloric Acid
+【225】视频名称: Make Hydrochloric Acid
     视频链接: https://www.youtube.com/watch?v=YGjd7xxTuZw
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【201】视频名称: Make a Solar Cell - TiO2/Raspberry based
+【226】视频名称: Make a Solar Cell - TiO2/Raspberry based
     视频链接: https://www.youtube.com/watch?v=WHTbw5jy6qU
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【202】视频名称: Levitation with the Levitron
+【227】视频名称: Levitation with the Levitron
     视频链接: https://www.youtube.com/watch?v=GMVtlNbMwHw
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【203】视频名称: Make "Elephant Toothpaste" - The Decomposition of Hydrogen Peroxide
+【228】视频名称: Make "Elephant Toothpaste" - The Decomposition of Hydrogen Peroxide
     视频链接: https://www.youtube.com/watch?v=XKli-QGHb40
     发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【204】视频名称: Hand vs. Liquid Nitrogen - Revisited
+【229】视频名称: Hand vs. Liquid Nitrogen - Revisited
     视频链接: https://www.youtube.com/watch?v=wV7g8L633Sg
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【205】视频名称: Make Glow Sticks - The Science
+【230】视频名称: Make Glow Sticks - The Science
     视频链接: https://www.youtube.com/watch?v=tItOOpyJP5k
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【206】视频名称: Ruthenium Metal - Invulnerable to Aqua Regia
+【231】视频名称: Ruthenium Metal - Invulnerable to Aqua Regia
     视频链接: https://www.youtube.com/watch?v=H7Ng4sOVkns
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【207】视频名称: Will it Oxidize: Edward Cullen
+【232】视频名称: Will it Oxidize: Edward Cullen
     视频链接: https://www.youtube.com/watch?v=Cy-YZ6H4sIE
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【208】视频名称: Will it Oxidize: Jacob Black
+【233】视频名称: Will it Oxidize: Jacob Black
     视频链接: https://www.youtube.com/watch?v=nk3TIIm-Ipc
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【209】视频名称: How to galvanize metal (for rust protection)
+【234】视频名称: How to galvanize metal (for rust protection)
     视频链接: https://www.youtube.com/watch?v=jimPImGKPy8
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【210】视频名称: Turn Pennies Silver and Gold (Chemistry Trick)
+【235】视频名称: Turn Pennies Silver and Gold (Chemistry Trick)
     视频链接: https://www.youtube.com/watch?v=_g_ml8tAnWE
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【211】视频名称: 25000 subscribers & my visit to science rendezvous 2010
+【236】视频名称: 25000 subscribers & my visit to science rendezvous 2010
     视频链接: https://www.youtube.com/watch?v=QfSGa3qEAZc
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【212】视频名称: Quick Update: Make BLUE glow in the dark powder
+【237】视频名称: Quick Update: Make BLUE glow in the dark powder
     视频链接: https://www.youtube.com/watch?v=VZ7-7HOwBV8
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【213】视频名称: Lab Equipment: pH measurement with paper and meters [Part 2]
+【238】视频名称: Lab Equipment: pH measurement with paper and meters [Part 2]
     视频链接: https://www.youtube.com/watch?v=OJ1ynxWEM6M
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【214】视频名称: Lab Equipment: pH measurement with paper and meters [Part 1]
+【239】视频名称: Lab Equipment: pH measurement with paper and meters [Part 1]
     视频链接: https://www.youtube.com/watch?v=uyfKU1jHwWI
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【215】视频名称: Make Manganese Dioxide Electrodes (for chlorate or HHO cells)
+【240】视频名称: Make Manganese Dioxide Electrodes (for chlorate or HHO cells)
     视频链接: https://www.youtube.com/watch?v=BjKYiu8eKa8
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【216】视频名称: Make Cobalt and Manganese Nitrates
+【241】视频名称: Make Cobalt and Manganese Nitrates
     视频链接: https://www.youtube.com/watch?v=KSIeCbv4jlM
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【217】视频名称: Purification of Manganese Sulfate
+【242】视频名称: Purification of Manganese Sulfate
     视频链接: https://www.youtube.com/watch?v=BLJgBSrhZI8
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【218】视频名称: Make MnSO4 from MnO2 [2 ways]
+【243】视频名称: Make MnSO4 from MnO2 [2 ways]
     视频链接: https://www.youtube.com/watch?v=2gXByJkg0iY
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【219】视频名称: "Anti" Magnetic water and Levitating Graphite by Diamagnetism
+【244】视频名称: "Anti" Magnetic water and Levitating Graphite by Diamagnetism
     视频链接: https://www.youtube.com/watch?v=jyqOTJOJSoU
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【220】视频名称: BREAK HEARTS with Liquid Nitrogen
+【245】视频名称: BREAK HEARTS with Liquid Nitrogen
     视频链接: https://www.youtube.com/watch?v=zLWEemhtdbE
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【221】视频名称: Make Duct Tape Glow!!!
+【246】视频名称: Make Duct Tape Glow!!!
     视频链接: https://www.youtube.com/watch?v=54R6q2_-4Yo
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【222】视频名称: Passivation of Titanium Metal
+【247】视频名称: Passivation of Titanium Metal
     视频链接: https://www.youtube.com/watch?v=zDZDRzMGa6c
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【223】视频名称: Make SMASH-GLOW Crystals!!!
+【248】视频名称: Make SMASH-GLOW Crystals!!!
     视频链接: https://www.youtube.com/watch?v=xQhLSoB-uBE
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【224】视频名称: How to Make Potassium Nitrate at Home
+【249】视频名称: How to Make Potassium Nitrate at Home
     视频链接: https://www.youtube.com/watch?v=xOjtlIxYYbs
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【225】视频名称: Make Sulfuric Acid (Copper Sulfate Electrochemical Method)
+【250】视频名称: Make Sulfuric Acid (Copper Sulfate Electrochemical Method)
     视频链接: https://www.youtube.com/watch?v=5dUSF9Gl0xE
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【226】视频名称: How To Make Glow in the Dark Powder
+【251】视频名称: How To Make Glow in the Dark Powder
     视频链接: https://www.youtube.com/watch?v=TYDn06G2C0E
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【227】视频名称: How to Purify by Recrystallization
+【252】视频名称: How to Purify by Recrystallization
     视频链接: https://www.youtube.com/watch?v=uVA0rK_VITY
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【228】视频名称: How to Make Aluminum Nitrate Nonahydrate
+【253】视频名称: How to Make Aluminum Nitrate Nonahydrate
     视频链接: https://www.youtube.com/watch?v=u4Ha1SJrazY
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【229】视频名称: Make Europium and Dysprosium Nitrate salts.
+【254】视频名称: Make Europium and Dysprosium Nitrate salts.
     视频链接: https://www.youtube.com/watch?v=8IFsOmriS8I
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【230】视频名称: How to make a Desiccator Bag for Drying Chemicals
+【255】视频名称: How to make a Desiccator Bag for Drying Chemicals
     视频链接: https://www.youtube.com/watch?v=XJFfS_YbbYI
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【231】视频名称: Ice Cooled with Liquid Nitrogen
+【256】视频名称: Ice Cooled with Liquid Nitrogen
     视频链接: https://www.youtube.com/watch?v=tXrRaeIhAds
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【232】视频名称: Lab Equipment: Magnetic Stir Plate
+【257】视频名称: Lab Equipment: Magnetic Stir Plate
     视频链接: https://www.youtube.com/watch?v=HH57T4w9UHc
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【233】视频名称: Make Strontium Nitrate
+【258】视频名称: Make Strontium Nitrate
     视频链接: https://www.youtube.com/watch?v=_rd8b6wNnKA
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【234】视频名称: Make Sodium Silicate
+【259】视频名称: Make Sodium Silicate
     视频链接: https://www.youtube.com/watch?v=xltvwhogklI
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【235】视频名称: HP YouOnYou: The Scientist
+【260】视频名称: HP YouOnYou: The Scientist
     视频链接: https://www.youtube.com/watch?v=9ohUP6v1m90
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【236】视频名称: Dissolve Glass with Drain Cleaner
+【261】视频名称: Dissolve Glass with Drain Cleaner
     视频链接: https://www.youtube.com/watch?v=nmktRTHL1NA
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【237】视频名称: Make a Test Tube Thunderstorm!
+【262】视频名称: Make a Test Tube Thunderstorm!
     视频链接: https://www.youtube.com/watch?v=Nyzlt-dVgWQ
     发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【238】视频名称: Make Potassium Permanganate (sort of...)
+【263】视频名称: Make Potassium Permanganate (sort of...)
     视频链接: https://www.youtube.com/watch?v=70AfSqP5YK8
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【239】视频名称: Make a Copper sulfate and zinc battery - "Gravity" design
+【264】视频名称: Make a Copper sulfate and zinc battery - "Gravity" design
     视频链接: https://www.youtube.com/watch?v=Id3tL2iI0Vw
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【240】视频名称: Make Copper Sulfate from Copper and Sulfuric acid (3 ways)
+【265】视频名称: Make Copper Sulfate from Copper and Sulfuric acid (3 ways)
     视频链接: https://www.youtube.com/watch?v=arlYPz3EP7A
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【241】视频名称: Get Zinc, Carbon Electrodes and MnO2 from a Lantern Battery
+【266】视频名称: Get Zinc, Carbon Electrodes and MnO2 from a Lantern Battery
     视频链接: https://www.youtube.com/watch?v=knc1lSupAwQ
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【242】视频名称: Hand vs. Liquid Nitrogen and the Leidenfrost Effect
+【267】视频名称: Hand vs. Liquid Nitrogen and the Leidenfrost Effect
     视频链接: https://www.youtube.com/watch?v=gjsMV1MglA4
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【243】视频名称: Make Sulfuric acid (metabisulfite/oxidizer method)
+【268】视频名称: Make Sulfuric acid (metabisulfite/oxidizer method)
     视频链接: https://www.youtube.com/watch?v=okvvD3-DF9U
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【244】视频名称: 3 Cool Things of Science - Episode 2
+【269】视频名称: 3 Cool Things of Science - Episode 2
     视频链接: https://www.youtube.com/watch?v=2T_qVaE3rX8
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【245】视频名称: Get Lithium Metal From an Energizer Battery
+【270】视频名称: Get Lithium Metal From an Energizer Battery
     视频链接: https://www.youtube.com/watch?v=BliWUHSOalU
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【246】视频名称: Make Nitric Acid - The Complete Guide
+【271】视频名称: Make Nitric Acid - The Complete Guide
     视频链接: https://www.youtube.com/watch?v=2yE7v4wkuZU
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【247】视频名称: Lowering Electrical Resistance with Liquid Nitrogen
+【272】视频名称: Lowering Electrical Resistance with Liquid Nitrogen
     视频链接: https://www.youtube.com/watch?v=LmdPB3AwRWo
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【248】视频名称: Make a Lithium Thionyl Chloride Battery
+【273】视频名称: Make a Lithium Thionyl Chloride Battery
     视频链接: https://www.youtube.com/watch?v=zTmp07tY9wQ
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【249】视频名称: 4 ways to make fire without matches by using chemistry
+【274】视频名称: 4 ways to make fire without matches by using chemistry
     视频链接: https://www.youtube.com/watch?v=vgh76gPSg3M
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【250】视频名称: How to make TCPO (for making glow sticks)
+【275】视频名称: How to make TCPO (for making glow sticks)
     视频链接: https://www.youtube.com/watch?v=ViJknvEEEOA
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【251】视频名称: Nuka Cola Quantum Glow Stick (Fallout 3 prop)
+【276】视频名称: Nuka Cola Quantum Glow Stick (Fallout 3 prop)
     视频链接: https://www.youtube.com/watch?v=hWuVhkwym5g
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【252】视频名称: Make Iodine from an Alkali Metal Iodide, Hydrochloric Acid and Hydrogen Peroxide
+【277】视频名称: Make Iodine from an Alkali Metal Iodide, Hydrochloric Acid and Hydrogen Peroxide
     视频链接: https://www.youtube.com/watch?v=ZFP7fYGrFRI
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【253】视频名称: Make Iodine from Sulfuric acid and Alkali Metal Iodide
+【278】视频名称: Make Iodine from Sulfuric acid and Alkali Metal Iodide
     视频链接: https://www.youtube.com/watch?v=2F_kPXbi2D8
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【254】视频名称: Make Glass Mirrors with Silver Nitrate
+【279】视频名称: Make Glass Mirrors with Silver Nitrate
     视频链接: https://www.youtube.com/watch?v=hUX_cpFWNso
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【255】视频名称: Cool Science: Silver Chloride Photochemistry
+【280】视频名称: Cool Science: Silver Chloride Photochemistry
     视频链接: https://www.youtube.com/watch?v=8e0-AbwBDYM
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【256】视频名称: Make Silver Nitrate From Silver and Nitric Acid
+【281】视频名称: Make Silver Nitrate From Silver and Nitric Acid
     视频链接: https://www.youtube.com/watch?v=d6hPgGV_qAg
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【257】视频名称: Make Silver Different Colors by Anodizing
+【282】视频名称: Make Silver Different Colors by Anodizing
     视频链接: https://www.youtube.com/watch?v=VrA7Jyw1uOs
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【258】视频名称: Cool Science: Restore Silver with Electrochemistry
+【283】视频名称: Cool Science: Restore Silver with Electrochemistry
     视频链接: https://www.youtube.com/watch?v=vGCx9HZwYBo
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【259】视频名称: Make a Complete Glow Stick - Refillable Too!
+【284】视频名称: Make a Complete Glow Stick - Refillable Too!
     视频链接: https://www.youtube.com/watch?v=xwi5M1nk6fQ
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【260】视频名称: HUGE 2 Liter Glow stick!!!
+【285】视频名称: HUGE 2 Liter Glow stick!!!
     视频链接: https://www.youtube.com/watch?v=mUCdGMeTveM
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【261】视频名称: Convert Alcohol into Flaming Jelly using Vinegar and Antacid
+【286】视频名称: Convert Alcohol into Flaming Jelly using Vinegar and Antacid
     视频链接: https://www.youtube.com/watch?v=E356hphckDQ
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【262】视频名称: Freezing Acetone with Liquid Nitrogen
+【287】视频名称: Freezing Acetone with Liquid Nitrogen
     视频链接: https://www.youtube.com/watch?v=PigqSwbRe0Q
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【263】视频名称: Make a glow stick reaction with real chemicals
+【288】视频名称: Make a glow stick reaction with real chemicals
     视频链接: https://www.youtube.com/watch?v=kH19EIf5GtE
     发布时间: 2009年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【264】视频名称: Peanut Butter Glows in the Dark
-    视频链接: https://www.youtube.com/watch?v=fUnSpEtnDNw
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【265】视频名称: Make Pyrophoric Iron and Iron Oxalate
-    视频链接: https://www.youtube.com/watch?v=vPnqLSyoEy8
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【266】视频名称: Using Fractional Distillation for Purification of Hydrobromic acid
-    视频链接: https://www.youtube.com/watch?v=TZo97aO4xbk
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【267】视频名称: Q&A with NurdRage September Edition
-    视频链接: https://www.youtube.com/watch?v=Bxac2OWTTHo
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【268】视频名称: Q&A with NurdRage August Edition
-    视频链接: https://www.youtube.com/watch?v=LFLnTPymSOc
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【269】视频名称: Make Hydrobromic Acid
-    视频链接: https://www.youtube.com/watch?v=C3n4Xqfb9qk
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【270】视频名称: Make an Electrolysis Box
-    视频链接: https://www.youtube.com/watch?v=M4vSCqj_5i8
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【271】视频名称: Thank you for your support and Answering Your Questions
-    视频链接: https://www.youtube.com/watch?v=ebsJ0keTsvs
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【272】视频名称: NurdRage Begs for Money!
-    视频链接: https://www.youtube.com/watch?v=gwu0iAMp5D4
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【273】视频名称: Make a thermometer probe for a westlab/scilogex hotplate
-    视频链接: https://www.youtube.com/watch?v=ORBgemwMLS4
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【274】视频名称: Recover Copper from Ferric Chloride Etchant (Waste free method)
-    视频链接: https://www.youtube.com/watch?v=CY2T3orVuFU
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【275】视频名称: Recycle Copper chloride PCB etchant (waste free method)
-    视频链接: https://www.youtube.com/watch?v=FjEoRidvgYE
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【276】视频名称: Make an Air Sensitive Solution
-    视频链接: https://www.youtube.com/watch?v=W_P2hdsJAaY
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【277】视频名称: Make a High Temperature Heating Mantle
-    视频链接: https://www.youtube.com/watch?v=N5meDWAqYes
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【278】视频名称: Make Paramagnetic Fluid ("Parafluid")
-    视频链接: https://www.youtube.com/watch?v=MUKFaxy-z7s
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【279】视频名称: Ghost Metal (Chemistry Trick) - Version 2
-    视频链接: https://www.youtube.com/watch?v=VDMgrgSVjd8
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【280】视频名称: Lab Update 8-26-2014
-    视频链接: https://www.youtube.com/watch?v=-4gwhNryki0
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【281】视频名称: testing-00020.mp4
-    视频链接: https://www.youtube.com/watch?v=gw9ZzvSiyAQ
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【282】视频名称: Make an Iron Heart Bleed (chemistry trick)
-    视频链接: https://www.youtube.com/watch?v=lH3b4426FMs
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【283】视频名称: Make 10 Etchants for Copper Printed Circuit Boards
-    视频链接: https://www.youtube.com/watch?v=Q4tWEse2rDI
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【284】视频名称: Make Conductive Silver Ink (complex ion based)
-    视频链接: https://www.youtube.com/watch?v=EBlqPS8boLI
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【285】视频名称: Make Silver Acetate
-    视频链接: https://www.youtube.com/watch?v=2J6V4acKels
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【286】视频名称: How to Make Fluorescein (Fluorescent Dye)
-    视频链接: https://www.youtube.com/watch?v=ihssISvNL3o
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【287】视频名称: Gold Chemical Resistance
-    视频链接: https://www.youtube.com/watch?v=ng6DGwiKWag
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-
---------------------------------------------------
-
-【288】视频名称: Test for Lead Using Potassium Rhodizonate
-    视频链接: https://www.youtube.com/watch?v=eiJNAxPYK04
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
 
 --------------------------------------------------
 
@@ -1765,11 +1765,11 @@
 其中精确到秒的发布时间: 15 条
 其中官方日精度日期: 0 条
 其中标题推断日期(日/月): 10 / 3 条
-其中相对文本推断(年/月/周/日): 235 条
-其中日期未知: 28 条
+其中相对文本推断(年/月/周/日): 260 条
+其中日期未知: 3 条
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 291
-本次运行耗时: 6分40秒
+本次运行耗时: 5分10秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 upload_date（日精度） + 官方 RSS（精确秒） + 频道页相对时间（兜底）
 分页缓存: 无（云端每次全量直取）
