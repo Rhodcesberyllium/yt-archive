@@ -6,26 +6,31 @@ fetch.py — GitHub Actions 云端全量抓取器（国内免梯子的"一劳永
 为什么在云端跑？
   本机在中国直连 YouTube 被墙、公共 CORS 中继又时好时坏、Wayback 快照也常被墙。
   本脚本运行在 GitHub Actions 的美国服务器上，直连 YouTube —— 无墙、无中继、无 VPN，
-  每周定时全量枚举频道视频（ID + 标题 + 官方发布日），结果写回仓库，墙内随时可下载。
+  每周定时全量枚举频道视频（ID + 标题 + 发布时间），结果写回仓库，墙内随时可下载。
 
 用法：
   python fetch.py                                  # 用 CHANNEL_URL 环境变量或内置默认频道
-  CHANNEL_URL="https://www.youtube.com/@xxx" python fetch.py
+  CHANNEL_URL="https://www.youtube.com/@xxx/videos" python fetch.py
   python fetch.py "https://www.youtube.com/@xxx/videos"
-  python fetch.py --list-only                      # 只枚举 ID+标题（不逐条取日期，很快）
+  python fetch.py --list-only                      # 只枚举 ID+标题（快，日期仅靠标题/相对文本）
   python fetch.py --demo                           # 离线演练：内置样例跑通全流程（本地测试用）
 
 输出：默认 data/<频道>_videos.txt，格式与本地版完全一致，可直接用 verify_output.py 验收。
-依赖：yt-dlp（pip install yt-dlp）；RSS 用标准库 urllib 直取，零第三方依赖。
+依赖：yt-dlp（pip install yt-dlp）；频道页/RSS 用标准库 urllib 直取，零第三方依赖。
 
-精度政策（与本地版一致，绝不伪造精确日期）：
-  精确到秒  —— 来自官方 RSS 的 <published> 字段
-  日精度    —— 来自官方 upload_date 字段（YYYMMDD）
-  标题推断  —— 标题内嵌完整日期（如 "March 27th 2019"），标注"推断"
-  未知      —— 官方字段暂不可取，下周自动重跑会再试
+日期来源优先级（与本地版一致，绝不伪造精确日期）：
+  1) 精确到秒   —— 官方 RSS <published>（最新约 15 条）
+  2) 日精度     —— 逐个视频官方 upload_date（YYYYMMDD，来自 watch 元数据；被风控时自动换客户端重试）
+  3) 标题推断   —— 标题内嵌完整日期（如 "March 27th 2019"），标注"推断"
+  4) 相对文本   —— 频道页相对时间（"3 years ago"），精确到年/月/周/日，标注粒度（兜底主力）
+  5) 未知       —— 以上全拿不到才标未知，下周自动重跑会再试
+
+云端 IP 特点说明：GitHub 数据中心 IP 常被 YouTube 对"单个视频 watch 页"风控，
+但"频道标签页/列表"通常不拦。因此 2) 会被 4) 兜住，任何情况下都有可见日期。
 """
 import argparse
 import datetime as dt
+import json
 import os
 import re
 import subprocess
@@ -41,6 +46,8 @@ MONTHS = {"Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
           "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12}
 MONTH_NAME_RE = (r"(?:January|February|March|April|May|June|July|August|September"
                  r"|October|November|December|[A-Z][a-z]{2})")
+AGO_UNITS = {"year": 365.25 * 86400, "month": 30.44 * 86400, "week": 7 * 86400,
+             "day": 86400, "hour": 3600, "minute": 60, "second": 1}
 DEFAULT_CHANNEL = "https://www.youtube.com/@NurdRage/videos"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
@@ -60,6 +67,24 @@ def yt_run(args, timeout=3600):
     return p.stdout or ""
 
 
+def http_get_bytes(url, timeout=40):
+    """用标准库直取页面/API（云端直连）。成功返回 bytes，失败返回 None。"""
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": UA, "Accept-Language": "en-US,en;q=0.9"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read()
+    except Exception as ex:
+        log("[网络] 获取失败 %s: %s" % (url[:70], str(ex)[:90]))
+        return None
+
+
+def ensure_base(channel_url):
+    for suf in ("/videos", "/shorts", "/streams", "/featured", "/playlists"):
+        channel_url = channel_url.split(suf)[0]
+    return channel_url.rstrip("/")
+
+
 # ------------------------------------------------ 时间/标题工具（与本地版同语义）
 
 def parse_publish_date(s):
@@ -73,6 +98,15 @@ def parse_publish_date(s):
         return None
 
 
+def parse_ago_unit(text):
+    """'3 years ago' -> (秒数, 精度单位)；解析失败返回 (None, None)"""
+    m = re.search(r"(\d+)\s+(year|month|week|day|hour|minute|second)s?\s+ago",
+                  (text or "").lower())
+    if not m:
+        return (None, None)
+    return (int(m.group(1)) * AGO_UNITS[m.group(2)], m.group(2))
+
+
 def clean_title(t):
     """清理标题残留（" - YouTube" 后缀、多余空白）"""
     s = (t or "").strip()
@@ -84,7 +118,7 @@ def clean_title(t):
 
 def parse_title_date(title):
     """从标题解析完整日期 -> (epoch_ms, 'day_title'|'month_title') 或 None。
-    只在标题含完整年份时推断（无年份的月+日不加假装精确，留给官方字段/未知）。"""
+    只在标题含完整年份时推断（无年份的月+日不加假装精确，留给相对文本/未知）。"""
     s = title or ""
     m = re.search(r"\b(%s)\.?\s+(\d{1,2})(?:st|nd|rd|th)?[,.\-]?\s+(\d{4})\b"
                   % MONTH_NAME_RE, s)
@@ -115,13 +149,21 @@ def fmt_utc(ms):
             .strftime("%Y-%m-%d %H:%M:%S"))
 
 
+def format_approx(ms, prec):
+    """按真实精度渲染相对文本推断日期：只显示能保证的粒度，绝不伪造精确日期。"""
+    d = dt.datetime.fromtimestamp(ms / 1000.0, tz=CN_TZ)
+    if prec == "month":
+        return '    发布时间: %s（推断至月份, ±1个月, 页面相对文本）' % d.strftime("%Y-%m")
+    if prec == "week":
+        return '    发布时间: %s（推断日期, ±1周, 页面相对文本）' % d.strftime("%Y-%m-%d")
+    if prec == "day":
+        return '    发布时间: %s（推断日期, 页面相对文本）' % d.strftime("%Y-%m-%d")
+    if prec == "year":
+        return '    发布时间: %d年（推断年份, ±1年, 页面相对文本）' % d.year
+    return '    发布时间: %s（推断日期, 精度未知, 页面相对文本）' % d.strftime("%Y-%m-%d")
+
+
 # ------------------------------------------------ 取数（全部跑在 GitHub 美国节点）
-
-def ensure_base(channel_url):
-    for suf in ("/videos", "/shorts", "/streams", "/featured", "/playlists"):
-        channel_url = channel_url.split(suf)[0]
-    return channel_url.rstrip("/")
-
 
 def enum_all(channel_url):
     """对 videos/shorts/streams 三个 tab 各抓一次取并集。
@@ -154,21 +196,46 @@ def enum_all(channel_url):
     return ids, tags
 
 
-def channel_meta(channel_url):
-    """返回 (ucid, name)；失败返回 (None, None)"""
+def channel_meta(channel_url, ids):
+    """从频道 /videos 页解析 (ucid, name)。HTML 失败时退化为 yt-dlp 枚举结果。
+    返回 (ucid 或 None, name 或 None)。"""
     base = ensure_base(channel_url)
-    out = yt_run(["--flat-playlist", "--playlist-items", "1",
-                  "--print", "%(channel_id)s\t%(channel)s", base], timeout=600)
-    for line in out.splitlines():
-        if "\t" in line:
+    ucid, name = None, None
+    html = http_get_bytes(base + "/videos")
+    if html:
+        m = (re.search(rb'"channelId":"(UC[A-Za-z0-9_-]{22})"', html)
+             or re.search(rb'"externalId":"(UC[A-Za-z0-9_-]{22})"', html)
+             or re.search(rb'"browseId":"(UC[A-Za-z0-9_-]{22})"', html))
+        if m:
+            ucid = m.group(1).decode()
+        t = re.search(rb"<title>([^<]*)</title>", html)
+        if t:
+            name = re.sub(r"\s*-\s*YouTube\s*$", "",
+                          t.group(1).decode("utf-8", "replace")).strip()
+        if not name:
+            m2 = re.search(rb'"title":"([^"]{1,200})","navigationEndpoint"', html)
+            if m2:
+                name = m2.group(1).decode("utf-8", "replace").strip().replace("\\u0026", "&")
+        if not name:
+            # 从枚举结果里取最常见的频道名兜底
+            pass
+    if (not ucid or ucid == "NA") or not name:
+        out = yt_run(["--flat-playlist", "--print", "%(channel_id)s\t%(channel)s",
+                      "--playlist-items", "1", base], timeout=600)
+        for line in out.splitlines():
+            if "\t" not in line:
+                continue
             a, b = line.split("\t", 1)
-            return a.strip() or None, b.strip() or None
-    return None, None
+            if (not ucid or ucid == "NA") and a.strip() and len(a.strip()) == 24:
+                ucid = a.strip()
+            if not name and b.strip() and b.strip() != "NA":
+                name = b.strip()
+    return ucid, name
 
 
 def fetch_upload_dates(ids, chunk=60):
-    """逐批对每个视频取官方 upload_date(YYYYMMDD)，返回 {id: 'YYYYMMDD'}。
-    失败的（已删除/私享/风控超时）不在结果中，回退到标题推断/未知。"""
+    """逐个视频取官方 upload_date(YYYYMMDD)，返回 {id: 'YYYYMMDD'}。
+    策略：被云 IP 风控时会早退止损，再用 web_embedded 客户端对缺失项重试一次。"""
     res, ids_list, n = {}, list(ids), len(ids)
     for i in range(0, n, chunk):
         urls = ["https://www.youtube.com/watch?v=%s" % v for v in ids_list[i:i + chunk]]
@@ -181,7 +248,27 @@ def fetch_upload_dates(ids, chunk=60):
             d = d.strip()
             if VIDEOID_RE.fullmatch(vid.strip()) and re.fullmatch(r"\d{8}", d):
                 res[vid.strip()] = d
-        log("[日期] %d/%d" % (min(i + chunk, n), n))
+        done = min(i + chunk, n)
+        log("[日期] %d/%d（当前命中 %d）" % (done, n, len(res)))
+        if done >= chunk and len(res) < 0.25 * done:
+            log("[日期] 命中率过低(%d/%d)，疑被风控，跳过剩余 %d 条；由频道页相对时间兜底"
+                % (len(res), done, n - done))
+            break
+    if res and len(res) < 0.3 * n:
+        missing = [v for v in ids_list if v not in res]
+        log("[日期] 用 web_embedded 客户端重试 %d 条缺失项" % len(missing))
+        for j in range(0, len(missing), 40):
+            urls = ["https://www.youtube.com/watch?v=%s" % v for v in missing[j:j + 40]]
+            out = yt_run(["--no-playlist", "--print", "%(id)s\t%(upload_date)s",
+                          "--extractor-args", "youtube:player_client=web_embedded",
+                          "--retries", "2"] + urls, timeout=3600)
+            for line in out.splitlines():
+                if "\t" not in line:
+                    continue
+                vid, d = line.split("\t", 1)
+                d = d.strip()
+                if VIDEOID_RE.fullmatch(vid.strip()) and re.fullmatch(r"\d{8}", d):
+                    res[vid.strip()] = d
     return res
 
 
@@ -190,9 +277,10 @@ def fetch_rss(ucid, dst):
     返回 {id: epoch_ms}，同时把原始 XML 落盘（供 verify_output.py 交叉对照）。"""
     out = {}
     url = "https://www.youtube.com/feeds/videos.xml?channel_id=" + ucid
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=40) as r:
-        body = r.read()
+    body = http_get_bytes(url)
+    if not body:
+        log("[RSS] 获取失败（频道 ID：%s）" % ucid)
+        return out
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     with open(dst, "wb") as f:
         f.write(body)
@@ -206,18 +294,113 @@ def fetch_rss(ucid, dst):
     return out
 
 
+# ---------------- 频道页相对时间（云 IP 被 watch 页风控时的兜底主力） ----------------
+
+def extract_rel_from_html(html, anchor_ms):
+    """从频道标签页 ytInitialData 提取 {id: (approx_ms, 精度)}。
+    兼容新版 lockupViewModel（含 contentMetadata 的相对时间）与旧版
+    publishedTimeText 两种布局；并处理 \x22 双转义的页面。"""
+    out = {}
+    html = re.sub(rb"\\x22", b'"', html)  # 移动版页面会把 JSON 引号双转义成 \x22
+    m = (re.search(rb"var ytInitialData\s*=\s*(\{.*?\});</script>", html, re.S)
+         or re.search(rb"ytInitialData\s*=\s*(\{.*?\});", html, re.S))
+    if not m:
+        return out
+    try:
+        data = json.loads(m.group(1).decode("utf-8", "replace"))
+    except Exception:
+        return out
+
+    def walk(o):
+        if isinstance(o, dict):
+            vid, ago = None, None
+            lv = o.get("lockupViewModel")
+            if isinstance(lv, dict):
+                vid = lv.get("contentId")
+                md = lv.get("metadata", {}).get("lockupMetadataViewModel", {})
+                for row in (md.get("metadata", {}).get("contentMetadataViewModel", {})
+                            .get("metadataRows", [])):
+                    for p in row.get("metadataParts", []):
+                        t = p.get("text", {}).get("content", "")
+                        if "ago" in t.lower():
+                            ago = t
+            else:
+                vid = o.get("videoId") or o.get("contentId")
+                pt = o.get("publishedTimeText") or {}
+                ago = (pt.get("simpleText") if isinstance(pt, dict) else None) \
+                    or o.get("publishedTimeText")
+            if vid and ago and VIDEOID_RE.fullmatch(str(vid)):
+                secs, prec = parse_ago_unit(str(ago))
+                if secs:
+                    out[str(vid)] = (int(anchor_ms - secs * 1000), prec)
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+    walk(data)
+    # 旧版布局兜底：videoId 与 "N years ago" 文本位置邻近配对
+    if not out:
+        for mm in re.finditer(rb'"videoId":"([A-Za-z0-9_-]{11})"', html):
+            start = max(0, mm.start() - 2500)
+            window = html[start:mm.start() + 2500]
+            agos = re.findall(rb'(\d+\s+(?:year|month|week|day|hour|minute|second)s?\s+ago)',
+                              window)
+            if agos:
+                secs, prec = parse_ago_unit(agos[0].decode())
+                if secs:
+                    out[mm.group(1).decode()] = (int(anchor_ms - secs * 1000), prec)
+    return out
+
+
+def fetch_relative_dates(channel_url, anchor_ms):
+    """抓 videos/shorts/streams 三 tab 页面，提取每条相对时间并取并集。"""
+    base = ensure_base(channel_url)
+    rel = {}
+    for tab in ("videos", "shorts", "streams"):
+        html = http_get_bytes("%s/%s" % (base, tab))
+        if not html:
+            continue
+        got = extract_rel_from_html(html, anchor_ms)
+        n0 = len(rel)
+        for k, v in got.items():
+            rel.setdefault(k, v)
+        log("[相对时间] tab=%s 提取 %d 条（并集 %d）" % (tab, len(got), len(rel)))
+        if n0 and len(rel) == n0:
+            pass
+    return rel
+
+
+def apply_relative(entries, rel):
+    """把没有真实/标题日期的条目用相对文本兜底（升格为 approx，标注粒度）。"""
+    up = 0
+    for e in entries:
+        if e.get("prec") and e["prec"] != "unknown":
+            continue
+        if e["id"] in rel:
+            ms, prec = rel[e["id"]]
+            e["approx_ms"], e["approx_prec"], e["prec"] = ms, prec, "approx"
+            up += 1
+        else:
+            e["prec"] = "unknown"
+    log("[相对时间] 兜底 %d 条未知 → 相对时间粒度" % up)
+    return up
+
+
 # ------------------------------------------------ 日期归并与排序
 
 def assign_dates(entries, rss_map):
-    """按可信度给每条定精度：RSS精确秒 > 官方日 > 标题完整日期 > 未知。"""
+    """按可信度给每条定精度：RSS精确秒 > 官方日 > 标题完整日期 > (相对文本由 apply_relative 兜底)。"""
     for e in entries:
         if e.get("rss_ts"):
             e["ts_ms"], e["prec"] = e["rss_ts"], "exact"
         elif e.get("upload_date"):
-            y, m, d = int(e["upload_date"][:4]), int(e["upload_date"][4:6]), int(e["upload_date"][6:8])
-            e["ts_ms"] = int(dt.datetime(y, m, d, tzinfo=timezone.utc).timestamp() * 1000)
-            e["prec"] = "day_official"
-        else:
+            ud = e["upload_date"]
+            if re.fullmatch(r"\d{8}", ud):
+                y, m, d = int(ud[:4]), int(ud[4:6]), int(ud[6:8])
+                e["ts_ms"] = int(dt.datetime(y, m, d, tzinfo=timezone.utc).timestamp() * 1000)
+                e["prec"] = "day_official"
+        if e.get("prec") in (None, "unknown") and not e.get("ts_ms"):
             pair = parse_title_date(e.get("title") or "")
             if pair:
                 e["ts_ms"], e["prec"] = pair
@@ -226,7 +409,7 @@ def assign_dates(entries, rss_map):
 
 
 def _sort_key(e):
-    ts = e.get("ts_ms")
+    ts = e.get("ts_ms") or e.get("approx_ms")
     return (1, 0) if not ts else (0, -ts)
 
 
@@ -253,6 +436,7 @@ def write_output(path, entries, meta):
     day_o = sum(1 for e in entries if e.get("prec") == "day_official")
     title_d = sum(1 for e in entries if e.get("prec") == "day_title")
     title_m = sum(1 for e in entries if e.get("prec") == "month_title")
+    approx = sum(1 for e in entries if e.get("prec") == "approx")
     unknown_n = sum(1 for e in entries if e.get("prec") == "unknown")
     for i, e in enumerate(entries, 1):
         title = clean_title(e.get("title"))
@@ -271,6 +455,8 @@ def write_output(path, entries, meta):
         elif e.get("prec") == "month_title":
             d = dt.datetime.fromtimestamp(e["ts_ms"] / 1000.0, tz=CN_TZ)
             L.append("    发布时间: %s（推断至月份, 来自标题）" % d.strftime("%Y-%m"))
+        elif e.get("prec") == "approx":
+            L.append(format_approx(e["approx_ms"], e.get("approx_prec") or "year"))
         else:
             L.append("    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）")
         tags = sorted(e.get("tags") or [], key=lambda x: "短视频" not in x)
@@ -284,8 +470,9 @@ def write_output(path, entries, meta):
     L.append("=" * 40)
     L.append("视频总数(去重后): %d" % len(entries))
     L.append("其中精确到秒的发布时间: %d 条" % exact)
-    L.append("其中标题推断日期(日/月): %d / %d 条" % (title_d, title_m))
     L.append("其中官方日精度日期: %d 条" % day_o)
+    L.append("其中标题推断日期(日/月): %d / %d 条" % (title_d, title_m))
+    L.append("其中相对文本推断(年/月/周/日): %d 条" % approx)
     L.append("其中日期未知: %d 条" % unknown_n)
     tcount = {}
     for e in entries:
@@ -312,11 +499,12 @@ def build(entries, meta, out, rss_map):
     entries.sort(key=_sort_key)
     write_output(out, entries, meta)
     unknown = sum(1 for e in entries if e.get("prec") == "unknown")
-    print("\n[完成] %s：共 %d 条（精确 %d / 官方日 %d / 标题推断 %d / 未知 %d），耗时 %s"
+    print("\n[完成] %s：共 %d 条（精确 %d / 官方日 %d / 标题推断 %d / 相对文本 %d / 未知 %d），耗时 %s"
           % (out, len(entries),
              sum(e.get("prec") == "exact" for e in entries),
              sum(e.get("prec") == "day_official" for e in entries),
              sum(e.get("prec") in ("day_title", "month_title") for e in entries),
+             sum(e.get("prec") == "approx" for e in entries),
              unknown, meta["elapsed"]), flush=True)
     return out
 
@@ -325,27 +513,32 @@ def run_demo(args):
     """离线演练：内置样例数据跑通 归并->排序->输出->RSS落盘 全流程，供本地测试。"""
     SAMPLE = [
         # (id, 标题, 官方日YYYY-MM-DD, RSS精确ISO, tags)
-        ("JNxQq3KFEM4", "Dissolving $1000 of Platinum to Make $6000 of Chloroplatinic Acid for Professional Use",
+        ("JNxQq3KFEM4",
+         "Dissolving $1000 of Platinum to Make $6000 of Chloroplatinic Acid for Professional Use",
          "2024-12-24", "2024-12-24T15:44:46+00:00", ["直播/回放 Live"]),
         ("3YwnlYl0VxA", "This Candle MAKES Oxygen and Started a Fire on a Space Station",
          "2024-12-20", "", []),
         ("_d1J9MVkRzM", "Refuel a Glow Stick", "2024-06-13", "", ["短视频 Shorts"]),
         ("9p3So4ijD4U", "Refuel a Glow Stick", "2024-05-30", "", []),
+        ("zLWEemhtdbE", "", "2023-05-02", "", []),         # 标题待补，仅官方日
         ("GsN7r6QkpRA", "Lab Notes - Cleaving Sodium Metal - March 27th 2019", "", "", []),
         ("ZxCO9BaBBHg", "Chemical Thunderstorm in a Beaker (April 2018)", "", "", []),
-        ("zLWEemhtdbE", "", "2023-05-02", "", []),      # 标题待补，仅官方日
-        ("gjsMV1MglA4", "Mystery Video", "", "", []),    # 未知
+        ("a1b2c3d4e5f", "Early Lab Notes - Something", "", "", []),   # 靠相对时间兜底
+        ("gjsMV1MglA4", "Mystery Video", "", "", []),     # 彻底的未知
     ]
     entries = [{"id": v, "title": t, "upload_date": u, "rss_ts": None,
                 "prec": None, "tags": list(g)} for v, t, u, _, g in SAMPLE]
+    for (v, t, u, iso, g) in SAMPLE:
+        e = next(x for x in entries if x["id"] == v)
+        if iso:
+            e["rss_ts"] = parse_publish_date(iso)
+        if u:
+            e["upload_date"] = u.replace("-", "")
     rss = {v: parse_publish_date(iso) for v, _, _, iso, _ in SAMPLE if iso}
     rss = {k: v for k, v in rss.items() if v}
-    for e in entries:
-        if e["id"] in rss:
-            e["rss_ts"] = rss[e["id"]]
-        if e["upload_date"]:
-            e["upload_date"] = e["upload_date"].replace("-", "")
-    # 把 RSS 样例落盘，供 verify_output.py 第[8]项交叉对照
+    # 模拟频道页相对时间解析结果（对应 a1b2c3d4e5f 无任何官方/标题日期的情况）
+    DEMO_REL = {"a1b2c3d4e5f":
+                (int(dt.datetime(2016, 4, 3, tzinfo=timezone.utc).timestamp() * 1000), "year")}
     ucid = "DEMOUC1"
     rss_body = ('<?xml version="1.0"?><feed>'
                 '<entry><id>yt:video:JNxQq3KFEM4</id><yt:videoId>JNxQq3KFEM4</yt:videoId>'
@@ -355,6 +548,7 @@ def run_demo(args):
     with open(os.path.join("cache", ucid, "pages", "rss.xml"), "wb") as f:
         f.write(rss_body.encode("utf-8"))
     assign_dates(entries, rss)
+    apply_relative(entries, DEMO_REL)
     out = args.out or "data/_demo_videos.txt"
     meta = {"name": "NurdRage(演示)", "ucid": ucid,
             "channel_url": DEFAULT_CHANNEL, "channel_count": len(SAMPLE),
@@ -374,13 +568,15 @@ def run_real(args, channel_url):
                 "prec": None, "tags": sorted(TAB_LABEL[t] for t in (tags.get(v) or set())
                                              if TAB_LABEL[t])}
                for v in ids]
-    ucid, name = channel_meta(channel_url)
+    ucid, name = channel_meta(channel_url, ids)
     rss_map = {}
-    if ucid and not args.list_only:
+    if ucid:
         try:
             rss_map = fetch_rss(ucid, os.path.join("cache", ucid, "pages", "rss.xml"))
         except Exception as ex:
             log("[警告] RSS 获取失败: %s" % str(ex)[:120])
+    else:
+        log("[RSS] 未解析到频道 ID，跳过（不影响其它日期通道）")
     for e in entries:
         if e["id"] in rss_map:
             e["rss_ts"] = rss_map[e["id"]]
@@ -390,25 +586,30 @@ def run_real(args, channel_url):
             if e["id"] in dates:
                 e["upload_date"] = dates[e["id"]]
     else:
-        log("[提示] --list-only：跳过逐条取日期，仅依赖标题推断/未知。")
+        log("[提示] --list-only：跳过逐条官方日期，仅靠标题/相对文本。")
     assign_dates(entries, rss_map)
+    anchor_ms = int(dt.datetime.now(timezone.utc).timestamp() * 1000)
+    rel = fetch_relative_dates(channel_url, anchor_ms)
+    apply_relative(entries, rel)
     elapsed = dt.datetime.now() - t0
     out = args.out or ("data/%s_videos.txt"
-                       % re.sub(r'[\\/:*?"<>|]+', "_", (name or ucid or "channel"))[:60])
+                       % re.sub(r'[\\/:*?"<>|]+', "_", (name or "channel"))[:60])
     src = ("GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + "
-           "官方 upload_date（日精度） + 官方 RSS（精确秒）")
-    meta = {"name": name or ucid, "ucid": ucid or "-", "channel_url": channel_url,
+           "官方 upload_date（日精度） + 官方 RSS（精确秒） + 频道页相对时间（兜底）")
+    meta = {"name": name or "-", "ucid": ucid or "-", "channel_url": channel_url,
             "channel_count": len(entries), "source_desc": src,
-            "raw_count": len(entries), "elapsed": "%d分%.0f秒" % (elapsed.seconds // 60, elapsed.seconds % 60)}
+            "raw_count": len(entries),
+            "elapsed": "%d分%.0f秒" % (elapsed.seconds // 60, elapsed.seconds % 60)}
     return build(entries, meta, out, rss_map)
 
 
 def main():
     ap = argparse.ArgumentParser(
         description="GitHub Actions 云端全量抓取器（国内免梯子；跑在 GitHub 美国节点直连 YouTube）")
-    ap.add_argument("url", nargs="?", default=None, help='频道链接，如 "https://www.youtube.com/@NurdRage/videos"')
+    ap.add_argument("url", nargs="?", default=None,
+                    help='频道链接，如 "https://www.youtube.com/@NurdRage/videos"')
     ap.add_argument("--out", default=None, help="输出 txt 路径（默认 data/<频道>_videos.txt）")
-    ap.add_argument("--list-only", action="store_true", help="只枚举 ID+标题，不逐条取日期")
+    ap.add_argument("--list-only", action="store_true", help="只枚举 ID+标题，不逐条取官方日期")
     ap.add_argument("--demo", action="store_true", help="离线演练：内置样例跑通全流程（本地测试用）")
     args = ap.parse_args()
     try:
