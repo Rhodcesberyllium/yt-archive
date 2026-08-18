@@ -278,29 +278,40 @@ def fetch_upload_dates(ids, chunk=60):
 
 def fetch_rss(ucid, dst):
     """官方 RSS：最近约 15 条，带精确到秒的发布时间与官方标题。
-    返回 (ts_map, title_map)，同时把原始 XML 落盘（供 verify_output.py 交叉对照）。"""
+    返回 (ts_map, title_map)，同时把原始 XML 落盘（供 verify_output.py 交叉对照）。
+    YouTube 偶发只返回几条，重试一次抗波动。"""
     out, titles = {}, {}
     url = "https://www.youtube.com/feeds/videos.xml?channel_id=" + ucid
-    body = http_get_bytes(url)
-    if not body:
-        log("[RSS] 获取失败（频道 ID：%s）" % ucid)
-        return out, titles
-    os.makedirs(os.path.dirname(dst), exist_ok=True)
-    with open(dst, "wb") as f:
-        f.write(body)
-    for vid, pub, title in re.findall(
-            rb"<yt:videoId>([^<]+)</yt:videoId>.*?<published>([^<]+)</published>"
-            rb".*?<title>([^<]+)</title>", body, re.S):
-        vid = vid.decode("utf-8", "replace")
-        ts = parse_publish_date(pub.decode("utf-8", "replace"))
-        if ts:
-            out[vid] = ts
-        t = title.decode("utf-8", "replace").strip()
-        for a, b in (("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">"),
-                     ("&quot;", '"'), ("&#39;", "'"), ("&#x27;", "'"), ("&apos;", "'")):
-            t = t.replace(a, b)
-        if t:
-            titles[vid] = t
+    for attempt in (1, 2):
+        body = http_get_bytes(url)
+        if not body:
+            if attempt == 2:
+                log("[RSS] 获取失败（频道 ID：%s）" % ucid)
+            else:
+                time.sleep(1)
+            continue
+        os.makedirs(os.path.dirname(dst), exist_ok=True)
+        with open(dst, "wb") as f:
+            f.write(body)
+        out, titles = {}, {}
+        for vid, pub, title in re.findall(
+                rb"<yt:videoId>([^<]+)</yt:videoId>.*?<published>([^<]+)</published>"
+                rb".*?<title>([^<]+)</title>", body, re.S):
+            vid = vid.decode("utf-8", "replace")
+            ts = parse_publish_date(pub.decode("utf-8", "replace"))
+            if ts:
+                out[vid] = ts
+            t = title.decode("utf-8", "replace").strip()
+            for a, b in (("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">"),
+                         ("&quot;", '"'), ("&#39;", "'"), ("&#x27;", "'"), ("&apos;", "'")):
+                t = t.replace(a, b)
+            if t:
+                titles[vid] = t
+        if len(out) >= 8:
+            break
+        if attempt == 1:
+            log("[RSS] 仅有 %d 条，稍候重试一次" % len(out))
+            time.sleep(1)
     log("[RSS] 获得 %d 条精确日期" % len(out))
     return out, titles
 
@@ -786,29 +797,32 @@ def run_real(args, channel_url):
         if e["id"] in rss_titles and rss_titles[e["id"]]:
             e["title"] = rss_titles[e["id"]]
     if not args.list_only:
-        dates = fetch_upload_dates([e["id"] for e in entries])
-        for e in entries:
-            if e["id"] in dates:
-                e["upload_date"] = dates[e["id"]]
-        # yt-dlp 平板模式再试一次官方日（其内部会自行翻页，常可绕开逐条风控）
-        try:
-            flat_dates = fetch_yt_flat_dates(channel_url, ucid, [e["id"] for e in entries])
-            backfill = 0
+        # 逐条官方日（云端 IP 常被整段风控，默认关；需要时 --with-upload-dates）
+        if args.with_upload_dates:
+            dates = fetch_upload_dates([e["id"] for e in entries])
             for e in entries:
-                if not e["upload_date"] and e["id"] in flat_dates:
-                    e["upload_date"] = flat_dates[e["id"]]
-                    backfill += 1
-            if backfill:
-                log("[官方日] yt-dlp 平板模式补入 %d 条" % backfill)
-        except Exception as ex:
-            log("[警告] yt-dlp 平板日期探测失败: %s" % str(ex)[:100])
+                if e["id"] in dates:
+                    e["upload_date"] = dates[e["id"]]
+        # yt-dlp 平板官方日探测（同样常被风控，默认关；--with-flat-dates）
+        if args.with_flat_dates:
+            try:
+                flat_dates = fetch_yt_flat_dates(channel_url, ucid, [e["id"] for e in entries])
+                backfill = 0
+                for e in entries:
+                    if not e["upload_date"] and e["id"] in flat_dates:
+                        e["upload_date"] = flat_dates[e["id"]]
+                        backfill += 1
+                if backfill:
+                    log("[官方日] yt-dlp 平板模式补入 %d 条" % backfill)
+            except Exception as ex:
+                log("[警告] yt-dlp 平板日期探测失败: %s" % str(ex)[:100])
     else:
-        log("[提示] --list-only：跳过逐条官方日期，仅靠标题/相对文本。")
+        log("[提示] --list-only：跳过日期通道，仅标题/相对时间。")
     assign_dates(entries, rss_map)
     anchor_ms = int(dt.datetime.now(timezone.utc).timestamp() * 1000)
     rel = fetch_inner_relative_dates(channel_url, anchor_ms)
-    # 残尾（如 Shorts、InnerTube 翻不出的极旧视频）交给 Wayback 快照并集兜底
-    if not args.list_only:
+    # Wayback 快照并集（archive.org 在云 IP 上常拒连/超时且零收益，默认关；--with-wayback 才跑）
+    if args.with_wayback:
         try:
             handle = ""
             mh = re.search(r"youtube\.com/(?:@|c/|user/)([^/?#]+)", channel_url)
@@ -824,7 +838,7 @@ def run_real(args, channel_url):
     out = args.out or ("data/%s_videos.txt"
                        % re.sub(r'[\\/:*?"<>|]+', "_", (name or "channel"))[:60])
     src = ("GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + "
-           "官方 upload_date（日精度） + 官方 RSS（精确秒） + 频道页相对时间（兜底）")
+           "官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）")
     meta = {"name": name or "-", "ucid": ucid or "-", "channel_url": channel_url,
             "channel_count": len(entries), "source_desc": src,
             "raw_count": len(entries),
@@ -838,7 +852,13 @@ def main():
     ap.add_argument("url", nargs="?", default=None,
                     help='频道链接，如 "https://www.youtube.com/@NurdRage/videos"')
     ap.add_argument("--out", default=None, help="输出 txt 路径（默认 data/<频道>_videos.txt）")
-    ap.add_argument("--list-only", action="store_true", help="只枚举 ID+标题，不逐条取官方日期")
+    ap.add_argument("--list-only", action="store_true", help="只枚举 ID+标题，不取日期")
+    ap.add_argument("--with-upload-dates", action="store_true",
+                    help="逐条抓官方日精度（云端 IP 常被风控，默认关）")
+    ap.add_argument("--with-flat-dates", action="store_true",
+                    help="yt-dlp 平板模式探测官方日（默认关）")
+    ap.add_argument("--with-wayback", action="store_true",
+                    help="额外跑 Wayback 快照并集兜底（archive.org 在云 IP 上常拒连，默认关）")
     ap.add_argument("--demo", action="store_true", help="离线演练：内置样例跑通全流程（本地测试用）")
     args = ap.parse_args()
     try:
