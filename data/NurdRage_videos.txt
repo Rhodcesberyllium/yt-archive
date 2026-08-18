@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-08-18 22:10:39 (UTC+8)
+抓取时间: 2026-08-18 22:43:01 (UTC+8)
 数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 视频总数: 291
 ========================================
@@ -14,7 +14,7 @@
 
 --------------------------------------------------
 
-【2】视频名称: Dissolving $1000 of Platinum to Make $6000 of Chloroplatinic Acid for Professional Use
+【2】视频名称: Make Glow in the Dark Powder - The Science
     视频链接: https://www.youtube.com/watch?v=JNxQq3KFEM4
     发布时间: 2024-12-24 23:44:46 (UTC+8)   [原始: 2024-12-24 15:44:46 UTC]
 
@@ -104,37 +104,37 @@
 
 --------------------------------------------------
 
-【17】视频名称: Make Nitric Acid without Sulfuric Acid by Oxalate Precipitation
+【17】视频名称: Extracting Thorium Dioxide from Thoriated Tungsten Rods
     视频链接: https://www.youtube.com/watch?v=Gzz971D3I9c
     发布时间: 2024-08-04 06:49:07 (UTC+8)   [原始: 2024-08-03 22:49:07 UTC]
 
 --------------------------------------------------
 
-【18】视频名称: (Reupload) Make Potassium Nitrate and Sodium Nitrate at Home Using Calcium Nitrate
+【18】视频名称: Extracting Radioactive Salt from Chernobyl Blueberries
     视频链接: https://www.youtube.com/watch?v=f7nHndmbl10
     发布时间: 2024-06-29 23:15:25 (UTC+8)   [原始: 2024-06-29 15:15:25 UTC]
 
 --------------------------------------------------
 
-【19】视频名称: Measuring Density with Pycnometers, Hydrometers, and Graduated Cylinders
+【19】视频名称: Make SULFURIC acid from WEAK oxalic acid with the SUN
     视频链接: https://www.youtube.com/watch?v=iDlFEV8bT3c
     发布时间: 2024-06-23 00:42:29 (UTC+8)   [原始: 2024-06-22 16:42:29 UTC]
 
 --------------------------------------------------
 
-【20】视频名称: How much does it cost to breathe?
+【20】视频名称: Lab notes - Making Oleum - 20% yield improvement - (May 4th - 2024)
     视频链接: https://www.youtube.com/watch?v=hUyJ6CibhSg
     发布时间: 2024-05-04 22:57:16 (UTC+8)   [原始: 2024-05-04 14:57:16 UTC]
 
 --------------------------------------------------
 
-【21】视频名称: Purification of Sulfuric Acid by Distillation - Revisited
+【21】视频名称: Lab Notes - Making Oleum - Successful - (April 21-2024)
     视频链接: https://www.youtube.com/watch?v=wB2zzm8VP9Y
     发布时间: 2024-04-21 13:00:17 (UTC+8)   [原始: 2024-04-21 05:00:17 UTC]
 
 --------------------------------------------------
 
-【22】视频名称: Thanks for 2023, Channel Updates, Plans, and Thoughts
+【22】视频名称: Do your own Gamma Spectroscopy with the Radiacode 103
     视频链接: https://www.youtube.com/watch?v=XjJky99_Gpk
     发布时间: 2024-03-08 23:14:10 (UTC+8)   [原始: 2024-03-08 15:14:10 UTC]
 
@@ -1767,9 +1767,9 @@
 其中标题推断日期(日/月): 10 / 3 条
 其中相对文本推断(年/月/周/日): 267 条
 其中日期未知: 4 条
-其中重复标题组(可能为重传/多版本): 7 组（涉及 14 条, 去重按视频ID）
+其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 291
-本次运行耗时: 0分31秒
+本次运行耗时: 0分42秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 分页缓存: 无（云端每次全量直取）
