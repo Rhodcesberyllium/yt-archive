@@ -369,67 +369,140 @@ def extract_rel_from_html(html, anchor_ms):
     return rel
 
 
-DEFAULT_ITV_VERSION = "2.20240821.01.00"
+DEFAULT_ITV_VERSION = "2.20250310.00.00"
+
+# InnerTube 候选客户端（按优先序）：页面自带版本 > 静态 WEB > ANDROID
+WEB_CLIENTS = [("WEB", None), ("WEB", "2.20250310.00.00"), ("ANDROID", "19.09.37")]
 
 
-def post_browse(token, client_version, api_key):
-    """InnerTube browse 接口 POST 翻页续拉。返回解析后的 JSON 对象；失败返回 None。"""
+def post_browse(token, client_name, client_version, api_key):
+    """InnerTube browse 接口 POST 翻页续拉。返回 (data|None, 错误文本|None)。"""
     url = "https://www.youtube.com/youtubei/v1/browse?prettyPrint=false"
     if api_key:
         url += "&key=" + urllib.parse.quote(api_key)
-    payload = {"context": {"client": {
-        "clientName": "WEB", "clientVersion": client_version, "hl": "en", "gl": "US"}},
-        "continuation": token}
+    client = {"clientName": client_name, "clientVersion": client_version,
+              "hl": "en", "gl": "US"}
+    if client_name == "ANDROID":
+        client["androidSdkVersion"] = 30
+    payload = {"context": {"client": client}, "continuation": token}
+    headers = {"Content-Type": "application/json", "User-Agent": UA}
+    if client_name == "WEB":
+        headers["X-Youtube-Client-Name"] = "1"
+        headers["X-Youtube-Client-Version"] = client_version
     req = urllib.request.Request(
-        url, data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json", "User-Agent": UA,
-                 "X-Youtube-Client-Name": "1",
-                 "X-Youtube-Client-Version": client_version})
+        url, data=json.dumps(payload).encode("utf-8"), headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=40) as r:
-            return json.loads(r.read().decode("utf-8", "replace"))
+            return json.loads(r.read().decode("utf-8", "replace")), None
     except Exception as ex:
-        log("[相对时间] 翻页请求失败: %s" % str(ex)[:90])
-        return None
+        return None, str(ex)[:120]
 
 
-def fetch_inner_relative_dates(channel_url, anchor_ms, max_pages=12):
-    """核心兜底：抓 videos/shorts/streams 三 tab 页面 + InnerTube 翻页续拉，
-    给尽量多视频标上相对时间。首屏约 30 条；随后用页面自带的
-    INNERTUBE_CLIENT_VERSION / API_KEY 发 POST 翻页，逐页并入 rel，
-    直到无更多 token 或翻页失败（失败只丢该页，保留已收集部分）。"""
+def _resp_diag(data):
+    """从 InnerTube 响应里抽取诊断要点，便于一眼看出是 token 问题还是被拒。"""
+    if not isinstance(data, dict):
+        return "非JSON对象"
+    keys = ",".join(list(data.keys())[:8])
+    err = data.get("error")
+    if isinstance(err, dict):
+        return "ERROR(%s:%s) keys=[%s]" % (
+            err.get("code"), str(err.get("message"))[:90], keys)
+    n = 0
+    try:
+        n = len(data.get("onResponseReceivedActions", []) or [])
+    except Exception:
+        n = -1
+    return "keys=[%s] onResponseReceivedActions=%d" % (keys, n)
+
+
+def fetch_inner_relative_dates(channel_url, anchor_ms, max_pages=14):
+    """核心兜底：三 tab 页面 + InnerTube 翻页续拉，给尽量多视频标上相对时间。
+
+    关键改进（针对上次"只翻 1 页且并集不长"）：
+      - 页面可能含多个 continuation token（grid + Shorts 栏等），逐个候选尝试；
+      - 每个 token 依次用 3 种客户端（页面版WEB -> 静态WEB -> ANDROID）兜底；
+      - 每次 POST 都打诊断日志（响应键 / 条目数 / 下页token），失败只丢当页。"""
     base = ensure_base(channel_url)
     rel = {}
     for tab in ("videos", "shorts", "streams"):
         html = http_get_bytes("%s/%s" % (base, tab))
         if not html:
             continue
-        cv, key = DEFAULT_ITV_VERSION, ""
+        page_ver = ""
         mcv = re.search(rb'"INNERTUBE_CLIENT_VERSION":"([^"]+)"', html)
         if mcv:
-            cv = mcv.group(1).decode()
+            page_ver = mcv.group(1).decode()
+        key = ""
         mk = re.search(rb'"INNERTUBE_API_KEY":"([^"]+)"', html)
         if mk:
             key = mk.group(1).decode()
         rel0, tokens = extract_rel_from_html_data(html, anchor_ms)
         for k, v in rel0.items():
             rel.setdefault(k, v)
-        token = tokens[-1] if tokens else None
-        seen, pages = set(), 0
-        while token and token not in seen and pages < max_pages:
-            seen.add(token)
-            data = post_browse(token, cv, key)
-            if data is None:
-                break
-            relp, tokensp = extract_rel_from_data(data, anchor_ms, {}, [])
-            for k, v in relp.items():
-                rel.setdefault(k, v)
-            pages += 1
-            token = tokensp[-1] if tokensp else None
+        candidates = list(dict.fromkeys(tokens))[:6]
+        queue, used = list(candidates), set()
+        pages, diags = 0, []
+        while queue and pages < max_pages:
+            token = queue.pop(0)
+            if token in used:
+                continue
+            used.add(token)
+            ok = False
+            for cname, cver in WEB_CLIENTS:
+                cver = cver or page_ver or DEFAULT_ITV_VERSION
+                data, err = post_browse(token, cname, cver, key)
+                if data is None:
+                    diags.append("[%s/%s] 网络错误: %s" % (cname, cver, err))
+                    continue
+                relp, tokensp = extract_rel_from_data(data, anchor_ms, {}, [])
+                nxt = tokensp[-1] if tokensp else None
+                if relp or nxt:
+                    for k, v in relp.items():
+                        rel.setdefault(k, v)
+                    if nxt and nxt not in used:
+                        queue.append(nxt)
+                    diags.append("[%s/%s] 新条目%d, 下页token:%s" % (
+                        cname, cver, len(relp), "有" if nxt else "无"))
+                    pages += 1
+                    ok = True
+                    break
+                diags.append("[%s/%s] %s" % (cname, cver, _resp_diag(data)))
             time.sleep(0.3)
-        log("[相对时间] tab=%s 首屏%d条 + 翻页%d页（累计并入 %d, 并集 %d）"
-            % (tab, len(rel0), pages, len(rel0) + pages, len(rel)))
+        log("[相对时间] tab=%s 首屏%d条 + 翻页%d页, 候选token%d个, 并集%d" % (
+            tab, len(rel0), pages, len(candidates), len(rel)))
+        if not pages:
+            for d in diags[:5]:
+                log("[相对时间]    诊断: %s" % d)
     return rel
+
+
+def fetch_yt_flat_dates(channel_url, ucid, wanted_ids):
+    """尝试用 yt-dlp 平板模式带出 release_date/timestamp（yt-dlp 内部会自动翻页，
+    走的是它经打的续拉逻辑）。若覆盖率够高（>=60%）返回 {id: 'YYYYMMDD'}。"""
+    base = ensure_base(channel_url)
+    urls = [base + "/videos"]
+    if ucid and ucid.startswith("UC"):
+        urls.append("https://www.youtube.com/playlist?list=UU" + ucid[2:])
+    res = {}
+    want = set(wanted_ids) or None
+    for url in urls:
+        out = yt_run(["--flat-playlist",
+                      "--print", "%(id)s\t%(title)s\t%(release_date)s\t%(timestamp)s",
+                      url], timeout=1800)
+        for line in out.splitlines():
+            parts = line.split("\t")
+            if len(parts) < 3:
+                continue
+            vid = parts[0].strip()
+            rd = (parts[2] or "").strip()
+            if VIDEOID_RE.fullmatch(vid) and re.fullmatch(r"\d{8}", rd):
+                if want is None or vid in want:
+                    res[vid] = rd
+        cov = 100.0 * len(res) / max(1, len(want or []))
+        log("[官方日] yt-dlp平板探测 %s覆盖 %s%%（%d条）" % (url.split("/")[-2] or url, "%.0f" % cov, len(res)))
+        if len(res) >= 0.6 * max(1, len(want or [])):
+            break
+    return res
 
 
 def apply_relative(entries, rel):
@@ -646,6 +719,18 @@ def run_real(args, channel_url):
         for e in entries:
             if e["id"] in dates:
                 e["upload_date"] = dates[e["id"]]
+        # yt-dlp 平板模式再试一次官方日（其内部会自行翻页，常可绕开逐条风控）
+        try:
+            flat_dates = fetch_yt_flat_dates(channel_url, ucid, [e["id"] for e in entries])
+            backfill = 0
+            for e in entries:
+                if not e["upload_date"] and e["id"] in flat_dates:
+                    e["upload_date"] = flat_dates[e["id"]]
+                    backfill += 1
+            if backfill:
+                log("[官方日] yt-dlp 平板模式补入 %d 条" % backfill)
+        except Exception as ex:
+            log("[警告] yt-dlp 平板日期探测失败: %s" % str(ex)[:100])
     else:
         log("[提示] --list-only：跳过逐条官方日期，仅靠标题/相对文本。")
     assign_dates(entries, rss_map)
