@@ -277,25 +277,32 @@ def fetch_upload_dates(ids, chunk=60):
 
 
 def fetch_rss(ucid, dst):
-    """官方 RSS：最近约 15 条，带精确到秒的发布时间。
-    返回 {id: epoch_ms}，同时把原始 XML 落盘（供 verify_output.py 交叉对照）。"""
-    out = {}
+    """官方 RSS：最近约 15 条，带精确到秒的发布时间与官方标题。
+    返回 (ts_map, title_map)，同时把原始 XML 落盘（供 verify_output.py 交叉对照）。"""
+    out, titles = {}, {}
     url = "https://www.youtube.com/feeds/videos.xml?channel_id=" + ucid
     body = http_get_bytes(url)
     if not body:
         log("[RSS] 获取失败（频道 ID：%s）" % ucid)
-        return out
+        return out, titles
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     with open(dst, "wb") as f:
         f.write(body)
-    for vid, pub in re.findall(
-            rb"<yt:videoId>([^<]+)</yt:videoId>.*?<published>([^<]+)</published>",
-            body, re.S):
+    for vid, pub, title in re.findall(
+            rb"<yt:videoId>([^<]+)</yt:videoId>.*?<published>([^<]+)</published>"
+            rb".*?<title>([^<]+)</title>", body, re.S):
+        vid = vid.decode("utf-8", "replace")
         ts = parse_publish_date(pub.decode("utf-8", "replace"))
         if ts:
-            out[vid.decode()] = ts
+            out[vid] = ts
+        t = title.decode("utf-8", "replace").strip()
+        for a, b in (("&amp;", "&"), ("&lt;", "<"), ("&gt;", ">"),
+                     ("&quot;", '"'), ("&#39;", "'"), ("&#x27;", "'"), ("&apos;", "'")):
+            t = t.replace(a, b)
+        if t:
+            titles[vid] = t
     log("[RSS] 获得 %d 条精确日期" % len(out))
-    return out
+    return out, titles
 
 
 # ---------------- 频道页相对时间（云 IP 被 watch 页风控时的兜底主力） ----------------
@@ -764,10 +771,10 @@ def run_real(args, channel_url):
                                              if TAB_LABEL[t])}
                for v in ids]
     ucid, name = channel_meta(channel_url, ids)
-    rss_map = {}
+    rss_map, rss_titles = {}, {}
     if ucid:
         try:
-            rss_map = fetch_rss(ucid, os.path.join("cache", ucid, "pages", "rss.xml"))
+            rss_map, rss_titles = fetch_rss(ucid, os.path.join("cache", ucid, "pages", "rss.xml"))
         except Exception as ex:
             log("[警告] RSS 获取失败: %s" % str(ex)[:120])
     else:
@@ -775,6 +782,9 @@ def run_real(args, channel_url):
     for e in entries:
         if e["id"] in rss_map:
             e["rss_ts"] = rss_map[e["id"]]
+        # RSS 的 id↔标题 是官方权威配对，覆盖网格枚举可能的顶格错配
+        if e["id"] in rss_titles and rss_titles[e["id"]]:
+            e["title"] = rss_titles[e["id"]]
     if not args.list_only:
         dates = fetch_upload_dates([e["id"] for e in entries])
         for e in entries:
