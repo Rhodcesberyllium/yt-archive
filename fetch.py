@@ -35,6 +35,8 @@ import os
 import re
 import subprocess
 import sys
+import time
+import urllib.parse
 import urllib.request
 from datetime import timezone, timedelta
 
@@ -254,7 +256,7 @@ def fetch_upload_dates(ids, chunk=60):
             log("[日期] 命中率过低(%d/%d)，疑被风控，跳过剩余 %d 条；由频道页相对时间兜底"
                 % (len(res), done, n - done))
             break
-    if res and len(res) < 0.3 * n:
+    if len(res) < 0.3 * n:
         missing = [v for v in ids_list if v not in res]
         log("[日期] 用 web_embedded 客户端重试 %d 条缺失项" % len(missing))
         for j in range(0, len(missing), 40):
@@ -296,51 +298,65 @@ def fetch_rss(ucid, dst):
 
 # ---------------- 频道页相对时间（云 IP 被 watch 页风控时的兜底主力） ----------------
 
-def extract_rel_from_html(html, anchor_ms):
-    """从频道标签页 ytInitialData 提取 {id: (approx_ms, 精度)}。
-    兼容新版 lockupViewModel（含 contentMetadata 的相对时间）与旧版
-    publishedTimeText 两种布局；并处理 \x22 双转义的页面。"""
-    out = {}
+def extract_rel_from_data(o, anchor_ms, rel=None, tokens=None):
+    """遍历任意频道/续拉 JSON：提取 (videoId/contentId -> (相对毫秒, 精度))，
+    同时收集 continuationCommand 的翻页 token。
+    兼容 lockupViewModel / videoRenderer / reelItemRenderer / publishedTimeText 各布局。"""
+    if rel is None:
+        rel = {}
+    if tokens is None:
+        tokens = []
+    if isinstance(o, dict):
+        cont = o.get("continuationCommand")
+        if isinstance(cont, dict) and isinstance(cont.get("token"), str):
+            tokens.append(cont["token"])
+        vid, ago = None, None
+        lv = o.get("lockupViewModel")
+        if isinstance(lv, dict):
+            vid = lv.get("contentId")
+            md = lv.get("metadata", {}).get("lockupMetadataViewModel", {})
+            for row in (md.get("metadata", {}).get("contentMetadataViewModel", {})
+                        .get("metadataRows", [])):
+                for p in row.get("metadataParts", []):
+                    t = p.get("text", {}).get("content", "")
+                    if "ago" in t.lower():
+                        ago = t
+        elif "videoId" in o or "publishedTimeText" in o:
+            vid = o.get("videoId") or o.get("contentId")
+            pt = o.get("publishedTimeText") or {}
+            ago = (pt.get("simpleText") if isinstance(pt, dict) else None) \
+                or o.get("publishedTimeText")
+        if vid and ago and VIDEOID_RE.fullmatch(str(vid)):
+            secs, prec = parse_ago_unit(str(ago))
+            if secs:
+                rel[str(vid)] = (int(anchor_ms - secs * 1000), prec)
+        for v in o.values():
+            extract_rel_from_data(v, anchor_ms, rel, tokens)
+    elif isinstance(o, list):
+        for v in o:
+            extract_rel_from_data(v, anchor_ms, rel, tokens)
+    return rel, tokens
+
+
+def extract_rel_from_html_data(html, anchor_ms):
+    """从频道标签页 ytInitialData 提取 (rel, tokens)。处理 \x22 双转义。"""
+    rel, tokens = {}, []
     html = re.sub(rb"\\x22", b'"', html)  # 移动版页面会把 JSON 引号双转义成 \x22
     m = (re.search(rb"var ytInitialData\s*=\s*(\{.*?\});</script>", html, re.S)
          or re.search(rb"ytInitialData\s*=\s*(\{.*?\});", html, re.S))
     if not m:
-        return out
+        return rel, tokens
     try:
         data = json.loads(m.group(1).decode("utf-8", "replace"))
     except Exception:
-        return out
+        return rel, tokens
+    return extract_rel_from_data(data, anchor_ms, rel, tokens)
 
-    def walk(o):
-        if isinstance(o, dict):
-            vid, ago = None, None
-            lv = o.get("lockupViewModel")
-            if isinstance(lv, dict):
-                vid = lv.get("contentId")
-                md = lv.get("metadata", {}).get("lockupMetadataViewModel", {})
-                for row in (md.get("metadata", {}).get("contentMetadataViewModel", {})
-                            .get("metadataRows", [])):
-                    for p in row.get("metadataParts", []):
-                        t = p.get("text", {}).get("content", "")
-                        if "ago" in t.lower():
-                            ago = t
-            else:
-                vid = o.get("videoId") or o.get("contentId")
-                pt = o.get("publishedTimeText") or {}
-                ago = (pt.get("simpleText") if isinstance(pt, dict) else None) \
-                    or o.get("publishedTimeText")
-            if vid and ago and VIDEOID_RE.fullmatch(str(vid)):
-                secs, prec = parse_ago_unit(str(ago))
-                if secs:
-                    out[str(vid)] = (int(anchor_ms - secs * 1000), prec)
-            for v in o.values():
-                walk(v)
-        elif isinstance(o, list):
-            for v in o:
-                walk(v)
-    walk(data)
-    # 旧版布局兜底：videoId 与 "N years ago" 文本位置邻近配对
-    if not out:
+
+def extract_rel_from_html(html, anchor_ms):
+    """兼容旧函数：返回 {id: (ms, 精度)}，含旧布局邻近匹配兜底。"""
+    rel, _ = extract_rel_from_html_data(html, anchor_ms)
+    if not rel:
         for mm in re.finditer(rb'"videoId":"([A-Za-z0-9_-]{11})"', html):
             start = max(0, mm.start() - 2500)
             window = html[start:mm.start() + 2500]
@@ -349,25 +365,70 @@ def extract_rel_from_html(html, anchor_ms):
             if agos:
                 secs, prec = parse_ago_unit(agos[0].decode())
                 if secs:
-                    out[mm.group(1).decode()] = (int(anchor_ms - secs * 1000), prec)
-    return out
+                    rel[mm.group(1).decode()] = (int(anchor_ms - secs * 1000), prec)
+    return rel
 
 
-def fetch_relative_dates(channel_url, anchor_ms):
-    """抓 videos/shorts/streams 三 tab 页面，提取每条相对时间并取并集。"""
+DEFAULT_ITV_VERSION = "2.20240821.01.00"
+
+
+def post_browse(token, client_version, api_key):
+    """InnerTube browse 接口 POST 翻页续拉。返回解析后的 JSON 对象；失败返回 None。"""
+    url = "https://www.youtube.com/youtubei/v1/browse?prettyPrint=false"
+    if api_key:
+        url += "&key=" + urllib.parse.quote(api_key)
+    payload = {"context": {"client": {
+        "clientName": "WEB", "clientVersion": client_version, "hl": "en", "gl": "US"}},
+        "continuation": token}
+    req = urllib.request.Request(
+        url, data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json", "User-Agent": UA,
+                 "X-Youtube-Client-Name": "1",
+                 "X-Youtube-Client-Version": client_version})
+    try:
+        with urllib.request.urlopen(req, timeout=40) as r:
+            return json.loads(r.read().decode("utf-8", "replace"))
+    except Exception as ex:
+        log("[相对时间] 翻页请求失败: %s" % str(ex)[:90])
+        return None
+
+
+def fetch_inner_relative_dates(channel_url, anchor_ms, max_pages=12):
+    """核心兜底：抓 videos/shorts/streams 三 tab 页面 + InnerTube 翻页续拉，
+    给尽量多视频标上相对时间。首屏约 30 条；随后用页面自带的
+    INNERTUBE_CLIENT_VERSION / API_KEY 发 POST 翻页，逐页并入 rel，
+    直到无更多 token 或翻页失败（失败只丢该页，保留已收集部分）。"""
     base = ensure_base(channel_url)
     rel = {}
     for tab in ("videos", "shorts", "streams"):
         html = http_get_bytes("%s/%s" % (base, tab))
         if not html:
             continue
-        got = extract_rel_from_html(html, anchor_ms)
-        n0 = len(rel)
-        for k, v in got.items():
+        cv, key = DEFAULT_ITV_VERSION, ""
+        mcv = re.search(rb'"INNERTUBE_CLIENT_VERSION":"([^"]+)"', html)
+        if mcv:
+            cv = mcv.group(1).decode()
+        mk = re.search(rb'"INNERTUBE_API_KEY":"([^"]+)"', html)
+        if mk:
+            key = mk.group(1).decode()
+        rel0, tokens = extract_rel_from_html_data(html, anchor_ms)
+        for k, v in rel0.items():
             rel.setdefault(k, v)
-        log("[相对时间] tab=%s 提取 %d 条（并集 %d）" % (tab, len(got), len(rel)))
-        if n0 and len(rel) == n0:
-            pass
+        token = tokens[-1] if tokens else None
+        seen, pages = set(), 0
+        while token and token not in seen and pages < max_pages:
+            seen.add(token)
+            data = post_browse(token, cv, key)
+            if data is None:
+                break
+            relp, tokensp = extract_rel_from_data(data, anchor_ms, {}, [])
+            for k, v in relp.items():
+                rel.setdefault(k, v)
+            pages += 1
+            token = tokensp[-1] if tokensp else None
+            time.sleep(0.3)
+        log("[相对时间] tab=%s 首屏%d条 + 翻页%d页（累计并入 %d, 并集 %d）"
+            % (tab, len(rel0), pages, len(rel0) + pages, len(rel)))
     return rel
 
 
@@ -589,7 +650,7 @@ def run_real(args, channel_url):
         log("[提示] --list-only：跳过逐条官方日期，仅靠标题/相对文本。")
     assign_dates(entries, rss_map)
     anchor_ms = int(dt.datetime.now(timezone.utc).timestamp() * 1000)
-    rel = fetch_relative_dates(channel_url, anchor_ms)
+    rel = fetch_inner_relative_dates(channel_url, anchor_ms)
     apply_relative(entries, rel)
     elapsed = dt.datetime.now() - t0
     out = args.out or ("data/%s_videos.txt"
