@@ -1,0 +1,75 @@
+# fetch-youtube-cloud — 每周自动 + 手动触发 + 表单输入频道。
+# 手动抓任意频道：Actions -> fetch-youtube-cloud -> Run workflow -> 在表单里粘贴频道链接 -> 运行。
+name: fetch-youtube-cloud
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel_url:
+        description: '要抓取的频道链接，例如 https://www.youtube.com/@某频道/videos（留空 = 用默认频道）'
+        required: false
+        default: ''
+  schedule:
+    - cron: "0 10 * * 1"       # 每周一 10:00 UTC = 北京 18:00
+  push:
+    branches: [ main ]
+    paths:                     # 上传/改动脚本时自动跑一次
+      - 'fetch.py'
+      - 'verify_output.py'
+      - '.github/workflows/fetch.yml'
+
+concurrency:
+  group: fetch-cloud
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  # 永久默认频道：仓库 Settings -> Secrets and variables -> Actions -> Variables
+  # 添加 CHANNEL_URL 即可覆盖（表单每次填的优先级更高；都不填则用下面这个内置默认）。
+  CHANNEL_URL: ${{ vars.CHANNEL_URL || 'https://www.youtube.com/@NurdRage/videos' }}
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 安装依赖
+        run: pip install --quiet yt-dlp
+
+      - name: 云端全量抓取（表单填的频道优先，留空/自动触发用默认）
+        env:
+          CH_INPUT: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.channel_url || '' }}
+        run: |
+          URL="${CH_INPUT:-$CHANNEL_URL}"
+          echo "抓取频道: $URL"
+          python fetch.py "$URL"
+
+      - name: 验收自检（verify_output.py）
+        run: |
+          OUT=$(ls data/*_videos.txt 2>/dev/null | head -n1)
+          if [ -z "$OUT" ]; then echo "未找到输出文件"; exit 1; fi
+          echo "校验文件: $OUT"
+          python verify_output.py "$OUT"
+
+      - name: 上传产物（备用下载通道）
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos-txt
+          path: data/*.txt
+
+      - name: 把最新清单提交回仓库
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: 刷新视频清单 [skip ci]'
+          file_pattern: 'data/*.txt'
+          disable_globbing: true
