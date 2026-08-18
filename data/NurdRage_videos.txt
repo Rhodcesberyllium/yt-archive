@@ -3,8 +3,8 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-08-18 22:02:50 (UTC+8)
-数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 upload_date（日精度） + 官方 RSS（精确秒） + 频道页相对时间（兜底）
+抓取时间: 2026-08-18 22:10:39 (UTC+8)
+数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 视频总数: 291
 ========================================
 
@@ -1769,8 +1769,8 @@
 其中日期未知: 4 条
 其中重复标题组(可能为重传/多版本): 7 组（涉及 14 条, 去重按视频ID）
 抓取累计条数(去重前): 291
-本次运行耗时: 8分50秒
+本次运行耗时: 0分31秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
-数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 upload_date（日精度） + 官方 RSS（精确秒） + 频道页相对时间（兜底）
+数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 分页缓存: 无（云端每次全量直取）
 ========================================
