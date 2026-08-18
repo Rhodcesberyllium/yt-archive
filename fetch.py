@@ -256,7 +256,9 @@ def fetch_upload_dates(ids, chunk=60):
             log("[日期] 命中率过低(%d/%d)，疑被风控，跳过剩余 %d 条；由频道页相对时间兜底"
                 % (len(res), done, n - done))
             break
-    if len(res) < 0.3 * n:
+    # 仅当首批真实返回过日期（说明该 IP 未被整体风控）才做嵌入式客户端重试；
+    # 实测云端 web/embedded 均全程 0，重试纯属白等。
+    if res and len(res) < 0.3 * n:
         missing = [v for v in ids_list if v not in res]
         log("[日期] 用 web_embedded 客户端重试 %d 条缺失项" % len(missing))
         for j in range(0, len(missing), 40):
@@ -415,7 +417,7 @@ def _resp_diag(data):
     return "keys=[%s] onResponseReceivedActions=%d" % (keys, n)
 
 
-def fetch_inner_relative_dates(channel_url, anchor_ms, max_pages=14):
+def fetch_inner_relative_dates(channel_url, anchor_ms, max_pages=60):
     """核心兜底：三 tab 页面 + InnerTube 翻页续拉，给尽量多视频标上相对时间。
 
     关键改进（针对上次"只翻 1 页且并集不长"）：
@@ -503,6 +505,65 @@ def fetch_yt_flat_dates(channel_url, ucid, wanted_ids):
         if len(res) >= 0.6 * max(1, len(want or [])):
             break
     return res
+
+
+def _parse_wb_ts(ts):
+    """Wayback 时间戳 -> epoch ms；失败返回 None。"""
+    for fmt in ("%Y%m%d%H%M%S", "%Y%m%d"):
+        try:
+            return int(dt.datetime.strptime(ts[:len(dt.datetime.now().strftime(fmt))], fmt)
+                       .replace(tzinfo=timezone.utc).timestamp() * 1000)
+        except Exception:
+            continue
+    return None
+
+
+def fetch_wayback_relative(ucid, handle, anchor_ms, max_snapshots=24):
+    """Wayback 快照并集：收集频道各 URL 形式的历史快照，用各快照当日的相对时间
+    还原当时可见的视频（云端直连可达；专治 channels 里连 InnerTube 都翻不出的残尾）。"""
+    cand_urls = []
+    if ucid:
+        cand_urls.append("https://www.youtube.com/channel/%s/videos" % ucid)
+    if handle:
+        cand_urls.append("https://www.youtube.com/@%s/videos" % handle)
+    snaps = []
+    for u in cand_urls:
+        cdx = ("http://web.archive.org/cdx/search/cdx?url=%s&output=json"
+               "&fl=timestamp,statuscode&filter=statuscode:200&collapse=timestamp:6&limit=80"
+               % urllib.parse.quote(u, safe=""))
+        body = http_get_bytes(cdx)
+        if not body:
+            continue
+        try:
+            rows = json.loads(body)
+        except Exception:
+            continue
+        got = 0
+        for row in rows[1:]:
+            if row and str(row[0]).isdigit():
+                snaps.append((str(row[0]), u))
+                got += 1
+        if got:
+            log("[Wayback] %s 命中 %d 个快照" % (u, got))
+    snaps = sorted(set(snaps))
+    if len(snaps) > max_snapshots:      # 时间轴均匀抽样，控制耗时
+        step = len(snaps) / max_snapshots
+        snaps = [snaps[int(i * step)] for i in range(max_snapshots)]
+    log("[Wayback] 将抓取 %d 个快照" % len(snaps))
+    rel = {}
+    n = len(snaps)
+    for i, (ts, u) in enumerate(snaps, 1):
+        wb_url = "https://web.archive.org/web/%sid_/%s" % (ts, u)
+        html = http_get_bytes(wb_url)
+        if not html:
+            continue
+        an = _parse_wb_ts(ts) or anchor_ms
+        got = extract_rel_from_html(html, an)
+        for k, v in got.items():
+            rel.setdefault(k, v)
+        if i % 6 == 0 or i == n:
+            log("[Wayback] 快照 %d/%d（并集 %d）" % (i, n, len(rel)))
+    return rel
 
 
 def apply_relative(entries, rel):
@@ -736,6 +797,18 @@ def run_real(args, channel_url):
     assign_dates(entries, rss_map)
     anchor_ms = int(dt.datetime.now(timezone.utc).timestamp() * 1000)
     rel = fetch_inner_relative_dates(channel_url, anchor_ms)
+    # 残尾（如 Shorts、InnerTube 翻不出的极旧视频）交给 Wayback 快照并集兜底
+    if not args.list_only:
+        try:
+            handle = ""
+            mh = re.search(r"youtube\.com/(?:@|c/|user/)([^/?#]+)", channel_url)
+            if mh:
+                handle = mh.group(1).strip()
+            wb = fetch_wayback_relative(ucid, handle, anchor_ms)
+            for k, v in wb.items():
+                rel.setdefault(k, v)
+        except Exception as ex:
+            log("[Wayback] 失败: %s" % str(ex)[:100])
     apply_relative(entries, rel)
     elapsed = dt.datetime.now() - t0
     out = args.out or ("data/%s_videos.txt"
