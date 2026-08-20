@@ -165,37 +165,59 @@ def format_approx(ms, prec):
     return '    发布时间: %s（推断日期, 精度未知, 页面相对文本）' % d.strftime("%Y-%m-%d")
 
 
+def fmt_duration(secs):
+    """秒 -> '1:24:32 (1h24m32s)' 或 '5:32 (5m32s)'；拿不到返回 '未知'。"""
+    if not secs or secs <= 0:
+        return "未知"
+    s = int(secs)
+    h, rem = divmod(s, 3600)
+    m, sec = divmod(rem, 60)
+    if h:
+        return "%d:%02d:%02d (%dh%dm%ds)" % (h, m, sec, h, m, sec)
+    return "%d:%02d (%dm%ds)" % (m, sec, m, sec)
+
+
 # ------------------------------------------------ 取数（全部跑在 GitHub 美国节点）
 
 def enum_all(channel_url):
     """对 videos/shorts/streams 三个 tab 各抓一次取并集。
-    返回 (ids: {id: title}, tags: {id: set(来源tab)})。"""
+    返回 (ids:{id:title}, tags:{id:set(tab)}, durations:{id:秒})。
+    时长与 id/标题取自同一条 yt-dlp 条目（同一行），自洽不错位。"""
     base = ensure_base(channel_url)
-    ids, tags = {}, {}
+    ids, tags, durations = {}, {}, {}
     for tab in ("videos", "shorts", "streams"):
         url = "%s/%s" % (base, tab)
-        out = yt_run(["--flat-playlist", "--print", "%(id)s\t%(title)s", url], timeout=2400)
+        out = yt_run(["--flat-playlist", "--print",
+                      "%(id)s\t%(title)s\t%(duration)s", url], timeout=2400)
         got = 0
         for line in out.splitlines():
-            if "\t" not in line:
+            parts = line.split("\t", 2)
+            if len(parts) < 2:
                 continue
-            vid, t = line.split("\t", 1)
-            vid = vid.strip()
+            vid = parts[0].strip()
             if not VIDEOID_RE.fullmatch(vid):
                 continue
-            ids[vid] = ids.get(vid) or t.strip()
+            ids[vid] = ids.get(vid) or parts[1].strip()
             tags.setdefault(vid, set()).add(tab)
+            dur = (parts[2] if len(parts) > 2 else "").strip()
+            if re.fullmatch(r"\d+", dur):     # 秒
+                durations[vid] = int(dur)
             got += 1
         log("[枚举] tab=%s 获得 %d 条（累计 %d）" % (tab, got, len(ids)))
     if not ids:  # 兜底：直接用调用者给的 URL 抽取一次
-        out = yt_run(["--flat-playlist", "--print", "%(id)s\t%(title)s", base], timeout=2400)
+        out = yt_run(["--flat-playlist", "--print",
+                      "%(id)s\t%(title)s\t%(duration)s", base], timeout=2400)
         for line in out.splitlines():
-            if "\t" in line:
-                vid, t = line.split("\t", 1)
-                vid = vid.strip()
-                if VIDEOID_RE.fullmatch(vid):
-                    ids[vid] = ids.get(vid) or t.strip()
-    return ids, tags
+            parts = line.split("\t", 2)
+            if len(parts) < 2:
+                continue
+            vid = parts[0].strip()
+            if VIDEOID_RE.fullmatch(vid):
+                ids[vid] = ids.get(vid) or parts[1].strip()
+                dur = (parts[2] if len(parts) > 2 else "").strip()
+                if re.fullmatch(r"\d+", dur):
+                    durations[vid] = int(dur)
+    return ids, tags, durations
 
 
 def channel_meta(channel_url, ids):
@@ -458,7 +480,7 @@ def fetch_inner_relative_dates(channel_url, anchor_ms, max_pages=60):
       - 每个 token 依次用 3 种客户端（页面版WEB -> 静态WEB -> ANDROID）兜底；
       - 每次 POST 都打诊断日志（响应键 / 条目数 / 下页token），失败只丢当页。"""
     base = ensure_base(channel_url)
-    rel, titles = {}, {}
+    rel, titles, key_out = {}, {}, ""
     for tab in ("videos", "shorts", "streams"):
         html = http_get_bytes("%s/%s" % (base, tab))
         if not html:
@@ -470,6 +492,9 @@ def fetch_inner_relative_dates(channel_url, anchor_ms, max_pages=60):
         key = ""
         mk = re.search(rb'"INNERTUBE_API_KEY":"([^"]+)"', html)
         if mk:
+            key = mk.group(1).decode()
+            if not key_out:
+                key_out = key
             key = mk.group(1).decode()
         rel0, tokens, titles0 = extract_rel_from_html_data(html, anchor_ms)
         for k, v in rel0.items():
@@ -512,7 +537,7 @@ def fetch_inner_relative_dates(channel_url, anchor_ms, max_pages=60):
         if not pages:
             for d in diags[:5]:
                 log("[相对时间]    诊断: %s" % d)
-    return rel, titles
+    return rel, titles, key_out
 
 
 def fetch_yt_flat_dates(channel_url, ucid, wanted_ids):
@@ -603,6 +628,44 @@ def fetch_wayback_relative(ucid, handle, anchor_ms, max_snapshots=24):
     return rel
 
 
+def fetch_android_dates(video_ids, api_key):
+    """对仍未知的极少数视频（多为远古 Shorts），用 ANDROID 客户端 POST youtubei/v1/player
+    直接要官方 publishDate（日精度）——该接口常可绕过网页 watch 页风控。
+    成败都只影响个位数条目：成功填日精度，失败保持未知，最多各试一次。返回 {id:'YYYYMMDD'}。"""
+    res = {}
+    if not video_ids or not api_key:
+        return res
+    url = "https://www.youtube.com/youtubei/v1/player?prettyPrint=false&key=" + \
+        urllib.parse.quote(api_key)
+    for vid in video_ids:
+        payload = {"context": {"client": {"clientName": "ANDROID",
+                                          "clientVersion": "19.09.37",
+                                          "androidSdkVersion": 30,
+                                          "hl": "en", "gl": "US"}},
+                   "videoId": vid, "contentCheckOk": True, "racyCheckOk": True}
+        req = urllib.request.Request(
+            url, data=json.dumps(payload).encode("utf-8"),
+            headers={"Content-Type": "application/json", "User-Agent": UA})
+        try:
+            with urllib.request.urlopen(req, timeout=25) as r:
+                d = json.loads(r.read().decode("utf-8", "replace"))
+        except Exception as ex:
+            log("[ANDROID] %s 失败: %s" % (vid, str(ex)[:70]))
+            continue
+        pd = ""
+        try:
+            mm = (d.get("microformat", {}) or {}).get("playerMicroformatRenderer", {}) or {}
+            pd = mm.get("publishDate") or mm.get("uploadDate") or ""
+        except Exception:
+            pd = ""
+        if isinstance(pd, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", pd):
+            res[vid] = pd.replace("-", "")
+            log("[ANDROID] %s -> %s（日精度）" % (vid, pd))
+        else:
+            log("[ANDROID] %s 无日期字段（可能也被风控）" % vid)
+    return res
+
+
 def apply_relative(entries, rel):
     """把没有真实/标题日期的条目用相对文本兜底（升格为 approx，标注粒度）。"""
     up = 0
@@ -675,6 +738,7 @@ def write_output(path, entries, meta):
         L.append("")
         L.append("【%d】视频名称: %s" % (i, title or "(标题待补)"))
         L.append("    视频链接: https://www.youtube.com/watch?v=%s" % e["id"])
+        L.append("    时长: %s" % fmt_duration(e.get("duration")))
         if e.get("prec") == "exact":
             L.append("    发布时间: %s (UTC+8)   [原始: %s UTC]"
                      % (fmt_cn(e["ts_ms"]), fmt_utc(e["ts_ms"])))
@@ -744,29 +808,30 @@ def build(entries, meta, out, rss_map):
 def run_demo(args):
     """离线演练：内置样例数据跑通 归并->排序->输出->RSS落盘 全流程，供本地测试。"""
     SAMPLE = [
-        # (id, 标题, 官方日YYYY-MM-DD, RSS精确ISO, tags)
+        # (id, 标题, 官方日YYYY-MM-DD, RSS精确ISO, tags, 时长秒)
         ("JNxQq3KFEM4",
          "Dissolving $1000 of Platinum to Make $6000 of Chloroplatinic Acid for Professional Use",
-         "2024-12-24", "2024-12-24T15:44:46+00:00", ["直播/回放 Live"]),
+         "2024-12-24", "2024-12-24T15:44:46+00:00", ["直播/回放 Live"], 5072),
         ("3YwnlYl0VxA", "This Candle MAKES Oxygen and Started a Fire on a Space Station",
-         "2024-12-20", "", []),
-        ("_d1J9MVkRzM", "Refuel a Glow Stick", "2024-06-13", "", ["短视频 Shorts"]),
-        ("9p3So4ijD4U", "Refuel a Glow Stick", "2024-05-30", "", []),
-        ("zLWEemhtdbE", "", "2023-05-02", "", []),         # 标题待补，仅官方日
-        ("GsN7r6QkpRA", "Lab Notes - Cleaving Sodium Metal - March 27th 2019", "", "", []),
-        ("ZxCO9BaBBHg", "Chemical Thunderstorm in a Beaker (April 2018)", "", "", []),
-        ("a1b2c3d4e5f", "Early Lab Notes - Something", "", "", []),   # 靠相对时间兜底
-        ("gjsMV1MglA4", "Mystery Video", "", "", []),     # 彻底的未知
+         "2024-12-20", "", [], 332),
+        ("_d1J9MVkRzM", "Refuel a Glow Stick", "2024-06-13", "", ["短视频 Shorts"], 12),
+        ("9p3So4ijD4U", "Refuel a Glow Stick", "2024-05-30", "", [], 8),
+        ("zLWEemhtdbE", "", "2023-05-02", "", [], None),          # 标题待补，仅官方日，时长未知
+        ("GsN7r6QkpRA", "Lab Notes - Cleaving Sodium Metal - March 27th 2019", "", "", [], 1371),
+        ("ZxCO9BaBBHg", "Chemical Thunderstorm in a Beaker (April 2018)", "", "", [], 601),
+        ("a1b2c3d4e5f", "Early Lab Notes - Something", "", "", [], None),   # 靠相对时间兜底
+        ("gjsMV1MglA4", "Mystery Video", "", "", [], None),      # 彻底的未知
     ]
     entries = [{"id": v, "title": t, "upload_date": u, "rss_ts": None,
-                "prec": None, "tags": list(g)} for v, t, u, _, g in SAMPLE]
-    for (v, t, u, iso, g) in SAMPLE:
+                "prec": None, "duration": dur, "tags": list(g)}
+               for v, t, u, iso, g, dur in SAMPLE]
+    for (v, t, u, iso, g, dur) in SAMPLE:
         e = next(x for x in entries if x["id"] == v)
         if iso:
             e["rss_ts"] = parse_publish_date(iso)
         if u:
             e["upload_date"] = u.replace("-", "")
-    rss = {v: parse_publish_date(iso) for v, _, _, iso, _ in SAMPLE if iso}
+    rss = {v: parse_publish_date(iso) for v, _, _, iso, _, _ in SAMPLE if iso}
     rss = {k: v for k, v in rss.items() if v}
     # 模拟频道页相对时间解析结果（对应 a1b2c3d4e5f 无任何官方/标题日期的情况）
     DEMO_REL = {"a1b2c3d4e5f":
@@ -792,13 +857,14 @@ def run_demo(args):
 def run_real(args, channel_url):
     t0 = dt.datetime.now()
     log("== 频道: %s ==" % channel_url)
-    ids, tags = enum_all(channel_url)
+    ids, tags, durations = enum_all(channel_url)
     if not ids:
         print("[错误] 未能从任何 tab 枚举到视频（频道可能为空或 yt-dlp 被暂时限制）。", file=sys.stderr)
         sys.exit(4)
     entries = [{"id": v, "title": ids[v], "upload_date": "", "rss_ts": None,
-                "prec": None, "tags": sorted(TAB_LABEL[t] for t in (tags.get(v) or set())
-                                             if TAB_LABEL[t])}
+                "prec": None, "duration": durations.get(v),
+                "tags": sorted(TAB_LABEL[t] for t in (tags.get(v) or set())
+                               if TAB_LABEL[t])}
                for v in ids]
     ucid, name = channel_meta(channel_url, ids)
     rss_map, rss_titles = {}, {}
@@ -840,7 +906,7 @@ def run_real(args, channel_url):
         log("[提示] --list-only：跳过日期通道，仅标题/相对时间。")
     assign_dates(entries, rss_map)
     anchor_ms = int(dt.datetime.now(timezone.utc).timestamp() * 1000)
-    rel, ititles = fetch_inner_relative_dates(channel_url, anchor_ms)
+    rel, ititles, itkey = fetch_inner_relative_dates(channel_url, anchor_ms)
     # InnerTube 每条 renderer 里自洽的 id↔标题（同一对象取出，不会串位），
     # 覆盖掉网格枚举顶格错配 / RSS 旧标题的问题。
     fixed = 0
@@ -864,6 +930,22 @@ def run_real(args, channel_url):
         except Exception as ex:
             log("[Wayback] 失败: %s" % str(ex)[:100])
     apply_relative(entries, rel)
+    # 仍未知的极少数（多为远古 Shorts）→ ANDROID 官方播放接口再试一次日精度
+    if not args.list_only:
+        try:
+            unk = [e["id"] for e in entries if e.get("prec") == "unknown"]
+            if unk and itkey:
+                ad = fetch_android_dates(unk, itkey)
+                for e in entries:
+                    if e["id"] in ad:
+                        ud = ad[e["id"]]
+                        y, m, d = int(ud[:4]), int(ud[4:6]), int(ud[6:8])
+                        e["ts_ms"] = int(dt.datetime(y, m, d, tzinfo=timezone.utc).timestamp() * 1000)
+                        e["prec"] = "day_official"
+                if ad:
+                    log("[ANDROID] 补齐 %d 条官方日" % len(ad))
+        except Exception as ex:
+            log("[ANDROID] 失败: %s" % str(ex)[:100])
     elapsed = dt.datetime.now() - t0
     out = args.out or ("data/%s_videos.txt"
                        % re.sub(r'[\\/:*?"<>|]+', "_", (name or "channel"))[:60])
