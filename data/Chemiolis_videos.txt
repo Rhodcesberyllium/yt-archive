@@ -1,0 +1,607 @@
+========================================
+频道: Chemiolis
+频道链接: https://www.youtube.com/@Chemiolis/videos
+频道 ID: UCoDmZirW1o9XSKSRM6YJ1rQ
+频道页显示视频总数: 82（本文件抓取到 82 条，覆盖率 100%）
+抓取时间: 2026-08-20 19:20:54 (UTC+8)
+数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
+视频总数: 82
+========================================
+
+【1】视频名称: Why I have been gone
+    视频链接: https://www.youtube.com/watch?v=oOJpiSQJZX4
+    时长: 3:23 (3m23s)
+    发布时间: 2026-03-15 22:03:58 (UTC+8)   [原始: 2026-03-15 14:03:58 UTC]
+
+--------------------------------------------------
+
+【2】视频名称: Using 1800s Chemistry to Periodinate Benzene
+    视频链接: https://www.youtube.com/watch?v=BWtLivzqNZw
+    时长: 9:21 (9m21s)
+    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【3】视频名称: Making a Human Pheromone (Androstadienone)
+    视频链接: https://www.youtube.com/watch?v=CjPXXwv9_W0
+    时长: 16:16 (16m16s)
+    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【4】视频名称: Making Sweetness Blocker (and trying it)
+    视频链接: https://www.youtube.com/watch?v=itW_jpro4JU
+    时长: 14:34 (14m34s)
+    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【5】视频名称: Making the Hair Growing Molecule (Minoxidil)
+    视频链接: https://www.youtube.com/watch?v=aPR6_ZnML9o
+    时长: 16:19 (16m19s)
+    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【6】视频名称: Making an Experimental Fat Burner (BAM15)
+    视频链接: https://www.youtube.com/watch?v=2jLKXBiQqjg
+    时长: 12:38 (12m38s)
+    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【7】视频名称: Making Thiophosgene
+    视频链接: https://www.youtube.com/watch?v=2hWMzfIw8GQ
+    时长: 10:36 (10m36s)
+    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【8】视频名称: Making Flunitrazolam (Designer Benzo)
+    视频链接: https://www.youtube.com/watch?v=kvGQsI48lKo
+    时长: 21:32 (21m32s)
+    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【9】视频名称: When you make an oopsie, again
+    视频链接: https://www.youtube.com/watch?v=gaEce1aiNNE
+    时长: 未知
+    发布时间: 2025-03-10 07:18:58 (UTC+8)   [原始: 2025-03-09 23:18:58 UTC]
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【10】视频名称: NaK, a beautiful yet dangerous alloy #science #scienceexperiment #experiment
+    视频链接: https://www.youtube.com/watch?v=rmV3yjmIDV8
+    时长: 未知
+    发布时间: 2025-01-30 02:21:22 (UTC+8)   [原始: 2025-01-29 18:21:22 UTC]
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【11】视频名称: Making a True Magnetic Liquid
+    视频链接: https://www.youtube.com/watch?v=5OjQTg4kxCM
+    时长: 8:56 (8m56s)
+    发布时间: 2025-01-17 21:41:54 (UTC+8)   [原始: 2025-01-17 13:41:54 UTC]
+
+--------------------------------------------------
+
+【12】视频名称: This Pigment Killed Napoleon
+    视频链接: https://www.youtube.com/watch?v=MrFGpTwsvGQ
+    时长: 未知
+    发布时间: 2024-12-10 21:58:08 (UTC+8)   [原始: 2024-12-10 13:58:08 UTC]
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【13】视频名称: That Chemist (Josiah Newton) is a Fraud
+    视频链接: https://www.youtube.com/watch?v=qrl25b2dGSE
+    时长: 9:29 (9m29s)
+    发布时间: 2024-11-05 08:33:21 (UTC+8)   [原始: 2024-11-05 00:33:21 UTC]
+
+--------------------------------------------------
+
+【14】视频名称: Making Fluorinated Empathogens (RC)
+    视频链接: https://www.youtube.com/watch?v=i43mLFsw6SM
+    时长: 15:34 (15m34s)
+    发布时间: 2024-10-17 19:03:25 (UTC+8)   [原始: 2024-10-17 11:03:25 UTC]
+
+--------------------------------------------------
+
+【15】视频名称: Making The Sweetest Compound Known (Lugduname)
+    视频链接: https://www.youtube.com/watch?v=YdGalCuJ96Q
+    时长: 36:22 (36m22s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【16】视频名称: Making a Stronger Methaqualone Analog (PPQ)
+    视频链接: https://www.youtube.com/watch?v=_RSwYif_w9M
+    时长: 14:01 (14m1s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【17】视频名称: How Truffle Aroma is Made
+    视频链接: https://www.youtube.com/watch?v=zBCY6kYptJc
+    时长: 7:31 (7m31s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【18】视频名称: Making Schizo Powder (PCMO)
+    视频链接: https://www.youtube.com/watch?v=5NGITGvFp4c
+    时长: 13:05 (13m5s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【19】视频名称: Making Uranium
+    视频链接: https://www.youtube.com/watch?v=noxQTdYCJ3c
+    时长: 11:55 (11m55s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【20】视频名称: Making a Red Bull Patented Stimulant (and trying it)
+    视频链接: https://www.youtube.com/watch?v=umNovJr8EdA
+    时长: 16:33 (16m33s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【21】视频名称: Making Tryptamines for Enlightenment
+    视频链接: https://www.youtube.com/watch?v=tqbkJHRpiWQ
+    时长: 11:01 (11m1s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【22】视频名称: Making Truth Serum
+    视频链接: https://www.youtube.com/watch?v=ZtkyQTGuRIA
+    时长: 15:39 (15m39s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【23】视频名称: Making KDS2010 (New Parkinson's Med)
+    视频链接: https://www.youtube.com/watch?v=zGEHfMcstC0
+    时长: 12:33 (12m33s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【24】视频名称: Making Hydrosilatrane: A Better Reductant?
+    视频链接: https://www.youtube.com/watch?v=KAe6yh_f1RI
+    时长: 10:55 (10m55s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【25】视频名称: Making and Tasting the COLDEST Substance Known - Icilin
+    视频链接: https://www.youtube.com/watch?v=3l3NKHossKM
+    时长: 13:27 (13m27s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【26】视频名称: Making Cursed Oxygen Benzene - Pyrylium
+    视频链接: https://www.youtube.com/watch?v=O74Qh8x8EUc
+    时长: 13:42 (13m42s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【27】视频名称: Making Arsenic-based Antibiotics (Arsinothricin)
+    视频链接: https://www.youtube.com/watch?v=V9GjwkHCeNA
+    时长: 15:26 (15m26s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【28】视频名称: Making 1,3-Dioxolane
+    视频链接: https://www.youtube.com/watch?v=1jxVaOY89qc
+    时长: 8:51 (8m51s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【29】视频名称: Making and Testing The ANTI-SPICY Molecule (Capsazepine)
+    视频链接: https://www.youtube.com/watch?v=VB0bn2FvObc
+    时长: 25:24 (25m24s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【30】视频名称: Will This Revolutionize Chemistry? (Organic Electrochemistry)
+    视频链接: https://www.youtube.com/watch?v=kKPNBUHoETE
+    时长: 21:26 (21m26s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【31】视频名称: Making and Tasting Government Banned Sweeteners
+    视频链接: https://www.youtube.com/watch?v=SfbrHPG73g4
+    时长: 28:33 (28m33s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【32】视频名称: Can You Trust NileRed?
+    视频链接: https://www.youtube.com/watch?v=W78EmvZzWNg
+    时长: 14:29 (14m29s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【33】视频名称: Making [2.2.2]Cryptand: A Chemical Prison
+    视频链接: https://www.youtube.com/watch?v=qqr9U47jx7o
+    时长: 13:56 (13m56s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【34】视频名称: Making Tetraphenyl Uranocene (Air stable Uranocene)
+    视频链接: https://www.youtube.com/watch?v=UuqkLIFbbEw
+    时长: 21:34 (21m34s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【35】视频名称: Making Adrenaline
+    视频链接: https://www.youtube.com/watch?v=Z-vCB_SxBms
+    时长: 9:42 (9m42s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【36】视频名称: Making Chemical Hair Remover
+    视频链接: https://www.youtube.com/watch?v=CQzNB6TDNxk
+    时长: 11:47 (11m47s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【37】视频名称: Extracting Thorium Oxide from Ore
+    视频链接: https://www.youtube.com/watch?v=io_EOQu3MdM
+    时长: 11:43 (11m43s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【38】视频名称: Making Chemotherapy from Platinum Metal
+    视频链接: https://www.youtube.com/watch?v=VuvNHydHKZk
+    时长: 10:33 (10m33s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【39】视频名称: Making Cubane (without handles)
+    视频链接: https://www.youtube.com/watch?v=v6jqlL5ZT3M
+    时长: 15:41 (15m41s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【40】视频名称: I Made Cubane First
+    视频链接: https://www.youtube.com/watch?v=zjp1aR6dSh4
+    时长: 33:33 (33m33s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【41】视频名称: Making [1.1.1]Propellane
+    视频链接: https://www.youtube.com/watch?v=iTlRvQuIyqE
+    时长: 16:32 (16m32s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【42】视频名称: Making Uranium Tetrachloride out of my Rock
+    视频链接: https://www.youtube.com/watch?v=3qmPZ0dlLEo
+    时长: 16:48 (16m48s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【43】视频名称: Making Oxetane
+    视频链接: https://www.youtube.com/watch?v=uV854t-ynNc
+    时长: 8:39 (8m39s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【44】视频名称: Making Cat Attractant (Nepetalactone)
+    视频链接: https://www.youtube.com/watch?v=osKdtwdBOHc
+    时长: 30:52 (30m52s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【45】视频名称: Making an Azodye from Acetone
+    视频链接: https://www.youtube.com/watch?v=tGWzpt3X9kk
+    时长: 25:13 (25m13s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【46】视频名称: Making the Smell of Rain
+    视频链接: https://www.youtube.com/watch?v=bl7K3lRPLYo
+    时长: 26:04 (26m4s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【47】视频名称: Making the Pinkest Chemical: Thiobenzoyl Chloride
+    视频链接: https://www.youtube.com/watch?v=iyi8Qimu3mc
+    时长: 8:53 (8m53s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【48】视频名称: Making ABNO: A New Stable Radical
+    视频链接: https://www.youtube.com/watch?v=XZnSNXy-Yks
+    时长: 15:18 (15m18s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【49】视频名称: New Molecules for Chemistry with LEDs
+    视频链接: https://www.youtube.com/watch?v=Vs3mIVvR6zc
+    时长: 13:33 (13m33s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【50】视频名称: Making Banana Borane (9-BBN)
+    视频链接: https://www.youtube.com/watch?v=RwQiHgWBvHA
+    时长: 11:18 (11m18s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【51】视频名称: Asymmetric Organocatalysis: The 2021 Nobel Prize
+    视频链接: https://www.youtube.com/watch?v=WcyTdXxQxBM
+    时长: 11:57 (11m57s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【52】视频名称: Making Tetraethyl Lead: The Additive that Polluted the World
+    视频链接: https://www.youtube.com/watch?v=bTJ4BRPw8Ik
+    时长: 8:31 (8m31s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【53】视频名称: Making Tributyltin Hydride - A Unique Hydrogen Donor
+    视频链接: https://www.youtube.com/watch?v=cGU8sJY5LOY
+    时长: 10:46 (10m46s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【54】视频名称: Making Triphenylarsine with Arsenic Metal
+    视频链接: https://www.youtube.com/watch?v=HbBrozOWySE
+    时长: 10:34 (10m34s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【55】视频名称: Making 2,2'-Bipyridine and its Ruthenium Complex
+    视频链接: https://www.youtube.com/watch?v=kkqECgHcZZY
+    时长: 10:22 (10m22s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【56】视频名称: Click Chemistry in Action: The Chemistry Behind the 2022 Nobel Prize
+    视频链接: https://www.youtube.com/watch?v=Ekbqix9fKXQ
+    时长: 8:02 (8m2s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【57】视频名称: Making Dibenzo[a,e]cyclooctene - an Emerging Ligand?
+    视频链接: https://www.youtube.com/watch?v=_2FNaCZldE4
+    时长: 15:15 (15m15s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【58】视频名称: Making Cyrene: the Next Common Solvent?
+    视频链接: https://www.youtube.com/watch?v=aUvt0VNxH38
+    时长: 10:21 (10m21s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【59】视频名称: Making PhB(Epin) - The Most Useful Reagent of the Year?
+    视频链接: https://www.youtube.com/watch?v=CrktwGCxRPw
+    时长: 22:44 (22m44s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【60】视频名称: Making Ethyl Pinacol - Road to Making PhB(Epin)
+    视频链接: https://www.youtube.com/watch?v=c6hZi6UonAE
+    时长: 10:45 (10m45s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【61】视频名称: Making Rose Fragrance from Lemongrass
+    视频链接: https://www.youtube.com/watch?v=i5-EXDoV1vM
+    时长: 9:38 (9m38s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【62】视频名称: Making Ethoxypillar[6]arene - The Future of Drug Delivery?
+    视频链接: https://www.youtube.com/watch?v=qhHSGibB_ak
+    时长: 8:03 (8m3s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【63】视频名称: Making Adamantane From Jet Fuel
+    视频链接: https://www.youtube.com/watch?v=1CqEpWVo8lY
+    时长: 10:23 (10m23s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【64】视频名称: Making 18-crown-6 - Crown Ethers
+    视频链接: https://www.youtube.com/watch?v=fVxA8SiE9ZU
+    时长: 11:06 (11m6s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【65】视频名称: Making Metallocenes - Organometallic Sandwiches
+    视频链接: https://www.youtube.com/watch?v=nlWyVBYkivU
+    时长: 13:59 (13m59s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【66】视频名称: Making 4,N,N-Trimethylaniline - Super Glue Activator
+    视频链接: https://www.youtube.com/watch?v=Va07TTf3qKc
+    时长: 12:45 (12m45s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【67】视频名称: Making Vanilla from Wood (Lignin)
+    视频链接: https://www.youtube.com/watch?v=QkOQWmv-7tY
+    时长: 9:50 (9m50s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【68】视频名称: Sodium Metal from Sodium Hydroxide
+    视频链接: https://www.youtube.com/watch?v=xIe6pc5TF3Y
+    时长: 6:21 (6m21s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【69】视频名称: Making 1,4-dioxane
+    视频链接: https://www.youtube.com/watch?v=v-Y-H6KcV2E
+    时长: 4:21 (4m21s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【70】视频名称: Making Diethyl Ether
+    视频链接: https://www.youtube.com/watch?v=cbCbq2OIyPA
+    时长: 6:13 (6m13s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【71】视频名称: Making Acrolein
+    视频链接: https://www.youtube.com/watch?v=6KApRHYuE6k
+    时长: 5:24 (5m24s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【72】视频名称: Making a Tear Gas
+    视频链接: https://www.youtube.com/watch?v=9cYNHOCWr0g
+    时长: 3:17 (3m17s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【73】视频名称: Alkylation of Cyclohexanone
+    视频链接: https://www.youtube.com/watch?v=W2ZACF5VPzc
+    时长: 16:00 (16m0s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【74】视频名称: Making Solvents from Gasoline
+    视频链接: https://www.youtube.com/watch?v=aIUew0qor2M
+    时长: 10:01 (10m1s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【75】视频名称: Making Benzene the Rough way
+    视频链接: https://www.youtube.com/watch?v=i3GRc2wcS1o
+    时长: 3:57 (3m57s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【76】视频名称: Making Biodiesel from Sunflower oil
+    视频链接: https://www.youtube.com/watch?v=zj5tx1IK3Go
+    时长: 11:32 (11m32s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【77】视频名称: Making Silver Metal from an Antique Chemical
+    视频链接: https://www.youtube.com/watch?v=RT8FXzrS_24
+    时长: 10:13 (10m13s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【78】视频名称: Carbon Tetrachloride from Old Fire Extinguishers
+    视频链接: https://www.youtube.com/watch?v=Jhan52QwiaI
+    时长: 6:22 (6m22s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【79】视频名称: These Two Chemicals are Special Together
+    视频链接: https://www.youtube.com/watch?v=oqgGyjKbU_s
+    时长: 未知
+    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【80】视频名称: When you make an oopsie
+    视频链接: https://www.youtube.com/watch?v=7YM-z7c8p5c
+    时长: 未知
+    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【81】视频名称: Purifying Carbon Tetrachloride
+    视频链接: https://www.youtube.com/watch?v=9EV8Rx9gwwY
+    时长: 未知
+    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【82】视频名称: Lithium aluminum hydride is very angry
+    视频链接: https://www.youtube.com/watch?v=TYXsnJUa-FE
+    时长: 未知
+    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+========================================
+统计
+========================================
+视频总数(去重后): 82
+其中精确到秒的发布时间: 7 条
+其中官方日精度日期: 0 条
+其中标题推断日期(日/月): 0 / 0 条
+其中相对文本推断(年/月/周/日): 71 条
+其中日期未知: 4 条
+其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
+抓取累计条数(去重前): 82
+本次运行耗时: 0分18秒
+实际使用中继: GitHub Actions 美国节点直连（无中继）
+数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
+分页缓存: 无（云端每次全量直取）
+========================================
