@@ -1,0 +1,273 @@
+========================================
+频道: Explosions&amp;Fire
+频道链接: https://www.youtube.com/@ExplosionsAndFire/videos
+频道 ID: UCVovvq34gd0ps5cVYNZrc7A
+频道页显示视频总数: 35（本文件抓取到 35 条，覆盖率 100%）
+抓取时间: 2026-08-20 19:36:12 (UTC+8)
+数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
+视频总数: 35
+========================================
+
+【1】视频名称: Academia is strange .
+    视频链接: https://www.youtube.com/watch?v=4CbdVkcr-Nw
+    时长: 50:11 (50m11s)
+    发布时间: 2026-04-24 22:52:20 (UTC+8)   [原始: 2026-04-24 14:52:20 UTC]
+
+--------------------------------------------------
+
+【2】视频名称: Impossible Perbromate Pyrotechnics at home
+    视频链接: https://www.youtube.com/watch?v=7ayFiLpXWTI
+    时长: 21:27 (21m27s)
+    发布时间: 2025-10（推断至月份, ±1个月, 页面相对文本）
+
+--------------------------------------------------
+
+【3】视频名称: beating Chlorine Trifluoride…
+    视频链接: https://www.youtube.com/watch?v=O-g5-LJ5KZM
+    时长: 30:04 (30m4s)
+    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【4】视频名称: dont send that Plutonium guy to jail
+    视频链接: https://www.youtube.com/watch?v=M0JGsSxBd2I
+    时长: 47:08 (47m8s)
+    发布时间: 2025-04-05 08:44:47 (UTC+8)   [原始: 2025-04-05 00:44:47 UTC]
+
+--------------------------------------------------
+
+【5】视频名称: Yellow Powder: Let’s solve unsolved alchemy
+    视频链接: https://www.youtube.com/watch?v=PDapGJ9jWZk
+    时长: 19:32 (19m32s)
+    发布时间: 2024-07-05 23:11:29 (UTC+8)   [原始: 2024-07-05 15:11:29 UTC]
+
+--------------------------------------------------
+
+【6】视频名称: Making Anti-Missile MTV Flares
+    视频链接: https://www.youtube.com/watch?v=XHDXk9THJZM
+    时长: 15:24 (15m24s)
+    发布时间: 2023-12-11 05:59:29 (UTC+8)   [原始: 2023-12-10 21:59:29 UTC]
+
+--------------------------------------------------
+
+【7】视频名称: Actually burning titanium
+    视频链接: https://www.youtube.com/watch?v=sm9BFRP93_k
+    时长: 10:40 (10m40s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【8】视频名称: Lighting metal fires (and putting them out??)
+    视频链接: https://www.youtube.com/watch?v=elR5vcAJ-PA
+    时长: 13:30 (13m30s)
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【9】视频名称: Holding Plutonium ☢️ (The real stuff!)
+    视频链接: https://www.youtube.com/watch?v=SHTreEh7ALc
+    时长: 未知
+    发布时间: 2023-07-23 21:52:05 (UTC+8)   [原始: 2023-07-23 13:52:05 UTC]
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【10】视频名称: My PhD Thesis is Due. We’re making ice cream
+    视频链接: https://www.youtube.com/watch?v=cs-ivTWpQBY
+    时长: 14:38 (14m38s)
+    发布时间: 2023-03-01 06:20:35 (UTC+8)   [原始: 2023-02-28 22:20:35 UTC]
+
+--------------------------------------------------
+
+【11】视频名称: How flammable can I make McDonalds?
+    视频链接: https://www.youtube.com/watch?v=M2YbK7FnESU
+    时长: 20:13 (20m13s)
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【12】视频名称: Hydrogen Peroxide: going all the way
+    视频链接: https://www.youtube.com/watch?v=LhEYaovWxl4
+    时长: 21:27 (21m27s)
+    发布时间: 2021-12-17 20:44:25 (UTC+8)   [原始: 2021-12-17 12:44:25 UTC]
+
+--------------------------------------------------
+
+【13】视频名称: NCl3: a terrifying yellow abomination
+    视频链接: https://www.youtube.com/watch?v=mV_daaldE_I
+    时长: 13:23 (13m23s)
+    发布时间: 2021年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【14】视频名称: Mysterious Metal Chemistry: Bismuth & Perchloric Acid
+    视频链接: https://www.youtube.com/watch?v=IIzXE99y4uQ
+    时长: 8:57 (8m57s)
+    发布时间: 2021年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【15】视频名称: Epazote: a herb with explosives?
+    视频链接: https://www.youtube.com/watch?v=JwTCG15ZB4s
+    时长: 12:44 (12m44s)
+    发布时间: 2021年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【16】视频名称: Recreating Old Alchemy Explosives
+    视频链接: https://www.youtube.com/watch?v=6ZCEBSPHUtg
+    时长: 12:40 (12m40s)
+    发布时间: 2021年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【17】视频名称: BNCP - A colourful super energetic
+    视频链接: https://www.youtube.com/watch?v=a60UewomiCg
+    时长: 12:03 (12m3s)
+    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【18】视频名称: Mixing Sodium and Chlorinated Solvents is Real Bad (Carbon Tetrachloride and Sodium)
+    视频链接: https://www.youtube.com/watch?v=psUc_oBXE6c
+    时长: 13:43 (13m43s)
+    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【19】视频名称: Pyrophoric gases (with @ChemicalForce )
+    视频链接: https://www.youtube.com/watch?v=qDxQIzOMV0w
+    时长: 9:42 (9m42s)
+    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【20】视频名称: Liquid Oxygen and Ozone - Ex&F
+    视频链接: https://www.youtube.com/watch?v=szgejoiEXP0
+    时长: 8:31 (8m31s)
+    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【21】视频名称: Sulfur Nitride, My Arch Nemesis - Ex&F
+    视频链接: https://www.youtube.com/watch?v=I-ZawsbYpmo
+    时长: 9:39 (9m39s)
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【22】视频名称: Making C2N14 from the hardware store - Azidoazide azide
+    视频链接: https://www.youtube.com/watch?v=-Sz4d7RQB6Y
+    时长: 9:23 (9m23s)
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【23】视频名称: Energetic Polymers and PVN - Explosions&Fire
+    视频链接: https://www.youtube.com/watch?v=0zcqeaJfY-8
+    时长: 10:28 (10m28s)
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【24】视频名称: Explosive Platinum from 1817
+    视频链接: https://www.youtube.com/watch?v=G_lTiQDzF9U
+    时长: 9:46 (9m46s)
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【25】视频名称: White Phosphorus - Explosions&Fire
+    视频链接: https://www.youtube.com/watch?v=ud1c5w06Y5E
+    时长: 13:21 (13m21s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【26】视频名称: Ammonium Chlorate - Explosions&Fire
+    视频链接: https://www.youtube.com/watch?v=_7YpDityLak
+    时长: 4:08 (4m8s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【27】视频名称: What salt tastes the best? Li, Na, K, Rb, Cs and more
+    视频链接: https://www.youtube.com/watch?v=RJh9yTIBY48
+    时长: 12:29 (12m29s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【28】视频名称: Nitrotetrazoles - Explosions&Fire
+    视频链接: https://www.youtube.com/watch?v=zJRxCPLPlgs
+    时长: 10:14 (10m14s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【29】视频名称: me angry.mp4
+    视频链接: https://www.youtube.com/watch?v=piQnScgCamY
+    时长: 1:41 (1m41s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【30】视频名称: Aluminium and Iodine Purple Smoke Reaction - Ex&F
+    视频链接: https://www.youtube.com/watch?v=3WVx2O2kl0A
+    时长: 1:21 (1m21s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【31】视频名称: Chloric acid - Ex&F
+    视频链接: https://www.youtube.com/watch?v=-PWCGPdT1CM
+    时长: 1:57 (1m57s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【32】视频名称: Silver Fulminate - Ex&F
+    视频链接: https://www.youtube.com/watch?v=SjoZ0MlzIfE
+    时长: 3:38 (3m38s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【33】视频名称: Explosions&Fire Trailer
+    视频链接: https://www.youtube.com/watch?v=uViSRE8nsck
+    时长: 0:49 (0m49s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【34】视频名称: Energetic Chromium (CrO3 and Peroxochromates) - Ex&F
+    视频链接: https://www.youtube.com/watch?v=9V9ekuXl6Jw
+    时长: 6:50 (6m50s)
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【35】视频名称: Turning yellow fire into electricity??
+    视频链接: https://www.youtube.com/watch?v=0W_cJ-CqaHs
+    时长: 未知
+    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+========================================
+统计
+========================================
+视频总数(去重后): 35
+其中精确到秒的发布时间: 7 条
+其中官方日精度日期: 0 条
+其中标题推断日期(日/月): 0 / 0 条
+其中相对文本推断(年/月/周/日): 27 条
+其中日期未知: 1 条
+其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
+抓取累计条数(去重前): 35
+本次运行耗时: 0分10秒
+实际使用中继: GitHub Actions 美国节点直连（无中继）
+数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
+分页缓存: 无（云端每次全量直取）
+========================================
