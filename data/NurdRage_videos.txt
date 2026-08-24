@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-08-20 18:19:45 (UTC+8)
+抓取时间: 2026-08-24 18:33:05 (UTC+8)
 数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 视频总数: 291
 ========================================
@@ -319,7 +319,7 @@
 【45】视频名称: Make p-Toluenesulfonic Acid
     视频链接: https://www.youtube.com/watch?v=1GosyO-W-1o
     时长: 13:57 (13m57s)
-    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -851,7 +851,7 @@
 【121】视频名称: Smash Glow Crystals in a Blender
     视频链接: https://www.youtube.com/watch?v=UU9CxAgSykk
     时长: 2:37 (2m37s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1593,7 +1593,7 @@
 【227】视频名称: Make "Elephant Toothpaste" - The Decomposition of Hydrogen Peroxide
     视频链接: https://www.youtube.com/watch?v=XKli-QGHb40
     时长: 2:35 (2m35s)
-    发布时间: 2011年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1831,7 +1831,7 @@
 【261】视频名称: Make a Test Tube Thunderstorm!
     视频链接: https://www.youtube.com/watch?v=Nyzlt-dVgWQ
     时长: 1:59 (1m59s)
-    发布时间: 2010年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
