@@ -3,22 +3,22 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-08-24 18:33:05 (UTC+8)
+抓取时间: 2026-09-01 01:22:17 (UTC+8)
 数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 视频总数: 291
 ========================================
 
-【1】视频名称: Dissolving $1000 of Platinum to Make $6000 of Chloroplatinic Acid for Professional Use
-    视频链接: https://www.youtube.com/watch?v=NgXSCjjtZvU
-    时长: 31:47 (31m47s)
-    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【2】视频名称: Make Glow in the Dark Powder - The Science
+【1】视频名称: Make Glow in the Dark Powder - The Science
     视频链接: https://www.youtube.com/watch?v=JNxQq3KFEM4
     时长: 38:18 (38m18s)
     发布时间: 2024-12-24 23:44:46 (UTC+8)   [原始: 2024-12-24 15:44:46 UTC]
+
+--------------------------------------------------
+
+【2】视频名称: Dissolving $1000 of Platinum to Make $6000 of Chloroplatinic Acid for Professional Use
+    视频链接: https://www.youtube.com/watch?v=NgXSCjjtZvU
+    时长: 31:47 (31m47s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -442,192 +442,192 @@
 
 --------------------------------------------------
 
-【63】视频名称: Lab Notes - Alternative glassware protection for sodium production (Successful) - August 31st 2018
-    视频链接: https://www.youtube.com/watch?v=juWlrKdsjm4
-    时长: 11:54 (11m54s)
-    发布时间: 2018-08-31（推断日期, 来自标题中的日期）
-
---------------------------------------------------
-
-【64】视频名称: Lab Notes - Successful glassware protection for sodium production - August 18th
+【63】视频名称: Lab Notes - Successful glassware protection for sodium production - August 18th
     视频链接: https://www.youtube.com/watch?v=av4zfDV5Mng
     时长: 10:02 (10m2s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【65】视频名称: Make Hydrobromic Acid Revisited 2018
+【64】视频名称: Make Hydrobromic Acid Revisited 2018
     视频链接: https://www.youtube.com/watch?v=4ei_xUIhRas
     时长: 10:08 (10m8s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【66】视频名称: Make Sodium Silicate (AKA "Water Glass") from Cat Litter and Drain Opener
+【65】视频名称: Make Sodium Silicate (AKA "Water Glass") from Cat Litter and Drain Opener
     视频链接: https://www.youtube.com/watch?v=Ip-jDuM25FE
     时长: 7:28 (7m28s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【67】视频名称: Lab Equipment: The Clevenger Apparatus
+【66】视频名称: Lab Equipment: The Clevenger Apparatus
     视频链接: https://www.youtube.com/watch?v=c1bT5pbI1L0
     时长: 6:56 (6m56s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【68】视频名称: Lab Notes July 24th - Optimizing sodium, making HBr, and The Clevenger
+【67】视频名称: Lab Notes July 24th - Optimizing sodium, making HBr, and The Clevenger
     视频链接: https://www.youtube.com/watch?v=Rra3N-kaGhg
     时长: 10:02 (10m2s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【69】视频名称: Make Dimethyl Dioxane (Mistake! Look in video description and comment)
+【68】视频名称: Make Dimethyl Dioxane (Mistake! Look in video description and comment)
     视频链接: https://www.youtube.com/watch?v=Soc4uR6Zpc4
     时长: 7:07 (7m7s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【70】视频名称: Lab Equipment: Short Path Distillation Apparatus
+【69】视频名称: Lab Equipment: Short Path Distillation Apparatus
     视频链接: https://www.youtube.com/watch?v=MaqrkRqu5k0
     时长: 7:18 (7m18s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【71】视频名称: Progress Report: Succesful Sodium Production with Inexpensive Chemicals and Continuing Optimizations
+【70】视频名称: Progress Report: Succesful Sodium Production with Inexpensive Chemicals and Continuing Optimizations
     视频链接: https://www.youtube.com/watch?v=oiZf-O6vvbE
     时长: 13:49 (13m49s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【72】视频名称: (REUPLOAD) Progress Report: Theory Test for Alcohol Catalyzed Magnesium Reduction of Sodium
+【71】视频名称: (REUPLOAD) Progress Report: Theory Test for Alcohol Catalyzed Magnesium Reduction of Sodium
     视频链接: https://www.youtube.com/watch?v=D4vDwQ4TyIc
     时长: 6:58 (6m58s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【73】视频名称: Rushed Vlog May 9th - Sodium Discovery and Youtube Strike
+【72】视频名称: Rushed Vlog May 9th - Sodium Discovery and Youtube Strike
     视频链接: https://www.youtube.com/watch?v=kJ2C2w8Ntt4
     时长: 2:58 (2m58s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【74】视频名称: Make Copper Formate (for Making Copper Conductive Ink)
+【73】视频名称: Make Copper Formate (for Making Copper Conductive Ink)
     视频链接: https://www.youtube.com/watch?v=auyCK8-DMP0
     时长: 4:19 (4m19s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【75】视频名称: Detect Hydrogen with a Carbon Monoxide Detector
+【74】视频名称: Detect Hydrogen with a Carbon Monoxide Detector
     视频链接: https://www.youtube.com/watch?v=rAZR_ExLE8U
     时长: 7:25 (7m25s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【76】视频名称: FAIL - Testing Alcohols Using Dichromate (Jones) and Komarowsky Reactions
+【75】视频名称: FAIL - Testing Alcohols Using Dichromate (Jones) and Komarowsky Reactions
     视频链接: https://www.youtube.com/watch?v=3blWSH7dcE0
     时长: 8:00 (8m0s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【77】视频名称: Using the Grignard Reaction to Make Tertiary alcohols
+【76】视频名称: Using the Grignard Reaction to Make Tertiary alcohols
     视频链接: https://www.youtube.com/watch?v=EFQWD7-DCPI
     时长: 23:41 (23m41s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【78】视频名称: Purifying and Drying Diethyl Ether For Grignard Reactions Using Potassium Hydroxide and Sodium
+【77】视频名称: Purifying and Drying Diethyl Ether For Grignard Reactions Using Potassium Hydroxide and Sodium
     视频链接: https://www.youtube.com/watch?v=EEXqjJd0Bak
     时长: 7:56 (7m56s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【79】视频名称: Vlog: Update on hotplate stirrers one year later, why no experiments this month, and patreon issues
+【78】视频名称: Vlog: Update on hotplate stirrers one year later, why no experiments this month, and patreon issues
     视频链接: https://www.youtube.com/watch?v=Nc0t7gpXbt4
     时长: 5:28 (5m28s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【80】视频名称: Make Alkyl Halides Bromoethane and Bromohexane
+【79】视频名称: Make Alkyl Halides Bromoethane and Bromohexane
     视频链接: https://www.youtube.com/watch?v=Ydn1D4FSqkc
     时长: 12:29 (12m29s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【81】视频名称: Toning Silver Coins by Anodization (fixed)
+【80】视频名称: Toning Silver Coins by Anodization (fixed)
     视频链接: https://www.youtube.com/watch?v=GajkqaSr01c
     时长: 6:43 (6m43s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【82】视频名称: Make PCB Tinning Solution ("Liquid Tin") by Redox Flipping
+【81】视频名称: Make PCB Tinning Solution ("Liquid Tin") by Redox Flipping
     视频链接: https://www.youtube.com/watch?v=Hsw3lOnHaas
     时长: 5:28 (5m28s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【83】视频名称: Restore Silver with Electrochemistry 2017
+【82】视频名称: Restore Silver with Electrochemistry 2017
     视频链接: https://www.youtube.com/watch?v=57iwtmT4LNQ
     时长: 5:45 (5m45s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【84】视频名称: Make Sulfuric Acid by the Copper Chloride Process
+【83】视频名称: Make Sulfuric Acid by the Copper Chloride Process
     视频链接: https://www.youtube.com/watch?v=l2AkVYxDSKc
     时长: 8:28 (8m28s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【85】视频名称: The Final Steps of Making Pyrimethamine ("Daraprim")
+【84】视频名称: The Final Steps of Making Pyrimethamine ("Daraprim")
     视频链接: https://www.youtube.com/watch?v=5kZi3J2S52E
     时长: 14:54 (14m54s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【86】视频名称: Getting Guanidine Carbonate and Hydrochloride from No-Lye Hair Relaxants
-    视频链接: https://www.youtube.com/watch?v=wmWTF3lBDEI
-    时长: 5:18 (5m18s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+【85】视频名称: Lab Notes - Alternative glassware protection for sodium production (Successful) - August 31st 2018
+    视频链接: https://www.youtube.com/watch?v=juWlrKdsjm4
+    时长: 11:54 (11m54s)
+    发布时间: 2018-08-31（推断日期, 来自标题中的日期）
 
 --------------------------------------------------
 
-【87】视频名称: REUPLOAD - Make 2-(p-chlorophenyl)-3-oxopentanenitrile - Step 5 in Pyrimethamine Synthesis
-    视频链接: https://www.youtube.com/watch?v=5oAZyhPx_ws
-    时长: 9:58 (9m58s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【88】视频名称: Lab Notes: Sodium progress report and dimethyl dioxane troubles - June 2018
+【86】视频名称: Lab Notes: Sodium progress report and dimethyl dioxane troubles - June 2018
     视频链接: https://www.youtube.com/watch?v=w4JmSaRrOeg
     时长: 9:39 (9m39s)
     发布时间: 2018-06（推断至月份, 来自标题）
 
 --------------------------------------------------
 
-【89】视频名称: Vlog April 2018 - Failed experiments and work in progress on making alkali metals
+【87】视频名称: Vlog April 2018 - Failed experiments and work in progress on making alkali metals
     视频链接: https://www.youtube.com/watch?v=si3T8kZxO0s
     时长: 5:15 (5m15s)
     发布时间: 2018-04（推断至月份, 来自标题）
+
+--------------------------------------------------
+
+【88】视频名称: Getting Guanidine Carbonate and Hydrochloride from No-Lye Hair Relaxants
+    视频链接: https://www.youtube.com/watch?v=wmWTF3lBDEI
+    时长: 5:18 (5m18s)
+    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【89】视频名称: REUPLOAD - Make 2-(p-chlorophenyl)-3-oxopentanenitrile - Step 5 in Pyrimethamine Synthesis
+    视频链接: https://www.youtube.com/watch?v=5oAZyhPx_ws
+    时长: 9:58 (9m58s)
+    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -837,14 +837,14 @@
 【119】视频名称: Lab Equipment: Soxhlet Extractor (Fixed)
     视频链接: https://www.youtube.com/watch?v=qiRBLfezuxs
     时长: 13:46 (13m46s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【120】视频名称: Lab Equipment: Aspirator Vacuum Pump
     视频链接: https://www.youtube.com/watch?v=tYLlkTDstmo
     时长: 8:44 (8m44s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1079,17 +1079,17 @@
 
 --------------------------------------------------
 
-【154】视频名称: Make Thermite (and testing various iron oxide sources)
-    视频链接: https://www.youtube.com/watch?v=RiF73l4PjyY
-    时长: 9:31 (9m31s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【155】视频名称: Q&A with NurdRage January 2016 edition - Thiols, mercury, and how to make sodium
+【154】视频名称: Q&A with NurdRage January 2016 edition - Thiols, mercury, and how to make sodium
     视频链接: https://www.youtube.com/watch?v=t_v_7A365PE
     时长: 10:33 (10m33s)
     发布时间: 2016-01（推断至月份, 来自标题）
+
+--------------------------------------------------
+
+【155】视频名称: Make Thermite (and testing various iron oxide sources)
+    视频链接: https://www.youtube.com/watch?v=RiF73l4PjyY
+    时长: 9:31 (9m31s)
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1222,14 +1222,14 @@
 【174】视频名称: ALS Liquid Nitrogen "Ice Bucket Challenge" (Ft. Muhammad Qureshi)
     视频链接: https://www.youtube.com/watch?v=Xj-prpHfyEY
     时长: 2:45 (2m45s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2014年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【175】视频名称: Lab Update 8-26-2014
     视频链接: https://www.youtube.com/watch?v=-4gwhNryki0
     时长: 0:50 (0m50s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2014年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1362,7 +1362,7 @@
 【194】视频名称: Make Blue Smash-Glow Crystals (Triboluminescence Demonstration)
     视频链接: https://www.youtube.com/watch?v=hPtCvReouCM
     时长: 2:44 (2m44s)
-    发布时间: 2013年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1817,14 +1817,14 @@
 【259】视频名称: HP YouOnYou: The Scientist
     视频链接: https://www.youtube.com/watch?v=9ohUP6v1m90
     时长: 1:07 (1m7s)
-    发布时间: 2010年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【260】视频名称: Dissolve Glass with Drain Cleaner
     视频链接: https://www.youtube.com/watch?v=nmktRTHL1NA
     时长: 2:17 (2m17s)
-    发布时间: 2010年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -2060,7 +2060,7 @@
 其中日期未知: 4 条
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 291
-本次运行耗时: 0分30秒
+本次运行耗时: 0分34秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 分页缓存: 无（云端每次全量直取）
