@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-09-01 01:22:17 (UTC+8)
+抓取时间: 2026-09-07 23:28:04 (UTC+8)
 数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 视频总数: 291
 ========================================
@@ -249,7 +249,7 @@
 【35】视频名称: Lab Notes - August 31st - Nitric Acid from Calcium Nitrate and My Hotplate Failed, Again.
     视频链接: https://www.youtube.com/watch?v=Xa2OMNaHn_Y
     时长: 8:07 (8m7s)
-    发布时间: 2021年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -823,14 +823,14 @@
 【117】视频名称: Vlog: NurdRage tries to Internet. How much NurdRage videos cost and why NurdRage Is a Failure
     视频链接: https://www.youtube.com/watch?v=rRP735DPdJw
     时长: 7:17 (7m17s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【118】视频名称: Light Matches with Acid
     视频链接: https://www.youtube.com/watch?v=oc3U2P9PlXY
     时长: 6:03 (6m3s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1586,7 +1586,7 @@
 【226】视频名称: Levitation with the Levitron
     视频链接: https://www.youtube.com/watch?v=GMVtlNbMwHw
     时长: 2:27 (2m27s)
-    发布时间: 2011年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1810,7 +1810,7 @@
 【258】视频名称: Make Sodium Silicate
     视频链接: https://www.youtube.com/watch?v=xltvwhogklI
     时长: 1:50 (1m50s)
-    发布时间: 2010年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -2060,7 +2060,7 @@
 其中日期未知: 4 条
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 291
-本次运行耗时: 0分34秒
+本次运行耗时: 0分30秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 分页缓存: 无（云端每次全量直取）
