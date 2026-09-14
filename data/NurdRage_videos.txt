@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-09-07 23:28:04 (UTC+8)
+抓取时间: 2026-09-15 00:07:26 (UTC+8)
 数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 视频总数: 291
 ========================================
@@ -589,31 +589,31 @@
 
 --------------------------------------------------
 
-【84】视频名称: The Final Steps of Making Pyrimethamine ("Daraprim")
-    视频链接: https://www.youtube.com/watch?v=5kZi3J2S52E
-    时长: 14:54 (14m54s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【85】视频名称: Lab Notes - Alternative glassware protection for sodium production (Successful) - August 31st 2018
+【84】视频名称: Lab Notes - Alternative glassware protection for sodium production (Successful) - August 31st 2018
     视频链接: https://www.youtube.com/watch?v=juWlrKdsjm4
     时长: 11:54 (11m54s)
     发布时间: 2018-08-31（推断日期, 来自标题中的日期）
 
 --------------------------------------------------
 
-【86】视频名称: Lab Notes: Sodium progress report and dimethyl dioxane troubles - June 2018
+【85】视频名称: Lab Notes: Sodium progress report and dimethyl dioxane troubles - June 2018
     视频链接: https://www.youtube.com/watch?v=w4JmSaRrOeg
     时长: 9:39 (9m39s)
     发布时间: 2018-06（推断至月份, 来自标题）
 
 --------------------------------------------------
 
-【87】视频名称: Vlog April 2018 - Failed experiments and work in progress on making alkali metals
+【86】视频名称: Vlog April 2018 - Failed experiments and work in progress on making alkali metals
     视频链接: https://www.youtube.com/watch?v=si3T8kZxO0s
     时长: 5:15 (5m15s)
     发布时间: 2018-04（推断至月份, 来自标题）
+
+--------------------------------------------------
+
+【87】视频名称: The Final Steps of Making Pyrimethamine ("Daraprim")
+    视频链接: https://www.youtube.com/watch?v=5kZi3J2S52E
+    时长: 14:54 (14m54s)
+    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -816,7 +816,7 @@
 【116】视频名称: Platinum Recovery from Laboratory Chemical Waste (pt 1)
     视频链接: https://www.youtube.com/watch?v=xeKZdJ1As7I
     时长: 9:52 (9m52s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1072,17 +1072,17 @@
 
 --------------------------------------------------
 
-【153】视频名称: Q&A with NurdRage September Edition
-    视频链接: https://www.youtube.com/watch?v=Bxac2OWTTHo
-    时长: 19:41 (19m41s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【154】视频名称: Q&A with NurdRage January 2016 edition - Thiols, mercury, and how to make sodium
+【153】视频名称: Q&A with NurdRage January 2016 edition - Thiols, mercury, and how to make sodium
     视频链接: https://www.youtube.com/watch?v=t_v_7A365PE
     时长: 10:33 (10m33s)
     发布时间: 2016-01（推断至月份, 来自标题）
+
+--------------------------------------------------
+
+【154】视频名称: Q&A with NurdRage September Edition
+    视频链接: https://www.youtube.com/watch?v=Bxac2OWTTHo
+    时长: 19:41 (19m41s)
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1355,7 +1355,7 @@
 【193】视频名称: Clean pennies with Vinegar and Salt
     视频链接: https://www.youtube.com/watch?v=H4N-iGvYrbM
     时长: 1:19 (1m19s)
-    发布时间: 2013年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2012年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1502,7 +1502,7 @@
 【214】视频名称: Make a Gallium Beating Heart
     视频链接: https://www.youtube.com/watch?v=g8Tc-5pUbH8
     时长: 2:25 (2m25s)
-    发布时间: 2012年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2011年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1579,7 +1579,7 @@
 【225】视频名称: Make a Solar Cell - TiO2/Raspberry based
     视频链接: https://www.youtube.com/watch?v=WHTbw5jy6qU
     时长: 7:58 (7m58s)
-    发布时间: 2011年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2010年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1803,7 +1803,7 @@
 【257】视频名称: Make Strontium Nitrate
     视频链接: https://www.youtube.com/watch?v=_rd8b6wNnKA
     时长: 1:37 (1m37s)
-    发布时间: 2010年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2009年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -2060,7 +2060,7 @@
 其中日期未知: 4 条
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 291
-本次运行耗时: 0分30秒
+本次运行耗时: 0分35秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
 分页缓存: 无（云端每次全量直取）
