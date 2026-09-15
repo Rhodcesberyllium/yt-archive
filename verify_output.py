@@ -1,25 +1,31 @@
 # -*- coding: utf-8 -*-
 """
-verify_output.py — 对 youtube_fetcher.py 的输出 txt 做验收自检（增强版）。
+verify_output.py — 对抓取产物做验收自检（增强版：默认连带校验同目录所有频道清单）。
 
 检查项:
   0. 文件编码为 UTF-8
   1. 每条视频链接格式: https://www.youtube.com/watch?v=<11位ID>
   2. 视频ID无重复；条数与头部"视频总数(去重后)"一致
-  3. 头部覆盖率信息（频道页计数 vs 抓取条数）解析并打印
+  3. 头部覆盖率信息（频道计数 vs 抓取条数）解析并打印
   4. 无"伪精确"占位日期：老版 `YYYY-MM-DD (UTC+8, 近似值)` 格式出现即失败
   5. 日期按真实精度分类统计（精确秒 / 日 / 月 / 年 / 未知）
   6. 排序断言：精确与日精度条目之间必须严格从新到旧（硬失败）；
      涉及月/年推断条目的顺序异常仅软警告（推断锚点可能跨真实边界）
   7. 标题"待补"数量与日期"未知"数量报告（--strict 时作为失败条件）
   8. 最新一条与频道 RSS 缓存对照（标题+日期）
+  9. 可靠日期占比（精确到秒或日）报告
 
 用法:
-    python verify_output.py NurdRage_videos.txt [--rss <rss.xml>] [--strict]
+    python verify_output.py data/NurdRage_videos.txt [--rss <rss.xml>] [--strict]
+    python verify_output.py --all                 # 校验 data/ 下所有频道清单
+
+说明：不给 --all 时，除了指定的那份，还会**连带校验同目录下其它 *_videos.txt**，
+任一失败即整体失败——这样工作流里只传一个文件也能覆盖全部频道。
 """
+import glob
+import os
 import re
 import sys
-import os
 from datetime import datetime, timezone, timedelta
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -34,46 +40,49 @@ YEAR_RE = re.compile(r"^发布时间: (\d{4})年（")
 UNKNOWN_RE = re.compile(r"^发布时间: 未知")
 COVER_RE = re.compile(r"频道页显示视频总数: ([\d,]+)（本文件抓取到 (\d+) 条，覆盖率 (\d+)%")
 TOTAL_RE = re.compile(r"视频总数\(去重后\): (\d+)")
+SOLID_RE = re.compile(r"可靠日期\(精确到秒或日\)合计: (\d+) / (\d+) 条 = (\d+)%")
 
 
 def parse_dt(s, fmt):
     return datetime.strptime(s, fmt).replace(tzinfo=CN_TZ)
 
 
-def main():
-    args = sys.argv[1:]
-    path = args[0] if args else "NurdRage_videos.txt"
-    rss_path, strict = None, False
-    for i, a in enumerate(args):
-        if a == "--rss" and i + 1 < len(args):
-            rss_path = args[i + 1]
-        elif a == "--strict":
-            strict = True
+def month_anchor(y, m):
+    return datetime(y, m, 15, tzinfo=CN_TZ)
 
+
+def year_anchor(y):
+    return datetime(y, 7, 1, tzinfo=CN_TZ)
+
+
+def verify_one(path, rss_path=None, strict=False):
+    """校验单个文件。全部检查项通过返回 True，否则 False（不再直接退出进程）。"""
+    if not os.path.isfile(path):
+        print("[X] 文件不存在: %s" % path)
+        return False
     raw = open(path, "rb").read()
-    text = raw.decode("utf-8")  # 非 UTF-8 会抛异常 -> 检查项0
+    try:
+        text = raw.decode("utf-8")          # 检查项 0
+    except UnicodeDecodeError as ex:
+        print("[X] 非 UTF-8 编码: %s" % ex)
+        return False
     print("[0] UTF-8 解码: 通过（%d 字节）" % len(raw))
 
-    # 头部覆盖率
     cm = COVER_RE.search(text)
-    tm = TOTAL_RE.search(text)
     coverage = None
     if cm:
         coverage = int(cm.group(3))
-        print("[3] 覆盖率: 频道页计数 %s，抓取 %s 条，覆盖率 %d%%"
+        print("[3] 覆盖率: 频道计数 %s，抓取 %s 条，覆盖率 %d%%"
               % (cm.group(1), cm.group(2), coverage))
     else:
         print("[3] 覆盖率: 输出头部未含频道计数行（旧版输出？）")
 
-    # 逐条目解析
-    entries = []
-    cur = None
-    bad_approx = 0
+    entries, cur, bad_approx = [], None, 0
     for line in text.splitlines():
         m = re.match(r"【(\d+)】视频名称: (.*)", line)
         if m:
-            cur = {"idx": int(m.group(1)), "title": m.group(2),
-                   "link": None, "dt": None, "level": None}
+            cur = {"idx": int(m.group(1)), "title": m.group(2), "link": None,
+                   "dt": None, "level": None}
             entries.append(cur)
             continue
         if cur is None:
@@ -81,61 +90,66 @@ def main():
         s = line.strip()
         if s.startswith("视频链接: "):
             url = s[len("视频链接: "):]
-            if not LINK_RE.match(url):
+            mm = LINK_RE.match(url)
+            if not mm:
                 print("[X] 链接格式错误: %s" % url)
-                sys.exit(1)
-            cur["link"] = LINK_RE.match(url).group(1)
+                return False
+            cur["link"] = mm.group(1)
         elif s.startswith("发布时间: "):
             mm = EXACT_RE.match(s)
             if mm:
                 cur["dt"] = parse_dt(mm.group(1), "%Y-%m-%d %H:%M:%S")
-                cur["level"] = 0          # 精确到秒
+                cur["level"] = 0            # 精确到秒（含"来自镜像/接口"的写法）
             elif BAD_APPROX_RE.match(s):
-                bad_approx += 1           # 伪精确占位，见检查项4
+                bad_approx += 1             # 伪精确占位，见检查项 4
             else:
                 md = DAY_RE.match(s)
                 if md:
                     cur["dt"] = parse_dt(md.group(1), "%Y-%m-%d")
-                    cur["level"] = 1      # 日精度（标题推断或实例原文）
+                    cur["level"] = 1        # 日精度
                 else:
                     mm2 = MONTH_RE.match(s)
                     if mm2:
                         cur["dt"] = month_anchor(int(mm2.group(1)), int(mm2.group(2)))
-                        cur["level"] = 2  # 月精度
+                        cur["level"] = 2    # 月精度
                     else:
                         my = YEAR_RE.match(s)
                         if my:
                             cur["dt"] = year_anchor(int(my.group(1)))
                             cur["level"] = 3  # 年精度
                         elif UNKNOWN_RE.match(s):
-                            cur["level"] = 4  # 未知
+                            cur["level"] = 4  # 未知（可带 ID 时序区间提示）
                         else:
                             print("[?] 未识别的发布时间行: %s" % line)
-                            sys.exit(1)
+                            return False
+
+    if not entries:
+        print("[X] 未解析到任何条目，疑似文件被截断或格式错误")
+        return False
 
     if bad_approx:
         print("[X] 发现 %d 条伪精确占位日期（格式: YYYY-MM-DD (UTC+8, 近似值)），禁止出现！"
               % bad_approx)
-        sys.exit(1)
+        return False
     print("[4] 伪精确占位日期: 0 条 ✓")
 
     links = [e["link"] for e in entries if e["link"]]
     if len(links) != len(entries):
         print("[X] 链接缺失: %d/%d 条" % (len(entries) - len(links), len(entries)))
-        sys.exit(1)
+        return False
     dup = len(links) - len(set(links))
     print("[1] 链接格式: 全部通过（%d 条）" % len(links))
     print("[2] 视频ID去重: %s（重复 %d 条）" % ("通过" if dup == 0 else "失败", dup))
     if dup:
-        sys.exit(1)
+        return False
 
+    tm = TOTAL_RE.search(text)
     total_hdr = int(tm.group(1)) if tm else None
     if total_hdr is not None and total_hdr != len(entries):
         print("[X] 条数不一致: 头部声明 %s，实际条目 %d" % (total_hdr, len(entries)))
-        sys.exit(1)
-    print("[2] 条数一致: 头部 %d = 实际 %d ✓" % (total_hdr or len(entries), len(entries)))
+        return False
+    print("[2] 条数一致: 头部 %s = 实际 %d ✓" % (total_hdr or len(entries), len(entries)))
 
-    # 日期分类统计
     cnt = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0}
     for e in entries:
         if e["level"] is not None:
@@ -143,9 +157,12 @@ def main():
     print("[5] 日期分布: 精确秒 %d | 日精度 %d | 月精度 %d | 年精度 %d | 未知 %d"
           % (cnt[0], cnt[1], cnt[2], cnt[3], cnt[4]))
 
-    # 排序断言：带时间且已知级别的相邻条目
-    known = [(i, e["dt"], e["level"]) for i, e in enumerate(entries)
-             if e["dt"] is not None]
+    sm = SOLID_RE.search(text)
+    if sm:
+        print("[9] 可靠日期(精确秒或日): %s / %s 条 = %s%%"
+              % (sm.group(1), sm.group(2), sm.group(3)))
+
+    known = [(i, e["dt"], e["level"]) for i, e in enumerate(entries) if e["dt"] is not None]
     hard_bad, soft_bad = [], []
     for a, b in zip(known, known[1:]):
         if a[1] < b[1]:
@@ -155,21 +172,19 @@ def main():
                 soft_bad.append((a[0] + 1, b[0] + 1, a[2], b[2]))
     if hard_bad:
         print("[6] 排序失败(精确/日精度区间乱序): %s（前3处）" % hard_bad[:3])
-        sys.exit(1)
+        return False
     print("[6] 排序断言: 精确/日精度区间从新到旧 ✓（涉及月/年推断锚点的软警告 %d 处%s）"
           % (len(soft_bad), ("，如 %s" % soft_bad[:2]) if soft_bad else ""))
 
-    # 标题待补 / 日期未知
     pend = sum(1 for e in entries if "(标题待补)" in e["title"])
     print("[7] 标题待补: %d 条%s" % (pend, "（建议继续重跑补全）" if pend else " ✓"))
-    print("[7] 日期未知: %d 条%s" % (cnt[4], "（建议继续重跑补全）" if cnt[4] else " ✓"))
+    print("[7] 日期未知: %d 条%s" % (cnt[4], "（会由后续运行逐周补全）" if cnt[4] else " ✓"))
     if strict and (pend or cnt[4]):
         print("[X] --strict: 存在标题待补或日期未知，判定失败。")
-        sys.exit(1)
+        return False
     if coverage is not None and coverage < 100:
-        print("[3] 覆盖率未达 100%%（%d%%），存在缺口，可通过 Wayback 补全循环缩小。" % coverage)
+        print("[3] 覆盖率未达 100%%（%d%%），存在缺口，可继续重跑补全。" % coverage)
 
-    # 与 RSS 缓存对照最新一条
     rss_candidates = [rss_path] if rss_path else []
     if os.path.isdir("cache"):
         rss_candidates += [os.path.join("cache", d, "pages", "rss.xml")
@@ -178,13 +193,14 @@ def main():
     for rp in rss_candidates:
         if os.path.isfile(rp):
             body = open(rp, "rb").read()
-            mm = re.search(rb"<entry>.*?<yt:videoId>([^<]+)</yt:videoId>.*?<published>([^<]+)</published>.*?<title>([^<]+)</title>",
-                           body, re.S)
+            mm = re.search(rb"<entry>.*?<yt:videoId>([^<]+)</yt:videoId>.*?<published>([^<]+)"
+                           rb"</published>.*?<title>([^<]+)</title>", body, re.S)
             if mm:
                 vid, pub, title = mm.groups()
-                pub_dt = datetime.fromisoformat(pub.decode().replace("Z", "+00:00")).astimezone(CN_TZ)
-                print("[8] RSS 对照: 最新视频 %s | %s" % (title.decode()[:60],
-                                                       pub_dt.strftime("%Y-%m-%d %H:%M:%S")))
+                pub_dt = datetime.fromisoformat(pub.decode().replace("Z", "+00:00")) \
+                    .astimezone(CN_TZ)
+                print("[8] RSS 对照: 最新视频 %s | %s"
+                      % (title.decode()[:60], pub_dt.strftime("%Y-%m-%d %H:%M:%S")))
                 if vid.decode() in links:
                     e = next(e for e in entries if e["link"] == vid.decode())
                     if e["dt"] is not None and e["level"] <= 1:
@@ -199,19 +215,61 @@ def main():
             break
     else:
         print("[8] RSS 对照: 未找到 RSS 缓存，跳过")
+    return True
 
-    print("\n== 总结: %s（%d 条视频；覆盖率 %s，精确/日精度 %d 条）=="
-          % ("全部通过 ✓" if not strict else "strict 通过 ✓", len(entries),
-             ("%d%%" % coverage) if coverage is not None else "?" , cnt[0] + cnt[1]))
+
+def main():
+    args = sys.argv[1:]
+    path, rss_path, strict, all_files = None, None, False, False
+    for i, a in enumerate(args):
+        if a == "--rss" and i + 1 < len(args):
+            rss_path = args[i + 1]
+        elif a == "--strict":
+            strict = True
+        elif a == "--all":
+            all_files = True
+        elif not a.startswith("--") and path is None:
+            path = a
+
+    if all_files or (path and os.path.isdir(path)):
+        base = path or "data"
+        targets = sorted(p for p in glob.glob(os.path.join(base, "*_videos.txt"))
+                         if not os.path.basename(p).startswith("_"))
+    else:
+        if not path:
+            path = "NurdRage_videos.txt"
+        targets = [path]
+        # 连带校验同目录下其它频道清单：工作流只传一个文件，也能覆盖全部频道
+        d = os.path.dirname(path) or "."
+        seen = {os.path.abspath(path)}
+        for p in sorted(glob.glob(os.path.join(d, "*_videos.txt"))):
+            if (os.path.abspath(p) in seen or os.path.basename(p).startswith("_")
+                    or not os.path.isfile(p)):
+                continue
+            seen.add(os.path.abspath(p))
+            targets.append(p)
+
+    if not targets:
+        print("[X] 没有找到任何待校验的清单文件")
+        sys.exit(1)
+
+    results = []
+    for i, p in enumerate(targets, 1):
+        print("\n" + "=" * 60)
+        print("== 校验 %d/%d: %s ==" % (i, len(targets), p))
+        print("=" * 60)
+        ok = verify_one(p, rss_path=rss_path, strict=strict)
+        results.append((p, ok))
+
+    bad = [p for p, ok in results if not ok]
+    print("\n" + "=" * 60)
+    if bad:
+        print("== 总结: 失败 ✗（%d/%d 个文件未通过）==" % (len(bad), len(results)))
+        for p in bad:
+            print("   - %s" % p)
+        sys.exit(1)
+    print("== 总结: 全部通过 ✓（%d 个文件）==" % len(results))
     sys.exit(0)
-
-
-def month_anchor(y, m):
-    return datetime(y, m, 15, tzinfo=CN_TZ)
-
-
-def year_anchor(y):
-    return datetime(y, 7, 1, tzinfo=CN_TZ)
 
 
 if __name__ == "__main__":
