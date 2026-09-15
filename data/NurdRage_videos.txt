@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-09-16 03:46:50 (UTC+8)
+抓取时间: 2026-09-16 04:28:51 (UTC+8)
 数据来源: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 视频总数: 291
 本次变化: 新增 0 条 / 从频道消失 0 条（相比上次抓取）
@@ -562,255 +562,255 @@
 
 --------------------------------------------------
 
-【80】视频名称: Toning Silver Coins by Anodization (fixed)
-    视频链接: https://www.youtube.com/watch?v=GajkqaSr01c
-    时长: 6:43 (6m43s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【81】视频名称: Make PCB Tinning Solution ("Liquid Tin") by Redox Flipping
-    视频链接: https://www.youtube.com/watch?v=Hsw3lOnHaas
-    时长: 5:28 (5m28s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【82】视频名称: Restore Silver with Electrochemistry 2017
-    视频链接: https://www.youtube.com/watch?v=57iwtmT4LNQ
-    时长: 5:45 (5m45s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【83】视频名称: Make Sulfuric Acid by the Copper Chloride Process
-    视频链接: https://www.youtube.com/watch?v=l2AkVYxDSKc
-    时长: 8:28 (8m28s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【84】视频名称: Lab Notes - Alternative glassware protection for sodium production (Successful) - August 31st 2018
+【80】视频名称: Lab Notes - Alternative glassware protection for sodium production (Successful) - August 31st 2018
     视频链接: https://www.youtube.com/watch?v=juWlrKdsjm4
     时长: 11:54 (11m54s)
     发布时间: 2018-08-31（推断日期, 来自标题中的日期）
 
 --------------------------------------------------
 
-【85】视频名称: Lab Notes: Sodium progress report and dimethyl dioxane troubles - June 2018
+【81】视频名称: Lab Notes: Sodium progress report and dimethyl dioxane troubles - June 2018
     视频链接: https://www.youtube.com/watch?v=w4JmSaRrOeg
     时长: 9:39 (9m39s)
     发布时间: 2018-06（推断至月份, 来自标题）
 
 --------------------------------------------------
 
-【86】视频名称: Vlog April 2018 - Failed experiments and work in progress on making alkali metals
+【82】视频名称: Vlog April 2018 - Failed experiments and work in progress on making alkali metals
     视频链接: https://www.youtube.com/watch?v=si3T8kZxO0s
     时长: 5:15 (5m15s)
     发布时间: 2018-04（推断至月份, 来自标题）
 
 --------------------------------------------------
 
-【87】视频名称: The Final Steps of Making Pyrimethamine ("Daraprim")
-    视频链接: https://www.youtube.com/watch?v=5kZi3J2S52E
-    时长: 14:54 (14m54s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+【83】视频名称: Toning Silver Coins by Anodization (fixed)
+    视频链接: https://www.youtube.com/watch?v=GajkqaSr01c
+    时长: 6:43 (6m43s)
+    发布时间: 2017-10-28（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
-【88】视频名称: Getting Guanidine Carbonate and Hydrochloride from No-Lye Hair Relaxants
-    视频链接: https://www.youtube.com/watch?v=wmWTF3lBDEI
-    时长: 5:18 (5m18s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+【84】视频名称: Make PCB Tinning Solution ("Liquid Tin") by Redox Flipping
+    视频链接: https://www.youtube.com/watch?v=Hsw3lOnHaas
+    时长: 5:28 (5m28s)
+    发布时间: 2017-10-21（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
-【89】视频名称: REUPLOAD - Make 2-(p-chlorophenyl)-3-oxopentanenitrile - Step 5 in Pyrimethamine Synthesis
-    视频链接: https://www.youtube.com/watch?v=5oAZyhPx_ws
-    时长: 9:58 (9m58s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+【85】视频名称: Restore Silver with Electrochemistry 2017
+    视频链接: https://www.youtube.com/watch?v=57iwtmT4LNQ
+    时长: 5:45 (5m45s)
+    发布时间: 2017-10-07（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
-【90】视频名称: How to LEVITATE Pencil Lead
-    视频链接: https://www.youtube.com/watch?v=yeIizmhzPQc
-    时长: 2:50 (2m50s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+【86】视频名称: Make Sulfuric Acid by the Copper Chloride Process
+    视频链接: https://www.youtube.com/watch?v=l2AkVYxDSKc
+    时长: 8:28 (8m28s)
+    发布时间: 2017-09-30（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
-【91】视频名称: Vapor Activated Glow Stick
-    视频链接: https://www.youtube.com/watch?v=im_2OIs_mns
-    时长: 4:13 (4m13s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【92】视频名称: Make Dragons Breath (firework)
-    视频链接: https://www.youtube.com/watch?v=fgq-GKJMR4M
-    时长: 2:16 (2m16s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【93】视频名称: Recover Used Gallium From Aluminum Using Solvent Extraction
-    视频链接: https://www.youtube.com/watch?v=NwLgL1dGuSM
-    时长: 9:51 (9m51s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【94】视频名称: Make Sodium Metal Without Electrolysis Using Domestic Chemicals
-    视频链接: https://www.youtube.com/watch?v=jCrFFVVcPUI
-    时长: 14:04 (14m4s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【95】视频名称: Extract Diethyl Ether and Heptane from Starter Fluid
+【87】视频名称: Extract Diethyl Ether and Heptane from Starter Fluid
     视频链接: https://www.youtube.com/watch?v=r8MwwpSWeq4
     时长: 5:57 (5m57s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【96】视频名称: Make Sodium Magnesium Oxide Aggregate - A Substitute for Sodium Metal
+【88】视频名称: Make Sodium Magnesium Oxide Aggregate - A Substitute for Sodium Metal
     视频链接: https://www.youtube.com/watch?v=ZXCSL0r4aqg
     时长: 5:20 (5m20s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【97】视频名称: Make Dioxane from Antifreeze
+【89】视频名称: Make Dioxane from Antifreeze
     视频链接: https://www.youtube.com/watch?v=9Zzrn-61XAY
     时长: 9:49 (9m49s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【98】视频名称: Make a Platinum Electrode
-    视频链接: https://www.youtube.com/watch?v=Ex0VU9kMsgU
-    时长: 3:11 (3m11s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【99】视频名称: Make Formic Acid
-    视频链接: https://www.youtube.com/watch?v=ceL-I0azPH8
-    时长: 6:09 (6m9s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【100】视频名称: Use Sodium to Purify Triethylamine
-    视频链接: https://www.youtube.com/watch?v=nQnUeHOa6ow
-    时长: 4:50 (4m50s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【101】视频名称: Recover Used Gallium From Aluminum
-    视频链接: https://www.youtube.com/watch?v=sUSjWfBBu2Y
-    时长: 5:20 (5m20s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【102】视频名称: The Pulsing Glow Stick - Oscillating Luminol Clock Reaction
-    视频链接: https://www.youtube.com/watch?v=Jo-7mhKXfoA
-    时长: 2:51 (2m51s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【103】视频名称: Make Ethyl Propionate by Fischer Esterfication and Molecular Sieves with a Soxhlet extractor
+【90】视频名称: Make Ethyl Propionate by Fischer Esterfication and Molecular Sieves with a Soxhlet extractor
     视频链接: https://www.youtube.com/watch?v=Ah5ds_3s5BI
     时长: 9:18 (9m18s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【104】视频名称: Make p-Chlorophenyl Acetonitrile - Step 4 in Pyrimethamine Synthesis
+【91】视频名称: Make p-Chlorophenyl Acetonitrile - Step 4 in Pyrimethamine Synthesis
     视频链接: https://www.youtube.com/watch?v=15ZkhhJcXXk
     时长: 11:52 (11m52s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【105】视频名称: FAIL: Gallium and Aluminum Thermite
+【92】视频名称: FAIL: Gallium and Aluminum Thermite
     视频链接: https://www.youtube.com/watch?v=51pAZxuqpUY
     时长: 6:30 (6m30s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【106】视频名称: Gallium Induced Structural Failure of an Aluminum Baseball Bat
+【93】视频名称: Gallium Induced Structural Failure of an Aluminum Baseball Bat
     视频链接: https://www.youtube.com/watch?v=XXs_pbZyaFg
     时长: 3:47 (3m47s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【107】视频名称: Vlog: High School Students Beat Ph.D. Chemist to Making Pyrimethamine or "Daraprim"
+【94】视频名称: Vlog: High School Students Beat Ph.D. Chemist to Making Pyrimethamine or "Daraprim"
     视频链接: https://www.youtube.com/watch?v=Rd7hXFnSHZc
     时长: 2:31 (2m31s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【108】视频名称: Make a Tritium Nuclear Battery or Radioisotope Photovoltaic Generator
+【95】视频名称: Make a Tritium Nuclear Battery or Radioisotope Photovoltaic Generator
     视频链接: https://www.youtube.com/watch?v=KKdzhPiOqqg
     时长: 26:00 (26m0s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【109】视频名称: Testing Alternative Peroxide Sources for Glow Sticks
+【96】视频名称: Testing Alternative Peroxide Sources for Glow Sticks
     视频链接: https://www.youtube.com/watch?v=8EpsLIC0Mzo
     时长: 6:36 (6m36s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【110】视频名称: Thanks for helping me fix my hotplate stirrers
-    视频链接: https://www.youtube.com/watch?v=UqzjHgY2Zpk
-    时长: 5:51 (5m51s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【111】视频名称: Testing eBay Molecular Sieves
+【97】视频名称: Testing eBay Molecular Sieves
     视频链接: https://www.youtube.com/watch?v=MduzjhRHBFY
     时长: 5:24 (5m24s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【112】视频名称: FAIL - Badly Stored Chemicals
-    视频链接: https://www.youtube.com/watch?v=tVWTbYz4Z-o
-    时长: 5:29 (5m29s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【113】视频名称: Dissolve Platinum with Chlorine Gas
+【98】视频名称: Dissolve Platinum with Chlorine Gas
     视频链接: https://www.youtube.com/watch?v=JFNtP2N2Eho
     时长: 5:37 (5m37s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【114】视频名称: Make Potassium Nitrate (Reuploaded/Remastered)
+【99】视频名称: Make Potassium Nitrate (Reuploaded/Remastered)
     视频链接: https://www.youtube.com/watch?v=XxhZkDAOeQ8
     时长: 2:52 (2m52s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【115】视频名称: Platinum Recovery from Laboratory Chemical Waste (Pt 2)
+【100】视频名称: Platinum Recovery from Laboratory Chemical Waste (Pt 2)
     视频链接: https://www.youtube.com/watch?v=7B-EwKOqqv4
     时长: 14:01 (14m1s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【101】视频名称: The Final Steps of Making Pyrimethamine ("Daraprim")
+    视频链接: https://www.youtube.com/watch?v=5kZi3J2S52E
+    时长: 14:54 (14m54s)
+    发布时间: 2017-09-09（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【102】视频名称: Getting Guanidine Carbonate and Hydrochloride from No-Lye Hair Relaxants
+    视频链接: https://www.youtube.com/watch?v=wmWTF3lBDEI
+    时长: 5:18 (5m18s)
+    发布时间: 2017-08-26（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【103】视频名称: REUPLOAD - Make 2-(p-chlorophenyl)-3-oxopentanenitrile - Step 5 in Pyrimethamine Synthesis
+    视频链接: https://www.youtube.com/watch?v=5oAZyhPx_ws
+    时长: 9:58 (9m58s)
+    发布时间: 2017-08-26（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【104】视频名称: How to LEVITATE Pencil Lead
+    视频链接: https://www.youtube.com/watch?v=yeIizmhzPQc
+    时长: 2:50 (2m50s)
+    发布时间: 2017-08-05（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【105】视频名称: Vapor Activated Glow Stick
+    视频链接: https://www.youtube.com/watch?v=im_2OIs_mns
+    时长: 4:13 (4m13s)
+    发布时间: 2017-07-08（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【106】视频名称: Make Dragons Breath (firework)
+    视频链接: https://www.youtube.com/watch?v=fgq-GKJMR4M
+    时长: 2:16 (2m16s)
+    发布时间: 2017-06-30（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【107】视频名称: Recover Used Gallium From Aluminum Using Solvent Extraction
+    视频链接: https://www.youtube.com/watch?v=NwLgL1dGuSM
+    时长: 9:51 (9m51s)
+    发布时间: 2017-06-28（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【108】视频名称: Make Sodium Metal Without Electrolysis Using Domestic Chemicals
+    视频链接: https://www.youtube.com/watch?v=jCrFFVVcPUI
+    时长: 14:04 (14m4s)
+    发布时间: 2017-04-29（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【109】视频名称: Make a Platinum Electrode
+    视频链接: https://www.youtube.com/watch?v=Ex0VU9kMsgU
+    时长: 3:11 (3m11s)
+    发布时间: 2017-04-01（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【110】视频名称: Make Formic Acid
+    视频链接: https://www.youtube.com/watch?v=ceL-I0azPH8
+    时长: 6:09 (6m9s)
+    发布时间: 2017-03-31（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【111】视频名称: Use Sodium to Purify Triethylamine
+    视频链接: https://www.youtube.com/watch?v=nQnUeHOa6ow
+    时长: 4:50 (4m50s)
+    发布时间: 2017-03-18（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【112】视频名称: Recover Used Gallium From Aluminum
+    视频链接: https://www.youtube.com/watch?v=sUSjWfBBu2Y
+    时长: 5:20 (5m20s)
+    发布时间: 2017-03-11（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【113】视频名称: The Pulsing Glow Stick - Oscillating Luminol Clock Reaction
+    视频链接: https://www.youtube.com/watch?v=Jo-7mhKXfoA
+    时长: 2:51 (2m51s)
+    发布时间: 2017-02-27（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【114】视频名称: Thanks for helping me fix my hotplate stirrers
+    视频链接: https://www.youtube.com/watch?v=UqzjHgY2Zpk
+    时长: 5:51 (5m51s)
+    发布时间: 2016-11-19（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【115】视频名称: FAIL - Badly Stored Chemicals
+    视频链接: https://www.youtube.com/watch?v=tVWTbYz4Z-o
+    时长: 5:29 (5m29s)
+    发布时间: 2016-10-13（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
@@ -926,157 +926,157 @@
 
 --------------------------------------------------
 
-【132】视频名称: Make Chlorotoluene (mixture of isomers) 1st step in making Pyrimethamine
-    视频链接: https://www.youtube.com/watch?v=khfYvY_Gczk
-    时长: 12:00 (12m0s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【133】视频名称: Lab Equipment: Dean Stark Trap
-    视频链接: https://www.youtube.com/watch?v=jxgpLp279Yc
-    时长: 11:35 (11m35s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【134】视频名称: Dissolve Gold with Poison
-    视频链接: https://www.youtube.com/watch?v=oNlbb0zvLAs
-    时长: 2:54 (2m54s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【135】视频名称: Make Chlorine Gas (fixed)
-    视频链接: https://www.youtube.com/watch?v=hLHfN7GvAyI
-    时长: 3:42 (3m42s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【136】视频名称: Q&A with NurdRage February Edition
-    视频链接: https://www.youtube.com/watch?v=ayIecBl3zoY
-    时长: 6:39 (6m39s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【137】视频名称: More QA with NurdRage January edition
-    视频链接: https://www.youtube.com/watch?v=uGOsLAE_qm8
-    时长: 6:44 (6m44s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【138】视频名称: Equipment for an Amateur Lab Part 2
-    视频链接: https://www.youtube.com/watch?v=B8WXzEQ9xHk
-    时长: 6:25 (6m25s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【139】视频名称: Make Thermite from Chromium Oxide
+【132】视频名称: Make Thermite from Chromium Oxide
     视频链接: https://www.youtube.com/watch?v=nEzH_499mTo
     时长: 6:00 (6m0s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【140】视频名称: Make Trimethyl Orthoformate
-    视频链接: https://www.youtube.com/watch?v=TmUNTkP2nw0
-    时长: 8:45 (8m45s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【141】视频名称: Q&A with NurdRage December edition
+【133】视频名称: Q&A with NurdRage December edition
     视频链接: https://www.youtube.com/watch?v=gBtDp8E7RcU
     时长: 12:28 (12m28s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【142】视频名称: Make Propionic Acid by the Haloform Reaction
+【134】视频名称: Make Propionic Acid by the Haloform Reaction
     视频链接: https://www.youtube.com/watch?v=iDMuQtglPIw
     时长: 10:34 (10m34s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【143】视频名称: Make Ethyl Propionate by Fischer Esterification
+【135】视频名称: Make Ethyl Propionate by Fischer Esterification
     视频链接: https://www.youtube.com/watch?v=iwcQO9pxAGE
     时长: 3:16 (3m16s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【144】视频名称: Drying Alcohol Using Magnesium and Molecular Sieves
-    视频链接: https://www.youtube.com/watch?v=NMfs3e9OdZQ
-    时长: 8:04 (8m4s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【145】视频名称: Q&A with NurdRage November edition
+【136】视频名称: Q&A with NurdRage November edition
     视频链接: https://www.youtube.com/watch?v=8Bgnj_bgE9w
     时长: 6:38 (6m38s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【146】视频名称: Make chloroform by the haloform reaction
+【137】视频名称: Make chloroform by the haloform reaction
     视频链接: https://www.youtube.com/watch?v=MvkuqLxQd2c
     时长: 5:21 (5m21s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【147】视频名称: Fractional Distillation of Lacquer Thinner to Obtain Toluene
+【138】视频名称: Fractional Distillation of Lacquer Thinner to Obtain Toluene
     视频链接: https://www.youtube.com/watch?v=ddCuWX4vtOA
     时长: 10:26 (10m26s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【148】视频名称: Equipment for an amateur lab - Part 1
+【139】视频名称: Equipment for an amateur lab - Part 1
     视频链接: https://www.youtube.com/watch?v=oVAMUiFk4MY
     时长: 7:41 (7m41s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【149】视频名称: Q&A with NurdRage October Edition
+【140】视频名称: Q&A with NurdRage October Edition
     视频链接: https://www.youtube.com/watch?v=hy5EU5Popw4
     时长: 19:11 (19m11s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【150】视频名称: Peanut Butter Glows in the Dark
-    视频链接: https://www.youtube.com/watch?v=fUnSpEtnDNw
-    时长: 4:01 (4m1s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【151】视频名称: Make Pyrophoric Iron and Iron Oxalate
+【141】视频名称: Make Pyrophoric Iron and Iron Oxalate
     视频链接: https://www.youtube.com/watch?v=vPnqLSyoEy8
     时长: 7:38 (7m38s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【152】视频名称: Using Fractional Distillation for Purification of Hydrobromic acid
+【142】视频名称: Using Fractional Distillation for Purification of Hydrobromic acid
     视频链接: https://www.youtube.com/watch?v=TZo97aO4xbk
     时长: 13:05 (13m5s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【153】视频名称: Q&A with NurdRage January 2016 edition - Thiols, mercury, and how to make sodium
+【143】视频名称: Make Chlorotoluene (mixture of isomers) 1st step in making Pyrimethamine
+    视频链接: https://www.youtube.com/watch?v=khfYvY_Gczk
+    时长: 12:00 (12m0s)
+    发布时间: 2016-04-26（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【144】视频名称: Lab Equipment: Dean Stark Trap
+    视频链接: https://www.youtube.com/watch?v=jxgpLp279Yc
+    时长: 11:35 (11m35s)
+    发布时间: 2016-03-31（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【145】视频名称: Dissolve Gold with Poison
+    视频链接: https://www.youtube.com/watch?v=oNlbb0zvLAs
+    时长: 2:54 (2m54s)
+    发布时间: 2016-03-03（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【146】视频名称: Make Chlorine Gas (fixed)
+    视频链接: https://www.youtube.com/watch?v=hLHfN7GvAyI
+    时长: 3:42 (3m42s)
+    发布时间: 2016-02-14（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【147】视频名称: Q&A with NurdRage February Edition
+    视频链接: https://www.youtube.com/watch?v=ayIecBl3zoY
+    时长: 6:39 (6m39s)
+    发布时间: 2016-02-13（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【148】视频名称: More QA with NurdRage January edition
+    视频链接: https://www.youtube.com/watch?v=uGOsLAE_qm8
+    时长: 6:44 (6m44s)
+    发布时间: 2016-01-26（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【149】视频名称: Equipment for an Amateur Lab Part 2
+    视频链接: https://www.youtube.com/watch?v=B8WXzEQ9xHk
+    时长: 6:25 (6m25s)
+    发布时间: 2016-01-22（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【150】视频名称: Q&A with NurdRage January 2016 edition - Thiols, mercury, and how to make sodium
     视频链接: https://www.youtube.com/watch?v=t_v_7A365PE
     时长: 10:33 (10m33s)
-    发布时间: 2016-01（推断至月份, 来自标题）
+    发布时间: 2016-01-16（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【151】视频名称: Make Trimethyl Orthoformate
+    视频链接: https://www.youtube.com/watch?v=TmUNTkP2nw0
+    时长: 8:45 (8m45s)
+    发布时间: 2015-12-30（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【152】视频名称: Drying Alcohol Using Magnesium and Molecular Sieves
+    视频链接: https://www.youtube.com/watch?v=NMfs3e9OdZQ
+    时长: 8:04 (8m4s)
+    发布时间: 2015-11-26（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【153】视频名称: Peanut Butter Glows in the Dark
+    视频链接: https://www.youtube.com/watch?v=fUnSpEtnDNw
+    时长: 4:01 (4m1s)
+    发布时间: 2015-10-09（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
@@ -2021,7 +2021,7 @@
 【288】视频名称: Refuel a Glow Stick
     视频链接: https://www.youtube.com/watch?v=_d1J9MVkRzM
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2024-04 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-10 前后，下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2029,7 +2029,7 @@
 【289】视频名称: Chemical Thunderstorm in a Beaker #Shorts #science #chemistry
     视频链接: https://www.youtube.com/watch?v=9p3So4ijD4U
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2024-04 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-10 前后，下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2037,7 +2037,7 @@
 【290】视频名称: Hand in Hot Ice #shorts
     视频链接: https://www.youtube.com/watch?v=GZxaXH70k5o
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2024-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-07 前后（±105 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2045,7 +2045,7 @@
 【291】视频名称: How much does it cost to breathe?
     视频链接: https://www.youtube.com/watch?v=ExoHov5ZUL0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2024-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2016-08 前后（±217 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2055,14 +2055,14 @@
 ========================================
 视频总数(去重后): 291
 其中精确到秒的发布时间: 7 条（官方 RSS 7 / 官方接口与镜像 0）
-其中官方日精度日期: 0 条
-其中标题推断日期(日/月): 10 / 3 条
-其中相对文本推断(年/月/周/日): 267 条
+其中官方日精度日期: 30 条
+其中标题推断日期(日/月): 10 / 2 条
+其中相对文本推断(年/月/周/日): 238 条
 其中日期未知: 4 条
-可靠日期(精确到秒或日)合计: 7 / 291 条 = 2%
+可靠日期(精确到秒或日)合计: 37 / 291 条 = 13%
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 291
-本次运行耗时: 6分44秒
+本次运行耗时: 6分46秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 
@@ -2075,11 +2075,12 @@
 - Piped 镜像（官方时间戳）: 0 条
 - Invidious 镜像（官方时间戳）: 0 条
 - InnerTube 频道页相对时间（模糊兜底）: 287 条
-- archive.org 存档快照（日精度）: 0 条
-- 存档查询条数/无快照: 75 / 75 条
-- 标题推断日期: 13 条
-- 页面相对文本（模糊）: 267 条
+- archive.org 存档快照（日精度）: 30 条
+- 存档查询条数/落空明细: 72 条（无快照 34 / 快照抓不到 5 / 快照无日期 3） 条
+- 标题推断日期: 12 条
+- 页面相对文本（模糊）: 238 条
 - 无日期条目的 ID 时序区间提示: 4 条
-- 最终各来源条数: 频道页相对时间=267, 标题中的日期=13, 官方 RSS=7, unknown=4
+- 最终各来源条数: 频道页相对时间=238, archive.org 存档=30, 标题中的日期=12, 官方 RSS=7, unknown=4
+- 各阶段耗时: 枚举 6s | 频道信息 0s | RSS 2s | Piped 40s | Invidious 38s | 频道页相对时间 23s | archive.org 存档 297s
 - 本次运行完整日志见 data/_run_log.txt
 - 想让日期全部精确到秒：给仓库加一个 Secret 名为 YT_API_KEY（YouTube Data API v3 的免费 key），脚本会自动启用官方接口通道。

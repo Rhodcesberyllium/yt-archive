@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@ExplosionsAndFire/videos
 频道 ID: UCVovvq34gd0ps5cVYNZrc7A
 频道页显示视频总数: 35（本文件抓取到 35 条，覆盖率 100%）
-抓取时间: 2026-09-16 04:09:52 (UTC+8)
+抓取时间: 2026-09-16 04:42:10 (UTC+8)
 数据来源: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 视频总数: 35
 本次变化: 新增 0 条 / 从频道消失 0 条（相比上次抓取）
@@ -268,27 +268,28 @@
 可靠日期(精确到秒或日)合计: 20 / 35 条 = 57%
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 35
-本次运行耗时: 4分56秒
+本次运行耗时: 1分22秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 
 ========================================
 数据通道明细（本次运行，排障用）
 ========================================
-- 历史日期缓存（本轮直接复用）: 7 条
+- 历史日期缓存（本轮直接复用）: 20 条
 - 官方 RSS（精确到秒）: 7 条
 - 官方 Data API v3（未配置 YT_API_KEY）（本次跳过）
 - Piped 镜像（官方时间戳）: 0 条
 - Invidious 镜像（官方时间戳）: 0 条
-- InnerTube 频道页相对时间（模糊兜底）: 33 条
-- archive.org 存档快照（日精度）: 13 条
-- 存档查询条数/无快照: 28 / 15 条
+- InnerTube 频道页相对时间（模糊兜底）: 45 条
+- archive.org 存档快照（日精度）: 0 条
+- 存档查询条数/落空明细: 0 条（无快照 0 / 快照抓不到 0 / 快照无日期 0） 条
 - YouTube 播放接口（日精度）: 0 条
-- 播放接口客户端探测（命中/样本/状态）: ANDROID_VR=0/6(LOGIN_REQUIRED); ANDROID=0/6(网络失败); IOS=0/6(网络失败); TVHTML5=0/6(LOGIN_REQUIRED); WEB_EMBEDDED_PLAYER=0/6(ERROR); MWEB=0/6(LOGIN_REQUIRED); WEB=0/6(LOGIN_REQUIRED) 条
 - yt-dlp 可用客户端: 无 条
+- 播放接口客户端探测（命中/样本/状态）: ANDROID_VR=0/2(LOGIN_REQUIRED); ANDROID=0/2(网络失败); IOS=0/2(网络失败); TVHTML5=0/2(LOGIN_REQUIRED); WEB_EMBEDDED_PLAYER=0/2(ERROR); MWEB=0/2(LOGIN_REQUIRED); WEB=0/2(LOGIN_REQUIRED) 条
 - 标题推断日期: 0 条
 - 页面相对文本（模糊）: 14 条
 - 无日期条目的 ID 时序区间提示: 1 条
 - 最终各来源条数: 频道页相对时间=14, archive.org 存档=13, 官方 RSS=7, unknown=1
+- 各阶段耗时: 枚举 2s | 频道信息 0s | RSS 2s | Piped 21s | Invidious 35s | 频道页相对时间 6s | archive.org 存档 0s | 播放接口探测 1s | yt-dlp 客户端探测 16s
 - 本次运行完整日志见 data/_run_log.txt
 - 想让日期全部精确到秒：给仓库加一个 Secret 名为 YT_API_KEY（YouTube Data API v3 的免费 key），脚本会自动启用官方接口通道。

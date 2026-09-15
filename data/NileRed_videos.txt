@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@NileRed/videos
 频道 ID: UCFhXFikryT4aFcLkLw2LBLA
 频道页显示视频总数: 401（本文件抓取到 401 条，覆盖率 100%）
-抓取时间: 2026-09-16 03:54:23 (UTC+8)
+抓取时间: 2026-09-16 04:36:40 (UTC+8)
 数据来源: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 视频总数: 401
 本次变化: 新增 0 条 / 从频道消失 0 条（相比上次抓取）
@@ -357,150 +357,150 @@
 
 --------------------------------------------------
 
-【50】视频名称: Making fuming nitric acid
-    视频链接: https://www.youtube.com/watch?v=QmCdrDLyNXQ
-    时长: 12:29 (12m29s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【51】视频名称: Making the dye in jeans edible
-    视频链接: https://www.youtube.com/watch?v=jBZ8ly4erzs
-    时长: 20:17 (20m17s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【52】视频名称: The lead sponge mystery continues...
-    视频链接: https://www.youtube.com/watch?v=Iqb_tXO-YGg
-    时长: 18:32 (18m32s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【53】视频名称: Turning Aspirin into Tylenol
-    视频链接: https://www.youtube.com/watch?v=b0Ejuew2riA
-    时长: 26:01 (26m1s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【54】视频名称: The evolution of NileRed + NEW LAB TOUR
+【50】视频名称: The evolution of NileRed + NEW LAB TOUR
     视频链接: https://www.youtube.com/watch?v=8mk4Q5omv3Q
     时长: 19:04 (19m4s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【55】视频名称: Making milk lactose free
-    视频链接: https://www.youtube.com/watch?v=wYyqZWWU9GU
-    时长: 13:33 (13m33s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【56】视频名称: Making indigo and dyeing jeans blue
-    视频链接: https://www.youtube.com/watch?v=6yhR242MnwA
-    时长: 16:33 (16m33s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【57】视频名称: I accidentally discovered lead sponge...
+【51】视频名称: I accidentally discovered lead sponge...
     视频链接: https://www.youtube.com/watch?v=1-NbDjxh_v0
     时长: 15:06 (15m6s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【58】视频名称: Turning paper into plastic
-    视频链接: https://www.youtube.com/watch?v=yMG0yfGFJ00
-    时长: 21:11 (21m11s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【59】视频名称: Growing lead crystals
-    视频链接: https://www.youtube.com/watch?v=dbBlBZhp49s
-    时长: 9:20 (9m20s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【60】视频名称: Turning mint flavor into a glowing liquid
-    视频链接: https://www.youtube.com/watch?v=Zn61XAGgJA0
-    时长: 11:39 (11m39s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【61】视频名称: Turning my own pee into an artificial sweetener
+【52】视频名称: Turning my own pee into an artificial sweetener
     视频链接: https://www.youtube.com/watch?v=pujG5DbtDT8
     时长: 18:50 (18m50s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【62】视频名称: Extracting urea from my own pee
-    视频链接: https://www.youtube.com/watch?v=sfldS5hqWYA
-    时长: 15:09 (15m9s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【63】视频名称: Recreating the world's first test for diabetes
-    视频链接: https://www.youtube.com/watch?v=l_apnZ3DYOI
-    时长: 21:08 (21m8s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【64】视频名称: Making laughing gas
+【53】视频名称: Making laughing gas
     视频链接: https://www.youtube.com/watch?v=uzSe3BDCkF8
     时长: 15:08 (15m8s)
     发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【65】视频名称: Making a dye from scratch and coloring socks!
-    视频链接: https://www.youtube.com/watch?v=vPSJRhg4dYk
-    时长: 18:14 (18m14s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【66】视频名称: Extracting DNA from strawberries and eating it
-    视频链接: https://www.youtube.com/watch?v=araeHtN_3Lk
-    时长: 12:18 (12m18s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【67】视频名称: Aluminum and Mercury - Trying out your suggestions!
-    视频链接: https://www.youtube.com/watch?v=8vUbNv4LoOM
-    时长: 10:07 (10m7s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【68】视频名称: Extracting the blue dye in jeans
+【54】视频名称: Extracting the blue dye in jeans
     视频链接: https://www.youtube.com/watch?v=67kyi5hLnA4
     时长: 17:25 (17m25s)
     发布时间: 2018-08-31（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
-【69】视频名称: Making my own blueprint
+【55】视频名称: Making my own blueprint
     视频链接: https://www.youtube.com/watch?v=0e8CMbHfLxM
     时长: 15:16 (15m16s)
     发布时间: 2018-06-10（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
-【70】视频名称: Making Prussian Blue
+【56】视频名称: Making Prussian Blue
     视频链接: https://www.youtube.com/watch?v=BtnCynfmBnc
     时长: 13:42 (13m42s)
     发布时间: 2018-05-28（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【57】视频名称: Making fuming nitric acid
+    视频链接: https://www.youtube.com/watch?v=QmCdrDLyNXQ
+    时长: 12:29 (12m29s)
+    发布时间: 2018-05-07（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【58】视频名称: Making the dye in jeans edible
+    视频链接: https://www.youtube.com/watch?v=jBZ8ly4erzs
+    时长: 20:17 (20m17s)
+    发布时间: 2018-04-22（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【59】视频名称: The lead sponge mystery continues...
+    视频链接: https://www.youtube.com/watch?v=Iqb_tXO-YGg
+    时长: 18:32 (18m32s)
+    发布时间: 2018-04-15（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【60】视频名称: Turning Aspirin into Tylenol
+    视频链接: https://www.youtube.com/watch?v=b0Ejuew2riA
+    时长: 26:01 (26m1s)
+    发布时间: 2018-04-08（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【61】视频名称: Making milk lactose free
+    视频链接: https://www.youtube.com/watch?v=wYyqZWWU9GU
+    时长: 13:33 (13m33s)
+    发布时间: 2018-03-18（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【62】视频名称: Making indigo and dyeing jeans blue
+    视频链接: https://www.youtube.com/watch?v=6yhR242MnwA
+    时长: 16:33 (16m33s)
+    发布时间: 2018-02-27（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【63】视频名称: Turning paper into plastic
+    视频链接: https://www.youtube.com/watch?v=yMG0yfGFJ00
+    时长: 21:11 (21m11s)
+    发布时间: 2018-01-13（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【64】视频名称: Growing lead crystals
+    视频链接: https://www.youtube.com/watch?v=dbBlBZhp49s
+    时长: 9:20 (9m20s)
+    发布时间: 2018-01-02（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【65】视频名称: Turning mint flavor into a glowing liquid
+    视频链接: https://www.youtube.com/watch?v=Zn61XAGgJA0
+    时长: 11:39 (11m39s)
+    发布时间: 2017-12-22（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【66】视频名称: Extracting urea from my own pee
+    视频链接: https://www.youtube.com/watch?v=sfldS5hqWYA
+    时长: 15:09 (15m9s)
+    发布时间: 2017-12-02（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【67】视频名称: Recreating the world's first test for diabetes
+    视频链接: https://www.youtube.com/watch?v=l_apnZ3DYOI
+    时长: 21:08 (21m8s)
+    发布时间: 2017-11-14（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【68】视频名称: Making a dye from scratch and coloring socks!
+    视频链接: https://www.youtube.com/watch?v=vPSJRhg4dYk
+    时长: 18:14 (18m14s)
+    发布时间: 2017-10-15（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【69】视频名称: Extracting DNA from strawberries and eating it
+    视频链接: https://www.youtube.com/watch?v=araeHtN_3Lk
+    时长: 12:18 (12m18s)
+    发布时间: 2017-09-29（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【70】视频名称: Aluminum and Mercury - Trying out your suggestions!
+    视频链接: https://www.youtube.com/watch?v=8vUbNv4LoOM
+    时长: 10:07 (10m7s)
+    发布时间: 2017-09-23（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
@@ -518,339 +518,339 @@
 
 --------------------------------------------------
 
-【73】视频名称: All about Mercury, the Liquid Metal | Element Series
-    视频链接: https://www.youtube.com/watch?v=ZiWlthrtneU
-    时长: 12:06 (12m6s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【74】视频名称: Aluminum and Mercury
-    视频链接: https://www.youtube.com/watch?v=IrdYueB9pY4
-    时长: 8:50 (8m50s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【75】视频名称: Making margarine from olive oil
+【73】视频名称: Making margarine from olive oil
     视频链接: https://www.youtube.com/watch?v=drIm8_1CvjQ
     时长: 20:53 (20m53s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【76】视频名称: Making nylon plastic
-    视频链接: https://www.youtube.com/watch?v=_Ybc8Dinm0U
-    时长: 18:17 (18m17s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【77】视频名称: Dissolving Gold in Mercury
-    视频链接: https://www.youtube.com/watch?v=yAGYGGmUmUw
-    时长: 6:11 (6m11s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【78】视频名称: Turning aspirin pills into mint flavor
-    视频链接: https://www.youtube.com/watch?v=3NN9IUvrKi4
-    时长: 12:24 (12m24s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【79】视频名称: Making glow sticks from scratch
+【74】视频名称: Making glow sticks from scratch
     视频链接: https://www.youtube.com/watch?v=w_CYwd6cHUA
     时长: 13:10 (13m10s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【80】视频名称: Making lead crystals that taste sweet
+【75】视频名称: Making lead crystals that taste sweet
     视频链接: https://www.youtube.com/watch?v=lOjLuJyMmUQ
     时长: 16:31 (16m31s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【81】视频名称: Making an old hypnotic sedative and preservative
+【76】视频名称: Making an old hypnotic sedative and preservative
     视频链接: https://www.youtube.com/watch?v=TzbkRC3rYEo
     时长: 14:10 (14m10s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【82】视频名称: Turning soap into oil and making French fries
-    视频链接: https://www.youtube.com/watch?v=HAieBBeS7Ss
-    时长: 21:46 (21m46s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【83】视频名称: Making Soap
-    视频链接: https://www.youtube.com/watch?v=uMBeXHnWhsE
-    时长: 21:05 (21m5s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【84】视频名称: Making liquid soap
-    视频链接: https://www.youtube.com/watch?v=VeNDrtB62es
-    时长: 13:43 (13m43s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【85】视频名称: Making an old pain and fever medication
-    视频链接: https://www.youtube.com/watch?v=eQNLmkj_GBo
-    时长: 13:33 (13m33s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【86】视频名称: Making Mercury (Part 1)
+【77】视频名称: Making Mercury (Part 1)
     视频链接: https://www.youtube.com/watch?v=0e78I9_oH1E
     时长: 18:53 (18m53s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【87】视频名称: Making Mercury (Part 2)
+【78】视频名称: Making Mercury (Part 2)
     视频链接: https://www.youtube.com/watch?v=ArKdq4J8-3I
     时长: 11:32 (11m32s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【88】视频名称: Extracting the spicy chemical in black pepper
+【79】视频名称: Extracting the spicy chemical in black pepper
     视频链接: https://www.youtube.com/watch?v=YGZddY3R1pU
     时长: 15:20 (15m20s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【89】视频名称: Making nylon
+【80】视频名称: Making nylon
     视频链接: https://www.youtube.com/watch?v=HTh_5CWMSoQ
     时长: 25:48 (25m48s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【90】视频名称: Making bakelite plastic (Part 2)
+【81】视频名称: Making bakelite plastic (Part 2)
     视频链接: https://www.youtube.com/watch?v=z-l2_WDqW1A
     时长: 12:32 (12m32s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【91】视频名称: Making bakelite plastic (Part 1)
-    视频链接: https://www.youtube.com/watch?v=phNLecfyWS8
-    时长: 18:23 (18m23s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【92】视频名称: Turning batteries into medicine
+【82】视频名称: Turning batteries into medicine
     视频链接: https://www.youtube.com/watch?v=U2UQ4-NOP9E
     时长: 20:03 (20m3s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【93】视频名称: What is Milk made of?
+【83】视频名称: What is Milk made of?
     视频链接: https://www.youtube.com/watch?v=BV8aFRII1M4
     时长: 18:09 (18m9s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【94】视频名称: Extracting the theobromine from cocoa powder
+【84】视频名称: Extracting the theobromine from cocoa powder
     视频链接: https://www.youtube.com/watch?v=2VaeGdLUsRQ
     时长: 11:54 (11m54s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【95】视频名称: Recreating the Briggs-Rauscher oscillating reaction
+【85】视频名称: Recreating the Briggs-Rauscher oscillating reaction
     视频链接: https://www.youtube.com/watch?v=SCoLMfplVWs
     时长: 18:03 (18m3s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【96】视频名称: Making a Nylon Precursor using Green Chemistry
+【86】视频名称: Making a Nylon Precursor using Green Chemistry
     视频链接: https://www.youtube.com/watch?v=O0LqwYTSir4
     时长: 18:03 (18m3s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【97】视频名称: Extracting mercury from contaminated water
+【87】视频名称: Extracting mercury from contaminated water
     视频链接: https://www.youtube.com/watch?v=S4T57SFntIs
     时长: 20:31 (20m31s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【98】视频名称: The Cannizzaro reaction
+【88】视频名称: The Cannizzaro reaction
     视频链接: https://www.youtube.com/watch?v=qEBC204WTKs
     时长: 20:43 (20m43s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【99】视频名称: Aspirin to Acetaminophen - Part 6 of 6: Acetaminophen from p-aminophenol
+【89】视频名称: Aspirin to Acetaminophen - Part 6 of 6: Acetaminophen from p-aminophenol
     视频链接: https://www.youtube.com/watch?v=u8Y3_7psygU
     时长: 10:02 (10m2s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【100】视频名称: Aspirin to Acetaminophen - Part 5 of 6: Reducing p-nitrophenol to p-aminophenol
+【90】视频名称: Aspirin to Acetaminophen - Part 5 of 6: Reducing p-nitrophenol to p-aminophenol
     视频链接: https://www.youtube.com/watch?v=dcaPfPefgDg
     时长: 11:33 (11m33s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【101】视频名称: Extracting the citric acid from lemons
-    视频链接: https://www.youtube.com/watch?v=FMtayizdFiw
-    时长: 16:20 (16m20s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【102】视频名称: Storing mercury without water
-    视频链接: https://www.youtube.com/watch?v=m03Bke3CLFM
-    时长: 7:05 (7m5s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【103】视频名称: Making Trimethylamine - The Stench of Rotting Fish
+【91】视频名称: Making Trimethylamine - The Stench of Rotting Fish
     视频链接: https://www.youtube.com/watch?v=cIDWdpMhKII
     时长: 24:00 (24m0s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【104】视频名称: Christmas Special: Making a ChemisTree
+【92】视频名称: Christmas Special: Making a ChemisTree
     视频链接: https://www.youtube.com/watch?v=BOkIqxwc5zs
     时长: 25:53 (25m53s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【105】视频名称: Aspirin to Acetaminophen - Part 4 of 6: Mono-nitration of Phenol
+【93】视频名称: Aspirin to Acetaminophen - Part 4 of 6: Mono-nitration of Phenol
     视频链接: https://www.youtube.com/watch?v=ieutY3LyWXA
     时长: 29:18 (29m18s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【106】视频名称: Making sunscreen from scratch
+【94】视频名称: Making sunscreen from scratch
     视频链接: https://www.youtube.com/watch?v=gavq_sZZ8B0
     时长: 22:40 (22m40s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【107】视频名称: Making a silver mirror
+【95】视频名称: Making a silver mirror
     视频链接: https://www.youtube.com/watch?v=nGmxHLHyUPc
     时长: 15:05 (15m5s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【108】视频名称: Distilling Mercury Metal
+【96】视频名称: Distilling Mercury Metal
     视频链接: https://www.youtube.com/watch?v=d6SahlAFV-w
     时长: 19:53 (19m53s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【109】视频名称: Aspirin to Acetaminophen - Part 3 of 6: Phenol from Salicylic Acid
+【97】视频名称: Aspirin to Acetaminophen - Part 3 of 6: Phenol from Salicylic Acid
     视频链接: https://www.youtube.com/watch?v=Q_f1hRmhUX8
     时长: 11:47 (11m47s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【110】视频名称: Aspirin to Acetaminophen - Part 2 of 6: Conversion of ASA to Salicylic Acid
-    视频链接: https://www.youtube.com/watch?v=tSRWqbpNTF4
-    时长: 12:55 (12m55s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【111】视频名称: Aspirin to Acetaminophen - Part 1 of 6: Extracting Aspirin from Pills
-    视频链接: https://www.youtube.com/watch?v=YPIr26-Tg5c
-    时长: 15:50 (15m50s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【112】视频名称: Making cadaverine
+【98】视频名称: Making cadaverine
     视频链接: https://www.youtube.com/watch?v=C5hxFAwKIzs
     时长: 15:18 (15m18s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【113】视频名称: Making Ammonium Metavanadate
+【99】视频名称: Making Ammonium Metavanadate
     视频链接: https://www.youtube.com/watch?v=0vVIj9CSAXM
     时长: 9:33 (9m33s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【114】视频名称: Cleaning Dirty Phenol
+【100】视频名称: Cleaning Dirty Phenol
     视频链接: https://www.youtube.com/watch?v=f5PHffYhw9w
     时长: 12:45 (12m45s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【115】视频名称: Making anisole
+【101】视频名称: Making anisole
     视频链接: https://www.youtube.com/watch?v=z_0AMRr5opg
     时长: 19:04 (19m4s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【116】视频名称: Playing with an InfraRed Camera (reuploaded)
+【102】视频名称: Playing with an InfraRed Camera (reuploaded)
     视频链接: https://www.youtube.com/watch?v=EfUzKcAcX0Q
     时长: 10:01 (10m1s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【117】视频名称: Making Cinnamic Acid
+【103】视频名称: Making Cinnamic Acid
     视频链接: https://www.youtube.com/watch?v=RWDfBtrGVCY
     时长: 13:27 (13m27s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【118】视频名称: Making Benzaldehyde from Bitter Almond Oil
+【104】视频名称: Making Benzaldehyde from Bitter Almond Oil
     视频链接: https://www.youtube.com/watch?v=a95a0iMOICU
     时长: 9:19 (9m19s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【119】视频名称: Making Hexanoic Acid
+【105】视频名称: Making Hexanoic Acid
     视频链接: https://www.youtube.com/watch?v=qy4xeixw_X8
     时长: 21:11 (21m11s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【120】视频名称: The Blue Bottle Experiment
+【106】视频名称: The Blue Bottle Experiment
     视频链接: https://www.youtube.com/watch?v=6sJbNRSCoMA
     时长: 7:12 (7m12s)
     发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【107】视频名称: All about Mercury, the Liquid Metal | Element Series
+    视频链接: https://www.youtube.com/watch?v=ZiWlthrtneU
+    时长: 12:06 (12m6s)
+    发布时间: 2017-08-23（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【108】视频名称: Aluminum and Mercury
+    视频链接: https://www.youtube.com/watch?v=IrdYueB9pY4
+    时长: 8:50 (8m50s)
+    发布时间: 2017-08-13（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【109】视频名称: Making nylon plastic
+    视频链接: https://www.youtube.com/watch?v=_Ybc8Dinm0U
+    时长: 18:17 (18m17s)
+    发布时间: 2017-08-02（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【110】视频名称: Dissolving Gold in Mercury
+    视频链接: https://www.youtube.com/watch?v=yAGYGGmUmUw
+    时长: 6:11 (6m11s)
+    发布时间: 2017-07-24（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【111】视频名称: Turning aspirin pills into mint flavor
+    视频链接: https://www.youtube.com/watch?v=3NN9IUvrKi4
+    时长: 12:24 (12m24s)
+    发布时间: 2017-07-17（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【112】视频名称: Turning soap into oil and making French fries
+    视频链接: https://www.youtube.com/watch?v=HAieBBeS7Ss
+    时长: 21:46 (21m46s)
+    发布时间: 2017-06-10（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【113】视频名称: Making Soap
+    视频链接: https://www.youtube.com/watch?v=uMBeXHnWhsE
+    时长: 21:05 (21m5s)
+    发布时间: 2017-05-29（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【114】视频名称: Making liquid soap
+    视频链接: https://www.youtube.com/watch?v=VeNDrtB62es
+    时长: 13:43 (13m43s)
+    发布时间: 2017-05-27（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【115】视频名称: Making an old pain and fever medication
+    视频链接: https://www.youtube.com/watch?v=eQNLmkj_GBo
+    时长: 13:33 (13m33s)
+    发布时间: 2017-05-20（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【116】视频名称: Making bakelite plastic (Part 1)
+    视频链接: https://www.youtube.com/watch?v=phNLecfyWS8
+    时长: 18:23 (18m23s)
+    发布时间: 2017-04-21（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【117】视频名称: Extracting the citric acid from lemons
+    视频链接: https://www.youtube.com/watch?v=FMtayizdFiw
+    时长: 16:20 (16m20s)
+    发布时间: 2017-01-14（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【118】视频名称: Storing mercury without water
+    视频链接: https://www.youtube.com/watch?v=m03Bke3CLFM
+    时长: 7:05 (7m5s)
+    发布时间: 2017-01-08（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【119】视频名称: Aspirin to Acetaminophen - Part 2 of 6: Conversion of ASA to Salicylic Acid
+    视频链接: https://www.youtube.com/watch?v=tSRWqbpNTF4
+    时长: 12:55 (12m55s)
+    发布时间: 2016-11-12（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【120】视频名称: Aspirin to Acetaminophen - Part 1 of 6: Extracting Aspirin from Pills
+    视频链接: https://www.youtube.com/watch?v=YPIr26-Tg5c
+    时长: 15:50 (15m50s)
+    发布时间: 2016-11-03（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
@@ -1830,7 +1830,7 @@
 【260】视频名称: Pulling the slimy DNA out of strawberries
     视频链接: https://www.youtube.com/watch?v=_94SnzaRtWc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后，下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1838,7 +1838,7 @@
 【261】视频名称: This is the smell of old people
     视频链接: https://www.youtube.com/watch?v=_6xrLhp1sSQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后，下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1846,7 +1846,7 @@
 【262】视频名称: This yellow powder can't get wet
     视频链接: https://www.youtube.com/watch?v=_mwP3x7IbxY
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后，下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1854,7 +1854,7 @@
 【263】视频名称: This balloon shook the entire room
     视频链接: https://www.youtube.com/watch?v=_RKdWYqgu3Y
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±26 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1862,7 +1862,7 @@
 【264】视频名称: Making hydrogen bubbles
     视频链接: https://www.youtube.com/watch?v=_Ptnlp9QKgw
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±26 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1870,7 +1870,7 @@
 【265】视频名称: Dissolving cotton balls
     视频链接: https://www.youtube.com/watch?v=-wbgrXLVXZ0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±26 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1878,7 +1878,7 @@
 【266】视频名称: Watch this magnet float in mid-air!
     视频链接: https://www.youtube.com/watch?v=-tcH9WiQDks
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±26 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1886,7 +1886,7 @@
 【267】视频名称: Melting soda cans into a metal bar
     视频链接: https://www.youtube.com/watch?v=8_lOnV7qgzk
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±26 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1894,7 +1894,7 @@
 【268】视频名称: Making chemical fireflies
     视频链接: https://www.youtube.com/watch?v=89Qlyy-wf68
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±26 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1902,7 +1902,7 @@
 【269】视频名称: Making an explosive metal egg
     视频链接: https://www.youtube.com/watch?v=8zT03ZWp8E0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±26 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1910,7 +1910,7 @@
 【270】视频名称: Freezing my hand in hot ice
     视频链接: https://www.youtube.com/watch?v=8up289SwkCY
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-03 前后（±171 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1918,7 +1918,7 @@
 【271】视频名称: This rock is from outer space
     视频链接: https://www.youtube.com/watch?v=8NegYG2aJWk
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-03 前后（±171 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1926,7 +1926,7 @@
 【272】视频名称: This is the most bitter chemical known to man
     视频链接: https://www.youtube.com/watch?v=7134LjBur_s
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-03 前后（±171 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1934,7 +1934,7 @@
 【273】视频名称: Making propane bubbles
     视频链接: https://www.youtube.com/watch?v=7WCfcxSuP-o
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-03 前后（±171 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1942,7 +1942,7 @@
 【274】视频名称: The golden penny experiment
     视频链接: https://www.youtube.com/watch?v=7FKOicBjYqs
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-08 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-03 前后（±171 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1950,7 +1950,7 @@
 【275】视频名称: This is dangerous hydrogen gas and I'm gonna light it on fire
     视频链接: https://www.youtube.com/watch?v=6SDvfK90gZ8
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1455 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-05 前后（±1547 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1958,7 +1958,7 @@
 【276】视频名称: I accidentally killed this magnet
     视频链接: https://www.youtube.com/watch?v=6EYWniWuPQM
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1455 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-05 前后（±1547 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1966,7 +1966,7 @@
 【277】视频名称: Glowing peanut butter is crazy
     视频链接: https://www.youtube.com/watch?v=52r4gEIGslc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1455 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-05 前后（±1547 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1974,7 +1974,7 @@
 【278】视频名称: Making the smell of death (putrescine)
     视频链接: https://www.youtube.com/watch?v=5llnmwAfiKQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1455 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-05 前后（±1547 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1982,7 +1982,7 @@
 【279】视频名称: How radioactive is uranium glass?
     视频链接: https://www.youtube.com/watch?v=4wh-BTZZEf8
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-02 前后（±191 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1660 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1990,7 +1990,7 @@
 【280】视频名称: This is one of the weirdest reactions I've ever seen
     视频链接: https://www.youtube.com/watch?v=4rYX4ROqRlg
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-02 前后（±191 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1660 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1998,7 +1998,7 @@
 【281】视频名称: Burning magnesium singes my eyeballs
     视频链接: https://www.youtube.com/watch?v=4Vo-HIj3szs
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-02 前后（±191 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1660 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2030,7 +2030,7 @@
 【285】视频名称: Mixing sodium with mercury
     视频链接: https://www.youtube.com/watch?v=0HmAjYxsUJk
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-03 前后（±74 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2038,7 +2038,7 @@
 【286】视频名称: Making glowing nylon goo
     视频链接: https://www.youtube.com/watch?v=zqa4QQLn17g
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-03 前后（±74 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2046,7 +2046,7 @@
 【287】视频名称: Watch this beaker disappear
     视频链接: https://www.youtube.com/watch?v=yNYO3opdPEc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-03 前后（±74 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2054,7 +2054,7 @@
 【288】视频名称: This flame looks fake but is real (nitromethane)
     视频链接: https://www.youtube.com/watch?v=yG34VsS6a0M
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-10 前后（±86 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2062,7 +2062,7 @@
 【289】视频名称: Lithium is dangerous
     视频链接: https://www.youtube.com/watch?v=yGDkiUAwxRs
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-10 前后（±86 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2070,7 +2070,7 @@
 【290】视频名称: Making the World's Deadliest Popsicle
     视频链接: https://www.youtube.com/watch?v=x9VPT2AEwOY
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2078,7 +2078,7 @@
 【291】视频名称: Making scary plasma in a microwave
     视频链接: https://www.youtube.com/watch?v=x5BFIVDUQPE
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2086,7 +2086,7 @@
 【292】视频名称: Poppy seeds vs drug test
     视频链接: https://www.youtube.com/watch?v=xy6NVV4ckvU
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2094,7 +2094,7 @@
 【293】视频名称: This is a very heavy cube
     视频链接: https://www.youtube.com/watch?v=xxaw8RFlfxs
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2102,7 +2102,7 @@
 【294】视频名称: Making a ball of perfectly clear ice
     视频链接: https://www.youtube.com/watch?v=xrgcjGIp3HU
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2110,7 +2110,7 @@
 【295】视频名称: This is the world's densest element
     视频链接: https://www.youtube.com/watch?v=xij-O0etaJ8
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2118,7 +2118,7 @@
 【296】视频名称: Drinking heavy water
     视频链接: https://www.youtube.com/watch?v=xcO1yCAO-pI
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2126,7 +2126,7 @@
 【297】视频名称: This is what happens when you burn zinc and sulfur...
     视频链接: https://www.youtube.com/watch?v=xWvp23Qkg7w
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2134,7 +2134,7 @@
 【298】视频名称: Don't touch this chemical or it will explode
     视频链接: https://www.youtube.com/watch?v=wyTQiKU4d1k
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±118 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2142,7 +2142,7 @@
 【299】视频名称: I love what happens when I shake this bottle
     视频链接: https://www.youtube.com/watch?v=wE-cNpIxn40
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±77 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2150,7 +2150,7 @@
 【300】视频名称: Making bulletproof-er wood
     视频链接: https://www.youtube.com/watch?v=v1eAj2SR6rI
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±77 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2158,7 +2158,7 @@
 【301】视频名称: Turning coke clear
     视频链接: https://www.youtube.com/watch?v=vfmifdya3dA
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±77 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2166,7 +2166,7 @@
 【302】视频名称: Dissolving glass in scary hydrofluoric acid
     视频链接: https://www.youtube.com/watch?v=vUeY-SU4i04
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±77 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2174,7 +2174,7 @@
 【303】视频名称: Making a block of perfectly clear ice
     视频链接: https://www.youtube.com/watch?v=t4klesoNObo
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±99 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2182,7 +2182,7 @@
 【304】视频名称: Vaporizing chicken in acid
     视频链接: https://www.youtube.com/watch?v=tGCZts3z4QQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1311 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2021-03 前后（±1598 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2190,7 +2190,7 @@
 【305】视频名称: This gem is actually a fossil
     视频链接: https://www.youtube.com/watch?v=sbZ7TDI3u_U
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±112 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2198,7 +2198,7 @@
 【306】视频名称: Popping corn on the cob in the microwave
     视频链接: https://www.youtube.com/watch?v=sIGfMIuavps
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±112 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2206,7 +2206,7 @@
 【307】视频名称: Melting glass in the microwave is crazy
     视频链接: https://www.youtube.com/watch?v=sHzdGaPcVZo
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±112 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2214,7 +2214,7 @@
 【308】视频名称: Making liquid air
     视频链接: https://www.youtube.com/watch?v=r5FpeOJItbw
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±112 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2222,7 +2222,7 @@
 【309】视频名称: This is one of the world's blackest paints
     视频链接: https://www.youtube.com/watch?v=rdKTjPDcTM0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±112 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2230,7 +2230,7 @@
 【310】视频名称: Ferrofluid vs magnet
     视频链接: https://www.youtube.com/watch?v=rFCl_W6TKFc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±112 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2238,7 +2238,7 @@
 【311】视频名称: Watch me eat pure capsaicin
     视频链接: https://www.youtube.com/watch?v=qMPOMDcKHlM
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-08 前后（±112 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2246,7 +2246,7 @@
 【312】视频名称: Making astronaut ice cream
     视频链接: https://www.youtube.com/watch?v=pMqmk1YFm3k
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±51 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2254,7 +2254,7 @@
 【313】视频名称: Revealing fingerprints with iodine
     视频链接: https://www.youtube.com/watch?v=o7UFVFnkKSs
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±51 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2262,7 +2262,7 @@
 【314】视频名称: Aluminum vs acid is crazy
     视频链接: https://www.youtube.com/watch?v=n4W-3UgN_Hg
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±51 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2270,7 +2270,7 @@
 【315】视频名称: This is my favorite liquid carcinogen
     视频链接: https://www.youtube.com/watch?v=nw8KRjG9MdA
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±51 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2278,7 +2278,7 @@
 【316】视频名称: These bugs are added to your food
     视频链接: https://www.youtube.com/watch?v=nun3S_6TV1Y
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±51 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2286,7 +2286,7 @@
 【317】视频名称: Touching gallium
     视频链接: https://www.youtube.com/watch?v=nqedbR9SKMA
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±51 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2294,7 +2294,7 @@
 【318】视频名称: Pure arsenic is scary
     视频链接: https://www.youtube.com/watch?v=nmupzAGFoQE
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±51 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2302,7 +2302,7 @@
 【319】视频名称: Making dry ice from scratch
     视频链接: https://www.youtube.com/watch?v=nOQW747_Ikw
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±51 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2310,7 +2310,7 @@
 【320】视频名称: This ice cube is too heavy
     视频链接: https://www.youtube.com/watch?v=lVryXeXbwGM
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-02 前后（±79 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2318,7 +2318,7 @@
 【321】视频名称: Light bulb vs liquid nitrogen
     视频链接: https://www.youtube.com/watch?v=k2YGTSCT0q0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-02 前后（±79 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2326,7 +2326,7 @@
 【322】视频名称: This mineral looks fake
     视频链接: https://www.youtube.com/watch?v=krEAeYlDtr0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-02 前后（±79 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2334,7 +2334,7 @@
 【323】视频名称: Using vinegar to grow a weird tower
     视频链接: https://www.youtube.com/watch?v=jdKmaIuFhcA
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-02 前后（±79 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2342,7 +2342,7 @@
 【324】视频名称: Using luminol to make a glowing waterfall
     视频链接: https://www.youtube.com/watch?v=io8xRpadUoU
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±168 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2350,7 +2350,7 @@
 【325】视频名称: Diamonds are not forever
     视频链接: https://www.youtube.com/watch?v=iiVxaOn0H_k
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±168 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2358,7 +2358,7 @@
 【326】视频名称: Making a vodka popsicle with liquid nitrogen
     视频链接: https://www.youtube.com/watch?v=h9AwuA4797E
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±168 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2366,7 +2366,7 @@
 【327】视频名称: Putting an egg in the microwave
     视频链接: https://www.youtube.com/watch?v=hsyWKYBvH7c
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±168 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2374,7 +2374,7 @@
 【328】视频名称: These are my radioactive rods
     视频链接: https://www.youtube.com/watch?v=heBU4Ky8zGg
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±168 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2382,7 +2382,7 @@
 【329】视频名称: Making a radiation sign with fluorescein
     视频链接: https://www.youtube.com/watch?v=hRJlrn29PcQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±168 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2390,7 +2390,7 @@
 【330】视频名称: Cesium is scary
     视频链接: https://www.youtube.com/watch?v=hL9j6CEnVnc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±168 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2398,7 +2398,7 @@
 【331】视频名称: Bromine is scary
     视频链接: https://www.youtube.com/watch?v=eLvXS6J_ETQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±113 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2406,7 +2406,7 @@
 【332】视频名称: Completely dissolving a penny in acid
     视频链接: https://www.youtube.com/watch?v=dGQ55-VgjHc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-02 前后（±48 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2414,7 +2414,7 @@
 【333】视频名称: Vaporizing paper in scary piranha solution
     视频链接: https://www.youtube.com/watch?v=c0D-MVWAtOc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-02 前后（±48 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2422,7 +2422,7 @@
 【334】视频名称: This chemical can be many different colors
     视频链接: https://www.youtube.com/watch?v=cvaFeDPyTx8
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-02 前后（±48 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2430,7 +2430,7 @@
 【335】视频名称: Biting through metal (Indium)
     视频链接: https://www.youtube.com/watch?v=bxsHsXbaw64
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±95 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2438,7 +2438,7 @@
 【336】视频名称: Pure uranium is dangerous
     视频链接: https://www.youtube.com/watch?v=bfIBLROsfKQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±95 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2446,7 +2446,7 @@
 【337】视频名称: Sodium metal is soft and squishy
     视频链接: https://www.youtube.com/watch?v=bej9ECbaKuw
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±95 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2454,7 +2454,7 @@
 【338】视频名称: This solid is over 99% air
     视频链接: https://www.youtube.com/watch?v=bbxFdvBudlE
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±95 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2462,7 +2462,7 @@
 【339】视频名称: Asbestos is dangerous
     视频链接: https://www.youtube.com/watch?v=a-023vdubbM
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±95 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2470,7 +2470,7 @@
 【340】视频名称: Calcium is crazy
     视频链接: https://www.youtube.com/watch?v=a9XSxgQhNJ0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±95 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2478,7 +2478,7 @@
 【341】视频名称: Burning sulfur singes what's left of my eyeballs
     视频链接: https://www.youtube.com/watch?v=asHethF_o_M
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±95 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2486,7 +2486,7 @@
 【342】视频名称: Grape flavor is spooky
     视频链接: https://www.youtube.com/watch?v=aj3zfzrtbNA
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±42 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2494,7 +2494,7 @@
 【343】视频名称: This is not a liquid or a gas
     视频链接: https://www.youtube.com/watch?v=aTmWUBzntOE
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±42 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2502,7 +2502,7 @@
 【344】视频名称: Magnesium singes my eyeballs again
     视频链接: https://www.youtube.com/watch?v=aBzHJDHzCEM
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±42 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2510,7 +2510,7 @@
 【345】视频名称: Dropping a match into liquid oxygen
     视频链接: https://www.youtube.com/watch?v=Z6rhk95-FVU
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±42 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2518,7 +2518,7 @@
 【346】视频名称: These chemicals singe my eyeballs
     视频链接: https://www.youtube.com/watch?v=Z6KS7mb1BPk
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±42 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2526,7 +2526,7 @@
 【347】视频名称: Ferrofluid is crazy
     视频链接: https://www.youtube.com/watch?v=ZqL3qTJJIc4
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-11 前后（±42 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2534,7 +2534,7 @@
 【348】视频名称: Freezing liquid nitrogen solid
     视频链接: https://www.youtube.com/watch?v=Zfwl-imUml8
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-03 前后（±146 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2542,7 +2542,7 @@
 【349】视频名称: This chemical does something weird when it's burned
     视频链接: https://www.youtube.com/watch?v=Y24YkmeOghw
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-03 前后（±146 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2550,7 +2550,7 @@
 【350】视频名称: Dissolving a pure gold bar in acid
     视频链接: https://www.youtube.com/watch?v=YojYM6qIV38
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-03 前后（±146 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2558,7 +2558,7 @@
 【351】视频名称: I bought the essence of poop
     视频链接: https://www.youtube.com/watch?v=YX2mxBPshNA
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-03 前后（±146 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2566,7 +2566,7 @@
 【352】视频名称: Sunscreen vs UV light
     视频链接: https://www.youtube.com/watch?v=YUY3EM4PtaI
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-03 前后（±146 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2574,7 +2574,7 @@
 【353】视频名称: Bromine vs aluminum is insane!
     视频链接: https://www.youtube.com/watch?v=XrH7eJl1wQc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±102 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2582,7 +2582,7 @@
 【354】视频名称: Pure acid vapor - don't breathe this
     视频链接: https://www.youtube.com/watch?v=XQ8qDrU1EL0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±102 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2590,7 +2590,7 @@
 【355】视频名称: Throwing fireballs
     视频链接: https://www.youtube.com/watch?v=XK2sJ_CDf9w
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±102 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2598,7 +2598,7 @@
 【356】视频名称: Calcium carbide is scary
     视频链接: https://www.youtube.com/watch?v=Wtf84-ujVN4
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±102 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2606,7 +2606,7 @@
 【357】视频名称: Turning a penny into a light bulb
     视频链接: https://www.youtube.com/watch?v=WUVhPuV1_QE
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±102 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2614,7 +2614,7 @@
 【358】视频名称: Making a giant glow stick from scratch
     视频链接: https://www.youtube.com/watch?v=V_rx5GXNBB8
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±102 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2622,7 +2622,7 @@
 【359】视频名称: Turning regular sand into an explosive gas
     视频链接: https://www.youtube.com/watch?v=VoHsFiwtxVc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±102 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2630,7 +2630,7 @@
 【360】视频名称: This reaction is hard to find
     视频链接: https://www.youtube.com/watch?v=VjPQA8aXE_M
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-02 前后（±102 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2638,7 +2638,7 @@
 【361】视频名称: Making explosive hydrogen and oxygen bubbles
     视频链接: https://www.youtube.com/watch?v=U5qMutFgz8A
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±242 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2646,7 +2646,7 @@
 【362】视频名称: Making a pure gold bead
     视频链接: https://www.youtube.com/watch?v=UWFiNUyUlLI
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±242 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2654,7 +2654,7 @@
 【363】视频名称: Dissolving gold in mercury
     视频链接: https://www.youtube.com/watch?v=UOIVkTjOvo8
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±242 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2662,7 +2662,7 @@
 【364】视频名称: How to make instant snow
     视频链接: https://www.youtube.com/watch?v=Tkur3xL0PhQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±242 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2670,7 +2670,7 @@
 【365】视频名称: Burning iron and sulfur is so satisfying
     视频链接: https://www.youtube.com/watch?v=TOAAbrWedUg
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±242 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2678,7 +2678,7 @@
 【366】视频名称: Vaporizing a hot dog in acid
     视频链接: https://www.youtube.com/watch?v=SomVrg951-Q
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±242 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2686,7 +2686,7 @@
 【367】视频名称: Making a block of dry ice is oddly satisfying
     视频链接: https://www.youtube.com/watch?v=RmVfrXq-ux8
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±242 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2694,7 +2694,7 @@
 【368】视频名称: Turning aspirin pills into mint flavor
     视频链接: https://www.youtube.com/watch?v=RaunfTlBp7I
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-03 前后（±1258 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2018-01 前后（±242 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2702,7 +2702,7 @@
 【369】视频名称: These metals melt when pushed together
     视频链接: https://www.youtube.com/watch?v=QNPrHtcn6nM
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2710,7 +2710,7 @@
 【370】视频名称: This metal is too bouncy
     视频链接: https://www.youtube.com/watch?v=PCU6g9mfRIk
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2718,7 +2718,7 @@
 【371】视频名称: Liquefying nails is crazy
     视频链接: https://www.youtube.com/watch?v=NDxrme-S2cE
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2726,7 +2726,7 @@
 【372】视频名称: This is more radioactive than uranium
     视频链接: https://www.youtube.com/watch?v=MutjjjjlrR0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2734,7 +2734,7 @@
 【373】视频名称: My favorite book is on fire (oh no)
     视频链接: https://www.youtube.com/watch?v=MpApxmvcd3M
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2742,7 +2742,7 @@
 【374】视频名称: White phosphorus is terrifying
     视频链接: https://www.youtube.com/watch?v=LK82rjh8E80
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2750,7 +2750,7 @@
 【375】视频名称: Making color changing mercury
     视频链接: https://www.youtube.com/watch?v=K56LuXCQ0ik
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2758,7 +2758,7 @@
 【376】视频名称: Turning a glass dish into a silver mirror
     视频链接: https://www.youtube.com/watch?v=Jh-w_N5cVyA
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2766,7 +2766,7 @@
 【377】视频名称: Pouring liquid oxygen onto steel wool
     视频链接: https://www.youtube.com/watch?v=JgZzH71URkk
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2774,7 +2774,7 @@
 【378】视频名称: Making Nordic Gold
     视频链接: https://www.youtube.com/watch?v=JdG0xiu2I6Y
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2782,7 +2782,7 @@
 【379】视频名称: Uranium is safe compared to this...
     视频链接: https://www.youtube.com/watch?v=JRL_Tvazw2I
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-08 前后（±1436 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-12 前后（±133 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2790,7 +2790,7 @@
 【380】视频名称: This is the Barking Dog experiment
     视频链接: https://www.youtube.com/watch?v=H5Bpn2M3LOc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后（±142 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1671 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2798,7 +2798,7 @@
 【381】视频名称: This dirty lead needs to be cleaned
     视频链接: https://www.youtube.com/watch?v=H4em0XRlkdg
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后（±142 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-01 前后（±1671 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2806,7 +2806,7 @@
 【382】视频名称: Making test tube liquid rockets
     视频链接: https://www.youtube.com/watch?v=G3NI9Y6nDZQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后（±142 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2021-08 前后（±1528 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2814,7 +2814,7 @@
 【383】视频名称: Dissolving copper wire in acid is crazy
     视频链接: https://www.youtube.com/watch?v=GzCqZvOlNDk
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后（±142 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2021-08 前后（±1528 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2822,7 +2822,7 @@
 【384】视频名称: How deadly is cyanide?
     视频链接: https://www.youtube.com/watch?v=GKmZsm192DI
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2021-06 前后（±1602 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2830,7 +2830,7 @@
 【385】视频名称: Turning lead into gold (lead iodide)
     视频链接: https://www.youtube.com/watch?v=F8VYpIJjkoI
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2021-06 前后（±1602 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2838,7 +2838,7 @@
 【386】视频名称: Making a green fireball is crazy
     视频链接: https://www.youtube.com/watch?v=FHdisDmdR6g
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2846,7 +2846,7 @@
 【387】视频名称: Potassium metal is like weird butter
     视频链接: https://www.youtube.com/watch?v=E37B-7OizLs
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2854,7 +2854,7 @@
 【388】视频名称: Pouring mercury into liquid nitrogen
     视频链接: https://www.youtube.com/watch?v=Eh2nxTqK9qQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2862,7 +2862,7 @@
 【389】视频名称: This is worse than pure spiciness
     视频链接: https://www.youtube.com/watch?v=EFvoCCRZWyI
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2870,7 +2870,7 @@
 【390】视频名称: Using a cabbage to do some chemistry
     视频链接: https://www.youtube.com/watch?v=EB9VT3hcETE
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2878,7 +2878,7 @@
 【391】视频名称: Making this is gross but satisfying
     视频链接: https://www.youtube.com/watch?v=DtZdE1P45yQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2886,7 +2886,7 @@
 【392】视频名称: What's inside these tree balls?
     视频链接: https://www.youtube.com/watch?v=Dmy1MSX5um4
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2894,7 +2894,7 @@
 【393】视频名称: Watch these chemicals react in mid-air!
     视频链接: https://www.youtube.com/watch?v=ClxXFeOwjOQ
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2902,7 +2902,7 @@
 【394】视频名称: Doing something weird with mercury
     视频链接: https://www.youtube.com/watch?v=Cjqy1dXdywE
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2910,7 +2910,7 @@
 【395】视频名称: Something weird grows from this liquid
     视频链接: https://www.youtube.com/watch?v=CRTjZTwIyI0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2918,7 +2918,7 @@
 【396】视频名称: Using electricity to grow metal crystals
     视频链接: https://www.youtube.com/watch?v=CPBjZPOFylc
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2926,7 +2926,7 @@
 【397】视频名称: This is the world's smokiest ball
     视频链接: https://www.youtube.com/watch?v=CEfYet7ogwU
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2022-02 前后（±1352 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-09 前后（±249 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2968,31 +2968,32 @@
 ========================================
 视频总数(去重后): 401
 其中精确到秒的发布时间: 7 条（官方 RSS 7 / 官方接口与镜像 0）
-其中官方日精度日期: 4 条
+其中官方日精度日期: 32 条
 其中标题推断日期(日/月): 0 / 0 条
-其中相对文本推断(年/月/周/日): 248 条
+其中相对文本推断(年/月/周/日): 220 条
 其中日期未知: 142 条
-可靠日期(精确到秒或日)合计: 11 / 401 条 = 3%
+可靠日期(精确到秒或日)合计: 39 / 401 条 = 10%
 其中重复标题组(可能为重传/多版本): 3 组（涉及 6 条, 去重按视频ID）
 抓取累计条数(去重前): 401
-本次运行耗时: 7分33秒
+本次运行耗时: 7分49秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 
 ========================================
 数据通道明细（本次运行，排障用）
 ========================================
-- 历史日期缓存（本轮直接复用）: 7 条
+- 历史日期缓存（本轮直接复用）: 11 条
 - 官方 RSS（精确到秒）: 7 条
 - 官方 Data API v3（未配置 YT_API_KEY）（本次跳过）
 - Piped 镜像（官方时间戳）: 0 条
 - Invidious 镜像（官方时间戳）: 0 条
 - InnerTube 频道页相对时间（模糊兜底）: 278 条
-- archive.org 存档快照（日精度）: 4 条
-- 存档查询条数/无快照: 45 / 41 条
+- archive.org 存档快照（日精度）: 28 条
+- 存档查询条数/落空明细: 72 条（无快照 33 / 快照抓不到 4 / 快照无日期 7） 条
 - 标题推断日期: 0 条
-- 页面相对文本（模糊）: 248 条
+- 页面相对文本（模糊）: 220 条
 - 无日期条目的 ID 时序区间提示: 142 条
-- 最终各来源条数: 频道页相对时间=248, unknown=142, 官方 RSS=7, archive.org 存档=4
+- 最终各来源条数: 频道页相对时间=220, unknown=142, archive.org 存档=32, 官方 RSS=7
+- 各阶段耗时: 枚举 7s | 频道信息 0s | RSS 1s | Piped 24s | Invidious 38s | 频道页相对时间 28s | archive.org 存档 372s
 - 本次运行完整日志见 data/_run_log.txt
 - 想让日期全部精确到秒：给仓库加一个 Secret 名为 YT_API_KEY（YouTube Data API v3 的免费 key），脚本会自动启用官方接口通道。
