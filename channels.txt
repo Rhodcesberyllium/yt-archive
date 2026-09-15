@@ -1,0 +1,16 @@
+# 每周自动抓取的频道清单
+#
+# 用法：一行一个频道链接，改完保存（网页上直接点铅笔图标编辑）即可。
+#   · 以 # 开头的整行会被忽略；行尾也可以写 # 注释
+#   · 链接可以带 /videos 后缀，也可以不带，效果一样
+#   · 想新增频道：在下面加一行；想停掉某个频道：把它整行删掉或前面加 #
+#   · 每个频道会在 data/ 下生成 <频道名>_videos.txt 和一个日期缓存 <频道名>_dates.txt
+#
+# 除了这里，还可以在 Actions 页面点 Run workflow，在表单里临时填一个频道链接，
+# 那次运行会"清单里的全部频道 + 表单里这个"一起抓。
+
+https://www.youtube.com/@NurdRage/videos
+https://www.youtube.com/@NileRed/videos
+https://www.youtube.com/@ChemicalForce/videos
+https://www.youtube.com/@Chemiolis/videos
+https://www.youtube.com/@ExplosionsAndFire/videos
