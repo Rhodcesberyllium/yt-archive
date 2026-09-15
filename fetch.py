@@ -33,12 +33,12 @@ fetch.py — GitHub Actions 云端全量抓取器 v2（国内免梯子的"一劳
 
 云端 IP 的实测结论（决定了本脚本的资源分配策略）：
   · GitHub 数据中心 IP 会被 YouTube 对"单视频元数据"整体风控——7 种播放接口客户端实测
-    全部 LOGIN_REQUIRED/网络失败，yt-dlp 各 player_client 也全为 0；这部分探测结果会记进
-    缓存，两周内不再重复浪费配额。
-  · Piped / Invidious 绝大多数实例从该 IP 不可达（连接超时），所以给它们**独立子预算**，
-    连续几页拿不到数据就放弃，避免把整个频道的时间预算耗在死实例上。
-  · 真正稳定产出的是：官方 RSS（精确秒）、archive.org 存档快照（日精度）、
+    全部 LOGIN_REQUIRED/网络失败，yt-dlp 各 player_client 也全为 0。
+  · Piped / Invidious 绝大多数实例从该 IP 不可达（连接超时）。
+  · 真正稳定产出的是：官方 RSS（精确秒）、archive.org 存档快照（日精度，实测命中率约 40%）、
     频道页相对时间（模糊兜底），以及**历史缓存逐周累积**。
+  因此：给每个数据源独立子预算；判定不可用的通路进冷却期（缓存里记截止日期），
+  把时间全部让给 archive.org 存档这条唯一有稳定产出的免 key 通路。
 """
 import argparse
 import bisect
@@ -72,6 +72,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 YT_ID_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
 PROBE_COOLDOWN_DAYS = 14      # 探测到"整体被风控"后，多久不再重复探测
+MIRROR_COOLDOWN_DAYS = 7      # 镜像实例全灭后，多久不再重复尝试
 
 # 精度等级：数字越大越可信，多源合并时取最大
 PREC_RANK = {"unknown": 0, "approx": 1, "month_title": 2, "day_title": 3,
@@ -122,6 +123,7 @@ DEFAULT_ITV_VERSION = "2.20250310.00.00"
 TAB_LABEL = {"videos": None, "shorts": "短视频 Shorts", "streams": "直播/回放 Live"}
 
 _RESOLVED_INSTANCES = None
+_MIRRORS_DEAD = False      # 本次运行内一旦判定镜像不可用，后续频道直接跳过
 
 
 def log(*a):
@@ -733,7 +735,7 @@ def _wayback_watch_date(vid):
     return None, ("no_date" if got_page else "no_page")
 
 
-def dates_from_wayback_watch(cands, deadline, absent, max_lookups=200, workers=6):
+def dates_from_wayback_watch(cands, deadline, absent, max_lookups=300, workers=8):
     """对仍缺日精度的视频查存档快照。命中返回日期；确认无快照的记进 absent（下轮不再查）。
     返回 (命中字典, 查询条数, 无快照 id 列表, 落空原因统计)。"""
     res, miss, reasons = {}, [], {}
@@ -1151,12 +1153,13 @@ def fetch_wayback_relative(ucid, handle, anchor_ms, deadline, max_snapshots=24):
 # ------------------------------------------------ 日期缓存（逐周收敛的关键）
 
 class DateCache:
-    """上一轮的结论：官方级日期 + 已确认无存档的 id + 探测冷却标记。"""
+    """上一轮的结论：官方级日期 + 已确认无存档的 id + 各类冷却标记。"""
 
     def __init__(self):
         self.dates = {}
         self.absent = set()
         self.blocked_until = None
+        self.mirrors_blocked_until = None
 
 
 def cache_path_for(out_path):
@@ -1175,6 +1178,9 @@ def load_date_cache(path):
                     m = re.match(r"#\s*probe_blocked_until=(\d{4}-\d{2}-\d{2})", line)
                     if m:
                         c.blocked_until = m.group(1)
+                    m2 = re.match(r"#\s*mirrors_blocked_until=(\d{4}-\d{2}-\d{2})", line)
+                    if m2:
+                        c.mirrors_blocked_until = m2.group(1)
                     continue
                 if "\t" not in line:
                     continue
@@ -1213,6 +1219,9 @@ def save_date_cache(path, cache, merged, min_rank=None):
     if cache.blocked_until:
         lines.append("# probe_blocked_until=%s（单视频接口此前整体被风控，到期前不再探测）"
                      % cache.blocked_until)
+    if cache.mirrors_blocked_until:
+        lines.append("# mirrors_blocked_until=%s（镜像实例此前全灭，到期前不再尝试）"
+                     % cache.mirrors_blocked_until)
     for vid in sorted(keep):
         ms, prec, src = keep[vid]
         lines.append("%s\t%d\t%s\t%s\t%s" % (vid, ms, prec, src, now))
@@ -1226,15 +1235,20 @@ def save_date_cache(path, cache, merged, min_rank=None):
     return len(keep)
 
 
-def probe_blocked_now(cache):
-    """单视频接口此前被整体风控且还在冷却期内 -> 本轮跳过探测，把预算留给存档通路。"""
-    if not cache.blocked_until:
+def _cooldown_active(date_str):
+    """给定的冷却截止日期还没到 -> True。"""
+    if not date_str:
         return False
     try:
-        until = dt.datetime.strptime(cache.blocked_until, "%Y-%m-%d").date()
+        until = dt.datetime.strptime(date_str, "%Y-%m-%d").date()
     except Exception:
         return False
     return dt.datetime.now(timezone.utc).date() < until
+
+
+def probe_blocked_now(cache):
+    """单视频接口此前被整体风控且还在冷却期内 -> 本轮跳过探测，把预算留给存档通路。"""
+    return _cooldown_active(cache.blocked_until)
 
 
 # ------------------------------------------------ 归并/排序
@@ -1352,7 +1366,7 @@ def write_output(path, entries, meta):
     L.append("=" * 40)
     L.append("频道: %s" % (meta.get("name") or "-"))
     L.append("频道链接: %s" % meta.get("channel_url", "-"))
-    L.append("频道 ID: %s" % meta.get("ucid", "-"))
+    L.append("频道 ID: %s" % (meta.get("ucid", "-")))
     if meta.get("channel_count"):
         cc = meta["channel_count"]
         L.append("频道页显示视频总数: %s（本文件抓取到 %d 条，覆盖率 %.0f%%）"
@@ -1565,19 +1579,34 @@ def run_channel(channel_url, args, deadline):
         counts.append(("官方 Data API v3（未配置 YT_API_KEY）", None))
         log("[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）")
 
-    # 3)(4) 第三方镜像：给独立子预算，慢/死的实例不会拖垮后面的通路
+    # 3)(4) 第三方镜像：独立子预算；一旦判定整体不可用就进冷却期，
+    #       把省下的时间全部让给真正有产出的 archive.org 存档通路。
     if not args.list_only:
+        global _MIRRORS_DEAD
         need = set(ids)
-        sub = Budget(min(100, max(25, deadline.left() * 0.22)), parent=deadline)
-        piped = dates_from_piped(ucid, need, sub, state)
+        if _MIRRORS_DEAD or _cooldown_active(cache.mirrors_blocked_until):
+            piped, inv = {}, {}
+            counts.append(("Piped / Invidious 镜像", None))
+            log("[镜像] 冷却期内跳过镜像通道（截至 %s）"
+                % (cache.mirrors_blocked_until or "本次运行已判定不可用"))
+        else:
+            sub = Budget(min(100, max(25, deadline.left() * 0.22)), parent=deadline)
+            piped = dates_from_piped(ucid, need, sub, state)
+            w.mark("Piped")
+            sub = Budget(min(100, max(25, deadline.left() * 0.22)), parent=deadline)
+            inv = dates_from_invidious(ucid, need, sub, state)
+            w.mark("Invidious")
+            if not piped and not inv:
+                _MIRRORS_DEAD = True
+                cache.mirrors_blocked_until = (dt.datetime.now(timezone.utc)
+                                               + dt.timedelta(days=MIRROR_COOLDOWN_DAYS)
+                                               ).strftime("%Y-%m-%d")
+                log("[镜像] 本轮镜像全灭，进入 %d 天冷却（截至 %s）"
+                    % (MIRROR_COOLDOWN_DAYS, cache.mirrors_blocked_until))
         sources.append(("piped", piped))
         counts.append(("Piped 镜像（官方时间戳）", len(piped)))
-        w.mark("Piped")
-        sub = Budget(min(100, max(25, deadline.left() * 0.22)), parent=deadline)
-        inv = dates_from_invidious(ucid, need, sub, state)
         sources.append(("invidious", inv))
         counts.append(("Invidious 镜像（官方时间戳）", len(inv)))
-        w.mark("Invidious")
 
     # 5) 频道页相对时间（兜底主力，同时拿 InnerTube key）
     anchor_ms = int(dt.datetime.now(timezone.utc).timestamp() * 1000)
@@ -1806,8 +1835,8 @@ def main():
     ap.add_argument("--with-flat-dates", action="store_true", help="兼容旧参数（可忽略）")
     ap.add_argument("--with-wayback", action="store_true",
                     help="额外跑 Wayback 频道页快照并集兜底（默认只跑 watch 页存档）")
-    ap.add_argument("--wb-lookups", type=int, default=200,
-                    help="每个频道最多查多少条 archive.org 存档（默认 200）")
+    ap.add_argument("--wb-lookups", type=int, default=300,
+                    help="每个频道最多查多少条 archive.org 存档（默认 300）")
     ap.add_argument("--demo", action="store_true", help="离线演练：内置样例跑通全流程（本地测试用）")
     ap.add_argument("--budget-min", type=float, default=None,
                     help="本次运行的日期抓取时间预算（分钟），默认 45")
@@ -1834,7 +1863,7 @@ def main():
                 log("[预算] 剩余时间不足以再抓一个频道，跳过后续 %d 个"
                     % (len(channels) - i + 1))
                 break
-            sub = Budget(int(min(700, max(240, deadline.left() * 0.75 / (len(channels) - i + 1)))),
+            sub = Budget(int(min(900, max(300, deadline.left() * 0.9 / (len(channels) - i + 1)))),
                          parent=deadline)
             log("\n[预算] 频道 %d/%d 分配 %.0f 秒（全局剩余 %.0f 秒）"
                 % (i, len(channels), sub.limit, deadline.left()))
