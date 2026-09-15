@@ -104,7 +104,7 @@ INVIDIOUS_INSTANCES = [
     "invidious.perennialte.ch", "iv.datura.network", "invidious.materialio.us",
     "invidious.protokolla.fi", "iv.ggtyler.dev", "invidious.einfachzocken.eu",
 ]
-# 播放接口候选客户端（按"云端可用概率"排序，先拿样本试，命中哪个就用哪个）
+# 播放接口候选客户端（按“云端可用概率”排序，先拿样本试，命中哪个就用哪个）
 PLAYER_CLIENTS = [
     ("ANDROID_VR", "1.60.19", {"androidSdkVersion": 32}),
     ("ANDROID", "19.09.37", {"androidSdkVersion": 30}),
@@ -130,7 +130,7 @@ def log(*a):
 
 def vid_rank(vid):
     """视频 ID -> 单调递增的数值。YouTube ID 是 64 位自增计数器的 base64url 编码，
-    因此同一频道内 ID 数值大小≈发布时间先后（用于给"无日期"条目定位与排序）。"""
+    因此同一频道内 ID 数值大小≈发布时间先后（用于给“无日期”条目定位与排序）。"""
     n = 0
     for c in vid or "":
         i = YT_ID_ALPHABET.find(c)
@@ -333,7 +333,7 @@ def parse_ago_unit(text):
 
 
 def clean_title(t):
-    """清理标题残留（HTML 实体、" - YouTube" 后缀、多余空白）"""
+    """清理标题残留（HTML 实体、“ - YouTube” 后缀、多余空白）"""
     s = html_unescape((t or "").strip())
     if not s:
         return ""
@@ -455,7 +455,7 @@ def enum_all(channel_url, deadline=None):
 
 
 def channel_meta(channel_url):
-    """从频道 /videos 页解析 (ucid, name, html)。HTML 失败时退化为 yt-dlp 枚举结果。"""
+    """从频道 /videos 页解析 (ucid, name)。HTML 失败时退化为 yt-dlp 枚举结果。"""
     base = ensure_base(channel_url)
     ucid, name = None, None
     html = http_get_bytes(base + "/videos", timeout=25)
@@ -533,7 +533,7 @@ def dates_from_rss(ucid, dst):
 def dates_from_data_api(ids, api_key, deadline):
     """官方 YouTube Data API v3（需仓库 Secret: YT_API_KEY）。
     一次请求最多 50 个视频、1 个配额单位；10000 单位/天的免费额度足够上千个视频。
-    配了它就是"全部视频精确到秒"的质量上限档。返回 id -> (ms,'exact','data_api')。"""
+    配了它就是“全部视频精确到秒”的质量上限档。返回 id -> (ms,'exact','data_api')。"""
     res = {}
     if not api_key or not ids:
         return res
@@ -570,7 +570,7 @@ def _take_mirror(res, vid, ms, src):
 def dates_from_piped(ucid, want, deadline, state):
     """Piped 镜像：/channel/<ucid> 翻页，每条带 uploadDate（官方发布时间毫秒）。
     翻完整个频道或覆盖率过半就认这个实例；连续 3 页拿不到新日期就放弃该实例，
-    避免把预算耗在"接口活着但不给日期"或连不上的实例上。"""
+    避免把预算耗在“接口活着但不给日期”或连不上的实例上。"""
     res = {}
     if not ucid:
         return res
@@ -612,7 +612,7 @@ def dates_from_piped(ucid, want, deadline, state):
             url = ("https://%s/nextpage/channel/%s?nextpage=%s"
                    % (host, ucid, urllib.parse.quote(nxt, safe="")))
             time.sleep(0.2)
-        if complete and res or len(res) >= 0.5 * max(1, len(want)):
+        if (complete and res) or len(res) >= 0.5 * max(1, len(want)):
             state["piped"] = host
             break
     if not res:
@@ -684,12 +684,14 @@ WB_DATE_PATTERNS = (
     rb'itemprop="(?:uploadDate|datePublished)"\s+content="(\d{4}-\d{2}-\d{2})',
     rb'"upload_date"\s*:\s*"(\d{4})(\d{2})(\d{2})"',
 )
-# 同一个视频在不同快照里可能以 www / 不带 www 两种主机名存档，都要查
-WB_URL_FORMS = ("https://www.youtube.com/watch?v=%s", "https://youtube.com/watch?v=%s")
+# 同一个视频在不同快照里可能以 www / 不带 www / m 三种主机名存档，都要查
+WB_URL_FORMS = ("https://www.youtube.com/watch?v=%s",
+                "https://youtube.com/watch?v=%s",
+                "https://m.youtube.com/watch?v=%s")
 
 
 def _wayback_cdx_stamps(vid):
-    """查这条视频在 archive.org 的快照时间戳列表（两种主机名都试）。"""
+    """查这条视频在 archive.org 的快照时间戳列表（几种主机名都试）。"""
     for form in WB_URL_FORMS:
         cdx = ("http://web.archive.org/cdx/search/cdx?url=%s&output=json&fl=timestamp"
                "&filter=statuscode:200&limit=4"
@@ -708,13 +710,13 @@ def _wayback_cdx_stamps(vid):
 
 
 def _wayback_watch_date(vid):
-    """返回 (YYYY-MM-DD|None, 原因)。原因用于统计"为什么没拿到"：
+    """返回 (YYYY-MM-DD|None, 原因)。原因用于统计“为什么没拿到”：
     no_cdx=没有快照 / no_page=快照抓不到 / no_date=快照里没有日期（多为JS壳页）。"""
     stamps = _wayback_cdx_stamps(vid)
     if not stamps:
         return None, "no_cdx"
     got_page = False
-    for ts in stamps[:2]:
+    for ts in stamps[:4]:
         html = http_get_bytes(
             "http://web.archive.org/web/%sid_/https://www.youtube.com/watch?v=%s"
             % (ts, vid), timeout=30, quiet=True)
@@ -999,7 +1001,7 @@ def _player_probe(vid, client, api_key):
 
 def dates_from_player(ids, api_key, deadline, state):
     """先用少量样本挑出当前云端 IP 下真正能用的客户端，再用它并行补齐所有缺口。
-    样本只取 2 条（判断"能不能用"足够了），避免在必然失败的探测上烧时间。"""
+    样本只取 2 条（判断“能不能用”足够了），避免在必然失败的探测上烧时间。"""
     res = {}
     ids = [v for v in ids if VIDEOID_RE.fullmatch(v)]
     if not ids:
@@ -1037,6 +1039,30 @@ def dates_from_player(ids, api_key, deadline, state):
                     res[vid] = (ms, "day_official", "innertube")
     log("[播放接口] %s 补齐 %d/%d 条官方日" % (chosen[0], len(res), len(ids)))
     return res
+
+
+def probe_ytdlp_client(sample_ids, deadline):
+    """在少量样本上试各种 yt-dlp player_client，返回第一个能给出 upload_date 的客户端名。
+    yt-dlp 的客户端实现带了完整请求头/visitorData，有时能拿到裸 POST 拿不到的日期。"""
+    sample_ids = [v for v in sample_ids if VIDEOID_RE.fullmatch(v)][:2]
+    if not sample_ids:
+        return None
+    for client in YTDLP_CLIENT_CANDIDATES:
+        if not deadline.ok(30):
+            break
+        urls = ["https://www.youtube.com/watch?v=%s" % v for v in sample_ids]
+        out = yt_run(["--no-playlist", "--print", "%(id)s\t%(upload_date)s",
+                      "--extractor-args", "youtube:player_client=" + client,
+                      "--retries", "1"] + urls,
+                     timeout=int(max(60, min(240, deadline.left()))))
+        hit = 0
+        for line in out.splitlines():
+            if "\t" in line and re.fullmatch(r"\d{8}", line.split("\t", 1)[1].strip()):
+                hit += 1
+        log("[yt-dlp] 客户端探测 %s：%d/%d 命中" % (client, hit, len(urls)))
+        if hit:
+            return client
+    return None
 
 
 def dates_from_ytdlp_clients(ids, deadline, client):
@@ -1175,7 +1201,7 @@ def load_date_cache(path):
 
 
 def save_date_cache(path, cache, merged, min_rank=None):
-    """只把"官方级"结论写回缓存（RSS/官方接口/镜像/存档/播放接口/yt-dlp），
+    """只把“官方级”结论写回缓存（RSS/官方接口/镜像/存档/播放接口/yt-dlp），
     标题推断与模糊相对时间不回写——那些每周都能就地重算，且标题可能被改。"""
     min_rank = PREC_RANK["day_official"] if min_rank is None else min_rank
     keep = {k: v for k, v in merged.items()
@@ -1258,8 +1284,8 @@ def apply_title_and_relative(entries, rel):
 
 
 def annotate_estimates(entries):
-    """给"完全没日期"的条目加区间提示：视频 ID 数值随时序单调，
-    用前后最近的官方级日期夹出大致位置。这是**提示**，不是日期，仍标"未知"。"""
+    """给“完全没日期”的条目加区间提示：视频 ID 数值随时序单调，
+    用前后最近的官方级日期夹出大致位置。这是**提示**，不是日期，仍标“未知”。"""
     anchors = sorted((vid_rank(e["id"]), e["ts_ms"]) for e in entries
                      if e.get("ts_ms")
                      and PREC_RANK.get(e.get("prec") or "", 0) >= PREC_RANK["day_official"])
@@ -1299,7 +1325,7 @@ def _sort_key(e):
 # ------------------------------------------------ 输出
 
 def read_previous_ids(path):
-    """读上一版清单里的 id -> 标题，用于"本次变化"归档对照。"""
+    """读上一版清单里的 id -> 标题，用于“本次变化”归档对照。"""
     ids, cur = {}, None
     if not os.path.isfile(path):
         return ids
@@ -1326,7 +1352,7 @@ def write_output(path, entries, meta):
     L.append("=" * 40)
     L.append("频道: %s" % (meta.get("name") or "-"))
     L.append("频道链接: %s" % meta.get("channel_url", "-"))
-    L.append("频道 ID: %s" % (meta.get("ucid", "-")))
+    L.append("频道 ID: %s" % meta.get("ucid", "-"))
     if meta.get("channel_count"):
         cc = meta["channel_count"]
         L.append("频道页显示视频总数: %s（本文件抓取到 %d 条，覆盖率 %.0f%%）"
@@ -1374,8 +1400,7 @@ def write_output(path, entries, meta):
             if e.get("est_ms"):
                 d = dt.datetime.fromtimestamp(e["est_ms"] / 1000.0, tz=CN_TZ)
                 hint = "；按视频 ID 时序推算大约在 %s 前后%s" % (
-                    d.strftime("%Y-%m"),
-                    ("（±%d 天）" % e["est_days"]) if e.get("est_days") else "")
+                    d.strftime("%Y-%m"), ("（±%d 天）" % e["est_days"]) if e.get("est_days") else "")
             L.append("    发布时间: 未知（官方字段暂不可取%s，下周自动重跑会再试）" % hint)
         tags = sorted(e.get("tags") or [], key=lambda x: "短视频" not in x)
         if tags:
@@ -1525,7 +1550,7 @@ def run_channel(channel_url, args, deadline):
         sources.append(("rss", rss_map))
     counts.append(("官方 RSS（精确到秒）", len(rss_map)))
     for e in entries:
-        # RSS 标题只用于"填空"：RSS 快照可能是发布时的旧标题，绝不能覆盖现行标题
+        # RSS 标题只用于“填空”：RSS 快照可能是发布时的旧标题，绝不能覆盖现行标题
         if e["id"] in rss_titles and not (e.get("title") or "").strip():
             e["title"] = rss_titles[e["id"]]
     w.mark("RSS")
@@ -1596,7 +1621,7 @@ def run_channel(channel_url, args, deadline):
     log("[缺口] 仍缺官方秒/日精度的视频: %d 条" % len(gaps))
 
     # 6) archive.org 历史 watch 页快照：免 key 拿老视频日精度的主要通路。
-    #    排序原则：先补"完全没有日期"的，再按时间**从旧到新**（老视频既最需要、也最可能有存档）。
+    #    排序原则：先补“完全没有日期”的，再按时间**从旧到新**（老视频既最需要、也最可能有存档）。
     if gaps and not args.list_only and not api_key and deadline.ok(45):
         try:
             bare = [e["id"] for e in gaps_ids("bare") if e["id"] not in cache.absent]
@@ -1604,7 +1629,7 @@ def run_channel(channel_url, args, deadline):
                             and e.get("prec") != "unknown"),
                            key=lambda e: e.get("ts_ms") or e.get("approx_ms") or 0)
             cand = bare + [e["id"] for e in dated]
-            log("[存档] 候选 %d 条（其中完全无日期 %d 条），按"无日期优先 + 从旧到新"顺序查"
+            log("[存档] 候选 %d 条（其中完全无日期 %d 条），按「无日期优先 + 从旧到新」顺序查"
                 % (len(cand), len(bare)))
             wb_res, tried, miss, reasons = dates_from_wayback_watch(
                 cand, deadline, cache.absent, max_lookups=args.wb_lookups)
@@ -1640,17 +1665,16 @@ def run_channel(channel_url, args, deadline):
         except Exception as ex:
             log("[播放接口] 失败: %s" % str(ex)[:120])
         w.mark("播放接口探测")
-        if not state.get("player_probe") or not blocked:
-            c2 = probe_ytdlp_client(gaps, deadline)
-            state["ytdlp_client"] = c2 or "-"
-            counts.append(("yt-dlp 可用客户端", c2 or "无"))
-            if c2:
-                yd = dates_from_ytdlp_clients(gaps, deadline, c2)
-                if yd:
-                    sources.append(("ytdlp", yd))
-                    merge_dates(entries, sources)
-                counts.append(("yt-dlp 客户端元数据（日精度）", len(yd)))
-            w.mark("yt-dlp 客户端探测")
+        c2 = probe_ytdlp_client(gaps, deadline)
+        state["ytdlp_client"] = c2 or "-"
+        counts.append(("yt-dlp 可用客户端", c2 or "无"))
+        if c2:
+            yd = dates_from_ytdlp_clients(gaps, deadline, c2)
+            if yd:
+                sources.append(("ytdlp", yd))
+                merge_dates(entries, sources)
+            counts.append(("yt-dlp 客户端元数据（日精度）", len(yd)))
+        w.mark("yt-dlp 客户端探测")
     elif blocked:
         counts.append(("单视频接口探测", None))
         log("[探测] 冷却期内（%s 前）跳过播放接口与 yt-dlp 探测，预算留给存档通路"
