@@ -25,20 +25,21 @@ fetch.py — GitHub Actions 云端全量抓取器 v2（国内免梯子的"一劳
   1) 精确到秒 —— 官方 RSS <published>（最近约 15 条）
   2) 精确到秒 —— 官方 Data API v3 snippet.publishedAt（配仓库 Secret: YT_API_KEY 后全量可用）
   3) 精确到秒 —— Piped / Invidious 在线镜像的 uploadDate / published（实例列表动态发现）
-  4) 日精度   —— archive.org 历史 watch 页快照里存档的官方 uploadDate（免 key 的老视频通路）
-  5) 日精度   —— YouTube 播放接口 playerMicroformatRenderer.publishDate；yt-dlp upload_date
-  6) 日/月    —— 标题内嵌完整日期（如 "March 27th 2019"），标注"推断"
-  7) 年/月/周/日 —— 频道页相对时间（"3 years ago"），标注粒度（兜底主力）
-  8) 未知     —— 以上全拿不到才标未知，并给出"按视频 ID 时序推算"的区间提示，下周自动重试
+  4) 日精度   —— watch 页 HTML 里的 SEO/schema.org 元数据（最便宜的一条）
+  5) 日精度   —— archive.org 历史 watch 页快照里存档的官方 uploadDate
+  6) 日精度   —— YouTube 播放接口 playerMicroformatRenderer.publishDate；yt-dlp upload_date
+  7) 日/月    —— 标题内嵌完整日期（如 "March 27th 2019"），标注"推断"
+  8) 年/月/周/日 —— 频道页相对时间（"3 years ago"），标注粒度（兜底主力）
+  9) 未知     —— 以上全拿不到才标未知，并给出"按视频 ID 时序推算"的区间提示，下周自动重试
 
 云端 IP 的实测结论（决定了本脚本的资源分配策略）：
-  · GitHub 数据中心 IP 会被 YouTube 对"单视频元数据"整体风控——7 种播放接口客户端实测
+  · GitHub 数据中心 IP 会被 YouTube 对"单视频接口"整体风控——7 种播放接口客户端实测
     全部 LOGIN_REQUIRED/网络失败，yt-dlp 各 player_client 也全为 0。
   · Piped / Invidious 绝大多数实例从该 IP 不可达（连接超时）。
   · 真正稳定产出的是：官方 RSS（精确秒）、archive.org 存档快照（日精度，实测命中率约 40%）、
     频道页相对时间（模糊兜底），以及**历史缓存逐周累积**。
   因此：给每个数据源独立子预算；判定不可用的通路进冷却期（缓存里记截止日期），
-  把时间全部让给 archive.org 存档这条唯一有稳定产出的免 key 通路。
+  把时间全部让给真正有产出的通路。
 """
 import argparse
 import bisect
@@ -71,6 +72,7 @@ RUN_LOG = "data/_run_log.txt"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 YT_ID_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+GOOGLEBOT_UA = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 PROBE_COOLDOWN_DAYS = 14      # 探测到"整体被风控"后，多久不再重复探测
 MIRROR_COOLDOWN_DAYS = 7      # 镜像实例全灭后，多久不再重复尝试
 
@@ -83,6 +85,7 @@ SRC_DESC = {
     "piped": "Piped 镜像",
     "invidious": "Invidious 镜像",
     "wayback": "archive.org 存档",
+    "watch": "watch 页元数据",
     "innertube": "YouTube 播放接口",
     "ytdlp": "yt-dlp 元数据",
     "cache": "历史缓存",
@@ -678,6 +681,60 @@ def dates_from_invidious(ucid, want, deadline, state):
     return res
 
 
+# --- 直接抓 watch 页 HTML：SEO/schema.org 元数据里常带官方发布日期 ---
+
+def _watch_page_date(vid):
+    """抓 watch 页 HTML 并从元数据里取官方发布日期。返回 (YYYY-MM-DD|None, 说明)。
+    先普通 UA 再 Googlebot UA：部分情况下页面被风控但元数据仍在（给搜索引擎看的）。"""
+    for ua in (UA, GOOGLEBOT_UA):
+        html = http_get_bytes("https://www.youtube.com/watch?v=%s" % vid,
+                              timeout=20, quiet=True, headers={"User-Agent": ua})
+        if not html:
+            continue
+        for pat in WB_DATE_PATTERNS:
+            m = re.search(pat, html)
+            if m:
+                g = m.groups()
+                if len(g) >= 3 and g[1] and g[2]:
+                    return "%s-%s-%s" % (g[0], g[1], g[2]), "ok"
+                return g[0].decode(), "ok"
+    return None, "no_date"
+
+
+def dates_from_watch_page(ids, deadline, state, workers=6, max_lookups=500):
+    """先用 3 条样本判断这条路通不通（不通就只花 6 次请求），通了再批量并行取。"""
+    res = {}
+    ids = [v for v in ids if VIDEOID_RE.fullmatch(v)]
+    if not ids:
+        return res, 0
+    sample = ids[:3]
+    hit = 0
+    for vid in sample:
+        if deadline.ok(6) and _watch_page_date(vid)[0]:
+            hit += 1
+    state["watch_probe"] = "%d/%d" % (hit, len(sample))
+    log("[watch页] 样本命中 %d/%d" % (hit, len(sample)))
+    if not hit:
+        return res, 0
+    tried = 0
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        step = workers * 4
+        for i in range(0, min(len(ids), max_lookups), step):
+            if not deadline.ok(15):
+                break
+            chunk = ids[i:i + step]
+            for vid, (d, _why) in zip(chunk, ex.map(_watch_page_date, chunk)):
+                tried += 1
+                if d:
+                    ms = day_str_to_ms(d)
+                    if ms:
+                        res[vid] = (ms, "day_official", "watch")
+            if tried % 25 < step or tried >= min(len(ids), max_lookups):
+                log("[watch页] 已查 %d 条，命中 %d 条" % (tried, len(res)))
+    log("[watch页] 本轮查 %d 条，命中 %d 条" % (tried, len(res)))
+    return res, tried
+
+
 # --- archive.org 历史 watch 页快照：免 key 拿老视频官方日精度的主要通路 ---
 
 WB_DATE_PATTERNS = (
@@ -1160,6 +1217,7 @@ class DateCache:
         self.absent = set()
         self.blocked_until = None
         self.mirrors_blocked_until = None
+        self.watch_blocked_until = None
 
 
 def cache_path_for(out_path):
@@ -1181,6 +1239,9 @@ def load_date_cache(path):
                     m2 = re.match(r"#\s*mirrors_blocked_until=(\d{4}-\d{2}-\d{2})", line)
                     if m2:
                         c.mirrors_blocked_until = m2.group(1)
+                    m3 = re.match(r"#\s*watch_blocked_until=(\d{4}-\d{2}-\d{2})", line)
+                    if m3:
+                        c.watch_blocked_until = m3.group(1)
                     continue
                 if "\t" not in line:
                     continue
@@ -1222,6 +1283,9 @@ def save_date_cache(path, cache, merged, min_rank=None):
     if cache.mirrors_blocked_until:
         lines.append("# mirrors_blocked_until=%s（镜像实例此前全灭，到期前不再尝试）"
                      % cache.mirrors_blocked_until)
+    if cache.watch_blocked_until:
+        lines.append("# watch_blocked_until=%s（watch 页此前取不到日期，到期前不再尝试）"
+                     % cache.watch_blocked_until)
     for vid in sorted(keep):
         ms, prec, src = keep[vid]
         lines.append("%s\t%d\t%s\t%s\t%s" % (vid, ms, prec, src, now))
@@ -1366,7 +1430,7 @@ def write_output(path, entries, meta):
     L.append("=" * 40)
     L.append("频道: %s" % (meta.get("name") or "-"))
     L.append("频道链接: %s" % meta.get("channel_url", "-"))
-    L.append("频道 ID: %s" % (meta.get("ucid", "-")))
+    L.append("频道 ID: %s" % meta.get("ucid", "-"))
     if meta.get("channel_count"):
         cc = meta["channel_count"]
         L.append("频道页显示视频总数: %s（本文件抓取到 %d 条，覆盖率 %.0f%%）"
@@ -1580,7 +1644,7 @@ def run_channel(channel_url, args, deadline):
         log("[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）")
 
     # 3)(4) 第三方镜像：独立子预算；一旦判定整体不可用就进冷却期，
-    #       把省下的时间全部让给真正有产出的 archive.org 存档通路。
+    #       把省下的时间全部让给真正有产出的通路。
     if not args.list_only:
         global _MIRRORS_DEAD
         need = set(ids)
@@ -1648,6 +1712,25 @@ def run_channel(channel_url, args, deadline):
 
     gaps = [e["id"] for e in gaps_ids()]
     log("[缺口] 仍缺官方秒/日精度的视频: %d 条" % len(gaps))
+
+    # 5b) 直接抓 watch 页元数据（最便宜的一条；不通就进冷却期，不浪费时间）
+    if (gaps and not args.list_only and deadline.ok(30)
+            and not _cooldown_active(cache.watch_blocked_until)):
+        try:
+            wp, wtried = dates_from_watch_page(gaps, deadline, state)
+            if wp:
+                sources.append(("watch", wp))
+                merge_dates(entries, sources)
+            counts.append(("watch 页元数据（日精度）", len(wp)))
+            if not wp:
+                cache.watch_blocked_until = (dt.datetime.now(timezone.utc)
+                                             + dt.timedelta(days=PROBE_COOLDOWN_DAYS)
+                                             ).strftime("%Y-%m-%d")
+                log("[watch页] 取不到日期，冷却至 %s" % cache.watch_blocked_until)
+        except Exception as ex:
+            log("[watch页] 失败: %s" % str(ex)[:120])
+        w.mark("watch 页元数据")
+        gaps = [e["id"] for e in gaps_ids()]
 
     # 6) archive.org 历史 watch 页快照：免 key 拿老视频日精度的主要通路。
     #    排序原则：先补“完全没有日期”的，再按时间**从旧到新**（老视频既最需要、也最可能有存档）。
@@ -1727,7 +1810,8 @@ def run_channel(channel_url, args, deadline):
         "name": name or "-", "ucid": ucid or "-", "channel_url": channel_url,
         "channel_count": len(entries), "raw_count": len(ids),
         "source_desc": ("GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) "
-                        "+ 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛"),
+                        "+ 多源日期解析(RSS/官方接口/镜像/watch页/存档/播放接口/相对文本) "
+                        "+ 历史缓存逐周收敛"),
         "elapsed": "%d分%.0f秒" % (elapsed // 60, elapsed % 60),
         "counts": counts,
         "phases": w.summary(),
