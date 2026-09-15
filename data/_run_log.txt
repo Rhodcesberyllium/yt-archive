@@ -1,66 +1,27 @@
 [日志] 本次运行日志同时写入 data/_run_log.txt
-[环境] Python 3.12.14 / 时间 2026-09-16 05:40:43 (UTC+8) / 视频ID时序可用
-[轮转] 本次从第 2 个频道开始抓（第 2 轮），保证配额逐轮公平分配
+[环境] Python 3.12.14 / 时间 2026-09-16 05:48:21 (UTC+8) / 视频ID时序可用
+[轮转] 本次从第 3 个频道开始抓（第 3 轮），保证配额逐轮公平分配
 == 本次将抓取 5 个频道（总预算 45 分钟）==
-   - https://www.youtube.com/@NileRed/videos
    - https://www.youtube.com/@ChemicalForce/videos
    - https://www.youtube.com/@Chemiolis/videos
    - https://www.youtube.com/@ExplosionsAndFire/videos
    - https://www.youtube.com/@NurdRage/videos
+   - https://www.youtube.com/@NileRed/videos
 
 [预算] 频道 1/5 分配 485 秒（全局剩余 2700 秒）
-
-============================================================
-== 频道: https://www.youtube.com/@NileRed/videos ==
-[枚举] tab=videos 获得 254 条（累计 254）
-[枚举] tab=shorts 获得 147 条（累计 401）
-[枚举] tab=streams 获得 0 条（累计 401）
-[计时] 枚举: 6.1s（累计 6.1s）
-[计时] 频道信息: 0.3s（累计 6.4s）
-[频道] 名称=NileRed ID=UCFhXFikryT4aFcLkLw2LBLA
-[缓存] 命中 319/401 条；另记 342 条已确认无存档；探测冷却中（2026-09-29）
-[RSS] 仅有 7 条，稍候重试一次
-[RSS] 获得 7 条精确日期
-[计时] RSS: 1.3s（累计 7.6s）
-[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
-[镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
-[相对时间] tab=videos 首屏30条 + 翻页35页, 候选token6个, 并集254
-[相对时间] tab=shorts 首屏0条 + 翻页11页, 候选token6个, 并集254
-[相对时间] tab=streams 首屏42条 + 翻页0页, 候选token4个, 并集278
-[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
-[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
-[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 24.0s（累计 31.6s）
-[缺口] 仍缺官方秒/日精度的视频: 82 条
-[watch页] 样本命中 3/3
-[watch页] 已查 27 条，命中 27 条
-[watch页] 已查 54 条，命中 54 条
-[watch页] 已查 81 条，命中 81 条
-[watch页] 已查 82 条，命中 82 条
-[watch页] 本轮查 82 条，命中 82 条
-[计时] watch 页元数据: 71.2s（累计 102.8s）
-[探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
-[兜底] 标题推断 0 条，页面相对文本 0 条
-[推算] 为 0 条无日期视频标出 ID 时序区间提示
-[归档] 相比上次：新增 0 条，消失 0 条
-
-[完成] data/NileRed_videos.txt：共 401 条（精确 7 / 官方日 394 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 401 条占 100%，耗时 1分42秒
-[缓存] 写入 data/NileRed_dates.txt（401 条官方级日期 + 342 条无存档标记）
-
-[预算] 频道 2/5 分配 584 秒（全局剩余 2597 秒）
 
 ============================================================
 == 频道: https://www.youtube.com/@ChemicalForce/videos ==
 [枚举] tab=videos 获得 171 条（累计 171）
 [枚举] tab=shorts 获得 44 条（累计 215）
 [枚举] tab=streams 获得 0 条（累计 215）
-[计时] 枚举: 3.7s（累计 3.7s）
-[计时] 频道信息: 0.3s（累计 4.0s）
+[计时] 枚举: 7.5s（累计 7.5s）
+[计时] 频道信息: 0.3s（累计 7.8s）
 [频道] 名称=ChemicalForce ID=UCqONNjBkukcc2yXbmHL8niQ
 [缓存] 命中 9/215 条；另记 206 条已确认无存档；探测冷却中（2026-09-29）
 [RSS] 仅有 7 条，稍候重试一次
 [RSS] 获得 7 条精确日期
-[计时] RSS: 1.2s（累计 5.2s）
+[计时] RSS: 1.3s（累计 9.0s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
 [镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
 [相对时间] tab=videos 首屏30条 + 翻页23页, 候选token5个, 并集171
@@ -69,32 +30,32 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 12.7s（累计 17.9s）
+[计时] 频道页相对时间: 14.8s（累计 23.8s）
 [缺口] 仍缺官方秒/日精度的视频: 206 条
 [存档] 候选 0 条（其中完全无日期 0 条），按「无日期优先 + 从旧到新」顺序查
-[计时] archive.org 存档: 0.0s（累计 17.9s）
+[计时] archive.org 存档: 0.0s（累计 23.8s）
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
 [兜底] 标题推断 0 条，页面相对文本 167 条
 [推算] 为 39 条无日期视频标出 ID 时序区间提示
 [归档] 相比上次：新增 0 条，消失 0 条
 
-[完成] data/ChemicalForce_videos.txt：共 215 条（精确 7 / 官方日 2 / 标题推断 0 / 相对文本 167 / 未知 39），可靠日期(秒或日) 9 条占 4%，耗时 0分17秒
+[完成] data/ChemicalForce_videos.txt：共 215 条（精确 7 / 官方日 2 / 标题推断 0 / 相对文本 167 / 未知 39），可靠日期(秒或日) 9 条占 4%，耗时 0分23秒
 [缓存] 写入 data/ChemicalForce_dates.txt（9 条官方级日期 + 206 条无存档标记）
 
-[预算] 频道 3/5 分配 773 秒（全局剩余 2579 秒）
+[预算] 频道 2/5 分配 602 秒（全局剩余 2676 秒）
 
 ============================================================
 == 频道: https://www.youtube.com/@Chemiolis/videos ==
 [枚举] tab=videos 获得 75 条（累计 75）
 [枚举] tab=shorts 获得 7 条（累计 82）
 [枚举] tab=streams 获得 0 条（累计 82）
-[计时] 枚举: 2.5s（累计 2.5s）
-[计时] 频道信息: 0.3s（累计 2.8s）
+[计时] 枚举: 2.4s（累计 2.4s）
+[计时] 频道信息: 0.4s（累计 2.7s）
 [频道] 名称=Chemiolis ID=UCoDmZirW1o9XSKSRM6YJ1rQ
 [缓存] 命中 23/82 条；另记 59 条已确认无存档；探测冷却中（2026-09-29）
 [RSS] 仅有 7 条，稍候重试一次
 [RSS] 获得 7 条精确日期
-[计时] RSS: 1.4s（累计 4.2s）
+[计时] RSS: 1.3s（累计 4.1s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
 [镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
 [相对时间] tab=videos 首屏30条 + 翻页11页, 候选token5个, 并集75
@@ -106,75 +67,35 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 8.5s（累计 12.7s）
+[计时] 频道页相对时间: 10.2s（累计 14.3s）
 [缺口] 仍缺官方秒/日精度的视频: 59 条
 [存档] 候选 0 条（其中完全无日期 0 条），按「无日期优先 + 从旧到新」顺序查
-[计时] archive.org 存档: 0.0s（累计 12.7s）
+[计时] archive.org 存档: 0.0s（累计 14.3s）
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
 [兜底] 标题推断 0 条，页面相对文本 55 条
 [推算] 为 4 条无日期视频标出 ID 时序区间提示
 [归档] 相比上次：新增 0 条，消失 0 条
 
-[完成] data/Chemiolis_videos.txt：共 82 条（精确 7 / 官方日 16 / 标题推断 0 / 相对文本 55 / 未知 4），可靠日期(秒或日) 23 条占 28%，耗时 0分12秒
+[完成] data/Chemiolis_videos.txt：共 82 条（精确 7 / 官方日 16 / 标题推断 0 / 相对文本 55 / 未知 4），可靠日期(秒或日) 23 条占 28%，耗时 0分14秒
 [缓存] 写入 data/Chemiolis_dates.txt（23 条官方级日期 + 59 条无存档标记）
 
-[预算] 频道 4/5 分配 900 秒（全局剩余 2567 秒）
+[预算] 频道 3/5 分配 798 秒（全局剩余 2662 秒）
 
 ============================================================
 == 频道: https://www.youtube.com/@ExplosionsAndFire/videos ==
 [枚举] tab=videos 获得 33 条（累计 33）
 [枚举] tab=shorts 获得 2 条（累计 35）
 [枚举] tab=streams 获得 0 条（累计 35）
-[计时] 枚举: 2.0s（累计 2.0s）
-[计时] 频道信息: 0.2s（累计 2.2s）
+[计时] 枚举: 1.7s（累计 1.7s）
+[计时] 频道信息: 0.3s（累计 2.0s）
 [频道] 名称=Explosions&Fire ID=UCVovvq34gd0ps5cVYNZrc7A
 [缓存] 命中 20/35 条；另记 15 条已确认无存档；探测冷却中（2026-09-29）
 [RSS] 仅有 7 条，稍候重试一次
 [RSS] 获得 7 条精确日期
-[计时] RSS: 1.1s（累计 3.3s）
+[计时] RSS: 1.4s（累计 3.3s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
-[实例] 动态发现：Piped 0 个 / Invidious 4 个（发现不到时只用内置列表）
-[网络] 失败 https://pipedapi.kavin.rocks/channel/UCVovvq34gd0ps5cVYNZrc7A: HTTP Error 403: Forbidden
-[Piped] api.piped.private.coffee 第 1 页：+0 条（累计 0/35）
-[Piped] api.piped.private.coffee 第 2 页：+0 条（累计 0/35）
-[网络] 失败 https://pipedapi.adminforge.de/channel/UCVovvq34gd0ps5cVYNZrc7A: HTTP Error 404: Not Found
-[网络] 失败 https://pipedapi.leptons.xyz/channel/UCVovvq34gd0ps5cVYNZrc7A: HTTP Error 502: Bad Gateway
-[Piped] pipedapi.ducks.party 第 1 页：+0 条（累计 0/35）
-[Piped] pipedapi.ducks.party 第 2 页：+0 条（累计 0/35）
-[网络] 失败 https://piped-api.lunar.icu/channel/UCVovvq34gd0ps5cVYNZrc7A: HTTP Error 502: Bad Gateway
-[网络] 失败 https://pipedapi.reallyaweso.me/channel/UCVovvq34gd0ps5cVYNZrc7A: HTTP Error 502: Bad Gateway
-[网络] 失败 https://pipedapi.drgns.space/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://pipedapi.smnz.de/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [Errno 101] Network is unreachable>
-[网络] 失败 https://pipedapi.orangenet.cc/channel/UCVovvq34gd0ps5cVYNZrc7A: HTTP Error 502: Bad Gateway
-[网络] 失败 https://pipedapi.zeteo.dev/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://piped-api.privacy.com.de/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://pipedapi.astartes.nl/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:10
-[网络] 失败 https://pipedapi.bpwn.ro/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://pipedapi.nosebs.ru/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://api.piped.yt/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://pipedapi.vyper.me/channel/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error timed out>
-[Piped] 试了 18 个实例均无数据；错误样例：pipedapi.kavin.rocks: 网络失败 | pipedapi.adminforge.de: 网络失败 | pipedapi.leptons.xyz: 网络失败
-[计时] Piped: 36.9s（累计 40.1s）
-[网络] 失败 https://yt.chocolatemoo53.com/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A: <urlopen error [Errno 101] Network is unreachable>
-[网络] 失败 https://inv-ygg.nadeko.net/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/vi: <urlopen error [Errno 101] Network is unreachable>
-[网络] 失败 https://inv.nadeko.ygg/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://inv.nadeko.net/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos: HTTP Error 403: Forbidden
-[网络] 失败 https://invidious.nerdvpn.de/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/: HTTP Error 401: Unauthorized
-[网络] 失败 https://yewtu.be/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos?page=: HTTP Error 403: Forbidden
-[网络] 失败 https://inv.tux.pizza/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos?: <urlopen error timed out>
-[网络] 失败 https://invidious.privacyredirect.com/api/v1/channels/UCVovvq34gd0ps5c: HTTP Error 404: Not Found
-[网络] 失败 https://iv.melmac.space/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/video: <urlopen error [Errno 101] Network is unreachable>
-[网络] 失败 https://invidious.jing.rocks/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://invidious.reallyaweso.me/api/v1/channels/UCVovvq34gd0ps5cVYNZr: HTTP Error 502: Bad Gateway
-[网络] 失败 https://invidious.dhusch.de/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/v: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
-[网络] 失败 https://invidious.perennialte.ch/api/v1/channels/UCVovvq34gd0ps5cVYNZr: HTTP Error 404: Not Found
-[网络] 失败 https://iv.datura.network/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/vid: <urlopen error [Errno -2] Name or service not known>
-[网络] 失败 https://iv.ggtyler.dev/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos: <urlopen error timed out>
-[网络] 失败 https://invidious.einfachzocken.eu/api/v1/channels/UCVovvq34gd0ps5cVYN: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-
-[Invidious] 试了 20 个实例均无数据；错误样例：yt.chocolatemoo53.com: 网络失败 | invidious.f5.si: 非 JSON: Expecting value: line 1 column 1 (char 0) | inv-ygg.nadeko.net: 网络失败
-[计时] Invidious: 51.1s（累计 91.2s）
-[镜像] 本轮镜像全灭，进入 7 天冷却（截至 2026-09-22）
-[相对时间] tab=videos 首屏30条 + 翻页7页, 候选token6个, 并集33
+[镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
+[相对时间] tab=videos 首屏0条 + 翻页7页, 候选token6个, 并集33
 [相对时间] tab=shorts 首屏0条 + 翻页0页, 候选token2个, 并集33
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
@@ -183,32 +104,32 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 5.6s（累计 96.8s）
+[计时] 频道页相对时间: 6.9s（累计 10.2s）
 [缺口] 仍缺官方秒/日精度的视频: 15 条
 [存档] 候选 0 条（其中完全无日期 0 条），按「无日期优先 + 从旧到新」顺序查
-[计时] archive.org 存档: 0.0s（累计 96.8s）
+[计时] archive.org 存档: 0.0s（累计 10.2s）
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
 [兜底] 标题推断 0 条，页面相对文本 14 条
 [推算] 为 1 条无日期视频标出 ID 时序区间提示
 [归档] 相比上次：新增 0 条，消失 0 条
 
-[完成] data/Explosions&Fire_videos.txt：共 35 条（精确 7 / 官方日 13 / 标题推断 0 / 相对文本 14 / 未知 1），可靠日期(秒或日) 20 条占 57%，耗时 1分36秒
+[完成] data/Explosions&Fire_videos.txt：共 35 条（精确 7 / 官方日 13 / 标题推断 0 / 相对文本 14 / 未知 1），可靠日期(秒或日) 20 条占 57%，耗时 0分10秒
 [缓存] 写入 data/Explosions&Fire_dates.txt（20 条官方级日期 + 15 条无存档标记）
 
-[预算] 频道 5/5 分配 900 秒（全局剩余 2470 秒）
+[预算] 频道 4/5 分配 900 秒（全局剩余 2652 秒）
 
 ============================================================
 == 频道: https://www.youtube.com/@NurdRage/videos ==
 [枚举] tab=videos 获得 287 条（累计 287）
 [枚举] tab=shorts 获得 4 条（累计 291）
 [枚举] tab=streams 获得 0 条（累计 291）
-[计时] 枚举: 4.9s（累计 4.9s）
-[计时] 频道信息: 0.3s（累计 5.1s）
+[计时] 枚举: 4.2s（累计 4.2s）
+[计时] 频道信息: 0.3s（累计 4.4s）
 [频道] 名称=NurdRage ID=UCIgKGGJkt1MrNmhq3vRibYA
 [缓存] 命中 291/291 条；另记 238 条已确认无存档；探测冷却中（2026-09-29）
 [RSS] 仅有 7 条，稍候重试一次
 [RSS] 获得 7 条精确日期
-[计时] RSS: 1.0s（累计 6.2s）
+[计时] RSS: 1.4s（累计 5.8s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
 [镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
 [相对时间] tab=videos 首屏30条 + 翻页39页, 候选token6个, 并集287
@@ -220,20 +141,52 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 19.2s（累计 25.3s）
+[计时] 频道页相对时间: 25.1s（累计 30.9s）
 [缺口] 仍缺官方秒/日精度的视频: 0 条
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
 [兜底] 标题推断 0 条，页面相对文本 0 条
 [推算] 为 0 条无日期视频标出 ID 时序区间提示
 [归档] 相比上次：新增 0 条，消失 0 条
 
-[完成] data/NurdRage_videos.txt：共 291 条（精确 7 / 官方日 284 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 291 条占 100%，耗时 0分25秒
+[完成] data/NurdRage_videos.txt：共 291 条（精确 7 / 官方日 284 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 291 条占 100%，耗时 0分30秒
 [缓存] 写入 data/NurdRage_dates.txt（291 条官方级日期 + 238 条无存档标记）
+
+[预算] 频道 5/5 分配 900 秒（全局剩余 2621 秒）
+
+============================================================
+== 频道: https://www.youtube.com/@NileRed/videos ==
+[枚举] tab=videos 获得 254 条（累计 254）
+[枚举] tab=shorts 获得 147 条（累计 401）
+[枚举] tab=streams 获得 0 条（累计 401）
+[计时] 枚举: 5.1s（累计 5.1s）
+[计时] 频道信息: 0.4s（累计 5.5s）
+[频道] 名称=NileRed ID=UCFhXFikryT4aFcLkLw2LBLA
+[缓存] 命中 401/401 条；另记 342 条已确认无存档；探测冷却中（2026-09-29）
+[RSS] 仅有 7 条，稍候重试一次
+[RSS] 获得 7 条精确日期
+[计时] RSS: 1.2s（累计 6.7s）
+[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
+[镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
+[相对时间] tab=videos 首屏30条 + 翻页35页, 候选token6个, 并集254
+[相对时间] tab=shorts 首屏0条 + 翻页11页, 候选token6个, 并集254
+[相对时间] tab=streams 首屏42条 + 翻页0页, 候选token4个, 并集278
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[计时] 频道页相对时间: 30.5s（累计 37.2s）
+[缺口] 仍缺官方秒/日精度的视频: 0 条
+[探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
+[兜底] 标题推断 0 条，页面相对文本 0 条
+[推算] 为 0 条无日期视频标出 ID 时序区间提示
+[归档] 相比上次：新增 0 条，消失 0 条
+
+[完成] data/NileRed_videos.txt：共 401 条（精确 7 / 官方日 394 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 401 条占 100%，耗时 0分37秒
+[缓存] 写入 data/NileRed_dates.txt（401 条官方级日期 + 342 条无存档标记）
 
 ============================================================
 == 本次共产出 5 个清单 ==
-  - data/NileRed_videos.txt（401 条，可靠日期统计见文件）
   - data/ChemicalForce_videos.txt（215 条，可靠日期统计见文件）
   - data/Chemiolis_videos.txt（82 条，可靠日期统计见文件）
   - data/Explosions&Fire_videos.txt（35 条，可靠日期统计见文件）
   - data/NurdRage_videos.txt（291 条，可靠日期统计见文件）
+  - data/NileRed_videos.txt（401 条，可靠日期统计见文件）
