@@ -14,10 +14,12 @@ verify_output.py — 对抓取产物做验收自检（增强版：默认连带�
   7. 标题"待补"数量与日期"未知"数量报告（--strict 时作为失败条件）
   8. 最新一条与频道 RSS 缓存对照（标题+日期）
   9. 可靠日期占比（精确到秒或日）报告
+ 10. 数据来源明细（各通道各贡献多少条）
 
 用法:
     python verify_output.py data/NurdRage_videos.txt [--rss <rss.xml>] [--strict]
     python verify_output.py --all                 # 校验 data/ 下所有频道清单
+    python verify_output.py --all --min-reliable 90   # 可靠日期占比低于 90% 即判定失败
 
 说明：不给 --all 时，除了指定的那份，还会**连带校验同目录下其它 *_videos.txt**，
 任一失败即整体失败——这样工作流里只传一个文件也能覆盖全部频道。
@@ -41,6 +43,7 @@ UNKNOWN_RE = re.compile(r"^发布时间: 未知")
 COVER_RE = re.compile(r"频道页显示视频总数: ([\d,]+)（本文件抓取到 (\d+) 条，覆盖率 (\d+)%")
 TOTAL_RE = re.compile(r"视频总数\(去重后\): (\d+)")
 SOLID_RE = re.compile(r"可靠日期\(精确到秒或日\)合计: (\d+) / (\d+) 条 = (\d+)%")
+SRC_RE = re.compile(r"^- 最终各来源条数: (.+)$", re.M)
 
 
 def parse_dt(s, fmt):
@@ -55,17 +58,17 @@ def year_anchor(y):
     return datetime(y, 7, 1, tzinfo=CN_TZ)
 
 
-def verify_one(path, rss_path=None, strict=False):
-    """校验单个文件。全部检查项通过返回 True，否则 False（不再直接退出进程）。"""
+def verify_one(path, rss_path=None, strict=False, min_reliable=None):
+    """校验单个文件。返回 (是否通过, 可靠日期占比或 None)。"""
     if not os.path.isfile(path):
         print("[X] 文件不存在: %s" % path)
-        return False
+        return False, None
     raw = open(path, "rb").read()
     try:
         text = raw.decode("utf-8")          # 检查项 0
     except UnicodeDecodeError as ex:
         print("[X] 非 UTF-8 编码: %s" % ex)
-        return False
+        return False, None
     print("[0] UTF-8 解码: 通过（%d 字节）" % len(raw))
 
     cm = COVER_RE.search(text)
@@ -93,7 +96,7 @@ def verify_one(path, rss_path=None, strict=False):
             mm = LINK_RE.match(url)
             if not mm:
                 print("[X] 链接格式错误: %s" % url)
-                return False
+                return False, None
             cur["link"] = mm.group(1)
         elif s.startswith("发布时间: "):
             mm = EXACT_RE.match(s)
@@ -121,33 +124,33 @@ def verify_one(path, rss_path=None, strict=False):
                             cur["level"] = 4  # 未知（可带 ID 时序区间提示）
                         else:
                             print("[?] 未识别的发布时间行: %s" % line)
-                            return False
+                            return False, None
 
     if not entries:
         print("[X] 未解析到任何条目，疑似文件被截断或格式错误")
-        return False
+        return False, None
 
     if bad_approx:
         print("[X] 发现 %d 条伪精确占位日期（格式: YYYY-MM-DD (UTC+8, 近似值)），禁止出现！"
               % bad_approx)
-        return False
+        return False, None
     print("[4] 伪精确占位日期: 0 条 ✓")
 
     links = [e["link"] for e in entries if e["link"]]
     if len(links) != len(entries):
         print("[X] 链接缺失: %d/%d 条" % (len(entries) - len(links), len(entries)))
-        return False
+        return False, None
     dup = len(links) - len(set(links))
     print("[1] 链接格式: 全部通过（%d 条）" % len(links))
     print("[2] 视频ID去重: %s（重复 %d 条）" % ("通过" if dup == 0 else "失败", dup))
     if dup:
-        return False
+        return False, None
 
     tm = TOTAL_RE.search(text)
     total_hdr = int(tm.group(1)) if tm else None
     if total_hdr is not None and total_hdr != len(entries):
         print("[X] 条数不一致: 头部声明 %s，实际条目 %d" % (total_hdr, len(entries)))
-        return False
+        return False, None
     print("[2] 条数一致: 头部 %s = 实际 %d ✓" % (total_hdr or len(entries), len(entries)))
 
     cnt = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0}
@@ -157,10 +160,18 @@ def verify_one(path, rss_path=None, strict=False):
     print("[5] 日期分布: 精确秒 %d | 日精度 %d | 月精度 %d | 年精度 %d | 未知 %d"
           % (cnt[0], cnt[1], cnt[2], cnt[3], cnt[4]))
 
+    ratio = None
     sm = SOLID_RE.search(text)
     if sm:
+        ratio = int(sm.group(3))
         print("[9] 可靠日期(精确秒或日): %s / %s 条 = %s%%"
               % (sm.group(1), sm.group(2), sm.group(3)))
+    else:
+        print("[9] 输出里没有“可靠日期”统计行（旧版输出？）")
+
+    src = SRC_RE.search(text)
+    if src:
+        print("[10] 数据来源明细: %s" % src.group(1).strip())
 
     known = [(i, e["dt"], e["level"]) for i, e in enumerate(entries) if e["dt"] is not None]
     hard_bad, soft_bad = [], []
@@ -172,18 +183,27 @@ def verify_one(path, rss_path=None, strict=False):
                 soft_bad.append((a[0] + 1, b[0] + 1, a[2], b[2]))
     if hard_bad:
         print("[6] 排序失败(精确/日精度区间乱序): %s（前3处）" % hard_bad[:3])
-        return False
+        return False, ratio
     print("[6] 排序断言: 精确/日精度区间从新到旧 ✓（涉及月/年推断锚点的软警告 %d 处%s）"
           % (len(soft_bad), ("，如 %s" % soft_bad[:2]) if soft_bad else ""))
 
     pend = sum(1 for e in entries if "(标题待补)" in e["title"])
     print("[7] 标题待补: %d 条%s" % (pend, "（建议继续重跑补全）" if pend else " ✓"))
-    print("[7] 日期未知: %d 条%s" % (cnt[4], "（会由后续运行逐周补全）" if cnt[4] else " ✓"))
+    print("[7] 日期未知: %d 条%s" % (cnt[4], "（会由后续运行逐轮补全）" if cnt[4] else " ✓"))
     if strict and (pend or cnt[4]):
         print("[X] --strict: 存在标题待补或日期未知，判定失败。")
-        return False
+        return False, ratio
     if coverage is not None and coverage < 100:
         print("[3] 覆盖率未达 100%%（%d%%），存在缺口，可继续重跑补全。" % coverage)
+
+    if min_reliable is not None:
+        if ratio is None:
+            print("[X] --min-reliable: 文件里没有可靠日期统计，无法判定。")
+            return False, ratio
+        if ratio < min_reliable:
+            print("[X] --min-reliable %d%%: 当前可靠日期仅 %d%%，判定失败。" % (min_reliable, ratio))
+            return False, ratio
+        print("[9] --min-reliable %d%%: 当前 %d%%，通过 ✓" % (min_reliable, ratio))
 
     rss_candidates = [rss_path] if rss_path else []
     if os.path.isdir("cache"):
@@ -215,12 +235,12 @@ def verify_one(path, rss_path=None, strict=False):
             break
     else:
         print("[8] RSS 对照: 未找到 RSS 缓存，跳过")
-    return True
+    return True, ratio
 
 
 def main():
     args = sys.argv[1:]
-    path, rss_path, strict, all_files = None, None, False, False
+    path, rss_path, strict, all_files, min_reliable = None, None, False, False, None
     for i, a in enumerate(args):
         if a == "--rss" and i + 1 < len(args):
             rss_path = args[i + 1]
@@ -228,6 +248,12 @@ def main():
             strict = True
         elif a == "--all":
             all_files = True
+        elif a == "--min-reliable" and i + 1 < len(args):
+            try:
+                min_reliable = int(args[i + 1])
+            except ValueError:
+                print("[X] --min-reliable 需要一个百分数，如 --min-reliable 90")
+                sys.exit(2)
         elif not a.startswith("--") and path is None:
             path = a
 
@@ -258,11 +284,18 @@ def main():
         print("\n" + "=" * 60)
         print("== 校验 %d/%d: %s ==" % (i, len(targets), p))
         print("=" * 60)
-        ok = verify_one(p, rss_path=rss_path, strict=strict)
-        results.append((p, ok))
+        ok, ratio = verify_one(p, rss_path=rss_path, strict=strict,
+                               min_reliable=min_reliable)
+        results.append((p, ok, ratio))
 
-    bad = [p for p, ok in results if not ok]
+    bad = [p for p, ok, _ in results if not ok]
+    rates = [r for _, _, r in results if r is not None]
     print("\n" + "=" * 60)
+    if rates:
+        print("== 可靠日期占比: %s（平均 %.0f%%）=="
+              % (", ".join("%s %d%%" % (os.path.basename(p), r)
+                           for p, _, r in results if r is not None),
+                 sum(rates) / len(rates)))
     if bad:
         print("== 总结: 失败 ✗（%d/%d 个文件未通过）==" % (len(bad), len(results)))
         for p in bad:
