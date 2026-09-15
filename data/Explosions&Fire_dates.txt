@@ -1,0 +1,9 @@
+# 日期缓存（由 fetch.py 自动维护，请勿手动编辑）
+# video_id	epoch_ms	precision	source	最近确认时间(UTC)
+4CbdVkcr-Nw	1777042340000	exact	rss	2026-09-15 18:53:20
+LhEYaovWxl4	1639745065000	exact	rss	2026-09-15 18:53:20
+M0JGsSxBd2I	1743813887000	exact	rss	2026-09-15 18:53:20
+PDapGJ9jWZk	1720192289000	exact	rss	2026-09-15 18:53:20
+SHTreEh7ALc	1690120325000	exact	rss	2026-09-15 18:53:20
+XHDXk9THJZM	1702245569000	exact	rss	2026-09-15 18:53:20
+cs-ivTWpQBY	1677622835000	exact	rss	2026-09-15 18:53:20

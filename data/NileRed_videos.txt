@@ -3,9 +3,10 @@
 频道链接: https://www.youtube.com/@NileRed/videos
 频道 ID: UCFhXFikryT4aFcLkLw2LBLA
 频道页显示视频总数: 401（本文件抓取到 401 条，覆盖率 100%）
-抓取时间: 2026-08-20 19:23:11 (UTC+8)
-数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
+抓取时间: 2026-09-16 02:41:06 (UTC+8)
+数据来源: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/播放接口/相对文本) + 历史缓存逐周收敛
 视频总数: 401
+本次变化: 新增 0 条 / 从频道消失 0 条（相比上次抓取）
 ========================================
 
 【1】视频名称: Making nasty soap
@@ -45,14 +46,7 @@
 
 --------------------------------------------------
 
-【6】视频名称: Making an atomic trampoline
-    视频链接: https://www.youtube.com/watch?v=jLX1-tNnvEo
-    时长: 58:01 (58m1s)
-    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【7】视频名称: Making a bouncy ball from scratch
+【6】视频名称: Making a bouncy ball from scratch
     视频链接: https://www.youtube.com/watch?v=tERigvFwLrM
     时长: 未知
     发布时间: 2025-08-15 01:09:32 (UTC+8)   [原始: 2025-08-14 17:09:32 UTC]
@@ -60,7 +54,7 @@
 
 --------------------------------------------------
 
-【8】视频名称: The clear ice myth
+【7】视频名称: The clear ice myth
     视频链接: https://www.youtube.com/watch?v=3Kv82RM2tic
     时长: 未知
     发布时间: 2025-08-01 01:00:28 (UTC+8)   [原始: 2025-07-31 17:00:28 UTC]
@@ -68,11 +62,18 @@
 
 --------------------------------------------------
 
-【9】视频名称: Making a bouncy egg by dissolving its shell
+【8】视频名称: Making a bouncy egg by dissolving its shell
     视频链接: https://www.youtube.com/watch?v=0msK5m7rbQE
     时长: 未知
     发布时间: 2025-07-16 01:26:55 (UTC+8)   [原始: 2025-07-15 17:26:55 UTC]
     标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【9】视频名称: Making an atomic trampoline
+    视频链接: https://www.youtube.com/watch?v=jLX1-tNnvEo
+    时长: 58:01 (58m1s)
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -121,7 +122,7 @@
 【16】视频名称: Turning cotton balls into cotton candy
     视频链接: https://www.youtube.com/watch?v=vHuFizITMdA
     时长: 29:52 (29m52s)
-    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2021年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -324,7 +325,7 @@
 【45】视频名称: Extracting the blue dye in jeans
     视频链接: https://www.youtube.com/watch?v=67kyi5hLnA4
     时长: 17:25 (17m25s)
-    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -506,21 +507,21 @@
 【71】视频名称: The Iodine Myth
     视频链接: https://www.youtube.com/watch?v=dPIaEWd8zf4
     时长: 13:07 (13m7s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【72】视频名称: Making a Mysterious Foam
     视频链接: https://www.youtube.com/watch?v=rxLNIHM0BZ0
     时长: 18:12 (18m12s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【73】视频名称: All about Mercury, the Liquid Metal | Element Series
     视频链接: https://www.youtube.com/watch?v=ZiWlthrtneU
     时长: 12:06 (12m6s)
-    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -856,28 +857,28 @@
 【121】视频名称: Dissolving pure silver to make silver nitrate
     视频链接: https://www.youtube.com/watch?v=EruzAVv2Odc
     时长: 7:44 (7m44s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【122】视频名称: All about Bromine, one of my favorite elements | Element Series
     视频链接: https://www.youtube.com/watch?v=nuW_VbKdvMI
     时长: 6:40 (6m40s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【123】视频名称: Making a liquid that attracts biting insects (1-octen-3-ol)
     视频链接: https://www.youtube.com/watch?v=yRXyrUnpfKs
     时长: 19:47 (19m47s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【124】视频名称: Making Benzaldehyde From Cinnamon Oil
     视频链接: https://www.youtube.com/watch?v=Fui19FPh0R0
     时长: 14:16 (14m16s)
-    发布时间: 2017年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1296,7 +1297,7 @@
 
 【184】视频名称: Preparing a Drying Agent (Magnesium sulfate)
     视频链接: https://www.youtube.com/watch?v=CKTjXXtv6w8
-    时长: 5:24 (5m24s)
+    时长: 5:25 (5m25s)
     发布时间: 2016年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
@@ -1367,28 +1368,28 @@
 【194】视频名称: How to make a Stannous Chloride Solution (Tin (II) Chloride)
     视频链接: https://www.youtube.com/watch?v=zziLOly2R8U
     时长: 3:49 (3m49s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【195】视频名称: How to make Propanal (propionaldehyde)
     视频链接: https://www.youtube.com/watch?v=T9ha_MS1S9o
     时长: 5:35 (5m35s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【196】视频名称: How to make Aniline
     视频链接: https://www.youtube.com/watch?v=nKWOZajmAQo
     时长: 7:22 (7m22s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【197】视频名称: How to make Nitrobenzene
     视频链接: https://www.youtube.com/watch?v=ovHFjtxo-D4
     时长: 4:29 (4m29s)
-    发布时间: 2016年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -2386,7 +2387,7 @@
 
 --------------------------------------------------
 
-【330】视频名称: Tasting the most bitter chemical known to man
+【330】视频名称: This is the most bitter chemical known to man
     视频链接: https://www.youtube.com/watch?v=7134LjBur_s
     时长: 未知
     发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
@@ -2410,7 +2411,7 @@
 
 --------------------------------------------------
 
-【333】视频名称: Sodium and potassium vs liquid nitrogen
+【333】视频名称: Making an explosive metal egg
     视频链接: https://www.youtube.com/watch?v=8zT03ZWp8E0
     时长: 未知
     发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
@@ -2966,15 +2967,29 @@
 统计
 ========================================
 视频总数(去重后): 401
-其中精确到秒的发布时间: 7 条
+其中精确到秒的发布时间: 7 条（官方 RSS 7 / 官方接口与镜像 0）
 其中官方日精度日期: 0 条
 其中标题推断日期(日/月): 0 / 0 条
 其中相对文本推断(年/月/周/日): 252 条
 其中日期未知: 142 条
 其中重复标题组(可能为重传/多版本): 3 组（涉及 6 条, 去重按视频ID）
 抓取累计条数(去重前): 401
-本次运行耗时: 0分55秒
+本次运行耗时: 7分19秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
-数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
-分页缓存: 无（云端每次全量直取）
+数据源明细: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/播放接口/相对文本) + 历史缓存逐周收敛
+
 ========================================
+数据通道明细（本次运行，排障用）
+========================================
+- 官方 RSS（精确到秒）: 7 条
+- 官方 Data API v3（未配置 YT_API_KEY）（本次跳过）
+- Piped 镜像（官方时间戳）: 0 条
+- Invidious 镜像（官方时间戳）: 0 条
+- InnerTube 频道页相对时间（模糊兜底）: 278 条
+- YouTube 播放接口（日精度）: 0 条
+- 播放接口客户端探测（命中/样本）: ANDROID_VR=0/6; ANDROID=0/6; IOS=0/6; TVHTML5=0/6; WEB_EMBEDDED_PLAYER=0/6; MWEB=0/6; WEB=0/6 条
+- 单条镜像补漏（残尾）: 0 条
+- 标题推断日期: 0 条
+- 页面相对文本（模糊）: 252 条
+- 最终各来源条数: 频道页相对时间=252, unknown=142, 官方 RSS=7
+- 提示: 想让它每次都能精确到秒，给仓库加一个 Secret 名为 YT_API_KEY（YouTube Data API v3 的免费 key）即可，脚本会自动启用官方接口通道。

@@ -3,22 +3,23 @@
 频道链接: https://www.youtube.com/@ChemicalForce/videos
 频道 ID: UCqONNjBkukcc2yXbmHL8niQ
 频道页显示视频总数: 215（本文件抓取到 215 条，覆盖率 100%）
-抓取时间: 2026-08-20 19:21:34 (UTC+8)
-数据来源: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
+抓取时间: 2026-09-16 02:48:57 (UTC+8)
+数据来源: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/播放接口/相对文本) + 历史缓存逐周收敛
 视频总数: 215
+本次变化: 新增 0 条 / 从频道消失 0 条（相比上次抓取）
 ========================================
 
-【1】视频名称: Mysterious Glowing Spheres: Xenon Difluoride and Silicon😯
-    视频链接: https://www.youtube.com/watch?v=yaVM1X8wRr0
-    时长: 3:07 (3m7s)
-    发布时间: 2026-08-08 00:28:01 (UTC+8)   [原始: 2026-08-07 16:28:01 UTC]
+【1】视频名称: I dissolved Dinitrogen Pentoxide in Nitric Acid and obtained NitroOleum!
+    视频链接: https://www.youtube.com/watch?v=1RAd7s4KqSg
+    时长: 12:47 (12m47s)
+    发布时间: 2026-08（推断至月份, ±1个月, 页面相对文本）
 
 --------------------------------------------------
 
-【2】视频名称: I dissolved Dinitrogen Pentoxide in Nitric Acid and obtained NitroOleum!
-    视频链接: https://www.youtube.com/watch?v=1RAd7s4KqSg
-    时长: 12:47 (12m47s)
-    发布时间: 2026-07-23（推断日期, ±1周, 页面相对文本）
+【2】视频名称: Mysterious Glowing Spheres: Xenon Difluoride and Silicon😯
+    视频链接: https://www.youtube.com/watch?v=yaVM1X8wRr0
+    时长: 3:07 (3m7s)
+    发布时间: 2026-08-08 00:28:01 (UTC+8)   [原始: 2026-08-07 16:28:01 UTC]
 
 --------------------------------------------------
 
@@ -121,7 +122,7 @@
 【16】视频名称: Perchloric acid. Teaser
     视频链接: https://www.youtube.com/watch?v=yaKNZlFjofI
     时长: 1:27 (1m27s)
-    发布时间: 2025-11（推断至月份, ±1个月, 页面相对文本）
+    发布时间: 2025-12（推断至月份, ±1个月, 页面相对文本）
 
 --------------------------------------------------
 
@@ -226,7 +227,7 @@
 【31】视频名称: I soaked BURNING MAGNESIUM into solution of OZONE in TetraChloroMethane
     视频链接: https://www.youtube.com/watch?v=0jXcKaPnWvg
     时长: 5:32 (5m32s)
-    发布时间: 2025年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -366,7 +367,7 @@
 【51】视频名称: Transforming Tungsten Compounds into Mirrors.
     视频链接: https://www.youtube.com/watch?v=llvRHCqWlQw
     时长: 12:09 (12m9s)
-    发布时间: 2024年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -492,14 +493,14 @@
 【69】视频名称: Platinum Makes Air EXPLODE
     视频链接: https://www.youtube.com/watch?v=ZhBIlOeaLgw
     时长: 6:33 (6m33s)
-    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【70】视频名称: This chemical reaction looks like the spread of mold
     视频链接: https://www.youtube.com/watch?v=QNEx-__I0n0
     时长: 9:36 (9m36s)
-    发布时间: 2023年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -632,7 +633,7 @@
 【89】视频名称: White phosphorus. Reactions with chemical weapon!
     视频链接: https://www.youtube.com/watch?v=gZTtQW5wXJI
     时长: 22:48 (22m48s)
-    发布时间: 2022年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2021年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -772,7 +773,7 @@
 【109】视频名称: I got Fluoroantimonic acid⚠️ I need your suggestions!
     视频链接: https://www.youtube.com/watch?v=Sitk5nB6uiY
     时长: 5:47 (5m47s)
-    发布时间: 2021年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -961,28 +962,28 @@
 【136】视频名称: Oleum. Sulfur trioxide SO3. Chemical reactions
     视频链接: https://www.youtube.com/watch?v=grV8IvIqeUs
     时长: 7:01 (7m1s)
-    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【137】视频名称: Sulfuric acid (EXTRA-conc.) and SUGAR. I'm on REDDIT!
     视频链接: https://www.youtube.com/watch?v=Z6_ge_Ee9lQ
     时长: 2:20 (2m20s)
-    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【138】视频名称: Don't Drop Potassium Metal in Oleum!
     视频链接: https://www.youtube.com/watch?v=pjC2VrqTdhw
     时长: 5:18 (5m18s)
-    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
 【139】视频名称: Barking dog reaction SOLID N2O/ Propellant N2O + Decaborane
     视频链接: https://www.youtube.com/watch?v=VPohbSeiImA
     时长: 6:22 (6m22s)
-    发布时间: 2020年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1150,7 +1151,7 @@
 【163】视频名称: KO2: Potassium superoxide. Chemical oxygen generator.
     视频链接: https://www.youtube.com/watch?v=VlpYy5WywE0
     时长: 7:03 (7m3s)
-    发布时间: 2019年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2018年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
@@ -1561,15 +1562,29 @@
 统计
 ========================================
 视频总数(去重后): 215
-其中精确到秒的发布时间: 7 条
+其中精确到秒的发布时间: 7 条（官方 RSS 7 / 官方接口与镜像 0）
 其中官方日精度日期: 0 条
 其中标题推断日期(日/月): 0 / 0 条
 其中相对文本推断(年/月/周/日): 169 条
 其中日期未知: 39 条
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 215
-本次运行耗时: 0分25秒
+本次运行耗时: 7分51秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
-数据源明细: GitHub Actions 美国节点直连 YouTube；全量枚举(videos/shorts/streams) + 官方 RSS（精确秒） + 频道页相对时间（InnerTube 翻页兜底）
-分页缓存: 无（云端每次全量直取）
+数据源明细: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/播放接口/相对文本) + 历史缓存逐周收敛
+
 ========================================
+数据通道明细（本次运行，排障用）
+========================================
+- 官方 RSS（精确到秒）: 7 条
+- 官方 Data API v3（未配置 YT_API_KEY）（本次跳过）
+- Piped 镜像（官方时间戳）: 0 条
+- Invidious 镜像（官方时间戳）: 0 条
+- InnerTube 频道页相对时间（模糊兜底）: 171 条
+- YouTube 播放接口（日精度）: 0 条
+- 播放接口客户端探测（命中/样本）: ANDROID_VR=0/6; ANDROID=0/6; IOS=0/6; TVHTML5=0/6; WEB_EMBEDDED_PLAYER=0/6; MWEB=0/6; WEB=0/6 条
+- 单条镜像补漏（残尾）: 0 条
+- 标题推断日期: 0 条
+- 页面相对文本（模糊）: 169 条
+- 最终各来源条数: 频道页相对时间=169, unknown=39, 官方 RSS=7
+- 提示: 想让它每次都能精确到秒，给仓库加一个 Secret 名为 YT_API_KEY（YouTube Data API v3 的免费 key）即可，脚本会自动启用官方接口通道。
