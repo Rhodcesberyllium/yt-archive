@@ -3,7 +3,7 @@
 频道链接: https://www.youtube.com/@NurdRage/videos
 频道 ID: UCIgKGGJkt1MrNmhq3vRibYA
 频道页显示视频总数: 291（本文件抓取到 291 条，覆盖率 100%）
-抓取时间: 2026-09-16 04:28:51 (UTC+8)
+抓取时间: 2026-09-16 04:57:39 (UTC+8)
 数据来源: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 视频总数: 291
 本次变化: 新增 0 条 / 从频道消失 0 条（相比上次抓取）
@@ -1087,136 +1087,136 @@
 
 --------------------------------------------------
 
-【155】视频名称: Make Thermite (and testing various iron oxide sources)
-    视频链接: https://www.youtube.com/watch?v=RiF73l4PjyY
-    时长: 9:31 (9m31s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【156】视频名称: Make Iron Oxide (for Thermite)
-    视频链接: https://www.youtube.com/watch?v=8ZQ67POLiqg
-    时长: 9:41 (9m41s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【157】视频名称: Q&A with NurdRage August Edition
+【155】视频名称: Q&A with NurdRage August Edition
     视频链接: https://www.youtube.com/watch?v=LFLnTPymSOc
     时长: 14:45 (14m45s)
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【158】视频名称: Make Hydrobromic Acid
-    视频链接: https://www.youtube.com/watch?v=C3n4Xqfb9qk
-    时长: 3:48 (3m48s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【159】视频名称: Make an Electrolysis Box
-    视频链接: https://www.youtube.com/watch?v=M4vSCqj_5i8
-    时长: 9:24 (9m24s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【160】视频名称: Thank you for your support and Answering Your Questions
-    视频链接: https://www.youtube.com/watch?v=ebsJ0keTsvs
-    时长: 11:25 (11m25s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【161】视频名称: Make sulfuric acid from water and sulfur (electrobromine process)
-    视频链接: https://www.youtube.com/watch?v=6ms6xbPhdVs
-    时长: 6:12 (6m12s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【162】视频名称: NurdRage Begs for Money!
-    视频链接: https://www.youtube.com/watch?v=gwu0iAMp5D4
-    时长: 3:03 (3m3s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【163】视频名称: Make a thermometer probe for a westlab/scilogex hotplate
-    视频链接: https://www.youtube.com/watch?v=ORBgemwMLS4
-    时长: 8:05 (8m5s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【164】视频名称: Recover Copper from Ferric Chloride Etchant (Waste free method)
+【156】视频名称: Recover Copper from Ferric Chloride Etchant (Waste free method)
     视频链接: https://www.youtube.com/watch?v=CY2T3orVuFU
     时长: 5:53 (5m53s)
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【165】视频名称: Recycle Copper chloride PCB etchant (waste free method)
-    视频链接: https://www.youtube.com/watch?v=FjEoRidvgYE
-    时长: 8:17 (8m17s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【166】视频名称: Make Copper Chloride (3 ways)
-    视频链接: https://www.youtube.com/watch?v=V8mHiFYmlBc
-    时长: 2:31 (2m31s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【167】视频名称: Make an Air Sensitive Solution
-    视频链接: https://www.youtube.com/watch?v=W_P2hdsJAaY
-    时长: 3:07 (3m7s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【168】视频名称: Purify Sulfuric Acid by Distillation
-    视频链接: https://www.youtube.com/watch?v=tgUH0HXrOKE
-    时长: 4:31 (4m31s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【169】视频名称: Make a High Temperature Heating Mantle
-    视频链接: https://www.youtube.com/watch?v=N5meDWAqYes
-    时长: 2:51 (2m51s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【170】视频名称: Make an AA Battery
+【157】视频名称: Make an AA Battery
     视频链接: https://www.youtube.com/watch?v=3Ts34IWziqo
     时长: 3:56 (3m56s)
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【171】视频名称: Gallium Induced Structural Failure of an Aluminum Sheet
+【158】视频名称: Gallium Induced Structural Failure of an Aluminum Sheet
     视频链接: https://www.youtube.com/watch?v=IZkzxWZETds
     时长: 2:55 (2m55s)
     发布时间: 2015年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
+【159】视频名称: Make Thermite (and testing various iron oxide sources)
+    视频链接: https://www.youtube.com/watch?v=RiF73l4PjyY
+    时长: 9:31 (9m31s)
+    发布时间: 2015-08-29（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【160】视频名称: Make Iron Oxide (for Thermite)
+    视频链接: https://www.youtube.com/watch?v=8ZQ67POLiqg
+    时长: 9:41 (9m41s)
+    发布时间: 2015-08-16（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【161】视频名称: Make Hydrobromic Acid
+    视频链接: https://www.youtube.com/watch?v=C3n4Xqfb9qk
+    时长: 3:48 (3m48s)
+    发布时间: 2015-07-25（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【162】视频名称: Make an Electrolysis Box
+    视频链接: https://www.youtube.com/watch?v=M4vSCqj_5i8
+    时长: 9:24 (9m24s)
+    发布时间: 2015-07-14（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【163】视频名称: Thank you for your support and Answering Your Questions
+    视频链接: https://www.youtube.com/watch?v=ebsJ0keTsvs
+    时长: 11:25 (11m25s)
+    发布时间: 2015-07-06（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【164】视频名称: Make sulfuric acid from water and sulfur (electrobromine process)
+    视频链接: https://www.youtube.com/watch?v=6ms6xbPhdVs
+    时长: 6:12 (6m12s)
+    发布时间: 2015-06-27（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【165】视频名称: NurdRage Begs for Money!
+    视频链接: https://www.youtube.com/watch?v=gwu0iAMp5D4
+    时长: 3:03 (3m3s)
+    发布时间: 2015-06-24（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【166】视频名称: Make a thermometer probe for a westlab/scilogex hotplate
+    视频链接: https://www.youtube.com/watch?v=ORBgemwMLS4
+    时长: 8:05 (8m5s)
+    发布时间: 2015-06-22（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【167】视频名称: Recycle Copper chloride PCB etchant (waste free method)
+    视频链接: https://www.youtube.com/watch?v=FjEoRidvgYE
+    时长: 8:17 (8m17s)
+    发布时间: 2015-05-16（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【168】视频名称: Make Copper Chloride (3 ways)
+    视频链接: https://www.youtube.com/watch?v=V8mHiFYmlBc
+    时长: 2:31 (2m31s)
+    发布时间: 2015-05-02（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【169】视频名称: Make an Air Sensitive Solution
+    视频链接: https://www.youtube.com/watch?v=W_P2hdsJAaY
+    时长: 3:07 (3m7s)
+    发布时间: 2015-04-18（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【170】视频名称: Purify Sulfuric Acid by Distillation
+    视频链接: https://www.youtube.com/watch?v=tgUH0HXrOKE
+    时长: 4:31 (4m31s)
+    发布时间: 2015-03-14（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
+【171】视频名称: Make a High Temperature Heating Mantle
+    视频链接: https://www.youtube.com/watch?v=N5meDWAqYes
+    时长: 2:51 (2m51s)
+    发布时间: 2015-03-07（日精度, 来自archive.org 存档）
+
+--------------------------------------------------
+
 【172】视频名称: Make Paramagnetic Fluid ("Parafluid")
     视频链接: https://www.youtube.com/watch?v=MUKFaxy-z7s
     时长: 2:57 (2m57s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2014-12-04（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
 【173】视频名称: Ghost Metal (Chemistry Trick) - Version 2
     视频链接: https://www.youtube.com/watch?v=VDMgrgSVjd8
     时长: 3:27 (3m27s)
-    发布时间: 2015年（推断年份, ±1年, 页面相对文本）
+    发布时间: 2014-10-29（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
@@ -1290,59 +1290,59 @@
 
 --------------------------------------------------
 
-【184】视频名称: Make Silver Acetate
-    视频链接: https://www.youtube.com/watch?v=2J6V4acKels
-    时长: 1:29 (1m29s)
-    发布时间: 2013年（推断年份, ±1年, 页面相对文本）
-
---------------------------------------------------
-
-【185】视频名称: Make Ferric Chloride (for etching printed circuit boards)
+【184】视频名称: Make Ferric Chloride (for etching printed circuit boards)
     视频链接: https://www.youtube.com/watch?v=43Xsh9J7S-g
     时长: 2:49 (2m49s)
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【186】视频名称: Platinum Bar Dissolving in Acid (Aqua Regia)
+【185】视频名称: Platinum Bar Dissolving in Acid (Aqua Regia)
     视频链接: https://www.youtube.com/watch?v=APxL87X92t4
     时长: 3:37 (3m37s)
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【187】视频名称: Make Purified Chloroplatinic Acid
+【186】视频名称: Make Purified Chloroplatinic Acid
     视频链接: https://www.youtube.com/watch?v=MlMj3VEYBMA
     时长: 3:31 (3m31s)
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【188】视频名称: Coke Can in Liquid Nitrogen
+【187】视频名称: Coke Can in Liquid Nitrogen
     视频链接: https://www.youtube.com/watch?v=7RgQOUUa9Sk
     时长: 0:50 (0m50s)
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【189】视频名称: Make Fake Blood Cuts (Chemistry Trick)
+【188】视频名称: Make Fake Blood Cuts (Chemistry Trick)
     视频链接: https://www.youtube.com/watch?v=ZgbY7WzkplI
     时长: 1:11 (1m11s)
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【190】视频名称: How to Make Fluorescein (Fluorescent Dye)
+【189】视频名称: How to Make Fluorescein (Fluorescent Dye)
     视频链接: https://www.youtube.com/watch?v=ihssISvNL3o
     时长: 2:20 (2m20s)
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
 
 --------------------------------------------------
 
-【191】视频名称: Make Gold from Chloroauric Acid
+【190】视频名称: Make Gold from Chloroauric Acid
     视频链接: https://www.youtube.com/watch?v=AHsPkoO4wKw
     时长: 3:24 (3m24s)
     发布时间: 2013年（推断年份, ±1年, 页面相对文本）
+
+--------------------------------------------------
+
+【191】视频名称: Make Silver Acetate
+    视频链接: https://www.youtube.com/watch?v=2J6V4acKels
+    时长: 1:29 (1m29s)
+    发布时间: 2012-11-26（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
@@ -2021,7 +2021,7 @@
 【288】视频名称: Refuel a Glow Stick
     视频链接: https://www.youtube.com/watch?v=_d1J9MVkRzM
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-10 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2015-08 前后，下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2029,7 +2029,7 @@
 【289】视频名称: Chemical Thunderstorm in a Beaker #Shorts #science #chemistry
     视频链接: https://www.youtube.com/watch?v=9p3So4ijD4U
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-10 前后，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2015-08 前后，下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2037,7 +2037,7 @@
 【290】视频名称: Hand in Hot Ice #shorts
     视频链接: https://www.youtube.com/watch?v=GZxaXH70k5o
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2017-07 前后（±105 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2016-08 前后（±448 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2045,7 +2045,7 @@
 【291】视频名称: How much does it cost to breathe?
     视频链接: https://www.youtube.com/watch?v=ExoHov5ZUL0
     时长: 未知
-    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2016-08 前后（±217 天），下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2016-05 前后（±308 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -2055,32 +2055,35 @@
 ========================================
 视频总数(去重后): 291
 其中精确到秒的发布时间: 7 条（官方 RSS 7 / 官方接口与镜像 0）
-其中官方日精度日期: 30 条
+其中官方日精度日期: 46 条
 其中标题推断日期(日/月): 10 / 2 条
-其中相对文本推断(年/月/周/日): 238 条
+其中相对文本推断(年/月/周/日): 222 条
 其中日期未知: 4 条
-可靠日期(精确到秒或日)合计: 37 / 291 条 = 13%
+可靠日期(精确到秒或日)合计: 53 / 291 条 = 18%
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 291
-本次运行耗时: 6分46秒
+本次运行耗时: 2分59秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
 数据源明细: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 
 ========================================
 数据通道明细（本次运行，排障用）
 ========================================
-- 历史日期缓存（本轮直接复用）: 7 条
+- 历史日期缓存（本轮直接复用）: 37 条
 - 官方 RSS（精确到秒）: 7 条
 - 官方 Data API v3（未配置 YT_API_KEY）（本次跳过）
 - Piped 镜像（官方时间戳）: 0 条
 - Invidious 镜像（官方时间戳）: 0 条
 - InnerTube 频道页相对时间（模糊兜底）: 287 条
-- archive.org 存档快照（日精度）: 30 条
-- 存档查询条数/落空明细: 72 条（无快照 34 / 快照抓不到 5 / 快照无日期 3） 条
+- archive.org 存档快照（日精度）: 16 条
+- 存档查询条数/落空明细: 137 条（无快照 116 / 快照抓不到 2 / 快照无日期 3） 条
+- YouTube 播放接口（日精度）: 0 条
+- yt-dlp 可用客户端: 无 条
+- 播放接口客户端探测（命中/样本/状态）: ANDROID_VR=0/2(LOGIN_REQUIRED); ANDROID=0/2(网络失败); IOS=0/2(网络失败); TVHTML5=0/2(LOGIN_REQUIRED); WEB_EMBEDDED_PLAYER=0/2(ERROR); MWEB=0/2(LOGIN_REQUIRED); WEB=0/2(LOGIN_REQUIRED) 条
 - 标题推断日期: 12 条
-- 页面相对文本（模糊）: 238 条
+- 页面相对文本（模糊）: 222 条
 - 无日期条目的 ID 时序区间提示: 4 条
-- 最终各来源条数: 频道页相对时间=238, archive.org 存档=30, 标题中的日期=12, 官方 RSS=7, unknown=4
-- 各阶段耗时: 枚举 6s | 频道信息 0s | RSS 2s | Piped 40s | Invidious 38s | 频道页相对时间 23s | archive.org 存档 297s
+- 最终各来源条数: 频道页相对时间=222, archive.org 存档=46, 标题中的日期=12, 官方 RSS=7, unknown=4
+- 各阶段耗时: 枚举 5s | 频道信息 1s | RSS 1s | Piped 39s | Invidious 37s | 频道页相对时间 24s | archive.org 存档 20s | 播放接口探测 2s | yt-dlp 客户端探测 50s
 - 本次运行完整日志见 data/_run_log.txt
 - 想让日期全部精确到秒：给仓库加一个 Secret 名为 YT_API_KEY（YouTube Data API v3 的免费 key），脚本会自动启用官方接口通道。
