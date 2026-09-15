@@ -1,0 +1,345 @@
+[日志] 本次运行日志同时写入 data/_run_log.txt
+[环境] Python 3.12.14 / 时区 UTC+8 / 时间 2026-09-16 03:40:06
+== 本次将抓取 5 个频道（总预算 45 分钟）==
+   - https://www.youtube.com/@NurdRage/videos
+   - https://www.youtube.com/@NileRed/videos
+   - https://www.youtube.com/@ChemicalForce/videos
+   - https://www.youtube.com/@Chemiolis/videos
+   - https://www.youtube.com/@ExplosionsAndFire/videos
+
+[预算] 频道 1/5 分配 377 秒（全局剩余 2700 秒）
+
+============================================================
+== 频道: https://www.youtube.com/@NurdRage/videos ==
+[枚举] tab=videos 获得 287 条（累计 287）
+[枚举] tab=shorts 获得 4 条（累计 291）
+[枚举] tab=streams 获得 0 条（累计 291）
+[频道] 名称=NurdRage ID=UCIgKGGJkt1MrNmhq3vRibYA
+[缓存] 命中 7/291 条；另记 0 条已确认无存档
+[RSS] 仅有 7 条，稍候重试一次
+[RSS] 获得 7 条精确日期
+[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
+[实例] 动态发现：Piped 0 个 / Invidious 3 个（发现不到时只用内置列表）
+[网络] 失败 https://pipedapi.kavin.rocks/channel/UCIgKGGJkt1MrNmhq3vRibYA: HTTP Error 403: Forbidden
+[Piped] api.piped.private.coffee 第 1 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 2 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 3 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 4 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 5 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 6 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 7 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 8 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 9 页：+0 条（累计 0/291）
+[Piped] api.piped.private.coffee 第 10 页：+0 条（累计 0/291）
+[Piped] 18 个实例均不可用/无数据；前几个错误：pipedapi.kavin.rocks: 网络失败
+[网络] 失败 https://inv-ygg.nadeko.net/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/vi: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://inv.nadeko.ygg/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/videos: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://inv.nadeko.net/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/videos: HTTP Error 403: Forbidden
+[网络] 失败 https://invidious.nerdvpn.de/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/: HTTP Error 401: Unauthorized
+[网络] 失败 https://yewtu.be/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/videos?page=: HTTP Error 403: Forbidden
+[网络] 失败 https://inv.tux.pizza/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/videos?: <urlopen error timed out>
+[网络] 失败 https://invidious.privacyredirect.com/api/v1/channels/UCIgKGGJkt1MrNmh: HTTP Error 404: Not Found
+[网络] 失败 https://iv.melmac.space/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/video: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://invidious.jing.rocks/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://invidious.reallyaweso.me/api/v1/channels/UCIgKGGJkt1MrNmhq3vRi: HTTP Error 502: Bad Gateway
+[网络] 失败 https://invidious.dhusch.de/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/v: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
+[网络] 失败 https://invidious.perennialte.ch/api/v1/channels/UCIgKGGJkt1MrNmhq3vRi: HTTP Error 404: Not Found
+[网络] 失败 https://iv.datura.network/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/vid: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://invidious.materialio.us/api/v1/channels/UCIgKGGJkt1MrNmhq3vRib: HTTP Error 500: Internal Server Error
+[网络] 失败 https://iv.ggtyler.dev/api/v1/channels/UCIgKGGJkt1MrNmhq3vRibYA/videos: <urlopen error timed out>
+[网络] 失败 https://invidious.einfachzocken.eu/api/v1/channels/UCIgKGGJkt1MrNmhq3v: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-
+[Invidious] 19 个实例均不可用/无数据；前几个错误：invidious.f5.si: 非 JSON: Expecting value: line 1 column 1 (char 0) | inv-ygg.nadeko.net: 网络失败 | inv.nadeko.ygg: 网络失败 | inv.nadeko.net: 网络失败
+[相对时间] tab=videos 首屏30条 + 翻页39页, 候选token6个, 并集287
+[相对时间] tab=shorts 首屏0条 + 翻页0页, 候选token2个, 并集287
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间] tab=streams 首屏35条 + 翻页0页, 候选token4个, 并集287
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[缺口] 仍缺官方秒/日精度的视频: 284 条
+[存档] 已查 75 条，命中 0 条
+[存档] 时间预算不足，已查 75/200 条
+[存档] 本轮查 75 条，命中 0 条，无快照 75 条
+[兜底] 标题推断 13 条，页面相对文本 267 条
+[推算] 为 4 条无日期视频标出 ID 时序区间提示
+[归档] 相比上次：新增 0 条，消失 0 条
+
+[完成] data/NurdRage_videos.txt：共 291 条（精确 7 / 官方日 0 / 标题推断 13 / 相对文本 267 / 未知 4），可靠日期(秒或日) 7 条占 2%，耗时 6分44秒
+[缓存] 写入 data/NurdRage_dates.txt（7 条官方级日期 + 75 条无存档标记）
+
+[预算] 频道 2/5 分配 401 秒（全局剩余 2296 秒）
+
+============================================================
+== 频道: https://www.youtube.com/@NileRed/videos ==
+[枚举] tab=videos 获得 254 条（累计 254）
+[枚举] tab=shorts 获得 147 条（累计 401）
+[枚举] tab=streams 获得 0 条（累计 401）
+[频道] 名称=NileRed ID=UCFhXFikryT4aFcLkLw2LBLA
+[缓存] 命中 7/401 条；另记 0 条已确认无存档
+[RSS] 仅有 7 条，稍候重试一次
+[RSS] 获得 7 条精确日期
+[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
+[网络] 失败 https://pipedapi.kavin.rocks/channel/UCFhXFikryT4aFcLkLw2LBLA: HTTP Error 403: Forbidden
+[Piped] api.piped.private.coffee 第 1 页：+0 条（累计 0/401）
+[Piped] api.piped.private.coffee 第 2 页：+0 条（累计 0/401）
+[Piped] api.piped.private.coffee 第 3 页：+0 条（累计 0/401）
+[Piped] api.piped.private.coffee 第 4 页：+0 条（累计 0/401）
+[Piped] api.piped.private.coffee 第 5 页：+0 条（累计 0/401）
+[Piped] api.piped.private.coffee 第 6 页：+0 条（累计 0/401）
+[Piped] api.piped.private.coffee 第 7 页：+0 条（累计 0/401）
+[Piped] api.piped.private.coffee 第 8 页：+0 条（累计 0/401）
+[Piped] api.piped.private.coffee 第 9 页：+0 条（累计 0/401）
+[Piped] 18 个实例均不可用/无数据；前几个错误：pipedapi.kavin.rocks: 网络失败
+[网络] 失败 https://inv-ygg.nadeko.net/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/vi: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://inv.nadeko.ygg/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/videos: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://inv.nadeko.net/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/videos: HTTP Error 403: Forbidden
+[网络] 失败 https://invidious.nerdvpn.de/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/: HTTP Error 401: Unauthorized
+[网络] 失败 https://yewtu.be/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/videos?page=: HTTP Error 403: Forbidden
+[网络] 失败 https://inv.tux.pizza/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/videos?: <urlopen error timed out>
+[网络] 失败 https://invidious.privacyredirect.com/api/v1/channels/UCFhXFikryT4aFcL: HTTP Error 404: Not Found
+[网络] 失败 https://iv.melmac.space/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/video: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://invidious.jing.rocks/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://invidious.reallyaweso.me/api/v1/channels/UCFhXFikryT4aFcLkLw2L: HTTP Error 502: Bad Gateway
+[网络] 失败 https://invidious.dhusch.de/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/v: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
+[网络] 失败 https://invidious.perennialte.ch/api/v1/channels/UCFhXFikryT4aFcLkLw2L: HTTP Error 404: Not Found
+[网络] 失败 https://iv.datura.network/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/vid: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://iv.ggtyler.dev/api/v1/channels/UCFhXFikryT4aFcLkLw2LBLA/videos: <urlopen error timed out>
+[网络] 失败 https://invidious.einfachzocken.eu/api/v1/channels/UCFhXFikryT4aFcLkLw: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-
+[Invidious] 19 个实例均不可用/无数据；前几个错误：invidious.f5.si: 非 JSON: Expecting value: line 1 column 1 (char 0) | inv-ygg.nadeko.net: 网络失败 | inv.nadeko.ygg: 网络失败 | inv.nadeko.net: 网络失败
+[相对时间] tab=videos 首屏0条 + 翻页35页, 候选token6个, 并集254
+[相对时间] tab=shorts 首屏0条 + 翻页11页, 候选token6个, 并集254
+[相对时间] tab=streams 首屏42条 + 翻页0页, 候选token4个, 并集278
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[缺口] 仍缺官方秒/日精度的视频: 394 条
+[存档] 时间预算不足，已查 45/200 条
+[存档] 本轮查 45 条，命中 4 条，无快照 41 条
+[兜底] 标题推断 0 条，页面相对文本 248 条
+[推算] 为 142 条无日期视频标出 ID 时序区间提示
+[归档] 相比上次：新增 0 条，消失 0 条
+
+[完成] data/NileRed_videos.txt：共 401 条（精确 7 / 官方日 4 / 标题推断 0 / 相对文本 248 / 未知 142），可靠日期(秒或日) 11 条占 3%，耗时 7分33秒
+[缓存] 写入 data/NileRed_dates.txt（11 条官方级日期 + 41 条无存档标记）
+
+[预算] 频道 3/5 分配 429 秒（全局剩余 1842 秒）
+
+============================================================
+== 频道: https://www.youtube.com/@ChemicalForce/videos ==
+[枚举] tab=videos 获得 171 条（累计 171）
+[枚举] tab=shorts 获得 44 条（累计 215）
+[枚举] tab=streams 获得 0 条（累计 215）
+[频道] 名称=ChemicalForce ID=UCqONNjBkukcc2yXbmHL8niQ
+[缓存] 命中 7/215 条；另记 0 条已确认无存档
+[RSS] 仅有 7 条，稍候重试一次
+[RSS] 获得 7 条精确日期
+[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
+[网络] 失败 https://pipedapi.kavin.rocks/channel/UCqONNjBkukcc2yXbmHL8niQ: HTTP Error 403: Forbidden
+[Piped] api.piped.private.coffee 第 1 页：+0 条（累计 0/215）
+[Piped] api.piped.private.coffee 第 2 页：+0 条（累计 0/215）
+[Piped] api.piped.private.coffee 第 3 页：+0 条（累计 0/215）
+[Piped] api.piped.private.coffee 第 4 页：+0 条（累计 0/215）
+[Piped] api.piped.private.coffee 第 5 页：+0 条（累计 0/215）
+[Piped] api.piped.private.coffee 第 6 页：+0 条（累计 0/215）
+[Piped] 18 个实例均不可用/无数据；前几个错误：pipedapi.kavin.rocks: 网络失败
+[网络] 失败 https://inv-ygg.nadeko.net/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/vi: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://inv.nadeko.ygg/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/videos: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://inv.nadeko.net/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/videos: HTTP Error 403: Forbidden
+[网络] 失败 https://invidious.nerdvpn.de/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/: HTTP Error 401: Unauthorized
+[网络] 失败 https://yewtu.be/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/videos?page=: HTTP Error 403: Forbidden
+[网络] 失败 https://inv.tux.pizza/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/videos?: <urlopen error timed out>
+[网络] 失败 https://invidious.privacyredirect.com/api/v1/channels/UCqONNjBkukcc2yX: HTTP Error 404: Not Found
+[网络] 失败 https://iv.melmac.space/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/video: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://invidious.jing.rocks/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://invidious.reallyaweso.me/api/v1/channels/UCqONNjBkukcc2yXbmHL8: HTTP Error 502: Bad Gateway
+[网络] 失败 https://invidious.dhusch.de/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/v: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
+[网络] 失败 https://invidious.perennialte.ch/api/v1/channels/UCqONNjBkukcc2yXbmHL8: HTTP Error 404: Not Found
+[网络] 失败 https://iv.datura.network/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/vid: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://iv.ggtyler.dev/api/v1/channels/UCqONNjBkukcc2yXbmHL8niQ/videos: <urlopen error timed out>
+[网络] 失败 https://invidious.einfachzocken.eu/api/v1/channels/UCqONNjBkukcc2yXbmH: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-
+[Invidious] 19 个实例均不可用/无数据；前几个错误：invidious.f5.si: 非 JSON: Expecting value: line 1 column 1 (char 0) | inv-ygg.nadeko.net: 网络失败 | inv.nadeko.ygg: 网络失败 | inv.nadeko.net: 网络失败
+[相对时间] tab=videos 首屏30条 + 翻页23页, 候选token5个, 并集171
+[相对时间] tab=shorts 首屏0条 + 翻页3页, 候选token4个, 并集171
+[相对时间] tab=streams 首屏12条 + 翻页0页, 候选token1个, 并集171
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[缺口] 仍缺官方秒/日精度的视频: 208 条
+[存档] 已查 75 条，命中 2 条
+[存档] 已查 150 条，命中 2 条
+[存档] 已查 200 条，命中 2 条
+[存档] 本轮查 200 条，命中 2 条，无快照 198 条
+[播放接口] 客户端 ANDROID_VR 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 ANDROID 命中 0/6，playabilityStatus=网络失败
+[播放接口] 客户端 IOS 命中 0/6，playabilityStatus=网络失败
+[播放接口] 客户端 TVHTML5 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 WEB_EMBEDDED_PLAYER 命中 0/6，playabilityStatus=ERROR
+[播放接口] 客户端 MWEB 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 WEB 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 所有客户端均无可取日期（云端 IP 被整体风控）
+[yt-dlp] 客户端探测 android_vr：0/3 命中
+[yt-dlp] 客户端探测 ios：0/3 命中
+[yt-dlp] 客户端探测 tv：0/3 命中
+[yt-dlp] 客户端探测 web_safari：0/3 命中
+[yt-dlp] 客户端探测 mweb：0/3 命中
+[yt-dlp] 客户端探测 android：0/3 命中
+[兜底] 标题推断 0 条，页面相对文本 167 条
+[推算] 为 39 条无日期视频标出 ID 时序区间提示
+[归档] 相比上次：新增 0 条，消失 0 条
+
+[完成] data/ChemicalForce_videos.txt：共 215 条（精确 7 / 官方日 2 / 标题推断 0 / 相对文本 167 / 未知 39），可靠日期(秒或日) 9 条占 4%，耗时 3分7秒
+[缓存] 写入 data/ChemicalForce_dates.txt（9 条官方级日期 + 198 条无存档标记）
+
+[预算] 频道 4/5 分配 579 秒（全局剩余 1654 秒）
+
+============================================================
+== 频道: https://www.youtube.com/@Chemiolis/videos ==
+[枚举] tab=videos 获得 75 条（累计 75）
+[枚举] tab=shorts 获得 7 条（累计 82）
+[枚举] tab=streams 获得 0 条（累计 82）
+[频道] 名称=Chemiolis ID=UCoDmZirW1o9XSKSRM6YJ1rQ
+[缓存] 命中 7/82 条；另记 0 条已确认无存档
+[RSS] 仅有 7 条，稍候重试一次
+[RSS] 获得 7 条精确日期
+[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
+[网络] 失败 https://pipedapi.kavin.rocks/channel/UCoDmZirW1o9XSKSRM6YJ1rQ: HTTP Error 403: Forbidden
+[Piped] api.piped.private.coffee 第 1 页：+0 条（累计 0/82）
+[Piped] api.piped.private.coffee 第 2 页：+0 条（累计 0/82）
+[Piped] api.piped.private.coffee 第 3 页：+0 条（累计 0/82）
+[Piped] 18 个实例均不可用/无数据；前几个错误：pipedapi.kavin.rocks: 网络失败
+[网络] 失败 https://inv-ygg.nadeko.net/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/vi: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://inv.nadeko.ygg/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/videos: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://inv.nadeko.net/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/videos: HTTP Error 403: Forbidden
+[网络] 失败 https://invidious.nerdvpn.de/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/: HTTP Error 401: Unauthorized
+[网络] 失败 https://yewtu.be/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/videos?page=: HTTP Error 403: Forbidden
+[网络] 失败 https://inv.tux.pizza/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/videos?: <urlopen error timed out>
+[网络] 失败 https://invidious.privacyredirect.com/api/v1/channels/UCoDmZirW1o9XSKS: HTTP Error 404: Not Found
+[网络] 失败 https://iv.melmac.space/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/video: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://invidious.jing.rocks/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://invidious.reallyaweso.me/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ: HTTP Error 502: Bad Gateway
+[网络] 失败 https://invidious.dhusch.de/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/v: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
+[网络] 失败 https://invidious.perennialte.ch/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ: HTTP Error 404: Not Found
+[网络] 失败 https://iv.datura.network/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/vid: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://iv.ggtyler.dev/api/v1/channels/UCoDmZirW1o9XSKSRM6YJ1rQ/videos: <urlopen error timed out>
+[网络] 失败 https://invidious.einfachzocken.eu/api/v1/channels/UCoDmZirW1o9XSKSRM6: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-
+[Invidious] 19 个实例均不可用/无数据；前几个错误：invidious.f5.si: 非 JSON: Expecting value: line 1 column 1 (char 0) | inv-ygg.nadeko.net: 网络失败 | inv.nadeko.ygg: 网络失败 | inv.nadeko.net: 网络失败
+[相对时间] tab=videos 首屏30条 + 翻页11页, 候选token5个, 并集75
+[相对时间] tab=shorts 首屏0条 + 翻页0页, 候选token1个, 并集75
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[相对时间] tab=streams 首屏22条 + 翻页0页, 候选token6个, 并集75
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[缺口] 仍缺官方秒/日精度的视频: 75 条
+[存档] 已查 75 条，命中 16 条
+[存档] 本轮查 75 条，命中 16 条，无快照 59 条
+[播放接口] 客户端 ANDROID_VR 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 ANDROID 命中 0/6，playabilityStatus=网络失败
+[播放接口] 客户端 IOS 命中 0/6，playabilityStatus=网络失败
+[播放接口] 客户端 TVHTML5 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 WEB_EMBEDDED_PLAYER 命中 0/6，playabilityStatus=ERROR
+[播放接口] 客户端 MWEB 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 WEB 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 所有客户端均无可取日期（云端 IP 被整体风控）
+[yt-dlp] 客户端探测 android_vr：0/3 命中
+[yt-dlp] 客户端探测 ios：0/3 命中
+[yt-dlp] 客户端探测 tv：0/3 命中
+[yt-dlp] 客户端探测 web_safari：0/3 命中
+[yt-dlp] 客户端探测 mweb：0/3 命中
+[yt-dlp] 客户端探测 android：0/3 命中
+[兜底] 标题推断 0 条，页面相对文本 55 条
+[推算] 为 4 条无日期视频标出 ID 时序区间提示
+[归档] 相比上次：新增 0 条，消失 0 条
+
+[完成] data/Chemiolis_videos.txt：共 82 条（精确 7 / 官方日 16 / 标题推断 0 / 相对文本 55 / 未知 4），可靠日期(秒或日) 23 条占 28%，耗时 7分24秒
+[缓存] 写入 data/Chemiolis_dates.txt（23 条官方级日期 + 59 条无存档标记）
+
+[预算] 频道 5/5 分配 600 秒（全局剩余 1210 秒）
+
+============================================================
+== 频道: https://www.youtube.com/@ExplosionsAndFire/videos ==
+[枚举] tab=videos 获得 33 条（累计 33）
+[枚举] tab=shorts 获得 2 条（累计 35）
+[枚举] tab=streams 获得 0 条（累计 35）
+[频道] 名称=Explosions&Fire ID=UCVovvq34gd0ps5cVYNZrc7A
+[缓存] 命中 7/35 条；另记 0 条已确认无存档
+[RSS] 仅有 7 条，稍候重试一次
+[RSS] 获得 7 条精确日期
+[DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
+[网络] 失败 https://pipedapi.kavin.rocks/channel/UCVovvq34gd0ps5cVYNZrc7A: HTTP Error 403: Forbidden
+[Piped] api.piped.private.coffee 第 1 页：+0 条（累计 0/35）
+[Piped] api.piped.private.coffee 第 2 页：+0 条（累计 0/35）
+[Piped] 18 个实例均不可用/无数据；前几个错误：pipedapi.kavin.rocks: 网络失败
+[网络] 失败 https://inv-ygg.nadeko.net/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/vi: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://inv.nadeko.ygg/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://inv.nadeko.net/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos: HTTP Error 403: Forbidden
+[网络] 失败 https://invidious.nerdvpn.de/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/: HTTP Error 401: Unauthorized
+[网络] 失败 https://yewtu.be/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos?page=: HTTP Error 403: Forbidden
+[网络] 失败 https://inv.tux.pizza/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos?: <urlopen error timed out>
+[网络] 失败 https://invidious.privacyredirect.com/api/v1/channels/UCVovvq34gd0ps5c: HTTP Error 404: Not Found
+[网络] 失败 https://iv.melmac.space/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/video: <urlopen error [Errno 101] Network is unreachable>
+[网络] 失败 https://invidious.jing.rocks/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://invidious.reallyaweso.me/api/v1/channels/UCVovvq34gd0ps5cVYNZr: HTTP Error 502: Bad Gateway
+[网络] 失败 https://invidious.dhusch.de/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/v: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
+[网络] 失败 https://invidious.perennialte.ch/api/v1/channels/UCVovvq34gd0ps5cVYNZr: HTTP Error 404: Not Found
+[网络] 失败 https://iv.datura.network/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/vid: <urlopen error [Errno -2] Name or service not known>
+[网络] 失败 https://invidious.materialio.us/api/v1/channels/UCVovvq34gd0ps5cVYNZrc: HTTP Error 500: Internal Server Error
+[网络] 失败 https://iv.ggtyler.dev/api/v1/channels/UCVovvq34gd0ps5cVYNZrc7A/videos: <urlopen error timed out>
+[网络] 失败 https://invidious.einfachzocken.eu/api/v1/channels/UCVovvq34gd0ps5cVYN: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-
+[Invidious] 19 个实例均不可用/无数据；前几个错误：invidious.f5.si: 非 JSON: Expecting value: line 1 column 1 (char 0) | inv-ygg.nadeko.net: 网络失败 | inv.nadeko.ygg: 网络失败 | inv.nadeko.net: 网络失败
+[相对时间] tab=videos 首屏30条 + 翻页7页, 候选token6个, 并集33
+[相对时间] tab=shorts 首屏0条 + 翻页0页, 候选token2个, 并集33
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间] tab=streams 首屏0条 + 翻页0页, 候选token2个, 并集33
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
+[相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
+[缺口] 仍缺官方秒/日精度的视频: 28 条
+[存档] 已查 28 条，命中 13 条
+[存档] 本轮查 28 条，命中 13 条，无快照 15 条
+[播放接口] 客户端 ANDROID_VR 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 ANDROID 命中 0/6，playabilityStatus=网络失败
+[播放接口] 客户端 IOS 命中 0/6，playabilityStatus=网络失败
+[播放接口] 客户端 TVHTML5 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 WEB_EMBEDDED_PLAYER 命中 0/6，playabilityStatus=ERROR
+[播放接口] 客户端 MWEB 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 客户端 WEB 命中 0/6，playabilityStatus=LOGIN_REQUIRED
+[播放接口] 所有客户端均无可取日期（云端 IP 被整体风控）
+[yt-dlp] 客户端探测 android_vr：0/3 命中
+[yt-dlp] 客户端探测 ios：0/3 命中
+[yt-dlp] 客户端探测 tv：0/3 命中
+[yt-dlp] 客户端探测 web_safari：0/3 命中
+[yt-dlp] 客户端探测 mweb：0/3 命中
+[yt-dlp] 客户端探测 android：0/3 命中
+[兜底] 标题推断 0 条，页面相对文本 14 条
+[推算] 为 1 条无日期视频标出 ID 时序区间提示
+[归档] 相比上次：新增 0 条，消失 0 条
+
+[完成] data/Explosions&Fire_videos.txt：共 35 条（精确 7 / 官方日 13 / 标题推断 0 / 相对文本 14 / 未知 1），可靠日期(秒或日) 20 条占 57%，耗时 4分56秒
+[缓存] 写入 data/Explosions&Fire_dates.txt（20 条官方级日期 + 15 条无存档标记）
+
+============================================================
+== 本次共产出 5 个清单 ==
+  - data/NurdRage_videos.txt（291 条，可靠日期统计见文件）
+  - data/NileRed_videos.txt（401 条，可靠日期统计见文件）
+  - data/ChemicalForce_videos.txt（215 条，可靠日期统计见文件）
+  - data/Chemiolis_videos.txt（82 条，可靠日期统计见文件）
+  - data/Explosions&Fire_videos.txt（35 条，可靠日期统计见文件）

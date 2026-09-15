@@ -3,23 +3,23 @@
 频道链接: https://www.youtube.com/@ChemicalForce/videos
 频道 ID: UCqONNjBkukcc2yXbmHL8niQ
 频道页显示视频总数: 215（本文件抓取到 215 条，覆盖率 100%）
-抓取时间: 2026-09-16 02:48:57 (UTC+8)
-数据来源: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/播放接口/相对文本) + 历史缓存逐周收敛
+抓取时间: 2026-09-16 03:57:31 (UTC+8)
+数据来源: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 视频总数: 215
 本次变化: 新增 0 条 / 从频道消失 0 条（相比上次抓取）
 ========================================
 
-【1】视频名称: I dissolved Dinitrogen Pentoxide in Nitric Acid and obtained NitroOleum!
-    视频链接: https://www.youtube.com/watch?v=1RAd7s4KqSg
-    时长: 12:47 (12m47s)
-    发布时间: 2026-08（推断至月份, ±1个月, 页面相对文本）
-
---------------------------------------------------
-
-【2】视频名称: Mysterious Glowing Spheres: Xenon Difluoride and Silicon😯
+【1】视频名称: Mysterious Glowing Spheres: Xenon Difluoride and Silicon😯
     视频链接: https://www.youtube.com/watch?v=yaVM1X8wRr0
     时长: 3:07 (3m7s)
     发布时间: 2026-08-08 00:28:01 (UTC+8)   [原始: 2026-08-07 16:28:01 UTC]
+
+--------------------------------------------------
+
+【2】视频名称: I dissolved Dinitrogen Pentoxide in Nitric Acid and obtained NitroOleum!
+    视频链接: https://www.youtube.com/watch?v=1RAd7s4KqSg
+    时长: 12:47 (12m47s)
+    发布时间: 2026-07-21（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
@@ -91,17 +91,17 @@
 
 --------------------------------------------------
 
-【12】视频名称: This Substance Turns PomeGRANATE Into PomeGRENADE
-    视频链接: https://www.youtube.com/watch?v=WMaOHhmZawk
-    时长: 11:44 (11m44s)
+【12】视频名称: Solid That Oxidizes Everything! Noble Gas Compound
+    视频链接: https://www.youtube.com/watch?v=GDczsKj0thQ
+    时长: 17:56 (17m56s)
     发布时间: 2026-01（推断至月份, ±1个月, 页面相对文本）
 
 --------------------------------------------------
 
-【13】视频名称: Solid That Oxidizes Everything! Noble Gas Compound
-    视频链接: https://www.youtube.com/watch?v=GDczsKj0thQ
-    时长: 17:56 (17m56s)
-    发布时间: 2026-01（推断至月份, ±1个月, 页面相对文本）
+【13】视频名称: This Substance Turns PomeGRANATE Into PomeGRENADE
+    视频链接: https://www.youtube.com/watch?v=WMaOHhmZawk
+    时长: 11:44 (11m44s)
+    发布时间: 2026-01-08（日精度, 来自archive.org 存档）
 
 --------------------------------------------------
 
@@ -1246,50 +1246,50 @@
 
 --------------------------------------------------
 
-【177】视频名称: Pyrophoric tert-butyl lithium
-    视频链接: https://www.youtube.com/watch?v=Ecvohy8obH0
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【178】视频名称: How to ignite ammonia
-    视频链接: https://www.youtube.com/watch?v=ZXpx_D89vtc
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【179】视频名称: Violet-black smoke
-    视频链接: https://www.youtube.com/watch?v=sndDmsYgjYM
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【180】视频名称: Perfect Ice Ball
-    视频链接: https://www.youtube.com/watch?v=jPNCexBwYyM
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【181】视频名称: The most toxic metal oxide
-    视频链接: https://www.youtube.com/watch?v=L3yxJTIvo6Q
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【182】视频名称: The Mixture That Fears Water
+【177】视频名称: The Mixture That Fears Water
     视频链接: https://www.youtube.com/watch?v=_5y5vHbJoak
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后，下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【178】视频名称: Red glow from pool cleaner #experiment #chemistry #scienceexperiment
+    视频链接: https://www.youtube.com/watch?v=8w2rohxgOxw
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±27 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【179】视频名称: Sulfide Fake Mirror #chemistry #scienceexperiment
+    视频链接: https://www.youtube.com/watch?v=6Jgjx5dAf-o
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-05 前后（±60 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【180】视频名称: I BROKE my ampoule of CAESIUM
+    视频链接: https://www.youtube.com/watch?v=59nGqP4S88Y
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-05 前后（±60 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【181】视频名称: SpongeBob and Liquid Oxygen #scienceexperiment #spongebob #chemistry
+    视频链接: https://www.youtube.com/watch?v=1vxp0a4P8pc
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-05 前后（±60 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【182】视频名称: Ozone and Nitric oxide reaction
+    视频链接: https://www.youtube.com/watch?v=0fUZ66VFP8A
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-07 前后（±8 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1297,263 +1297,263 @@
 【183】视频名称: Red Selenium
     视频链接: https://www.youtube.com/watch?v=0bfdXTjY9f8
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-07 前后（±8 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
 
-【184】视频名称: Can You Extinguish Magnesium?
-    视频链接: https://www.youtube.com/watch?v=gcOsSeBqXoo
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【185】视频名称: Glowing sugar
-    视频链接: https://www.youtube.com/watch?v=SSiIyKNv-Jw
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【186】视频名称: Calcium Carbide Trick
-    视频链接: https://www.youtube.com/watch?v=tu5a5Nqcu_U
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【187】视频名称: Nearly solid fluorine
-    视频链接: https://www.youtube.com/watch?v=kNWIfwsB2ac
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【188】视频名称: This acid will explode your cookies
-    视频链接: https://www.youtube.com/watch?v=oCxTZEKQ8Oc
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【189】视频名称: Potassium SUPERoxide
-    视频链接: https://www.youtube.com/watch?v=jnkPiqViRho
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【190】视频名称: Chemical indicator for carbon monoxide
-    视频链接: https://www.youtube.com/watch?v=WQvUYhmIN6c
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【191】视频名称: Smoldering splint in Ozone
-    视频链接: https://www.youtube.com/watch?v=U2VkZT37r9w
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【192】视频名称: Photochemical reaction with Fe(CO)5 #experiment #chemistry
-    视频链接: https://www.youtube.com/watch?v=w5E8mk3sVgI
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【193】视频名称: This solid contains a lot of hydrogen #experiment #chemistry
-    视频链接: https://www.youtube.com/watch?v=wa41m4S7EK0
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【194】视频名称: Sulfide Fake Mirror #chemistry #scienceexperiment
-    视频链接: https://www.youtube.com/watch?v=6Jgjx5dAf-o
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【195】视频名称: I poured burning methane into liquid oxygen and regretted it #experiment #chemistry
-    视频链接: https://www.youtube.com/watch?v=NyvrbFGcuLI
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【196】视频名称: This smoke is made of iron #experiment #scienceexperiment #chemistry
-    视频链接: https://www.youtube.com/watch?v=PVpcuB0AtdM
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【197】视频名称: Too much white smoke from liquid gases #scienceexperiment #experiment #chemistry
-    视频链接: https://www.youtube.com/watch?v=mLI_p_yERNE
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【198】视频名称: I BROKE my ampoule of CAESIUM
-    视频链接: https://www.youtube.com/watch?v=59nGqP4S88Y
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【199】视频名称: Christmas chemical fire
-    视频链接: https://www.youtube.com/watch?v=hyEVmFxk_vc
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【200】视频名称: Ozone and Nitric oxide reaction
-    视频链接: https://www.youtube.com/watch?v=0fUZ66VFP8A
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【201】视频名称: SpongeBob and Liquid Oxygen #scienceexperiment #spongebob #chemistry
-    视频链接: https://www.youtube.com/watch?v=1vxp0a4P8pc
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【202】视频名称: Yellow sulfur and red selenium
-    视频链接: https://www.youtube.com/watch?v=ImhgwOHQlA8
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【203】视频名称: The only acid that dissolves gold
-    视频链接: https://www.youtube.com/watch?v=ND-Lcad3vGQ
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【204】视频名称: It's not a classic barking dog reaction #scienceexperiment #chemistry #chemicals l
-    视频链接: https://www.youtube.com/watch?v=etpRI-LSvaM
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【205】视频名称: The world's smokiest liquid #scienceexperiment #chemistry #experiments
-    视频链接: https://www.youtube.com/watch?v=heDx9ig28dw
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【206】视频名称: Molded Zirconium ball
-    视频链接: https://www.youtube.com/watch?v=s2JjrX2WGO4
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【207】视频名称: Chromium hexacarbonyl
-    视频链接: https://www.youtube.com/watch?v=AjEN0w5rmGU
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【208】视频名称: Hydrogen sulfide is scary
-    视频链接: https://www.youtube.com/watch?v=q4IS-Q9pjpg
-    时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
-    标注: 短视频 Shorts
-
---------------------------------------------------
-
-【209】视频名称: Potassium vapor #scienceexperiment #chemistry
+【184】视频名称: Potassium vapor #scienceexperiment #chemistry
     视频链接: https://www.youtube.com/watch?v=zOvwh6qEprU
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-07 前后（±8 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
 
-【210】视频名称: Lots of smoke from liquefied gases
+【185】视频名称: Photochemical reaction with Fe(CO)5 #experiment #chemistry
+    视频链接: https://www.youtube.com/watch?v=w5E8mk3sVgI
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【186】视频名称: This solid contains a lot of hydrogen #experiment #chemistry
+    视频链接: https://www.youtube.com/watch?v=wa41m4S7EK0
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【187】视频名称: Calcium Carbide Trick
+    视频链接: https://www.youtube.com/watch?v=tu5a5Nqcu_U
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【188】视频名称: Molded Zirconium ball
+    视频链接: https://www.youtube.com/watch?v=s2JjrX2WGO4
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【189】视频名称: Violet-black smoke
+    视频链接: https://www.youtube.com/watch?v=sndDmsYgjYM
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【190】视频名称: Hydrogen sulfide is scary
+    视频链接: https://www.youtube.com/watch?v=q4IS-Q9pjpg
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【191】视频名称: Lots of smoke from liquefied gases
     视频链接: https://www.youtube.com/watch?v=oKZL7wHOra8
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
 
-【211】视频名称: Red glow from pool cleaner #experiment #chemistry #scienceexperiment
-    视频链接: https://www.youtube.com/watch?v=8w2rohxgOxw
+【192】视频名称: This acid will explode your cookies
+    视频链接: https://www.youtube.com/watch?v=oCxTZEKQ8Oc
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
 
-【212】视频名称: Blue smoke from pink powder #experiment #science #chemistry
-    视频链接: https://www.youtube.com/watch?v=AKlFszovpbk
+【193】视频名称: Too much white smoke from liquid gases #scienceexperiment #experiment #chemistry
+    视频链接: https://www.youtube.com/watch?v=mLI_p_yERNE
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
 
-【213】视频名称: Black apple #experiment #science #chemistry #ammonia
-    视频链接: https://www.youtube.com/watch?v=Ng0cb05Kewc
+【194】视频名称: Nearly solid fluorine
+    视频链接: https://www.youtube.com/watch?v=kNWIfwsB2ac
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
 
-【214】视频名称: Mercury mirror
-    视频链接: https://www.youtube.com/watch?v=btjanPf8tpU
+【195】视频名称: Potassium SUPERoxide
+    视频链接: https://www.youtube.com/watch?v=jnkPiqViRho
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
 
-【215】视频名称: Black penny #experiment #chemistry #science
+【196】视频名称: Perfect Ice Ball
+    视频链接: https://www.youtube.com/watch?v=jPNCexBwYyM
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【197】视频名称: Christmas chemical fire
+    视频链接: https://www.youtube.com/watch?v=hyEVmFxk_vc
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【198】视频名称: The world's smokiest liquid #scienceexperiment #chemistry #experiments
+    视频链接: https://www.youtube.com/watch?v=heDx9ig28dw
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【199】视频名称: Can You Extinguish Magnesium?
+    视频链接: https://www.youtube.com/watch?v=gcOsSeBqXoo
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【200】视频名称: It's not a classic barking dog reaction #scienceexperiment #chemistry #chemicals l
+    视频链接: https://www.youtube.com/watch?v=etpRI-LSvaM
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【201】视频名称: Black penny #experiment #chemistry #science
     视频链接: https://www.youtube.com/watch?v=dSqCich0Dp4
     时长: 未知
-    发布时间: 未知（该视频官方字段暂不可取，下周自动重跑会再试）
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【202】视频名称: Mercury mirror
+    视频链接: https://www.youtube.com/watch?v=btjanPf8tpU
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【203】视频名称: How to ignite ammonia
+    视频链接: https://www.youtube.com/watch?v=ZXpx_D89vtc
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【204】视频名称: Chemical indicator for carbon monoxide
+    视频链接: https://www.youtube.com/watch?v=WQvUYhmIN6c
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±105 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【205】视频名称: Smoldering splint in Ozone
+    视频链接: https://www.youtube.com/watch?v=U2VkZT37r9w
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-02 前后（±42 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【206】视频名称: Glowing sugar
+    视频链接: https://www.youtube.com/watch?v=SSiIyKNv-Jw
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-02 前后（±42 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【207】视频名称: This smoke is made of iron #experiment #scienceexperiment #chemistry
+    视频链接: https://www.youtube.com/watch?v=PVpcuB0AtdM
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±2 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【208】视频名称: I poured burning methane into liquid oxygen and regretted it #experiment #chemistry
+    视频链接: https://www.youtube.com/watch?v=NyvrbFGcuLI
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±2 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【209】视频名称: Black apple #experiment #science #chemistry #ammonia
+    视频链接: https://www.youtube.com/watch?v=Ng0cb05Kewc
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±2 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【210】视频名称: The only acid that dissolves gold
+    视频链接: https://www.youtube.com/watch?v=ND-Lcad3vGQ
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±2 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【211】视频名称: The most toxic metal oxide
+    视频链接: https://www.youtube.com/watch?v=L3yxJTIvo6Q
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-04 前后（±2 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【212】视频名称: Yellow sulfur and red selenium
+    视频链接: https://www.youtube.com/watch?v=ImhgwOHQlA8
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后（±9 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【213】视频名称: Pyrophoric tert-butyl lithium
+    视频链接: https://www.youtube.com/watch?v=Ecvohy8obH0
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后（±9 天），下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【214】视频名称: Chromium hexacarbonyl
+    视频链接: https://www.youtube.com/watch?v=AjEN0w5rmGU
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后，下周自动重跑会再试）
+    标注: 短视频 Shorts
+
+--------------------------------------------------
+
+【215】视频名称: Blue smoke from pink powder #experiment #science #chemistry
+    视频链接: https://www.youtube.com/watch?v=AKlFszovpbk
+    时长: 未知
+    发布时间: 未知（官方字段暂不可取；按视频 ID 时序推算大约在 2026-03 前后，下周自动重跑会再试）
     标注: 短视频 Shorts
 
 --------------------------------------------------
@@ -1563,28 +1563,34 @@
 ========================================
 视频总数(去重后): 215
 其中精确到秒的发布时间: 7 条（官方 RSS 7 / 官方接口与镜像 0）
-其中官方日精度日期: 0 条
+其中官方日精度日期: 2 条
 其中标题推断日期(日/月): 0 / 0 条
-其中相对文本推断(年/月/周/日): 169 条
+其中相对文本推断(年/月/周/日): 167 条
 其中日期未知: 39 条
+可靠日期(精确到秒或日)合计: 9 / 215 条 = 4%
 其中重复标题组(可能为重传/多版本): 0 组（涉及 0 条, 去重按视频ID）
 抓取累计条数(去重前): 215
-本次运行耗时: 7分51秒
+本次运行耗时: 3分7秒
 实际使用中继: GitHub Actions 美国节点直连（无中继）
-数据源明细: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/播放接口/相对文本) + 历史缓存逐周收敛
+数据源明细: GitHub Actions 美国节点直连；全量枚举(videos/shorts/streams) + 多源日期解析(RSS/官方接口/镜像/存档/播放接口/相对文本) + 历史缓存逐周收敛
 
 ========================================
 数据通道明细（本次运行，排障用）
 ========================================
+- 历史日期缓存（本轮直接复用）: 7 条
 - 官方 RSS（精确到秒）: 7 条
 - 官方 Data API v3（未配置 YT_API_KEY）（本次跳过）
 - Piped 镜像（官方时间戳）: 0 条
 - Invidious 镜像（官方时间戳）: 0 条
 - InnerTube 频道页相对时间（模糊兜底）: 171 条
+- archive.org 存档快照（日精度）: 2 条
+- 存档查询条数/无快照: 200 / 198 条
 - YouTube 播放接口（日精度）: 0 条
-- 播放接口客户端探测（命中/样本）: ANDROID_VR=0/6; ANDROID=0/6; IOS=0/6; TVHTML5=0/6; WEB_EMBEDDED_PLAYER=0/6; MWEB=0/6; WEB=0/6 条
-- 单条镜像补漏（残尾）: 0 条
+- 播放接口客户端探测（命中/样本/状态）: ANDROID_VR=0/6(LOGIN_REQUIRED); ANDROID=0/6(网络失败); IOS=0/6(网络失败); TVHTML5=0/6(LOGIN_REQUIRED); WEB_EMBEDDED_PLAYER=0/6(ERROR); MWEB=0/6(LOGIN_REQUIRED); WEB=0/6(LOGIN_REQUIRED) 条
+- yt-dlp 可用客户端: 无 条
 - 标题推断日期: 0 条
-- 页面相对文本（模糊）: 169 条
-- 最终各来源条数: 频道页相对时间=169, unknown=39, 官方 RSS=7
-- 提示: 想让它每次都能精确到秒，给仓库加一个 Secret 名为 YT_API_KEY（YouTube Data API v3 的免费 key）即可，脚本会自动启用官方接口通道。
+- 页面相对文本（模糊）: 167 条
+- 无日期条目的 ID 时序区间提示: 39 条
+- 最终各来源条数: 频道页相对时间=167, unknown=39, 官方 RSS=7, archive.org 存档=2
+- 本次运行完整日志见 data/_run_log.txt
+- 想让日期全部精确到秒：给仓库加一个 Secret 名为 YT_API_KEY（YouTube Data API v3 的免费 key），脚本会自动启用官方接口通道。
