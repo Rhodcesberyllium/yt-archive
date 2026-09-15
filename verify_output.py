@@ -13,13 +13,13 @@ verify_output.py — 对抓取产物做验收自检（增强版：默认连带�
      涉及月/年推断条目的顺序异常仅软警告（推断锚点可能跨真实边界）
   7. 标题"待补"数量与日期"未知"数量报告（--strict 时作为失败条件）
   8. 最新一条与频道 RSS 缓存对照（标题+日期）
-  9. 可靠日期占比（精确到秒或日）报告
+  9. 可靠日期占比（精确到秒或日）报告，可用 --min-reliable 设成硬门槛
  10. 数据来源明细（各通道各贡献多少条）
 
 用法:
     python verify_output.py data/NurdRage_videos.txt [--rss <rss.xml>] [--strict]
-    python verify_output.py --all                 # 校验 data/ 下所有频道清单
-    python verify_output.py --all --min-reliable 90   # 可靠日期占比低于 90% 即判定失败
+    python verify_output.py --all                          # 校验 data/ 下所有频道清单
+    python verify_output.py --all --min-reliable 90        # 可靠日期占比低于 90% 即失败
 
 说明：不给 --all 时，除了指定的那份，还会**连带校验同目录下其它 *_videos.txt**，
 任一失败即整体失败——这样工作流里只传一个文件也能覆盖全部频道。
@@ -241,9 +241,14 @@ def verify_one(path, rss_path=None, strict=False, min_reliable=None):
 def main():
     args = sys.argv[1:]
     path, rss_path, strict, all_files, min_reliable = None, None, False, False, None
+    skip_next = False
     for i, a in enumerate(args):
+        if skip_next:          # 上一个是带参数的选项，这个值是它的参数，不能当成文件路径
+            skip_next = False
+            continue
         if a == "--rss" and i + 1 < len(args):
             rss_path = args[i + 1]
+            skip_next = True
         elif a == "--strict":
             strict = True
         elif a == "--all":
@@ -254,6 +259,7 @@ def main():
             except ValueError:
                 print("[X] --min-reliable 需要一个百分数，如 --min-reliable 90")
                 sys.exit(2)
+            skip_next = True
         elif not a.startswith("--") and path is None:
             path = a
 
