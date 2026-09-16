@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-verify_output.py — 对抓取产物做验收自检（增强版：默认连带校验同目录所有频道清单）。
+verify_output.py — 对抓取产物做验收自检（默认连带校验同目录所有频道清单）。
 
 检查项:
   0. 文件编码为 UTF-8
@@ -15,6 +15,10 @@ verify_output.py — 对抓取产物做验收自检（增强版：默认连带�
   8. 最新一条与频道 RSS 缓存对照（标题+日期）
   9. 可靠日期占比（精确到秒或日）报告，可用 --min-reliable 设成硬门槛
  10. 数据来源明细（各通道各贡献多少条）
+
+顺带产出:
+  data/_progress.txt —— 各频道补齐进度汇总（每次校验后自动刷新，
+  一眼看出每个频道还缺多少条、谁会被下一轮优先抓）
 
 用法:
     python verify_output.py data/NurdRage_videos.txt [--rss <rss.xml>] [--strict]
@@ -46,6 +50,27 @@ SOLID_RE = re.compile(r"可靠日期\(精确到秒或日\)合计: (\d+) / (\d+) 
 SRC_RE = re.compile(r"^- 最终各来源条数: (.+)$", re.M)
 
 
+def _channel_of(path):
+    """从产物头部取频道名（用于进度汇总显示）。"""
+    try:
+        with open(path, "r", encoding="utf-8", errors="replace") as f:
+            for line in f:
+                if line.startswith("频道: "):
+                    return line[len("频道: "):].strip()
+                if line.startswith("【") or line.startswith("----"):
+                    break
+    except Exception:
+        pass
+    return os.path.basename(path).replace("_videos.txt", "")
+
+
+def _stats(path, total=0, solid=0, unknown=0, ratio=None, channel=""):
+    """把单文件校验结果整理成统计字典，供汇总与进度文件使用。"""
+    return {"path": path, "channel": channel, "total": total or 0,
+            "solid": solid or 0, "unknown": unknown or 0, "ratio": ratio,
+            "gap": max(0, (total or 0) - (solid or 0))}
+
+
 def parse_dt(s, fmt):
     return datetime.strptime(s, fmt).replace(tzinfo=CN_TZ)
 
@@ -59,7 +84,7 @@ def year_anchor(y):
 
 
 def verify_one(path, rss_path=None, strict=False, min_reliable=None):
-    """校验单个文件。返回 (是否通过, 可靠日期占比或 None)。"""
+    """校验单个文件。返回 (是否通过, 统计字典)。统计字典含 total/solid/unknown/ratio/gap。"""
     if not os.path.isfile(path):
         print("[X] 文件不存在: %s" % path)
         return False, None
@@ -96,7 +121,7 @@ def verify_one(path, rss_path=None, strict=False, min_reliable=None):
             mm = LINK_RE.match(url)
             if not mm:
                 print("[X] 链接格式错误: %s" % url)
-                return False, None
+                return False, _stats(path)
             cur["link"] = mm.group(1)
         elif s.startswith("发布时间: "):
             mm = EXACT_RE.match(s)
@@ -124,33 +149,33 @@ def verify_one(path, rss_path=None, strict=False, min_reliable=None):
                             cur["level"] = 4  # 未知（可带 ID 时序区间提示）
                         else:
                             print("[?] 未识别的发布时间行: %s" % line)
-                            return False, None
+                            return False, _stats(path)
 
     if not entries:
         print("[X] 未解析到任何条目，疑似文件被截断或格式错误")
-        return False, None
+        return False, _stats(path)
 
     if bad_approx:
         print("[X] 发现 %d 条伪精确占位日期（格式: YYYY-MM-DD (UTC+8, 近似值)），禁止出现！"
               % bad_approx)
-        return False, None
+        return False, _stats(path)
     print("[4] 伪精确占位日期: 0 条 ✓")
 
     links = [e["link"] for e in entries if e["link"]]
     if len(links) != len(entries):
         print("[X] 链接缺失: %d/%d 条" % (len(entries) - len(links), len(entries)))
-        return False, None
+        return False, _stats(path)
     dup = len(links) - len(set(links))
     print("[1] 链接格式: 全部通过（%d 条）" % len(links))
     print("[2] 视频ID去重: %s（重复 %d 条）" % ("通过" if dup == 0 else "失败", dup))
     if dup:
-        return False, None
+        return False, _stats(path)
 
     tm = TOTAL_RE.search(text)
     total_hdr = int(tm.group(1)) if tm else None
     if total_hdr is not None and total_hdr != len(entries):
         print("[X] 条数不一致: 头部声明 %s，实际条目 %d" % (total_hdr, len(entries)))
-        return False, None
+        return False, _stats(path)
     print("[2] 条数一致: 头部 %s = 实际 %d ✓" % (total_hdr or len(entries), len(entries)))
 
     cnt = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0}
@@ -168,6 +193,7 @@ def verify_one(path, rss_path=None, strict=False, min_reliable=None):
               % (sm.group(1), sm.group(2), sm.group(3)))
     else:
         print("[9] 输出里没有“可靠日期”统计行（旧版输出？）")
+    st = _stats(path, len(entries), cnt[0] + cnt[1], cnt[4], ratio, _channel_of(path))
 
     src = SRC_RE.search(text)
     if src:
@@ -183,7 +209,7 @@ def verify_one(path, rss_path=None, strict=False, min_reliable=None):
                 soft_bad.append((a[0] + 1, b[0] + 1, a[2], b[2]))
     if hard_bad:
         print("[6] 排序失败(精确/日精度区间乱序): %s（前3处）" % hard_bad[:3])
-        return False, ratio
+        return False, st
     print("[6] 排序断言: 精确/日精度区间从新到旧 ✓（涉及月/年推断锚点的软警告 %d 处%s）"
           % (len(soft_bad), ("，如 %s" % soft_bad[:2]) if soft_bad else ""))
 
@@ -192,17 +218,17 @@ def verify_one(path, rss_path=None, strict=False, min_reliable=None):
     print("[7] 日期未知: %d 条%s" % (cnt[4], "（会由后续运行逐轮补全）" if cnt[4] else " ✓"))
     if strict and (pend or cnt[4]):
         print("[X] --strict: 存在标题待补或日期未知，判定失败。")
-        return False, ratio
+        return False, st
     if coverage is not None and coverage < 100:
         print("[3] 覆盖率未达 100%%（%d%%），存在缺口，可继续重跑补全。" % coverage)
 
     if min_reliable is not None:
         if ratio is None:
             print("[X] --min-reliable: 文件里没有可靠日期统计，无法判定。")
-            return False, ratio
+            return False, st
         if ratio < min_reliable:
             print("[X] --min-reliable %d%%: 当前可靠日期仅 %d%%，判定失败。" % (min_reliable, ratio))
-            return False, ratio
+            return False, st
         print("[9] --min-reliable %d%%: 当前 %d%%，通过 ✓" % (min_reliable, ratio))
 
     rss_candidates = [rss_path] if rss_path else []
@@ -235,7 +261,50 @@ def verify_one(path, rss_path=None, strict=False, min_reliable=None):
             break
     else:
         print("[8] RSS 对照: 未找到 RSS 缓存，跳过")
-    return True, ratio
+    return True, st
+
+
+def write_progress(path, stats):
+    """把各频道的补齐进度汇总成 data/_progress.txt（每轮自动刷新，一眼看全）。
+
+    可靠日期 = 精确到秒或日。缺口大的频道会被下一轮优先抓（见 fetch.py 的 order_channels）。"""
+    rows = [r for r in stats if r and r.get("total")]
+    if not rows:
+        return
+    rows.sort(key=lambda r: (-r["gap"], r["channel"]))
+    L = ["=" * 62,
+         "各频道补齐进度（每次运行自动刷新）",
+         "=" * 62,
+         "生成时间: %s (UTC+8)" % datetime.now(CN_TZ).strftime("%Y-%m-%d %H:%M:%S"),
+         "",
+         "%-22s %8s %10s %7s %8s" % ("频道", "总条数", "可靠日期", "占比", "还缺"),
+         "-" * 62]
+    tt = ts = 0
+    for r in rows:
+        tt += r["total"]
+        ts += r["solid"]
+        L.append("%-22s %8d %10d %7s %8d"
+                 % (r["channel"][:22], r["total"], r["solid"],
+                    ("%.0f%%" % r["ratio"]) if r["ratio"] is not None else "-", r["gap"]))
+    L.append("-" * 62)
+    L.append("%-22s %8d %10d %7s %8d"
+             % ("合计", tt, ts, ("%.0f%%" % (100.0 * ts / tt)) if tt else "-", tt - ts))
+    L.append("")
+    L.append("说明：")
+    L.append("- 「可靠日期」= 精确到秒（官方 RSS / 官方接口）或精确到日（官方元数据 / 历史存档）；")
+    L.append("  其余标为「推断」或「未知」，如实标注精度，绝不假装精确。")
+    L.append("- 缺口最大的频道会被下一轮优先抓取。watch 页通路的配额按 IP 约每小时 200 次，")
+    L.append("  因此是逐轮补齐；已补到的日期会写进缓存，不会丢。")
+    L.append("- 想快点补完：在 Actions 页多点几次 Run workflow（每次间隔一小时以上），")
+    L.append("  或把 .github/workflows/fetch.yml 里的 cron 临时改成每天一次，补完再改回每周。")
+    L.append("=" * 62)
+    try:
+        os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("\n".join(L) + "\n")
+        print("\n进度汇总已写入 %s" % path)
+    except Exception as ex:
+        print("[!] 写进度汇总失败：%s" % str(ex)[:80])
 
 
 def main():
@@ -284,24 +353,33 @@ def main():
     if not targets:
         print("[X] 没有找到任何待校验的清单文件")
         sys.exit(1)
+    progress_path = os.path.join(os.path.dirname(os.path.abspath(targets[0])) or ".",
+                                 "_progress.txt")
 
     results = []
     for i, p in enumerate(targets, 1):
         print("\n" + "=" * 60)
         print("== 校验 %d/%d: %s ==" % (i, len(targets), p))
         print("=" * 60)
-        ok, ratio = verify_one(p, rss_path=rss_path, strict=strict,
-                               min_reliable=min_reliable)
-        results.append((p, ok, ratio))
+        ok, st = verify_one(p, rss_path=rss_path, strict=strict,
+                            min_reliable=min_reliable)
+        results.append((p, ok, st))
 
     bad = [p for p, ok, _ in results if not ok]
-    rates = [r for _, _, r in results if r is not None]
+    stats = [st for _, _, st in results if st is not None]
     print("\n" + "=" * 60)
-    if rates:
-        print("== 可靠日期占比: %s（平均 %.0f%%）=="
-              % (", ".join("%s %d%%" % (os.path.basename(p), r)
-                           for p, _, r in results if r is not None),
-                 sum(rates) / len(rates)))
+    good = [st for st in stats if st.get("ratio") is not None]
+    if good:
+        print("== 可靠日期占比: %s =="
+              % "，".join("%s %d%%" % (st["channel"] or os.path.basename(st["path"]),
+                                      st["ratio"]) for st in good))
+    tot = sum(st["total"] for st in stats)
+    sol = sum(st["solid"] for st in stats)
+    if tot:
+        print("== 全部频道合计: %d / %d 条 = %.0f%%（还缺 %d 条）=="
+              % (sol, tot, 100.0 * sol / tot, tot - sol))
+    write_progress(progress_path, stats)
+
     if bad:
         print("== 总结: 失败 ✗（%d/%d 个文件未通过）==" % (len(bad), len(results)))
         for p in bad:
