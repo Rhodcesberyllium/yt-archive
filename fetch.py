@@ -19,6 +19,7 @@ fetch.py — GitHub Actions 云端全量抓取器 v2（国内免梯子的"一劳
   data/<频道>_dates.txt    日期缓存（逐周收敛的关键，别手动改）
   data/_run_log.txt        本次运行完整日志
   data/_rotation.txt       频道排队用的轮转计数（自动维护）
+  data/_progress.txt       各频道补齐进度汇总（由 verify_output.py 生成）
 
 依赖：yt-dlp；其余全部走标准库。
 
@@ -34,9 +35,10 @@ fetch.py — GitHub Actions 云端全量抓取器 v2（国内免梯子的"一劳
   9) 未知     —— 以上全拿不到才标未知，并给出"按视频 ID 时序推算"的区间提示，下轮自动重试
 
 云端 IP 的实测结论（决定了本脚本的资源分配策略）：
-  · watch 页 HTML 抓取可用且日期准确（实测把两个大频道补齐到 291/291 与 401/401 = 100%，
-    与标题内嵌日期交叉验证 7/7 一致、与旧年份估计交叉验证 123/123 一致），
-    但该通路有"每 IP 每小时约 200 次"的**总量**配额，用满后当天不再返回日期。
+  · watch 页 HTML 抓取可用且日期准确（实测已把 NurdRage / NileRed / ChemicalForce
+    三个频道全部补齐到 291/291、401/401、215/215 = 100%，与标题内嵌日期交叉验证
+    7/7 一致、与旧年份估计交叉验证 123/123 一致），但该通路有"每 IP 每小时约 200 次"
+    的**总量**配额，用满后当天不再返回日期。
     → 对策：每频道每轮限 150 条、**按"还缺多少条"给频道排队**（缺口大的先跑）、
       配额用尽即收手、拿到的日期全部进缓存。这样每一轮都花在刀刃上，
       几轮下来所有频道都会补齐。该通路不设退避：探测成本很低，配额一恢复就能立刻继续补。
@@ -1552,7 +1554,12 @@ def write_output(path, entries, meta):
     L.append("数据通道明细（本次运行，排障用）")
     L.append("=" * 40)
     for k, v in (meta.get("counts") or []):
-        L.append("- %s: %s 条" % (k, v) if v is not None else "- %s（本次跳过）" % k)
+        if v is None:
+            L.append("- %s（本次跳过）" % k)
+        elif isinstance(v, str):      # 说明性内容（如探测结果、落空明细），不加“条”字
+            L.append("- %s: %s" % (k, v))
+        else:
+            L.append("- %s: %d 条" % (k, v))
     if meta.get("prec_by_src"):
         L.append("- 最终各来源条数: %s" % meta["prec_by_src"])
     if meta.get("phases"):
