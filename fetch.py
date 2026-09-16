@@ -18,7 +18,7 @@ fetch.py — GitHub Actions 云端全量抓取器 v2（国内免梯子的"一劳
   data/<频道>_videos.txt   给人看的清单（含统计、数据通道明细、各阶段耗时）
   data/<频道>_dates.txt    日期缓存（逐周收敛的关键，别手动改）
   data/_run_log.txt        本次运行完整日志
-  data/_rotation.txt       频道轮转计数（自动维护）
+  data/_rotation.txt       频道排队用的轮转计数（自动维护）
 
 依赖：yt-dlp；其余全部走标准库。
 
@@ -31,14 +31,15 @@ fetch.py — GitHub Actions 云端全量抓取器 v2（国内免梯子的"一劳
   6) 日精度   —— YouTube 播放接口 playerMicroformatRenderer.publishDate；yt-dlp upload_date
   7) 日/月    —— 标题内嵌完整日期（如 "March 27th 2019"），标注"推断"
   8) 年/月/周/日 —— 频道页相对时间（"3 years ago"），标注粒度（兜底主力）
-  9) 未知     —— 以上全拿不到才标未知，并给出"按视频 ID 时序推算"的区间提示，下周自动重试
+  9) 未知     —— 以上全拿不到才标未知，并给出"按视频 ID 时序推算"的区间提示，下轮自动重试
 
 云端 IP 的实测结论（决定了本脚本的资源分配策略）：
-  · watch 页 HTML 抓取可用且日期准确（实测 NurdRage 一次补齐到 291/291 = 100%，
+  · watch 页 HTML 抓取可用且日期准确（实测把两个大频道补齐到 291/291 与 401/401 = 100%，
     与标题内嵌日期交叉验证 7/7 一致、与旧年份估计交叉验证 123/123 一致），
-    但该通路有"每 IP 每小时约 200 次"的配额，**用满后当天不再返回日期**。
-    → 对策：每轮每频道限 150 条、频道顺序逐轮轮转、配额用尽即收手、
-      拿到的日期全部进缓存。这样几轮下来所有频道都会补齐，且不会把配额耗在同一个频道上。
+    但该通路有"每 IP 每小时约 200 次"的**总量**配额，用满后当天不再返回日期。
+    → 对策：每频道每轮限 150 条、**按"还缺多少条"给频道排队**（缺口大的先跑）、
+      配额用尽即收手、拿到的日期全部进缓存。这样每一轮都花在刀刃上，
+      几轮下来所有频道都会补齐。该通路不设退避：探测成本很低，配额一恢复就能立刻继续补。
   · YouTube 的单视频播放接口被整体风控（7 种客户端全为 LOGIN_REQUIRED/网络失败），
     yt-dlp 各 player_client 也全为 0；Piped / Invidious 从该 IP 基本不可达。
   · 所以资源分配是：便宜的批量/页面通路优先，判定不可用的通路进退避期（缓存记截止日期），
@@ -47,6 +48,7 @@ fetch.py — GitHub Actions 云端全量抓取器 v2（国内免梯子的"一劳
 import argparse
 import bisect
 import datetime as dt
+import glob
 import json
 import os
 import re
@@ -71,15 +73,14 @@ AGO_UNITS = {"year": 365.25 * 86400, "month": 30.44 * 86400, "week": 7 * 86400,
              "day": 86400, "hour": 3600, "minute": 60, "second": 1}
 DEFAULT_CHANNEL = "https://www.youtube.com/@NurdRage/videos"
 CHANNELS_FILE = "channels.txt"
-ROTATION_FILE = "data/_rotation.txt"   # 每轮把频道顺序轮转一格，保证限流配额公平分配
+ROTATION_FILE = "data/_rotation.txt"   # 频道排队时用于打散同级顺序
 RUN_LOG = "data/_run_log.txt"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
 YT_ID_ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
 GOOGLEBOT_UA = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
-PROBE_COOLDOWN_DAYS = 14      # 探测到"整体被风控"后，多久不再重复探测
+PROBE_COOLDOWN_DAYS = 14      # 单视频接口被整体风控后，多久不再重复探测
 MIRROR_COOLDOWN_DAYS = 7      # 镜像实例全灭后，多久不再重复尝试
-WATCH_BACKOFF_DAYS = 1        # watch 页配额用尽后的退避时长（这条路有效，只短暂退避）
 
 # 精度等级：数字越大越可信，多源合并时取最大
 PREC_RANK = {"unknown": 0, "approx": 1, "month_title": 2, "day_title": 3,
@@ -711,8 +712,8 @@ def dates_from_watch_page(ids, deadline, state, workers=3, max_lookups=150,
     """先用样本判断这条路通不通（不通会等一会儿再探一次），通了再分批并行取。
 
     实测教训：该通路有"每 IP 每小时约 200 次"的配额，用满后页面不再返回日期。
-    所以这里每频道每轮**限 150 条**（给后面的频道留配额）、主动放慢节奏，
-    并在连续 10 条取不到时立刻收手；配合频道顺序逐轮轮转，几轮下来各频道都会补齐。
+    所以这里每频道每轮**限 150 条**（给同轮后面的频道留配额）、主动放慢节奏，
+    并在连续 10 条取不到时立刻收手；配合"按缺口排队"，几轮下来各频道都会补齐。
     已拿到的日期都会进缓存，逐周累积不会丢。"""
     res = {}
     ids = [v for v in ids if VIDEOID_RE.fullmatch(v)]
@@ -731,7 +732,7 @@ def dates_from_watch_page(ids, deadline, state, workers=3, max_lookups=150,
 
     hit, cnt = probe()
     if not hit:
-        wait = min(25.0, max(0.0, deadline.left() - 15))
+        wait = min(10.0, max(0.0, deadline.left() - 15))
         log("[watch页] 样本 0/%d，疑似配额用尽，等 %.0f 秒后重探" % (cnt, wait))
         time.sleep(wait)
         hit, cnt = probe()
@@ -1250,7 +1251,6 @@ class DateCache:
         self.absent = set()
         self.blocked_until = None
         self.mirrors_blocked_until = None
-        self.watch_backoff_until = None
 
 
 def cache_path_for(out_path):
@@ -1272,9 +1272,6 @@ def load_date_cache(path):
                     m2 = re.match(r"#\s*mirrors_blocked_until=(\d{4}-\d{2}-\d{2})", line)
                     if m2:
                         c.mirrors_blocked_until = m2.group(1)
-                    m3 = re.match(r"#\s*watch_backoff_until=(\d{4}-\d{2}-\d{2})", line)
-                    if m3:
-                        c.watch_backoff_until = m3.group(1)
                     continue
                 if "\t" not in line:
                     continue
@@ -1316,9 +1313,6 @@ def save_date_cache(path, cache, merged, min_rank=None):
     if cache.mirrors_blocked_until:
         lines.append("# mirrors_blocked_until=%s（镜像实例此前全灭，到期前不再尝试）"
                      % cache.mirrors_blocked_until)
-    if cache.watch_backoff_until:
-        lines.append("# watch_backoff_until=%s（watch 页此前配额用尽，短暂退避）"
-                     % cache.watch_backoff_until)
     for vid in sorted(keep):
         ms, prec, src = keep[vid]
         lines.append("%s\t%d\t%s\t%s\t%s" % (vid, ms, prec, src, now))
@@ -1746,21 +1740,16 @@ def run_channel(channel_url, args, deadline):
     gaps = [e["id"] for e in gaps_ids()]
     log("[缺口] 仍缺官方秒/日精度的视频: %d 条" % len(gaps))
 
-    # 5b) 直接抓 watch 页元数据（实测最有效的一条免 key 通路；配额用尽就短暂退避）
-    if (gaps and not args.list_only and deadline.ok(30)
-            and not _cooldown_active(cache.watch_backoff_until)):
+    # 5b) 直接抓 watch 页元数据（实测最有效的一条免 key 通路）。
+    #     不设退避：探测本身很便宜（几次请求），而配额是滚动恢复的，
+    #     每轮都机会性地试一次，配额一恢复就能立刻补数据。
+    if gaps and not args.list_only and deadline.ok(30):
         try:
             wp, wtried = dates_from_watch_page(gaps, deadline, state)
             if wp:
                 sources.append(("watch", wp))
                 merge_dates(entries, sources)
             counts.append(("watch 页元数据（日精度）", len(wp)))
-            if not wp:
-                # 只短暂退避：这条路本身有效，配额用尽通常是一时的
-                cache.watch_backoff_until = (dt.datetime.now(timezone.utc)
-                                             + dt.timedelta(days=WATCH_BACKOFF_DAYS)
-                                             ).strftime("%Y-%m-%d")
-                log("[watch页] 本轮取不到日期，退避至 %s" % cache.watch_backoff_until)
         except Exception as ex:
             log("[watch页] 失败: %s" % str(ex)[:120])
         w.mark("watch 页元数据")
@@ -1860,7 +1849,7 @@ def run_channel(channel_url, args, deadline):
     return {"out": out, "name": name or "-", "total": len(entries), "stats": by_src}
 
 
-# ------------------------------------------------ 频道列表
+# ------------------------------------------------ 频道列表与排队
 
 def load_channels(cli_url):
     """channels.txt 里的频道 + 命令行额外传入的频道（去重，保持顺序）。"""
@@ -1887,32 +1876,73 @@ def load_channels(cli_url):
     return out
 
 
-def rotate_channels(channels):
-    """按 ROTATION_FILE 里的计数把频道顺序轮转一格。
-
-    原因：watch 页通路有"每 IP 每小时约 200 次"的总量配额，固定顺序跑会让排在后面的
-    频道永远分不到配额。每轮把顺序转一格，几轮下来每个频道都能轮到"排第一"的那次，
-    配合日期缓存（拿到就不会丢），最终所有频道都能补齐。"""
-    if not channels:
-        return channels
-    n = 0
+def _rotation_read():
     try:
         with open(ROTATION_FILE, "r", encoding="utf-8", errors="replace") as f:
-            n = int((f.read().strip() or "0"))
+            return int((f.read().strip() or "0"))
     except Exception:
-        n = 0
-    k = n % len(channels)
-    out = channels[k:] + channels[:k] if k else channels
+        return 0
+
+
+def _rotation_bump(n):
     try:
         os.makedirs(os.path.dirname(ROTATION_FILE) or ".", exist_ok=True)
         with open(ROTATION_FILE, "w", encoding="utf-8") as f:
             f.write("%d" % (n + 1))
     except Exception:
         pass
+
+
+def scan_needs():
+    """扫 data/*_videos.txt，按频道链接统计“还缺可靠日期”的条数（纯本地，不联网）。
+
+    产物的头部写了“频道链接”，据此把文件与 channels.txt 里的条目对应起来。"""
+    need = {}
+    for path in sorted(glob.glob(os.path.join("data", "*_videos.txt"))):
+        if os.path.basename(path).startswith("_"):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8", errors="replace") as f:
+                txt = f.read()
+        except Exception:
+            continue
+        m = re.search(r"^频道链接: (.+)$", txt, re.M)
+        if not m:
+            continue
+        url = ensure_base(m.group(1).strip())
+        total = len(re.findall(r"^【[0-9]+】视频名称:", txt, re.M))
+        good = (len(re.findall(r"^    发布时间: [0-9]{4}-[0-9]{2}-[0-9]{2} "
+                               r"[0-9]{2}:[0-9]{2}:[0-9]{2} [(]UTC[+]8[)]", txt, re.M))
+                + len(re.findall(r"^    发布时间: [0-9]{4}-[0-9]{2}-[0-9]{2}（(?:日精度|推断日期)",
+                                 txt, re.M)))
+        need[url] = max(0, total - good)
+    return need
+
+
+def order_channels(channels):
+    """按“还缺可靠日期的条数”从多到少排队；缺口相同用轮转计数打散，保证长期公平。
+
+    为什么不是简单轮转：watch 页通路每 IP 每小时只有约 200 次配额，
+    如果按固定顺序（或盲目轮转）跑，配额常被已经补齐的频道吃掉，
+    缺口最大的频道反而迟迟补不上。先看缺口，才能让每一轮都花在刀刃上。"""
+    if not channels:
+        return channels
+    n = _rotation_read()
+    _rotation_bump(n)
+    need = scan_needs()
+    if need:
+        order = sorted(range(len(channels)),
+                       key=lambda i: (-need.get(ensure_base(channels[i]), 0),
+                                      (i - n) % len(channels)))
+        out = [channels[i] for i in order]
+        log("[排队] 按缺口从多到少：%s"
+            % " > ".join("%s(缺 %d)" % (ensure_base(u).rsplit("/", 1)[-1],
+                                       need.get(ensure_base(u), 0)) for u in out))
+        return out
+    k = n % len(channels)
     if k:
-        log("[轮转] 本次从第 %d 个频道开始抓（第 %d 轮），保证配额逐轮公平分配"
-            % (k + 1, n + 1))
-    return out
+        log("[轮转] 本次从第 %d 个频道开始抓（第 %d 轮）" % (k + 1, n + 1))
+    return channels[k:] + channels[:k] if k else channels
 
 
 # ------------------------------------------------ 离线演练
@@ -1996,7 +2026,7 @@ def main():
             start_run_log()
         deadline = Budget((args.budget_min or
                            float(os.environ.get("TIME_BUDGET_MIN", "45"))) * 60)
-        channels = rotate_channels(load_channels(args.url))
+        channels = order_channels(load_channels(args.url))
         log("== 本次将抓取 %d 个频道（总预算 %.0f 分钟）=="
             % (len(channels), deadline.left() / 60))
         for u in channels:
