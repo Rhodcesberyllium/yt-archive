@@ -1,6 +1,6 @@
 [日志] 本次运行日志同时写入 data/_run_log.txt
-[环境] Python 3.12.14 / 时间 2026-09-16 11:53:48 (UTC+8) / 视频ID时序可用
-[排队] 按缺口从多到少：@ChemicalForce(缺 206) > @Chemiolis(缺 59) > @ExplosionsAndFire(缺 15) > @NurdRage(缺 0) > @NileRed(缺 0)
+[环境] Python 3.12.14 / 时间 2026-09-16 12:56:23 (UTC+8) / 视频ID时序可用
+[排队] 按缺口从多到少：@ChemicalForce(缺 72) > @Chemiolis(缺 59) > @ExplosionsAndFire(缺 15) > @NurdRage(缺 0) > @NileRed(缺 0)
 == 本次将抓取 5 个频道（总预算 45 分钟）==
    - https://www.youtube.com/@ChemicalForce/videos
    - https://www.youtube.com/@Chemiolis/videos
@@ -15,15 +15,15 @@
 [枚举] tab=videos 获得 171 条（累计 171）
 [枚举] tab=shorts 获得 44 条（累计 215）
 [枚举] tab=streams 获得 0 条（累计 215）
-[计时] 枚举: 3.5s（累计 3.5s）
-[计时] 频道信息: 0.3s（累计 3.8s）
+[计时] 枚举: 4.6s（累计 4.6s）
+[计时] 频道信息: 0.3s（累计 4.9s）
 [频道] 名称=ChemicalForce ID=UCqONNjBkukcc2yXbmHL8niQ
-[缓存] 命中 9/215 条；另记 206 条已确认无存档；探测冷却中（2026-09-29）
+[缓存] 命中 143/215 条；另记 206 条已确认无存档；探测冷却中（2026-09-29）
 [网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCqONNjBkukcc2yXbm: HTTP Error 404: Not Found
 [网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCqONNjBkukcc2yXbm: HTTP Error 404: Not Found
 [RSS] 获取失败（频道 ID：UCqONNjBkukcc2yXbmHL8niQ）
 [RSS] 获得 0 条精确日期
-[计时] RSS: 1.4s（累计 5.2s）
+[计时] RSS: 1.6s（累计 6.5s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
 [镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
 [相对时间] tab=videos 首屏30条 + 翻页23页, 候选token5个, 并集171
@@ -32,43 +32,38 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 14.0s（累计 19.2s）
-[缺口] 仍缺官方秒/日精度的视频: 206 条
+[计时] 频道页相对时间: 14.0s（累计 20.5s）
+[缺口] 仍缺官方秒/日精度的视频: 72 条
 [watch页] 样本命中 3/3
 [watch页] 已查 27 条，命中 27 条
 [watch页] 已查 54 条，命中 54 条
-[watch页] 已查 81 条，命中 81 条
-[watch页] 已查 108 条，命中 108 条
-[watch页] 已查 126 条，命中 126 条
-[watch页] 连续 10 条取不到，疑似配额用尽，本频道就此收手
-[watch页] 本轮查 144 条，命中 134 条
-[计时] watch 页元数据: 101.8s（累计 121.1s）
-[存档] 候选 0 条（其中完全无日期 0 条），按「无日期优先 + 从旧到新」顺序查
-[计时] archive.org 存档: 0.0s（累计 121.1s）
+[watch页] 已查 72 条，命中 72 条
+[watch页] 本轮查 72 条，命中 72 条
+[计时] watch 页元数据: 52.0s（累计 72.5s）
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
-[兜底] 标题推断 0 条，页面相对文本 33 条
-[推算] 为 39 条无日期视频标出 ID 时序区间提示
+[兜底] 标题推断 0 条，页面相对文本 0 条
+[推算] 为 0 条无日期视频标出 ID 时序区间提示
 [归档] 相比上次：新增 0 条，消失 0 条
 
-[完成] data/ChemicalForce_videos.txt：共 215 条（精确 7 / 官方日 136 / 标题推断 0 / 相对文本 33 / 未知 39），可靠日期(秒或日) 143 条占 67%，耗时 2分1秒
-[缓存] 写入 data/ChemicalForce_dates.txt（143 条官方级日期 + 206 条无存档标记）
+[完成] data/ChemicalForce_videos.txt：共 215 条（精确 7 / 官方日 208 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 215 条占 100%，耗时 1分12秒
+[缓存] 写入 data/ChemicalForce_dates.txt（215 条官方级日期 + 206 条无存档标记）
 
-[预算] 频道 2/5 分配 580 秒（全局剩余 2579 秒）
+[预算] 频道 2/5 分配 591 秒（全局剩余 2627 秒）
 
 ============================================================
 == 频道: https://www.youtube.com/@Chemiolis/videos ==
 [枚举] tab=videos 获得 75 条（累计 75）
 [枚举] tab=shorts 获得 7 条（累计 82）
 [枚举] tab=streams 获得 0 条（累计 82）
-[计时] 枚举: 2.2s（累计 2.2s）
-[计时] 频道信息: 0.6s（累计 2.7s）
+[计时] 枚举: 2.9s（累计 2.9s）
+[计时] 频道信息: 0.3s（累计 3.1s）
 [频道] 名称=Chemiolis ID=UCoDmZirW1o9XSKSRM6YJ1rQ
 [缓存] 命中 23/82 条；另记 59 条已确认无存档；探测冷却中（2026-09-29）
 [网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCoDmZirW1o9XSKSRM: HTTP Error 404: Not Found
 [网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCoDmZirW1o9XSKSRM: HTTP Error 404: Not Found
 [RSS] 获取失败（频道 ID：UCoDmZirW1o9XSKSRM6YJ1rQ）
 [RSS] 获得 0 条精确日期
-[计时] RSS: 1.6s（累计 4.4s）
+[计时] RSS: 1.6s（累计 4.7s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
 [镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
 [相对时间] tab=videos 首屏30条 + 翻页11页, 候选token5个, 并集75
@@ -80,37 +75,40 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 9.9s（累计 14.3s）
+[计时] 频道页相对时间: 9.5s（累计 14.2s）
 [缺口] 仍缺官方秒/日精度的视频: 59 条
-[watch页] 样本 0/3，疑似配额用尽，等 10 秒后重探
-[watch页] 样本命中 0/3
-[计时] watch 页元数据: 14.4s（累计 28.7s）
+[watch页] 样本命中 3/3
+[watch页] 已查 27 条，命中 27 条
+[watch页] 已查 54 条，命中 38 条
+[watch页] 已查 59 条，命中 38 条
+[watch页] 本轮查 59 条，命中 38 条
+[计时] watch 页元数据: 40.9s（累计 55.1s）
 [存档] 候选 0 条（其中完全无日期 0 条），按「无日期优先 + 从旧到新」顺序查
-[计时] archive.org 存档: 0.0s（累计 28.7s）
+[计时] archive.org 存档: 0.0s（累计 55.1s）
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
-[兜底] 标题推断 0 条，页面相对文本 55 条
+[兜底] 标题推断 0 条，页面相对文本 17 条
 [推算] 为 4 条无日期视频标出 ID 时序区间提示
 [归档] 相比上次：新增 0 条，消失 0 条
 
-[完成] data/Chemiolis_videos.txt：共 82 条（精确 7 / 官方日 16 / 标题推断 0 / 相对文本 55 / 未知 4），可靠日期(秒或日) 23 条占 28%，耗时 0分28秒
-[缓存] 写入 data/Chemiolis_dates.txt（23 条官方级日期 + 59 条无存档标记）
+[完成] data/Chemiolis_videos.txt：共 82 条（精确 7 / 官方日 54 / 标题推断 0 / 相对文本 17 / 未知 4），可靠日期(秒或日) 61 条占 74%，耗时 0分55秒
+[缓存] 写入 data/Chemiolis_dates.txt（61 条官方级日期 + 59 条无存档标记）
 
-[预算] 频道 3/5 分配 765 秒（全局剩余 2550 秒）
+[预算] 频道 3/5 分配 771 秒（全局剩余 2572 秒）
 
 ============================================================
 == 频道: https://www.youtube.com/@ExplosionsAndFire/videos ==
 [枚举] tab=videos 获得 33 条（累计 33）
 [枚举] tab=shorts 获得 2 条（累计 35）
 [枚举] tab=streams 获得 0 条（累计 35）
-[计时] 枚举: 1.8s（累计 1.8s）
-[计时] 频道信息: 0.3s（累计 2.0s）
+[计时] 枚举: 2.3s（累计 2.3s）
+[计时] 频道信息: 0.3s（累计 2.6s）
 [频道] 名称=Explosions&Fire ID=UCVovvq34gd0ps5cVYNZrc7A
 [缓存] 命中 20/35 条；另记 15 条已确认无存档；探测冷却中（2026-09-29）
-[网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCVovvq34gd0ps5cVY: HTTP Error 500: Internal Server Error
+[网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCVovvq34gd0ps5cVY: HTTP Error 404: Not Found
 [网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCVovvq34gd0ps5cVY: HTTP Error 404: Not Found
 [RSS] 获取失败（频道 ID：UCVovvq34gd0ps5cVYNZrc7A）
 [RSS] 获得 0 条精确日期
-[计时] RSS: 1.7s（累计 3.7s）
+[计时] RSS: 1.6s（累计 4.2s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
 [镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
 [相对时间] tab=videos 首屏30条 + 翻页7页, 候选token6个, 并集33
@@ -122,11 +120,11 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 6.2s（累计 9.9s）
+[计时] 频道页相对时间: 6.1s（累计 10.2s）
 [缺口] 仍缺官方秒/日精度的视频: 15 条
 [watch页] 样本 0/3，疑似配额用尽，等 10 秒后重探
 [watch页] 样本命中 0/3
-[计时] watch 页元数据: 15.5s（累计 25.4s）
+[计时] watch 页元数据: 15.2s（累计 25.4s）
 [存档] 候选 0 条（其中完全无日期 0 条），按「无日期优先 + 从旧到新」顺序查
 [计时] archive.org 存档: 0.0s（累计 25.4s）
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
@@ -137,25 +135,25 @@
 [完成] data/Explosions&Fire_videos.txt：共 35 条（精确 7 / 官方日 13 / 标题推断 0 / 相对文本 14 / 未知 1），可靠日期(秒或日) 20 条占 57%，耗时 0分25秒
 [缓存] 写入 data/Explosions&Fire_dates.txt（20 条官方级日期 + 15 条无存档标记）
 
-[预算] 频道 4/5 分配 900 秒（全局剩余 2525 秒）
+[预算] 频道 4/5 分配 900 秒（全局剩余 2547 秒）
 
 ============================================================
 == 频道: https://www.youtube.com/@NurdRage/videos ==
 [枚举] tab=videos 获得 287 条（累计 287）
 [枚举] tab=shorts 获得 4 条（累计 291）
 [枚举] tab=streams 获得 0 条（累计 291）
-[计时] 枚举: 4.3s（累计 4.3s）
-[计时] 频道信息: 0.3s（累计 4.5s）
+[计时] 枚举: 5.3s（累计 5.3s）
+[计时] 频道信息: 0.3s（累计 5.5s）
 [频道] 名称=NurdRage ID=UCIgKGGJkt1MrNmhq3vRibYA
 [缓存] 命中 291/291 条；另记 238 条已确认无存档；探测冷却中（2026-09-29）
-[网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCIgKGGJkt1MrNmhq3: HTTP Error 500: Internal Server Error
+[网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCIgKGGJkt1MrNmhq3: HTTP Error 404: Not Found
 [网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCIgKGGJkt1MrNmhq3: HTTP Error 404: Not Found
 [RSS] 获取失败（频道 ID：UCIgKGGJkt1MrNmhq3vRibYA）
 [RSS] 获得 0 条精确日期
-[计时] RSS: 1.4s（累计 6.0s）
+[计时] RSS: 1.6s（累计 7.1s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
 [镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
-[相对时间] tab=videos 首屏30条 + 翻页39页, 候选token6个, 并集287
+[相对时间] tab=videos 首屏0条 + 翻页39页, 候选token6个, 并集287
 [相对时间] tab=shorts 首屏0条 + 翻页0页, 候选token2个, 并集287
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
@@ -164,30 +162,32 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 23.1s（累计 29.1s）
+[计时] 频道页相对时间: 21.4s（累计 28.5s）
 [缺口] 仍缺官方秒/日精度的视频: 0 条
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
 [兜底] 标题推断 0 条，页面相对文本 0 条
 [推算] 为 0 条无日期视频标出 ID 时序区间提示
 [归档] 相比上次：新增 0 条，消失 0 条
 
-[完成] data/NurdRage_videos.txt：共 291 条（精确 7 / 官方日 284 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 291 条占 100%，耗时 0分29秒
+[完成] data/NurdRage_videos.txt：共 291 条（精确 7 / 官方日 284 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 291 条占 100%，耗时 0分28秒
 [缓存] 写入 data/NurdRage_dates.txt（291 条官方级日期 + 238 条无存档标记）
 
-[预算] 频道 5/5 分配 900 秒（全局剩余 2496 秒）
+[预算] 频道 5/5 分配 900 秒（全局剩余 2518 秒）
 
 ============================================================
 == 频道: https://www.youtube.com/@NileRed/videos ==
 [枚举] tab=videos 获得 254 条（累计 254）
 [枚举] tab=shorts 获得 147 条（累计 401）
 [枚举] tab=streams 获得 0 条（累计 401）
-[计时] 枚举: 5.3s（累计 5.3s）
-[计时] 频道信息: 0.3s（累计 5.6s）
+[计时] 枚举: 6.6s（累计 6.6s）
+[计时] 频道信息: 0.3s（累计 6.9s）
 [频道] 名称=NileRed ID=UCFhXFikryT4aFcLkLw2LBLA
 [缓存] 命中 401/401 条；另记 342 条已确认无存档；探测冷却中（2026-09-29）
-[RSS] 仅有 7 条，稍候重试一次
-[RSS] 获得 7 条精确日期
-[计时] RSS: 1.0s（累计 6.6s）
+[网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCFhXFikryT4aFcLkL: HTTP Error 404: Not Found
+[网络] 失败 https://www.youtube.com/feeds/videos.xml?channel_id=UCFhXFikryT4aFcLkL: HTTP Error 404: Not Found
+[RSS] 获取失败（频道 ID：UCFhXFikryT4aFcLkLw2LBLA）
+[RSS] 获得 0 条精确日期
+[计时] RSS: 1.6s（累计 8.5s）
 [DataAPI] 未配置 YT_API_KEY，跳过（配置后本通道可给全部视频精确到秒的日期）
 [镜像] 冷却期内跳过镜像通道（截至 2026-09-22）
 [相对时间] tab=videos 首屏30条 + 翻页35页, 候选token6个, 并集254
@@ -196,14 +196,14 @@
 [相对时间]    诊断: [WEB/2.20260915.01.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [WEB/2.20250310.00.00] keys=[responseContext,trackingParams,onResponseReceivedEndpoints] onResponseReceivedActions=0
 [相对时间]    诊断: [ANDROID/19.09.37] 网络错误: HTTP Error 400: Bad Request
-[计时] 频道页相对时间: 28.1s（累计 34.7s）
+[计时] 频道页相对时间: 27.1s（累计 35.6s）
 [缺口] 仍缺官方秒/日精度的视频: 0 条
 [探测] 冷却期内（2026-09-29 前）跳过播放接口与 yt-dlp 探测，预算留给其它通路
 [兜底] 标题推断 0 条，页面相对文本 0 条
 [推算] 为 0 条无日期视频标出 ID 时序区间提示
 [归档] 相比上次：新增 0 条，消失 0 条
 
-[完成] data/NileRed_videos.txt：共 401 条（精确 7 / 官方日 394 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 401 条占 100%，耗时 0分34秒
+[完成] data/NileRed_videos.txt：共 401 条（精确 7 / 官方日 394 / 标题推断 0 / 相对文本 0 / 未知 0），可靠日期(秒或日) 401 条占 100%，耗时 0分35秒
 [缓存] 写入 data/NileRed_dates.txt（401 条官方级日期 + 342 条无存档标记）
 
 ============================================================
